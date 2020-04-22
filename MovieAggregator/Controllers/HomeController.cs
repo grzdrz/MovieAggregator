@@ -20,12 +20,13 @@ namespace MovieAggregator.Controllers
 
         public ActionResult Index()
         {
-            var cast = db.Casts.Include(p => p.Movie).ToList();
+            var cast = db.Cast.Include(p => p.Movie).ToList();
 
             Debug.WriteLine("Cast: ");
             foreach (var e in cast)
             {
-                Debug.WriteLine("  " + e.FirstName);
+                Debug.WriteLine("  " + e.FirstName + " " + e.SecondName + " " + e.LastName + " and his movie:");
+                Debug.WriteLine("    " + e.Movie.Name);
             }
 
             return View();

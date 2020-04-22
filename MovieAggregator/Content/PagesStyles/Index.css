@@ -2,10 +2,9 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-    box-sizing: content-box;
+    box-sizing: border-box;
     width: 100%;
 }
-
 body {
     background: #29223e;
     display: flex;
@@ -13,16 +12,18 @@ body {
     color: white;
 }
 
+
 #header {
     width: 100%;
     padding: 100px 0px;
     text-align: center;
 }
 
+
+
 #content {
     width: 100%;
     display: flex;
-    box-sizing: border-box;
 }
     #content #column1, #column3 {
         width: 20%;
@@ -31,7 +32,18 @@ body {
     #content #column2 {
         width: 60%;
         padding: 20px;
+        display: flex;
+        flex-direction: column;
     }
+        #content #column2 .movieBlock {
+            padding: 20px 10px;
+            border: 1px solid #8e673c;
+        }
+        #content #column2 .movieBlock:nth-child(n+2) {
+            margin-top: 20px;
+        }
+
+
 
 #footer {
     width: 100%;

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MovieAggregator.Models
 {
-    public class Cast
+    public class Actor
     {
         public int Id { get; set; } 
         public string FirstName { get; set; }

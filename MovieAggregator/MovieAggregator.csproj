@@ -131,7 +131,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Cast.cs" />
+    <Compile Include="Models\Actor.cs" />
     <Compile Include="Models\DBContextMoviesInfo.cs" />
     <Compile Include="Models\DBInitializator.cs" />
     <Compile Include="Models\Movie.cs" />

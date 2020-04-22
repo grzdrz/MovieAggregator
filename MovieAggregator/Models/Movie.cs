@@ -10,17 +10,14 @@ namespace MovieAggregator.Models
         public int Id { get; set; }
 
         public string Name { get; set; }
-        public DateTime ReleaseDate { get; set; }
-
-
         public string Director { get; set; }
         public string Writer { get; set; }
-
-
+        public DateTime ReleaseDate { get; set; }
         public string Description { get; set; }
 
 
-        public virtual IEnumerable<Cast> Cast { get; set; }
+
+        public virtual IEnumerable<Actor> Cast { get; set; }
             
     }
 }
