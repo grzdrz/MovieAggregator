@@ -11,7 +11,11 @@ body {
     flex-flow:column;
     color: white;
 }
-
+#targetWrap, #wrap {
+    width: 100%;
+    dispaly: flex;
+    flex-direction: column;
+}
 
 #header {
     width: 100%;
@@ -42,12 +46,15 @@ body {
         #content #column2 .movieBlock:nth-child(n+2) {
             margin-top: 20px;
         }
+            #content #column2 .movieBlock p{
+                margin-top: 10px;
+            }
 
 
 
-#footer {
-    width: 100%;
-    padding: 100px 0px;
-    text-align: center;
-}
+            #footer {
+                width: 100%;
+                padding: 100px 0px;
+                text-align: center;
+            }
 

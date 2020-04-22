@@ -14,7 +14,7 @@ namespace MovieAggregator
     {
         protected void Application_Start()
         {
-            Database.SetInitializer<DBContextMoviesInfo>(new DBInitializator());
+            //Database.SetInitializer<DBContextMoviesInfo>(new DBInitializator());
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

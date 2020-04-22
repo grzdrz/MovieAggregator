@@ -31,5 +31,12 @@ namespace MovieAggregator.Controllers
 
             return View();
         }
+
+        public JsonResult GetMoviesInfo()
+        {
+            IEnumerable<Movie> movies = db.Movies;
+
+            return Json(movies, JsonRequestBehavior.AllowGet);
+        }
     }
 }
