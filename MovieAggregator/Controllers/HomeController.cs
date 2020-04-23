@@ -38,5 +38,20 @@ namespace MovieAggregator.Controllers
 
             return Json(movies, JsonRequestBehavior.AllowGet);
         }
+
+        public JsonResult GetMoviesInfoByPageNumber(int pageNumber = 1)
+        {
+            IEnumerable<Movie> movies = db.Movies.ToList();
+            movies = movies.Skip((pageNumber - 1) * 4).Take(4).ToList();
+
+            return Json(movies, JsonRequestBehavior.AllowGet);
+        }
+
+        public string GetMoviesCount()
+        {
+            int moviesCount = db.Movies.Count();
+
+            return moviesCount.ToString();
+        }
     }
 }
