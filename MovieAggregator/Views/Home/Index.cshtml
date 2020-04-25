@@ -2,13 +2,14 @@
     Layout = null;
     ViewBag.Title = "Home Page";
 }
-<head>
-    <meta charset="utf-8" />
-    <title>@ViewBag.Title</title>
-    <link href="~/Content/PagesStyles/Index.css" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        @*<link href="~/Content/PagesStyles/Index.css" rel="stylesheet" />*@
+        <link href="~/Content/PagesStyles/AdminPanel.css" rel="stylesheet" />
+    </head>
 <body>
-    <div id="targetWrap"></div>
+    <div id="wrap"></div>
 
     <!-- Подгрузка реакт скриптов -->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
@@ -17,22 +18,11 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 
-    <script type="text/babel" src="~/Scripts/Components/CentralColumn.js">
-    </script>
-    <script type="text/babel" src="~/Scripts/Components/Content.js">
-    </script>
-    <script type="text/babel" src="~/Scripts/Components/Footer.js">
-    </script>
-    <script type="text/babel" src="~/Scripts/Components/Header.js">
-    </script>
-    <script type="text/babel" src="~/Scripts/Components/LeftColumn.js">
-    </script>
-    <script type="text/babel" src="~/Scripts/Components/RightColumn.js">
-    </script>
-    <script type="text/babel" src="~/Scripts/Components/Pagination.js">
+    @*<script type="text/babel" src="~/Scripts/Components/MainPage/CentralColumn.js">
+    </script>*@
+    <script type="text/babel" src="~/Scripts/Components/AdminPage/CentralColumnForAdmin.js">
     </script>
 
-
-    <script type="text/babel" src="~/Scripts/Components/Wrap.js">
+    <script type="text/babel" src="~/Scripts/Components/Base.js">
     </script>
 </body>

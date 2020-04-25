@@ -46,6 +46,7 @@ body {
             #content #column2 #container .movieBlock {
                 padding: 20px 10px;
                 border: 1px solid #d8b440;
+                border-radius: 5px;
             }
                 #content #column2 #container .movieBlock:nth-child(n+2) {
                     margin-top: 20px;
@@ -70,6 +71,7 @@ body {
                     width: 30px;
                     border: 1px solid #d8b440;
                     margin: 0px 5px;
+                    border-radius: 5px;
                 }
                     #content #column2 #pagination ul li a {
                         color: #d8b440;
