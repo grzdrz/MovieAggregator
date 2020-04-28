@@ -327,6 +327,7 @@ class MovieBlockEditor extends React.Component {
 			[event.target.name]: event.target.value
 		});
 	}
+
 	async onSubmit(event) {
 		event.preventDefault();
 

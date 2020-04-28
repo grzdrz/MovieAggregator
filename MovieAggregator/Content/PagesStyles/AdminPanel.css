@@ -8,8 +8,6 @@
 
 body {
     background: #29223e;
-    display: flex;
-    flex-flow: column;
     color: white;
 }
 
@@ -23,14 +21,38 @@ body {
     width: 100%;
     padding: 30px 0px;
     text-align: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
 }
-    #header a {
-        margin: 20px 0px;
-        text-decoration: none;
-        border: 1px solid #d8b440;
-        border-radius: 5px;
-        background: #d8b440;
+    #header #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 20px;
     }
+        #header #menu #mainPage {
+            text-decoration: none;
+            border: 1px solid #d8b440;
+            border-radius: 5px;
+            background: #d8b440;
+            width: 10%;
+            height: 30px;
+        }
+        #header #menu ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 30%;
+        }
+            #header #menu ul li {
+                width: 30%;
+            }
+                #header #menu ul li button {
+                    height: 30px;
+                    border-radius: 5px;
+                }
 
 
 #content {
@@ -143,6 +165,37 @@ body {
             padding: 30px 0px;
             text-align: center;
         }
+
+
+
+
+#signIn {
+    z-index: 999;
+    width: auto;
+    /*display: flex;*/
+    background: #221f2a;
+    position: absolute;
+    top: 20%;
+    /*bottom: 20%;*/
+    right: 30%;
+    left: 30%;
+    padding: 30px 50px;
+    border: 2px solid #dc9607;
+    border-radius: 5px;
+    color: #dc9607;
+
+    display: none;
+}
+    #signIn form input {
+        padding: 5px 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 2px solid #dc9607;
+        background: #d9c581;
+    }
+    #signIn form input:last-child {
+        margin-top: 20px;
+    }
 
 
 /*#29223e - back*/

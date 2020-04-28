@@ -52,7 +52,34 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.3\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -126,30 +153,42 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Actor.cs" />
-    <Compile Include="Models\DBContextMoviesInfo.cs" />
-    <Compile Include="Models\DBInitializator.cs" />
-    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\IdentityInfrastructure\AppDbInitializer.cs" />
+    <Compile Include="Models\IdentityInfrastructure\AppRole.cs" />
+    <Compile Include="Models\IdentityInfrastructure\AppRoleManager.cs" />
+    <Compile Include="Models\IdentityInfrastructure\AppUserModels.cs" />
+    <Compile Include="Models\IdentityInfrastructure\AppIdentityDbContext.cs" />
+    <Compile Include="Models\IdentityInfrastructure\AppUserManager.cs" />
+    <Compile Include="Models\IdentityInfrastructure\IdentityHelpers.cs" />
+    <Compile Include="Models\IdentityInfrastructure\UserViewModels.cs" />
+    <Compile Include="Models\MoviesDB\Actor.cs" />
+    <Compile Include="Models\MoviesDB\DBContextMoviesInfo.cs" />
+    <Compile Include="Models\MoviesDB\DBInitializator.cs" />
+    <Compile Include="Models\MoviesDB\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Content\PagesStyles\AdminPanel.css" />
-    <Content Include="Content\PagesTEST\MovieBlockCreator.html" />
-    <Content Include="Content\PagesTEST\AdminPanel.html" />
+    <Content Include="Content\PrototypesOfPages\SignInWindow.html" />
+    <Content Include="Content\PrototypesOfPages\MovieBlockCreator.html" />
+    <Content Include="Content\PrototypesOfPages\AdminPanel.html" />
     <Content Include="Scripts\Components\AdminPage\CentralColumnForAdmin.js" />
+    <Content Include="Scripts\Components\AdminPage\ContentForAdmin.js" />
     <Content Include="Scripts\Components\MainPage\CentralColumn.js" />
     <Content Include="Scripts\Components\Base.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\PagesStyles\Index.css" />
-    <Content Include="Content\PagesTEST\Index.html" />
+    <Content Include="Content\PrototypesOfPages\Index.html" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\Components\MainPage\Content.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -168,11 +207,11 @@
     <Folder Include="Views\Movies\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Create.cshtml" />
+    <Content Include="Views\Admin\Edit.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,4 +1,5 @@
 using MovieAggregator.Models;
+using MovieAggregator.Models.IdentityInfrastructure;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -15,6 +16,7 @@ namespace MovieAggregator
         protected void Application_Start()
         {
             //Database.SetInitializer<DBContextMoviesInfo>(new DBInitializator());
+            //Database.SetInitializer<AppIdentityDbContext>(new AppDbInitializer());
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

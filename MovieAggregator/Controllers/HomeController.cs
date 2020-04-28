@@ -6,6 +6,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
+using MovieAggregator.Models.IdentityInfrastructure;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.AspNet.Identity;
 
 namespace MovieAggregator.Controllers
 {
@@ -20,15 +23,18 @@ namespace MovieAggregator.Controllers
 
         public ActionResult Index()
         {
-            var cast = db.Cast.Include(p => p.Movie).ToList();
-
-            Debug.WriteLine("Cast: ");
-            foreach (var e in cast)
+            var userName = User.Identity.Name;
+            AppUser user = UserManager.FindByName(userName);
+            if (user != null)
             {
-                Debug.WriteLine("  " + e.FirstName + " " + e.SecondName + " " + e.LastName + " and his movie:");
-                Debug.WriteLine("    " + e.Movie.Name);
+                var roles = UserManager.GetRoles(user.Id).ToList();
+                if (roles.Contains("admin"))
+                {
+                    ViewBag.UserRole = "Admin";
+                    return View();
+                }
             }
-
+            ViewBag.UserRole = "notAdmin";
             return View();
         }
 
@@ -61,6 +67,41 @@ namespace MovieAggregator.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+
+        private AppUserManager UserManager
+        {
+            get
+            {
+                return HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
+            }
+        }
+
+
+        [Authorize]
+        public ActionResult Index1()
+        {
+            return View(GetData("Index1"));
+        }
+
+        [Authorize(Roles = "Users")]
+        public ActionResult OtherAction()
+        {
+            return View("Index1", GetData("OtherAction"));
+        }
+
+        private Dictionary<string, object> GetData(string actionName)
+        {
+            Dictionary<string, object> dict = new Dictionary<string, object>();
+
+            dict.Add("Action", actionName);
+            dict.Add("Пользователь", HttpContext.User.Identity.Name);
+            dict.Add("Аутентифицирован?", HttpContext.User.Identity.IsAuthenticated);
+            dict.Add("Тип аутентификации", HttpContext.User.Identity.AuthenticationType);
+            dict.Add("В роли Users?", HttpContext.User.IsInRole("Users"));
+
+            return dict;
         }
     }
 }

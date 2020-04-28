@@ -1,36 +1,52 @@
 ﻿class CentralColumn extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+
+		this.getCurPage = this.getCurPage.bind(this);
+		this.setCurPage = this.setCurPage.bind(this);
+		this.state = {
+			getCurPage: this.getCurPage,
+			setCurPage: this.setCurPage,
+		};
 	}
+
+	getCurPage() {
+		return this.state.curPage;
+	}
+	setCurPage(curPage) {
+		this.setState({ curPage: curPage });
+	}
+
 
 	render() {
 		return (
 			<div id="column2">
-				<Container />
-				<Pagination updateMoviesList={this.updateMoviesList} />
+				<MoviesContainer columnState={this.state} />
+				<Pagination curPage={1} columnState={this.state} />
 			</div>
 		);
 	}
 }
 
-class Container extends React.Component {
+class MoviesContainer extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { moviesInfoArray: props.moviesInfoArray };
+		this.state = {};
 	}
 
 	render() {
-		if (this.state.moviesInfoArray) {
+		if (this.props.moviesInfoArray) {
 			return (
-				<div id="container">
-					<MoviesBlockList moviesInfoArray={this.state.moviesInfoArray}/>
+				<div id="moviesContainer">
+					<MoviesBlockList
+						moviesInfoArray={this.props.moviesInfoArray}
+						columnState={this.props.columnState} />
 				</div>
 			);
 		}
 		else {
 			return (
-				<div id="container">
+				<div id="moviesContainer">
 					<p style={{ textAlign: "center" }}>Wait, loading in process...</p>
 				</div>
 			);
@@ -41,10 +57,14 @@ class Container extends React.Component {
 class Pagination extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { updateMoviesList: props.updateMoviesList};
+		this.state = {};
 
+		////////////////////////////
 		this.getMoviesCount();
-		this.getMovies(1);
+		if (props.curPage)
+			this.getMovies(props.curPage);//при изменении текущего блока 
+		else
+			this.getMovies(1);//при вставке блока
 	}
 
 	async getMoviesCount() {
@@ -76,8 +96,13 @@ class Pagination extends React.Component {
 
 		let moviesInfoArray = await response.json();
 
-		let container = document.querySelector("#container");
-		ReactDOM.render(<MoviesBlockList moviesInfoArray={moviesInfoArray} />, container);
+		this.props.columnState.setCurPage(pageNumber);
+
+		let container = document.querySelector("#moviesContainer");
+		ReactDOM.unmountComponentAtNode(container);
+		ReactDOM.render(<MoviesBlockList
+			moviesInfoArray={moviesInfoArray}
+			columnState={this.props.columnState} />, container);
 	}
 
 	render() {
@@ -115,7 +140,8 @@ class MoviesBlockList extends React.Component {
 				return (
 					<MovieBlock
 						key={arrElem.Id}
-						moviesInfo={arrElem} />
+						moviesInfo={arrElem}
+						columnState={this.props.columnState} />
 				);
 			})
 		);

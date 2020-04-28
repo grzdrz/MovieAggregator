@@ -8,21 +8,35 @@
         @*<link href="~/Content/PagesStyles/Index.css" rel="stylesheet" />*@
         <link href="~/Content/PagesStyles/AdminPanel.css" rel="stylesheet" />
     </head>
-<body>
-    <div id="wrap"></div>
+    <body>
+        <div id="wrap"></div>
+        <div id="signIn"></div>
 
-    <!-- Подгрузка реакт скриптов -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <!-- Подгрузка скрипта бабеля для компиляции JSX-->
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <!-- Подгрузка реакт скриптов -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <!-- Подгрузка скрипта бабеля для компиляции JSX-->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 
-    @*<script type="text/babel" src="~/Scripts/Components/MainPage/CentralColumn.js">
-    </script>*@
-    <script type="text/babel" src="~/Scripts/Components/AdminPage/CentralColumnForAdmin.js">
-    </script>
+        @*<script type="text/babel" src="~/Scripts/Components/MainPage/CentralColumn.js">
+        </script>*@
+        @if (ViewBag.UserRole == "Admin")
+        {
+            <script type="text/babel" src="~/Scripts/Components/AdminPage/CentralColumnForAdmin.js">
+            </script>
+            <script type="text/babel" src="~/Scripts/Components/AdminPage/ContentForAdmin.js">
+            </script>
+        }
+        else
+        {
+            <script type="text/babel" src="~/Scripts/Components/MainPage/CentralColumn.js">
+            </script>
+            <script type="text/babel" src="~/Scripts/Components/MainPage/Content.js">
+            </script>
+        }
 
-    <script type="text/babel" src="~/Scripts/Components/Base.js">
-    </script>
-</body>
+        <script type="text/babel" src="~/Scripts/Components/Base.js">
+        </script>
+
+    </body>
