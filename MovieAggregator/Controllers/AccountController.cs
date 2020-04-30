@@ -12,7 +12,7 @@ using System.Web.Mvc;
 
 namespace MovieAggregator.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class AccountController : Controller
     {
         [AllowAnonymous]
@@ -47,11 +47,17 @@ namespace MovieAggregator.Controllers
                 var roles = UserManager.GetRoles(user.Id).ToList();
                 if (roles.Contains("admin")) role = "admin";
                 else role = "user";
-                return Json(new TESTContainer { isDataReceivedSuccessfully = true, userRole = role }, JsonRequestBehavior.AllowGet);
+                return Json(
+                    new { isDataReceivedSuccessfully = true, userRole = role },
+                    "application/json",
+                    JsonRequestBehavior.AllowGet);
             }
 
             //return View(details);
-            return Json(new TESTContainer { isDataReceivedSuccessfully = false, userRole = "NA" }, JsonRequestBehavior.AllowGet);
+            return Json(
+                new { isDataReceivedSuccessfully = false} ,
+                "application/json",
+                JsonRequestBehavior.AllowGet);
         }
 
         private IAuthenticationManager AuthManager
@@ -76,12 +82,24 @@ namespace MovieAggregator.Controllers
             AuthManager.SignOut();
             return RedirectToAction("Index", "Home");
         }
-    }
 
+        public JsonResult GetClientRole()
+        {
+            AppUser user = UserManager.FindByName(HttpContext.User.Identity.Name);
 
-    public class TESTContainer
-    { 
-        public bool isDataReceivedSuccessfully = false;
-        public string userRole = "NA";
+            string role = "";
+            if (user is null)
+                role = "NA";
+            else
+            {
+                var roles = UserManager.GetRoles(user.Id).ToList();
+                if (roles.Contains("admin")) role = "admin";
+                else role = "user";
+            }
+            return Json(
+                new { isDataReceivedSuccessfully = true, role = role },
+                "application/json",
+                JsonRequestBehavior.AllowGet);
+        }
     }
 }

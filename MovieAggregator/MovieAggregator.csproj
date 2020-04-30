@@ -179,16 +179,16 @@
     <Content Include="Content\PrototypesOfPages\SignInWindow.html" />
     <Content Include="Content\PrototypesOfPages\MovieBlockCreator.html" />
     <Content Include="Content\PrototypesOfPages\AdminPanel.html" />
-    <Content Include="Scripts\Components\AdminPage\CentralColumnForAdmin.js" />
-    <Content Include="Scripts\Components\AdminPage\ContentForAdmin.js" />
-    <Content Include="Scripts\Components\MainPage\CentralColumn.js" />
+    <Content Include="Scripts\Components\Header.js" />
+    <Content Include="Scripts\Components\Footer.js" />
+    <Content Include="Scripts\Components\CentralColumn.js" />
+    <Content Include="Scripts\Components\Content.js" />
     <Content Include="Scripts\Components\Base.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\PrototypesOfPages\Index.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\Components\MainPage\Content.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -10,7 +10,6 @@
     </head>
     <body>
         <div id="wrap"></div>
-        <div id="signIn"></div>
 
         <!-- Подгрузка реакт скриптов -->
         <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
@@ -19,22 +18,14 @@
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 
-        @*<script type="text/babel" src="~/Scripts/Components/MainPage/CentralColumn.js">
-        </script>*@
-        @if (ViewBag.UserRole == "Admin")
-        {
-            <script type="text/babel" src="~/Scripts/Components/AdminPage/CentralColumnForAdmin.js">
-            </script>
-            <script type="text/babel" src="~/Scripts/Components/AdminPage/ContentForAdmin.js">
-            </script>
-        }
-        else
-        {
-            <script type="text/babel" src="~/Scripts/Components/MainPage/CentralColumn.js">
-            </script>
-            <script type="text/babel" src="~/Scripts/Components/MainPage/Content.js">
-            </script>
-        }
+        <script type="text/babel" src="~/Scripts/Components/CentralColumn.js">
+        </script>
+        <script type="text/babel" src="~/Scripts/Components/Content.js">
+        </script>
+        <script type="text/babel" src="~/Scripts/Components/Header.js">
+        </script>
+        <script type="text/babel" src="~/Scripts/Components/Footer.js">
+        </script>
 
         <script type="text/babel" src="~/Scripts/Components/Base.js">
         </script>
