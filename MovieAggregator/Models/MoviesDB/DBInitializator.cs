@@ -17,7 +17,8 @@ namespace MovieAggregator.Models
                 Director = "Frank Darabont",
                 Writer = "Stephen King",
                 Description = "Бухгалтер Энди Дюфрейн обвинён в убийстве собственной жены и её любовника. Оказавшись в тюрьме под названием Шоушенк, он сталкивается с жестокостью и беззаконием, царящими по обе стороны решётки. Каждый, кто попадает в эти стены, становится их рабом до конца жизни. Но Энди, обладающий живым умом и доброй душой, находит подход как к заключённым, так и к охранникам, добиваясь их особого к себе расположения.",
-                ReleaseDate = new DateTime(1994, 9, 10)
+                ReleaseDate = new DateTime(1994, 9, 10),
+                ImgSrc = "poster1.jpg"
             };
             Movie movie2 = new Movie()
             {
@@ -25,7 +26,8 @@ namespace MovieAggregator.Models
                 Director = "Frank Darabont",
                 Writer = "Frank Darabont",
                 Description = "Пол Эджкомб — начальник блока смертников в тюрьме «Холодная гора», каждый из узников которого однажды проходит «зеленую милю» по пути к месту казни. Пол повидал много заключённых и надзирателей за время работы. Однако гигант Джон Коффи, обвинённый в страшном преступлении, стал одним из самых необычных обитателей блока.",
-                ReleaseDate = new DateTime(1999, 12, 6)
+                ReleaseDate = new DateTime(1999, 12, 6),
+                ImgSrc = ""
             };
             Movie movie3 = new Movie()
             {
@@ -33,7 +35,8 @@ namespace MovieAggregator.Models
                 Director = "Steven Spielberg",
                 Writer = "Steven Zaillian",
                 Description = "Фильм рассказывает реальную историю загадочного Оскара Шиндлера, члена нацистской партии, преуспевающего фабриканта, спасшего во время Второй мировой войны почти 1200 евреев.",
-                ReleaseDate = new DateTime(1993, 10, 30)
+                ReleaseDate = new DateTime(1993, 10, 30),
+                ImgSrc = ""
             };
             Movie movie4 = new Movie()
             {
@@ -52,7 +55,8 @@ namespace MovieAggregator.Models
                               "кажется,\n" +
                               "предугадывает каждый их ход.Врагом,\n" +
                               "увидеть которого мог бы лишь Кобб.",
-                ReleaseDate = new DateTime(2010, 7, 8)
+                ReleaseDate = new DateTime(2010, 7, 8),
+                ImgSrc = ""
             };
             Movie movie5 = new Movie()
             {
@@ -67,7 +71,8 @@ namespace MovieAggregator.Models
                               "он в нелёгкой борьбе отвоёвывает своё законное место в «Круге жизни»,\n" +
                               "осознав,\n" +
                               "что значит быть настоящим Королём.",
-                ReleaseDate = new DateTime(1994, 5, 7)
+                ReleaseDate = new DateTime(1994, 5, 7),
+                ImgSrc = ""
             };
             Movie movie6 = new Movie()
             {
@@ -81,7 +86,8 @@ namespace MovieAggregator.Models
                               "подтверждают его догадку. Поняв, что убийца наказывает свои жертвы за совершенные\n" +
                               "ими смертные грехи, детектив встает перед выбором: вернуться к работе либо уйти и передать\n" +
                               "дело своему менее опытному напарнику?",
-                ReleaseDate = new DateTime(1995, 9, 15)
+                ReleaseDate = new DateTime(1995, 9, 15),
+                ImgSrc = ""
             };
 
             db.Movies.Add(movie1);

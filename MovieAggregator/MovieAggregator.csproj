@@ -181,7 +181,7 @@
     <Content Include="Content\PagesPrototypes\SignInWindow.html" />
     <Content Include="Content\PagesPrototypes\MovieBlockCreator.html" />
     <Content Include="Content\PagesPrototypes\AdminPanel.html" />
-    <Content Include="Content\testPoster1.jpg" />
+    <Content Include="Content\Images\poster1.jpg" />
     <Content Include="Scripts\Components\AdminComponents.js" />
     <Content Include="Scripts\Components\Header.js" />
     <Content Include="Scripts\Components\Footer.js" />

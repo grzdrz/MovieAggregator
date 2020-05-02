@@ -180,19 +180,12 @@ class MovieBlock extends React.Component {
 	}
 
 	render() {
+		let parsedDateTimeStamp = this.props.moviesInfo.ReleaseDate.match(/[0-9]+/i)[0];
+		let date = new Date(parseInt(parsedDateTimeStamp));
+		let formattedDate = date.getDay().toString() + "." + date.getMonth().toString() + "." + date.getFullYear().toString();
+
 		return (
 			<div className="movieBlock">
-				<h1>{this.props.moviesInfo.Name}</h1>
-				<p>{this.props.moviesInfo.Director}</p>
-				<p>{this.props.moviesInfo.Writer}</p>
-				<p>{this.props.moviesInfo.ReleaseDate}</p>
-				<p>{this.props.moviesInfo.Description}</p>
-
-				<ShowMovieBlockFullInfoButton
-					key={"ShowMovieBlockFullInfoButton" + this.props.moviesInfo.Id}
-					id={this.props.moviesInfo.Id}
-					appState={this.props.appState} />
-
 				{
 					this.props.appState.role === "admin" ?
 						<EditMovieBlock
@@ -209,6 +202,20 @@ class MovieBlock extends React.Component {
 							appState={this.props.appState} />
 						: null
 				}
+
+				<div className="mainInformationBlock clearfix">
+					{this.props.moviesInfo.ImgSrc ? <img src={"../Content/Images/" + this.props.moviesInfo.ImgSrc}></img> : null}
+					<h1>{this.props.moviesInfo.Name}</h1>
+					<p>Director: {this.props.moviesInfo.Director}</p>
+					<p>Writer: {this.props.moviesInfo.Writer}</p>
+					<p>Release date: {formattedDate}</p>
+					<p>{this.props.moviesInfo.Description}</p>
+				</div>
+
+				<ShowMovieBlockFullInfoButton
+					key={"ShowMovieBlockFullInfoButton" + this.props.moviesInfo.Id}
+					id={this.props.moviesInfo.Id}
+					appState={this.props.appState} />
 			</div>
 		);
 	}
@@ -257,14 +264,12 @@ class MovieFullInfoBlock extends React.Component {
 
 	render() {
 		if (this.state.movieFullInfo) {
+			let parsedDateTimeStamp = this.state.movieFullInfo.ReleaseDate.match(/[0-9]+/i)[0];
+			let date = new Date(parseInt(parsedDateTimeStamp));
+			let formattedDate = date.getDay().toString() + "." + date.getMonth().toString() + "." + date.getFullYear().toString();
+
 			return (
 				<div className="movieBlock">
-					<h1>{this.state.movieFullInfo.Name}</h1>
-					<p>{this.state.movieFullInfo.Director}</p>
-					<p>{this.state.movieFullInfo.Writer}</p>
-					<p>{this.state.movieFullInfo.ReleaseDate}</p>
-					<p>{this.state.movieFullInfo.Description}</p>
-
 					{
 						this.props.appState.role === "admin" ?
 							<EditMovieBlock
@@ -281,6 +286,39 @@ class MovieFullInfoBlock extends React.Component {
 								appState={this.props.appState} />
 							: null
 					}
+
+					<div className="mainInformationBlock clearfix">
+						{this.state.movieFullInfo.ImgSrc ? <img src={"../Content/Images/" + this.state.movieFullInfo.ImgSrc}></img> : null}
+					    <h1>{this.state.movieFullInfo.Name}</h1>
+						<p>Director: {this.state.movieFullInfo.Director}</p>
+						<p>Writer: {this.state.movieFullInfo.Writer}</p>
+						<p>Release date: {formattedDate}</p>
+						<p>{this.state.movieFullInfo.Description}</p>
+					</div>
+
+					<div className="additionalInformationBlock">
+						<h1>Cast</h1>
+						{
+							this.state.movieFullInfo.Cast.map(a => {
+								return (
+									<p key={a.FirstName + a.SecondName + a.Id}>
+										{a.FirstName} {a.SecondName}
+									</p>);
+							})
+						}
+					</div>
+
+					<div className="additionalInformationBlock">
+						<h1>Producers</h1>
+						{
+							this.state.movieFullInfo.Producers.map(p => {
+								return (
+									<p key={p.FirstName + p.SecondName + p.Id}>
+										{p.FirstName} {p.SecondName}
+									</p>);
+							})
+						}
+					</div>
 				</div>
 			);
 		}

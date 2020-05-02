@@ -18,6 +18,8 @@ namespace MovieAggregator.Models
         public string Genres { get; set; }
         public string Country { get; set; }
 
+        public string ImgSrc { get; set; }
+
 
         public ICollection<Producer> Producers { get; set; }
         public ICollection<Actor> Cast { get; set; }

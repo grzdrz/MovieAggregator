@@ -23,6 +23,7 @@ class MovieBlockCreator extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {//дефолтные поля формы
+			ImgSrc: "",
 			Name: "Name1",
 			Director: "Director1",
 			Writer: "Writer1",
@@ -30,8 +31,11 @@ class MovieBlockCreator extends React.Component {
 			Description: "blablabla",
 		};
 		this.buttonRef = React.createRef();
+		this.inputImageRef = React.createRef();
+		this.formRef = React.createRef();
 
 		this.onChange = this.onChange.bind(this);
+		this.onChangeImage = this.onChangeImage.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
 	}
 
@@ -40,13 +44,16 @@ class MovieBlockCreator extends React.Component {
 			[event.target.name]: event.target.value
 		});
 	}
+	onChangeImage(event) {
+		this.inputImageRef.current.value = event.target.files[0].name;
+    }
 
 	async onSubmit(event) {
 		event.preventDefault();
 		this.buttonRef.current.style.display = "none";
 
 		let url = 'https://localhost:44373/Movies/Create';
-		let formBody = new FormData(document.querySelector("#createMovieBlockForm"));
+		let formBody = new FormData(this.formRef.current);
 		let response = await fetch(url, {
 			method: 'POST',
 			body: formBody,
@@ -65,7 +72,11 @@ class MovieBlockCreator extends React.Component {
 
 	render() {
 		return (
-			<form id="createMovieBlockForm" onSubmit={this.onSubmit}>
+			<form id="createMovieBlockForm" onSubmit={this.onSubmit} ref={this.formRef}>
+				<lable>Постер:</lable>
+				<input type="file" name="image" onChange={this.onChangeImage} />
+				<input type="hidden" name="ImgSrc" ref={this.inputImageRef} />
+
 				<lable>Название фильма:</lable>
 				<input type="text" name="Name" value={this.state.Name} onChange={this.onChange}/>
 
@@ -117,8 +128,11 @@ class MovieBlockEditor extends React.Component {
 			dataIsLoaded: false,
 		};
 		this.buttonRef = React.createRef();
+		this.inputImageRef = React.createRef();
+		this.formRef = React.createRef();
 
 		this.onChange = this.onChange.bind(this);
+		this.onChangeImage = this.onChangeImage.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
 		this.getCurrentMovieBlockInfo = this.getCurrentMovieBlockInfo.bind(this);
 	}
@@ -150,13 +164,16 @@ class MovieBlockEditor extends React.Component {
 			[event.target.name]: event.target.value
 		});
 	}
+	onChangeImage(event) {
+		this.inputImageRef.current.value = event.target.files[0].name;
+	}
 
 	async onSubmit(event) {
 		event.preventDefault();
 		this.buttonRef.current.style.display = "none";
 
 		let url = 'https://localhost:44373/Movies/Edit';
-		let formBody = new FormData(document.querySelector("#editMovieBlockForm"));
+		let formBody = new FormData(this.formRef.current);
 		let response = await fetch(url, {
 			method: 'POST',
 			body: formBody,
@@ -176,8 +193,12 @@ class MovieBlockEditor extends React.Component {
 	render() {
 		if (this.state.dataIsLoaded) {
 			return (
-				<form id="editMovieBlockForm" onSubmit={this.onSubmit}>
+				<form id="editMovieBlockForm" onSubmit={this.onSubmit} ref={this.formRef}>
 					<input type="hidden" name="Id" value={this.state.Id} />
+
+					<lable>Постер:</lable>
+					<input type="file" name="image" onChange={this.onChangeImage} />
+					<input type="hidden" name="ImgSrc" ref={this.inputImageRef} />
 
 					<lable>Название фильма:</lable>
 					<input type="text" name="Name" value={this.state.Name} onChange={this.onChange} />

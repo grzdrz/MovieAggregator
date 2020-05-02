@@ -8,6 +8,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MovieAggregator.Models;
+using System.IO;
 
 namespace MovieAggregator.Controllers
 {
@@ -48,10 +49,19 @@ namespace MovieAggregator.Controllers
         }
 
         [HttpPost]
-        public async Task<JsonResult> Create(Movie movie)
+        public async Task<JsonResult> Create(Movie movie, HttpPostedFileBase image)
         {
             if (ModelState.IsValid)
             {
+                using (BinaryReader br = new BinaryReader(image.InputStream))
+                {
+                    var path = "C:\\Users\\space\\Music\\MovieAggregator\\MovieAggregator\\Content\\Images\\" + image.FileName;
+                    using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write))
+                    {
+                        await fs.WriteAsync(br.ReadBytes(image.ContentLength), 0, image.ContentLength);
+                    }
+                }
+
                 db.Movies.Add(movie);
                 await db.SaveChangesAsync();
                 return Json(new { isDataReceivedSuccessfully = true }, JsonRequestBehavior.AllowGet);
@@ -61,10 +71,19 @@ namespace MovieAggregator.Controllers
         }
 
         [HttpPost]
-        public async Task<JsonResult> Edit(Movie movie)
+        public async Task<JsonResult> Edit(Movie movie, HttpPostedFileBase image)
         {
             if (ModelState.IsValid)
             {
+                using (BinaryReader br = new BinaryReader(image.InputStream))
+                {
+                    var path = "C:\\Users\\space\\Music\\MovieAggregator\\MovieAggregator\\Content\\Images\\" + image.FileName;
+                    using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write))
+                    {
+                        await fs.WriteAsync(br.ReadBytes(image.ContentLength), 0, image.ContentLength);
+                    }
+                }
+
                 db.Entry(movie).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return Json(new { isDataReceivedSuccessfully = true }, JsonRequestBehavior.AllowGet);
