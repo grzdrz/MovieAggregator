@@ -13,5 +13,6 @@ namespace MovieAggregator.Models
 
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Actor> Cast { get; set; }
+        public DbSet<Producer> Producers { get; set; }
     }
 }

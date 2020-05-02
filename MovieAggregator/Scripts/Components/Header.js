@@ -42,6 +42,7 @@ class SignIn extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
+        this.buttonRef = React.createRef();
 
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -55,6 +56,7 @@ class SignIn extends React.Component {
 
     async onSubmit(event) {
         event.preventDefault();
+        this.buttonRef.current.style.display = "none";
 
         let url = 'https://localhost:44373/Account/Login';//добавить роль в ответе
         let formBody = new FormData(document.querySelector("#signIn form"));
@@ -72,6 +74,7 @@ class SignIn extends React.Component {
             this.props.appState.updateClientRoleAndStatus();
         }
         else {
+            this.buttonRef.current.style.display = "inline-block";
             this.setState({ submitError: "error" });
         }
     }
@@ -85,7 +88,7 @@ class SignIn extends React.Component {
                 <lable>Пароль</lable>
                 <input type="password" name="Password" value={this.state.Password} onChange={this.onChange} />
 
-                <input type="submit" value="Отправить" />
+                <input type="submit" value="Отправить" ref={this.buttonRef} />
 
                 {this.state.submitError == "error" ? <p>{"Ошибка, введите данные еще раз"}</p> : null}
             </form>

@@ -47,6 +47,13 @@
 					</div>
 				);
 			}
+			case "movieFullInfoBlock": {
+				return (
+					<div id="column2">
+						<MovieFullInfoBlock appState={extendedAppState} curMovieBlockId={this.state.curMovieBlockId} />
+					</div>
+				);
+			}
 			default: return null;
 		}
 	}
@@ -181,6 +188,11 @@ class MovieBlock extends React.Component {
 				<p>{this.props.moviesInfo.ReleaseDate}</p>
 				<p>{this.props.moviesInfo.Description}</p>
 
+				<ShowMovieBlockFullInfoButton
+					key={"ShowMovieBlockFullInfoButton" + this.props.moviesInfo.Id}
+					id={this.props.moviesInfo.Id}
+					appState={this.props.appState} />
+
 				{
 					this.props.appState.role === "admin" ?
 						<EditMovieBlock
@@ -202,9 +214,7 @@ class MovieBlock extends React.Component {
 	}
 }
 
-
-
-class AddMovieBlockButton extends React.Component {
+class ShowMovieBlockFullInfoButton extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
@@ -213,245 +223,73 @@ class AddMovieBlockButton extends React.Component {
 	}
 
 	setArgsToEventHandler() {//для вызова протянутого метода из ивента с аргументом
-		this.props.appState.switchCColumnContainer("createMovieBlockForm");
-    }
-
-	render() {
-		return (
-			<div id="createMovieBlockButton">
-				<button onClick={this.setArgsToEventHandler}><p>Add movie block</p></button>
-			</div>
-			);
-    }
-}
-
-class MovieBlockCreator extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {//дефолтные поля формы
-			Name: "Name1",
-			Director: "Director1",
-			Writer: "Writer1",
-			ReleaseDate: Date.now(),
-			Description: "blablabla",
-		};
-
-		this.onChange = this.onChange.bind(this);
-		this.onSubmit = this.onSubmit.bind(this);
-	}
-
-	onChange(event) {
-		this.setState({
-			[event.target.name]: event.target.value
-		});
-	}
-
-	async onSubmit(event) {
-		event.preventDefault();
-
-		let url = 'https://localhost:44373/Movies/Create';
-		let formBody = new FormData(document.querySelector("#createMovieBlockForm"));
-		let response = await fetch(url, {
-			method: 'POST',
-			body: formBody,
-		});
-
-		let result = await response.json();
-
-		if (result.isDataReceivedSuccessfully == true) {
-			this.props.appState.switchCColumnContainer("moviesContainer");//возвращаем контейнер на отображение фильмов
-		}
-		else {
-			this.setState({ submitError: "error"});
-		}
-    }
-
-	render() {
-		return (
-			<form id="createMovieBlockForm" onSubmit={this.onSubmit}>
-				<lable>Название фильма:</lable>
-				<input type="text" name="Name" value={this.state.Name} onChange={this.onChange}/>
-
-				<lable>Режисер:</lable>
-				<input type="text" name="Director" value={this.state.Director} onChange={this.onChange}/>
-
-				<lable>Сценаристы:</lable>
-				<input type="text" name="Writer" value={this.state.Writer} onChange={this.onChange}/>
-
-				<lable>Дата выхода:</lable>
-				<input type="date" name="ReleaseDate" value={this.state.ReleaseDate} onChange={this.onChange}/>
-
-				<lable>Описание:</lable>
-				<textarea name="Description" value={this.state.Description} onChange={this.onChange}>
-				</textarea>
-
-				<input id="submit" type="submit" value="Отправить" />
-
-				{this.state.submitError == "error" ? <p>{"Ошибка, введите данные еще раз"}</p> : null}
-			</form>
-			);
-    }
-}
-
-
-class EditMovieBlock extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-
-		this.setArgsToEventHandler = this.setArgsToEventHandler.bind(this);
-	}
-
-	setArgsToEventHandler() {//для вызова протянутого метода из ивента с аргументом
-		this.props.appState.switchCColumnContainer("editMovieBlockForm", this.props.id);
+		this.props.appState.switchCColumnContainer("movieFullInfoBlock", this.props.id);
 	}
 
 	render() {
 		return (
-			<button onClick={this.setArgsToEventHandler}><p>Edit</p></button>
+			<button onClick={this.setArgsToEventHandler}><p>Show full info</p></button>
 		);
 	}
 }
 
-class MovieBlockEditor extends React.Component {
+class MovieFullInfoBlock extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			dataIsLoaded: false,
-		};
+		this.state = { movieFullInfo: null };
 
-		this.onChange = this.onChange.bind(this);
-		this.onSubmit = this.onSubmit.bind(this);
-		this.getCurrentMovieBlockInfo = this.getCurrentMovieBlockInfo.bind(this);
+		this.getFullMovieInfo = this.getFullMovieInfo.bind(this);
 	}
 
-	componentDidMount() {
-		this.getCurrentMovieBlockInfo();
-    }
+	componentWillMount() {
+		this.getFullMovieInfo(this.props.curMovieBlockId);
+	}
 
-	async getCurrentMovieBlockInfo() {
-		let url = 'https://localhost:44373/Movies/Details?id=' + this.props.curMovieBlockId.toString();
+	async getFullMovieInfo(id) {
+		let url = 'https://localhost:44373/Movies/Details?id=' + id.toString();
 		let response = await fetch(url);
-
-		let moviesInfo = await response.json();
-
-		this.setState({
-			dataIsLoaded: true,
-
-			Id: moviesInfo.Id,
-			Name: moviesInfo.Name,
-			Director: moviesInfo.Director,
-			Writer: moviesInfo.Writer,
-			ReleaseDate: moviesInfo.ReleaseDate,
-			Description: moviesInfo.Description,
-		});
-	}
-
-	onChange(event) {
-		this.setState({
-			[event.target.name]: event.target.value
-		});
-	}
-
-	async onSubmit(event) {
-		event.preventDefault();
-
-		let url = 'https://localhost:44373/Movies/Edit';
-		let formBody = new FormData(document.querySelector("#editMovieBlockForm"));
-		let response = await fetch(url, {
-			method: 'POST',
-			body: formBody,
-		});
-
 		let result = await response.json();
 
-		if (result.isDataReceivedSuccessfully == true) {
-			this.props.appState.switchCColumnContainer("moviesContainer");//возвращаем контейнер на отображение фильмов
-		}
-		else {
-			this.setState({ submitError: "error" });
+		if (result) {
+			this.setState({ movieFullInfo: result});
 		}
 	}
 
 	render() {
-		if (this.state.dataIsLoaded) {
+		if (this.state.movieFullInfo) {
 			return (
-				<form id="editMovieBlockForm" onSubmit={this.onSubmit}>
-					<input type="hidden" name="Id" value={this.state.Id} />
+				<div className="movieBlock">
+					<h1>{this.state.movieFullInfo.Name}</h1>
+					<p>{this.state.movieFullInfo.Director}</p>
+					<p>{this.state.movieFullInfo.Writer}</p>
+					<p>{this.state.movieFullInfo.ReleaseDate}</p>
+					<p>{this.state.movieFullInfo.Description}</p>
 
-					<lable>Название фильма:</lable>
-					<input type="text" name="Name" value={this.state.Name} onChange={this.onChange} />
-
-					<lable>Режисер:</lable>
-					<input type="text" name="Director" value={this.state.Director} onChange={this.onChange} />
-
-					<lable>Сценаристы:</lable>
-					<input type="text" name="Writer" value={this.state.Writer} onChange={this.onChange} />
-
-					<lable>Дата выхода:</lable>
-					<input type="date" name="ReleaseDate" value={this.state.ReleaseDate} onChange={this.onChange} />
-
-					<lable>Описание:</lable>
-					<textarea name="Description" value={this.state.Description} onChange={this.onChange}>
-					</textarea>
-
-					<input id="submit" type="submit" value="Отправить" />
-
-					{this.state.submitError == "error" ? <p>{"Ошибка, введите данные еще раз"}</p> : null}
-				</form>
+					{
+						this.props.appState.role === "admin" ?
+							<EditMovieBlock
+								key={"EditMovieBlock" + this.state.movieFullInfo.Id}
+								id={this.state.movieFullInfo.Id}
+								appState={this.props.appState} />
+							: null
+					}
+					{
+						this.props.appState.role === "admin" ?
+							<RemoveMovieBlock
+								key={"RemoveMovieBlock" + this.state.movieFullInfo.Id}
+								id={this.state.movieFullInfo.Id}
+								appState={this.props.appState} />
+							: null
+					}
+				</div>
 			);
-		}
-		else return (<p>Loading data...</p>);
-	}
-}
-
-class RemoveMovieBlock extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-
-		this.deleteMovie = this.deleteMovie.bind(this);
-	}
-
-	///////////////////////дублируется
-	//обработчик кликов по номерам страниц, подгружающий определенное количество данных и вставляющий их в разметку
-	async getMoviesInfo(pageNumber) {
-		let url = 'https://localhost:44373/Home/GetMoviesInfoByPageNumber?pageNumber=' + pageNumber.toString();
-		let response = await fetch(url);
-
-		let moviesInfoArray = await response.json();
-
-		this.props.appState.setCurPageAndMoviesInfoArray(pageNumber, moviesInfoArray);
-	}
-
-	async deleteMovie() {
-		let buttons = document.querySelectorAll(".deleteButton");
-		for (let b of buttons) {
-			b.disabled = true;
-		}
-
-		let url = 'https://localhost:44373/Movies/Delete/?id=' + this.props.id;
-
-		let response = await fetch(url, {
-			method: 'POST',
-		});
-
-		let result = await response.json();
-
-		if (result.isDataReceivedSuccessfully == true) {
-			//this.props.appState.switchCColumnContainer("moviesContainer");//ненужон, т.к. состояние при удалении не менялось
-			this.getMoviesInfo(this.props.appState.curPage);
 		}
 		else {
-			for (let b of buttons) {
-				b.disabled = false;/////
-			}
-		}
-	}
-
-	render() {
-		return (
-			<button className="deleteButton" onClick={this.deleteMovie}><p>Remove</p></button>
+			return (
+				<div id="moviesContainer">
+					<p style={{ textAlign: "center" }}>Wait, loading in process...</p>
+				</div>
 			);
+		}
 	}
 }

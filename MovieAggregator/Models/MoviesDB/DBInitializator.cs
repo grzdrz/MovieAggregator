@@ -69,6 +69,27 @@ namespace MovieAggregator.Models
                               "что значит быть настоящим Королём.",
                 ReleaseDate = new DateTime(1994, 5, 7)
             };
+            Movie movie6 = new Movie()
+            {
+                Name = "Seven",
+                Director = "David Fincher",
+                Writer = "Andrew Kevin Walker",
+                Description = "Детектив Уильям Сомерсет — ветеран уголовного розыска, мечтающий уйти на пенсию и уехать\n" +
+                              "подальше от города и грешных обитателей. За 7 дней до пенсии на Сомерсета сваливаются\n" +
+                              "две неприятности: молодой напарник Миллс и особо изощренное убийство. Острый ум опытного\n" +
+                              "сыщика сразу определяет, что за этим преступлением, скорее всего, последуют другие. Новости\n" +
+                              "подтверждают его догадку. Поняв, что убийца наказывает свои жертвы за совершенные\n" +
+                              "ими смертные грехи, детектив встает перед выбором: вернуться к работе либо уйти и передать\n" +
+                              "дело своему менее опытному напарнику?",
+                ReleaseDate = new DateTime(1995, 9, 15)
+            };
+
+            db.Movies.Add(movie1);
+            db.Movies.Add(movie2);
+            db.Movies.Add(movie3);
+            db.Movies.Add(movie4);
+            db.Movies.Add(movie5);
+            db.Movies.Add(movie6);
             #endregion
 
             #region "Cast"
@@ -77,51 +98,73 @@ namespace MovieAggregator.Models
                 FirstName = "Morgan",
                 SecondName = "Freeman",
                 LastName = "",
-                Movie = movie1
+                Movies = new List<Movie>() { movie1, movie6 }
             };
             Actor cast2 = new Actor()
             {
                 FirstName = "Tom",
                 SecondName = "Hanks",
                 LastName = "",
-                Movie = movie2
+                Movies = new List<Movie>() { movie2 }
             };
             Actor cast3 = new Actor()
             {
                 FirstName = "Liam",
                 SecondName = "Neeson",
                 LastName = "",
-                Movie = movie3
+                Movies = new List<Movie>() { movie3 }
             };
             Actor cast4 = new Actor()
             {
                 FirstName = "Leonardo",
                 SecondName = "DiCaprio",
                 LastName = "",
-                Movie = movie4
+                Movies = new List<Movie>() { movie4 }
             };
             Actor cast5 = new Actor()
             {
                 FirstName = "Matthew",
                 SecondName = "Broderick",
                 LastName = "",
-                Movie = movie5
+                Movies = new List<Movie>() { movie5 }
             };
-            #endregion
-
-            db.Movies.Add(movie1);
-            db.Movies.Add(movie2);
-            db.Movies.Add(movie3);
-            db.Movies.Add(movie4);
-            db.Movies.Add(movie5);
 
             db.Cast.Add(cast1);
             db.Cast.Add(cast2);
             db.Cast.Add(cast3);
             db.Cast.Add(cast4);
             db.Cast.Add(cast5);
+            #endregion
 
-            db.SaveChanges();
+            #region "Produsers"
+            Producer producer1 = new Producer() 
+            {
+                FirstName = "PFN1",
+                SecondName = "PSN1",
+                LastName = "",
+                Movies = new List<Movie>() { movie1, movie2, movie6 }
+            };
+            Producer producer2 = new Producer()
+            {
+                FirstName = "PFN2",
+                SecondName = "PSN2",
+                LastName = "",
+                Movies = new List<Movie>() { movie1, movie3 }
+            };
+            Producer producer3 = new Producer()
+            {
+                FirstName = "PFN3",
+                SecondName = "PSN3",
+                LastName = "",
+                Movies = new List<Movie>() { movie4, movie5 }
+            };
+
+            db.Producers.Add(producer1);
+            db.Producers.Add(producer2);
+            db.Producers.Add(producer3);
+            #endregion
+
+            //db.SaveChanges();
             base.Seed(db);
         }
     }

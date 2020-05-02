@@ -15,9 +15,18 @@ namespace MovieAggregator.Models
         public DateTime ReleaseDate { get; set; }
         public string Description { get; set; }
 
+        public string Genres { get; set; }
+        public string Country { get; set; }
 
 
-        public virtual IEnumerable<Actor> Cast { get; set; }
-            
+        public ICollection<Producer> Producers { get; set; }
+        public ICollection<Actor> Cast { get; set; }
+
+        public Movie()
+        {
+            Producers = new List<Producer>();
+            Cast = new List<Actor>();
+        }
+
     }
 }

@@ -13,12 +13,13 @@ namespace MovieAggregator.Controllers
 {
     public class MoviesController : Controller
     {
-        private DBContextMoviesInfo db = new DBContextMoviesInfo();
+        private DBContextMoviesInfo db;
 
-        //public async Task<ActionResult> Index()
-        //{
-        //    return View(await db.Movies.ToListAsync());
-        //}
+        public MoviesController()
+        {
+            db = new DBContextMoviesInfo();
+            db.Configuration.ProxyCreationEnabled = false;
+        }
 
         public async Task<JsonResult> Details(int? id)
         {
@@ -26,11 +27,23 @@ namespace MovieAggregator.Controllers
             {
                 return Json(new { isDataReceivedSuccessfully = false }, JsonRequestBehavior.AllowGet);
             }
-            Movie movie = await db.Movies.FindAsync(id);
+
+            Movie movie = await db.Movies.Include(a => a.Cast).Include(p => p.Producers).FirstAsync(m => m.Id == id);
+            //обнуление циклических ссылок, иначе жисон ругается
+            foreach (var c in movie.Cast)
+            {
+                c.Movies = null;
+            }
+            foreach (var p in movie.Producers)
+            {
+                p.Movies = null;
+            }
+
             if (movie == null)
             {
                 return Json(new { isDataReceivedSuccessfully = false }, JsonRequestBehavior.AllowGet);
             }
+
             return Json(movie, JsonRequestBehavior.AllowGet);
         }
 

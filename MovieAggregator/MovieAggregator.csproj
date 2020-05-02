@@ -174,11 +174,15 @@
     <Compile Include="Models\MoviesDB\DBContextMoviesInfo.cs" />
     <Compile Include="Models\MoviesDB\DBInitializator.cs" />
     <Compile Include="Models\MoviesDB\Movie.cs" />
+    <Compile Include="Models\MoviesDB\Producer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Content\PagesStyles\AdminPanel.css" />
-    <Content Include="Content\PrototypesOfPages\SignInWindow.html" />
-    <Content Include="Content\PrototypesOfPages\MovieBlockCreator.html" />
-    <Content Include="Content\PrototypesOfPages\AdminPanel.html" />
+    <Content Include="Content\PagesPrototypes\MovieFullInfo.html" />
+    <Content Include="Content\PagesPrototypes\SignInWindow.html" />
+    <Content Include="Content\PagesPrototypes\MovieBlockCreator.html" />
+    <Content Include="Content\PagesPrototypes\AdminPanel.html" />
+    <Content Include="Content\testPoster1.jpg" />
+    <Content Include="Scripts\Components\AdminComponents.js" />
     <Content Include="Scripts\Components\Header.js" />
     <Content Include="Scripts\Components\Footer.js" />
     <Content Include="Scripts\Components\CentralColumn.js" />
@@ -186,7 +190,7 @@
     <Content Include="Scripts\Components\Base.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\PrototypesOfPages\Index.html" />
+    <Content Include="Content\PagesPrototypes\Index.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

@@ -5,19 +5,19 @@ using System.Web;
 
 namespace MovieAggregator.Models
 {
-    public class Actor
+    public class Producer
     {
-        public int Id { get; set; } 
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string SecondName { get; set; }
         public string LastName { get; set; }
 
+
         public ICollection<Movie> Movies { get; set; }
 
-        public Actor()
+        public Producer()
         {
             Movies = new List<Movie>();
         }
-
     }
 }

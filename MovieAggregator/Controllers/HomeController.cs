@@ -19,6 +19,7 @@ namespace MovieAggregator.Controllers
         public HomeController()
         {
             db = new DBContextMoviesInfo();
+            db.Configuration.ProxyCreationEnabled = false;
         }
 
         public ActionResult Index()
@@ -70,6 +71,8 @@ namespace MovieAggregator.Controllers
         }
 
 
+
+
         private AppUserManager UserManager
         {
             get
@@ -77,7 +80,6 @@ namespace MovieAggregator.Controllers
                 return HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
             }
         }
-
 
         [Authorize]
         public ActionResult Index1()

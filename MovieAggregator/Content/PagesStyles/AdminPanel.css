@@ -90,25 +90,59 @@ body {
             display: flex;
             flex-direction: column;
         }
-            #content #column2 #moviesContainer .movieBlock {
-                padding: 20px 10px;
+            #content #column2 .movieBlock {
+                padding: 20px 15px;
                 border: 1px solid #d8b440;
                 border-radius: 5px;
             }
-                #content #column2 #moviesContainer .movieBlock:nth-child(n+2) {
+                #content #column2 .movieBlock:nth-child(n+2) {
                     margin-top: 20px;
                 }
-                #content #column2 #moviesContainer .movieBlock p {
+                #content #column2 .movieBlock img {
+                    width: 30%;
+                    float: left;
+                    margin-right: 10px;
+                    border: 2px solid #d8b440;
+                    border-radius: 5px;
+                }
+                #content #column2 .movieBlock p {
                     margin-top: 10px;
                 }
-                #content #column2 #moviesContainer .movieBlock button {
+                #content #column2 .movieBlock h1 {
+                    color: #d8b440;
+                }
+                #content #column2 .movieBlock button {
                     background: #d8b440;
                     margin-top: 10px;
                     border-radius: 5px;
                 }
-                    #content #column2 #moviesContainer .movieBlock button p {
+                    #content #column2 .movieBlock button:nth-of-type(1) {
+                        margin-top: 0px;
+                    }
+                    #content #column2 .movieBlock button:nth-of-type(2) {
+                        margin-bottom: 20px;
+                    }
+                    #content #column2 .movieBlock button:last-of-type {
+                        margin-top: 20px;
+                    }
+                    #content #column2 .movieBlock button p {
                         margin: 0px;
                         color: #29223e;
+                    }
+
+                #content #column2 .movieBlock .mainInformationBlock {
+
+                }
+                #content #column2 .movieBlock .additionalInformationBlock {
+                    margin-top: 20px;
+                    clear: both
+                }
+                    #content #column2 .movieBlock .additionalInformationBlock h1 {
+                        font-size: 120%;
+                        color: #d8b440;
+                    }
+                    #content #column2 .movieBlock .additionalInformationBlock p {
+                        margin: 0px 15px;
                     }
 
         #content #column2 #pagination {
@@ -198,5 +232,13 @@ body {
     }
 
 
+
+.clearfix:after { /*растягиватель внешнего блока под внутренний float блок*/
+    content: "."; /* добавить содержимое: "." */
+    display: block; /* сделать блоком, т.к. inline не может иметь clear */
+    clear: both; /* с обеих сторон clear */
+    visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
+    height: 0; /* сделать высоту 0, чтобы не занимал место */
+}
 /*#29223e - back*/
 /*#d8b440*/
