@@ -64,16 +64,32 @@ namespace MovieAggregator.Controllers
         {
             if (ModelState.IsValid)
             {
-                using (BinaryReader br = new BinaryReader(image.InputStream))
-                {
-                    var path = "C:\\Users\\space\\Music\\MovieAggregator\\MovieAggregator\\Content\\Images\\" + image.FileName;
-                    using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write))
+                if (image != null)
+                    using (BinaryReader br = new BinaryReader(image.InputStream))
                     {
-                        await fs.WriteAsync(br.ReadBytes(image.ContentLength), 0, image.ContentLength);
+                        var path = "C:\\Users\\space\\Music\\MovieAggregator\\MovieAggregator\\Content\\Images\\" + image.FileName;
+                        using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write))
+                        {
+                            await fs.WriteAsync(br.ReadBytes(image.ContentLength), 0, image.ContentLength);
+                        }
+                    }
+
+                db.Movies.Add(movie);
+                if (selectedActors != null)
+                {
+                    foreach (var actor in db.Cast.Where(a => selectedActors.Contains(a.Id)))
+                    {
+                        movie.Cast.Add(actor);
+                    }
+                }
+                if (selectedProducers != null)
+                {
+                    foreach (var producer in db.Producers.Where(p => selectedProducers.Contains(p.Id)))
+                    {
+                        movie.Producers.Add(producer);
                     }
                 }
 
-                db.Movies.Add(movie);
                 await db.SaveChangesAsync();
                 return Json(new { isDataReceivedSuccessfully = true }, JsonRequestBehavior.AllowGet);
             }
@@ -82,20 +98,41 @@ namespace MovieAggregator.Controllers
         }
 
         [HttpPost]
-        public async Task<JsonResult> Edit(Movie movie, HttpPostedFileBase image)
+        public async Task<JsonResult> Edit(Movie movie, int[] selectedActors, int[] selectedProducers, HttpPostedFileBase image)
         {
             if (ModelState.IsValid)
             {
-                using (BinaryReader br = new BinaryReader(image.InputStream))
-                {
-                    var path = "C:\\Users\\space\\Music\\MovieAggregator\\MovieAggregator\\Content\\Images\\" + image.FileName;
-                    using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write))
+                if (image != null)
+                    using (BinaryReader br = new BinaryReader(image.InputStream))
                     {
-                        await fs.WriteAsync(br.ReadBytes(image.ContentLength), 0, image.ContentLength);
+                        var path = "C:\\Users\\space\\Music\\MovieAggregator\\MovieAggregator\\Content\\Images\\" + image.FileName;
+                        using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write))
+                        {
+                            await fs.WriteAsync(br.ReadBytes(image.ContentLength), 0, image.ContentLength);
+                        }
+                    }
+
+
+                Movie movieToReplace = db.Movies.FirstOrDefault(m => m.Id == movie.Id);
+                db.Movies.Remove(movieToReplace);
+                await db.SaveChangesAsync();
+
+
+                db.Movies.Add(movie);
+                if (selectedActors != null)
+                {
+                    foreach (var actor in db.Cast.Where(a => selectedActors.Contains(a.Id)))
+                    {
+                        movie.Cast.Add(actor);
                     }
                 }
-
-                db.Entry(movie).State = EntityState.Modified;
+                if (selectedProducers != null)
+                {
+                    foreach (var producer in db.Producers.Where(p => selectedProducers.Contains(p.Id)))
+                    {
+                        movie.Producers.Add(producer);
+                    }
+                }
                 await db.SaveChangesAsync();
                 return Json(new { isDataReceivedSuccessfully = true }, JsonRequestBehavior.AllowGet);
             }

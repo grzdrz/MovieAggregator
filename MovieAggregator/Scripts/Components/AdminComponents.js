@@ -136,7 +136,7 @@ class MovieBlockCreator extends React.Component {
 						this.state.cast ?
 							this.state.cast.map((a, aIndex) => {
 								return (
-									<li key={"actorToSelect" + aIndex}>
+									<li key={"actorToSelectCreate" + aIndex}>
 										<input type="checkbox" name="selectedActors" value={a.Id} />
 										<p>{a.FirstName} {a.SecondName}</p>
 									</li>);
@@ -153,7 +153,7 @@ class MovieBlockCreator extends React.Component {
 						this.state.producers ?
 							this.state.producers.map((p, pIndex) => {
 								return (
-									<li key={"producerToSelect" + pIndex}>
+									<li key={"producerToSelectCreate" + pIndex}>
 										<input type="checkbox" name="selectedProducers" value={p.Id} />
 										<p>{p.FirstName} {p.SecondName}</p>
 									</li>);
@@ -194,37 +194,66 @@ class MovieBlockEditor extends React.Component {
 		super(props);
 		this.state = {
 			dataIsLoaded: false,
+
+			fullCast: [],
+			fullProducers: [],
+			isCastSelectorVisible: false,
+			isProducersSelectorVisible: false,
+
+			//isMounted: false
 		};
 		this.buttonRef = React.createRef();
 		this.inputImageRef = React.createRef();
 		this.formRef = React.createRef();
+		this.castSelectorRef = React.createRef();
+		this.producersSelectorRef = React.createRef();
 
 		this.onChange = this.onChange.bind(this);
 		this.onChangeImage = this.onChangeImage.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
-		this.getCurrentMovieBlockInfo = this.getCurrentMovieBlockInfo.bind(this);
+		this.getCurrentMovieBlockInfoAndDependentModels = this.getCurrentMovieBlockInfoAndDependentModels.bind(this);
+		this.onSelectorClick = this.onSelectorClick.bind(this);
 	}
 
 	componentDidMount() {
-		this.getCurrentMovieBlockInfo();
-    }
+		this.getCurrentMovieBlockInfoAndDependentModels();
+	}
 
-	async getCurrentMovieBlockInfo() {
+	onSelectorClick(event) {
+		if (event.target.id === "castSelector") {
+			if (this.state.isCastSelectorVisible) this.setState({ isCastSelectorVisible: false });
+			else this.setState({ isCastSelectorVisible: true });
+		}
+		else if (event.target.id === "producersSelector") {
+			if (this.state.isProducersSelectorVisible) this.setState({ isProducersSelectorVisible: false });
+			else this.setState({ isProducersSelectorVisible: true });
+		}
+	}
+	async getCurrentMovieBlockInfoAndDependentModels() {
 		let url = 'https://localhost:44373/Movies/Details?id=' + this.props.curMovieBlockId.toString();
 		let response = await fetch(url);
-
 		let moviesInfo = await response.json();
 
-		this.setState({
-			dataIsLoaded: true,
+		url = 'https://localhost:44373/Movies/DependentDetails';
+		response = await fetch(url);
+		let fullDependentModels = await response.json();
 
-			Id: moviesInfo.Id,
-			Name: moviesInfo.Name,
-			Director: moviesInfo.Director,
-			Writer: moviesInfo.Writer,
-			ReleaseDate: moviesInfo.ReleaseDate,
-			Description: moviesInfo.Description,
-		});
+		if (fullDependentModels.cast && fullDependentModels.producers && moviesInfo)
+			this.setState({
+				dataIsLoaded: true,
+
+				Id: moviesInfo.Id,
+				Name: moviesInfo.Name,
+				Director: moviesInfo.Director,
+				Writer: moviesInfo.Writer,
+				ReleaseDate: moviesInfo.ReleaseDate,
+				Description: moviesInfo.Description,
+
+				fullCast: fullDependentModels.cast,
+				fullProducers: fullDependentModels.producers,
+				Cast: moviesInfo.Cast,
+				Producers: moviesInfo.Producers,
+			});
 	}
 
 	onChange(event) {
@@ -235,7 +264,6 @@ class MovieBlockEditor extends React.Component {
 	onChangeImage(event) {
 		this.inputImageRef.current.value = event.target.files[0].name;
 	}
-
 	async onSubmit(event) {
 		event.preventDefault();
 		this.buttonRef.current.style.display = "none";
@@ -260,6 +288,9 @@ class MovieBlockEditor extends React.Component {
 
 	render() {
 		if (this.state.dataIsLoaded) {
+			let actualCastIdArr = this.state.Cast.map(a => a.Id);
+			let actualProducersIdArr = this.state.Producers.map(p => p.Id);
+
 			return (
 				<form id="editMovieBlockForm" onSubmit={this.onSubmit} ref={this.formRef}>
 					<input type="hidden" name="Id" value={this.state.Id} />
@@ -278,11 +309,53 @@ class MovieBlockEditor extends React.Component {
 					<input type="text" name="Writer" value={this.state.Writer} onChange={this.onChange} />
 
 					<lable>Дата выхода:</lable>
-					<input type="date" name="ReleaseDate" value={this.state.ReleaseDate} onChange={this.onChange} />
+					<input type="date" name="ReleaseDate" defaultValue={this.state.ReleaseDate/*???*/} />
 
 					<lable>Описание:</lable>
 					<textarea name="Description" value={this.state.Description} onChange={this.onChange}>
 					</textarea>
+
+					<p id="castSelector" onClick={this.onSelectorClick}>Актеры</p>
+					<ul
+						ref={this.castSelectorRef}
+						style={this.state.isCastSelectorVisible ?
+							{ display: "inline-block" } : { display: "none" }}>
+						{
+							this.state.fullCast ?
+								this.state.fullCast.map((a, aIndex) => {
+									return (
+										<li key={"actorToSelectEdit" + aIndex}>
+											<input
+												type="checkbox"
+												name="selectedActors"
+												value={a.Id}
+												defaultChecked={actualCastIdArr.includes(a.Id, 0) ? true : false } />
+											<p>{a.FirstName} {a.SecondName}</p>
+										</li>);
+								}) : null
+						}
+					</ul>
+
+					<p id="producersSelector" onClick={this.onSelectorClick}>Продюсеры</p>
+					<ul
+						ref={this.producersSelectorRef}
+						style={this.state.isProducersSelectorVisible ?
+							{ display: "inline-block" } : { display: "none" }}>
+						{
+							this.state.fullProducers ?
+								this.state.fullProducers.map((p, pIndex) => {
+									return (
+										<li key={"producerToSelectEdit" + pIndex}>
+											<input
+												type="checkbox"
+												name="selectedProducers"
+												value={p.Id}
+												defaultChecked={actualProducersIdArr.includes(p.Id, 0) ? true : false} />
+											<p>{p.FirstName} {p.SecondName}</p>
+										</li>);
+								}) : null
+						}
+					</ul>
 
 					<input id="submit" type="submit" value="Отправить" ref={this.buttonRef}/>
 
@@ -292,6 +365,10 @@ class MovieBlockEditor extends React.Component {
 		}
 		else return (<p>Loading data...</p>);
 	}
+
+	//componentDidMount() {
+	//	this.setState({isMounted: true});
+	//}
 }
 
 class RemoveMovieBlock extends React.Component {
