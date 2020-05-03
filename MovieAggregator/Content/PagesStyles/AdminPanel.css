@@ -170,27 +170,43 @@ body {
                     }
 
 
-        #content #column2 #createMovieBlockForm, #editMovieBlockForm {
+
+
+        #createMovieBlockForm, #editMovieBlockForm {
             border: 1px solid #d8b440;
             border-radius: 5px;
             padding: 10px 20px;
         }
-            #content #column2 #createMovieBlockForm lable, #editMovieBlockForm lable {
+            #createMovieBlockForm lable, #editMovieBlockForm lable {
             }
-            #content #column2 #createMovieBlockForm input, #editMovieBlockForm input {
+            #createMovieBlockForm > input, #editMovieBlockForm > input {
                 height: 25px;
                 padding-left: 10px;
                 margin-bottom: 20px;
             }
-            #content #column2 #createMovieBlockForm #submit, #editMovieBlockForm #submit {
+            #createMovieBlockForm #submit, #editMovieBlockForm #submit {
                 margin-top: 20px;
                 background: #d8b440;
                 border-radius: 5px;
             }
-            #content #column2 #createMovieBlockForm textarea, #editMovieBlockForm textarea {
+            #createMovieBlockForm textarea, #editMovieBlockForm textarea {
                 height: 200px;
                 padding: 10px;
                 resize: none;
+            }
+            #createMovieBlockForm ul, #editMovieBlockForm ul {
+                list-style: none;
+            }
+                #createMovieBlockForm ul li, #editMovieBlockForm ul li {
+                    display: flex;
+                }
+                    #createMovieBlockForm ul li input, #editMovieBlockForm ul li input {
+                        margin: 0px;
+                        height: 15px;
+                        width: 10%;
+                    }
+            #createMovieBlockForm > p, #editMovieBlockForm > p {
+                margin-top: 15px;
             }
 
 

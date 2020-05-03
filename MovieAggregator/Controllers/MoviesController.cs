@@ -48,8 +48,19 @@ namespace MovieAggregator.Controllers
             return Json(movie, JsonRequestBehavior.AllowGet);
         }
 
+        public async Task<JsonResult> DependentDetails()
+        {
+            IEnumerable<Actor> cast = await db.Cast.ToListAsync();
+            IEnumerable<Producer> producers = await db.Producers.ToListAsync();
+
+            return Json(new { 
+                cast = cast,
+                producers = producers
+            }, JsonRequestBehavior.AllowGet);
+        }
+
         [HttpPost]
-        public async Task<JsonResult> Create(Movie movie, HttpPostedFileBase image)
+        public async Task<JsonResult> Create(Movie movie, int[] selectedActors, int[] selectedProducers, HttpPostedFileBase image)
         {
             if (ModelState.IsValid)
             {

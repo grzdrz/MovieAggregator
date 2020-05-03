@@ -29,16 +29,39 @@ class MovieBlockCreator extends React.Component {
 			Writer: "Writer1",
 			ReleaseDate: Date.now(),
 			Description: "blablabla",
+
+			cast: [],
+			producers: [],
+			isCastSelectorVisible: false,
+			isProducersSelectorVisible: false,
 		};
 		this.buttonRef = React.createRef();
 		this.inputImageRef = React.createRef();
 		this.formRef = React.createRef();
+		this.castSelectorRef = React.createRef();
+		this.producersSelectorRef = React.createRef();
 
 		this.onChange = this.onChange.bind(this);
 		this.onChangeImage = this.onChangeImage.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
+		this.onSelectorClick = this.onSelectorClick.bind(this);
+		this.getDependentModels = this.getDependentModels.bind(this);
 	}
 
+	componentWillMount() {
+		this.getDependentModels();
+    }
+
+	onSelectorClick(event) {
+		if (event.target.id === "castSelector") {
+			if (this.state.isCastSelectorVisible) this.setState({ isCastSelectorVisible: false });
+			else this.setState({ isCastSelectorVisible: true });
+		}
+		else if (event.target.id === "producersSelector") {
+			if (this.state.isProducersSelectorVisible) this.setState({ isProducersSelectorVisible: false });
+			else this.setState({ isProducersSelectorVisible: true });
+		}
+    }
 	onChange(event) {
 		this.setState({
 			[event.target.name]: event.target.value
@@ -68,6 +91,17 @@ class MovieBlockCreator extends React.Component {
 			this.buttonRef.current.style.display = "inline-block";
 			this.setState({ submitError: "error"});
 		}
+	}
+	async getDependentModels() {
+		let url = 'https://localhost:44373/Movies/DependentDetails';
+		let response = await fetch(url);
+		let result = await response.json();
+
+		if (result.cast && result.producers)
+			this.setState({
+				cast: result.cast,
+				producers: result.producers,
+			});
     }
 
 	render() {
@@ -92,6 +126,40 @@ class MovieBlockCreator extends React.Component {
 				<lable>Описание:</lable>
 				<textarea name="Description" value={this.state.Description} onChange={this.onChange}>
 				</textarea>
+
+				<p id="castSelector" onClick={this.onSelectorClick}>Актеры</p>
+				<ul 
+					ref={this.castSelectorRef}
+					style={this.state.isCastSelectorVisible ?
+						{ display: "inline-block" } : { display: "none" }}>
+					{
+						this.state.cast ?
+							this.state.cast.map((a, aIndex) => {
+								return (
+									<li key={"actorToSelect" + aIndex}>
+										<input type="checkbox" name="selectedActors" value={a.Id} />
+										<p>{a.FirstName} {a.SecondName}</p>
+									</li>);
+							}) : null
+					}
+				</ul>
+
+				<p id="producersSelector" onClick={this.onSelectorClick}>Продюсеры</p>
+				<ul 
+					ref={this.producersSelectorRef}
+					style={this.state.isProducersSelectorVisible ?
+						{ display: "inline-block" } : { display: "none" }}>
+					{
+						this.state.producers ?
+							this.state.producers.map((p, pIndex) => {
+								return (
+									<li key={"producerToSelect" + pIndex}>
+										<input type="checkbox" name="selectedProducers" value={p.Id} />
+										<p>{p.FirstName} {p.SecondName}</p>
+									</li>);
+							}) : null
+					}
+				</ul>
 
 				<input id="submit" type="submit" value="Отправить" ref={this.buttonRef}/>
 
