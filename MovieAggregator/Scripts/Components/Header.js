@@ -19,10 +19,10 @@
         return (
             <div id="header">
                 <div id="menu">
-                    <button id="mainPage"><p>Главная</p></button>
+                    <button id="mainPage"><a href='https://localhost:44373/'><p>Главная</p></a></button>
                     <ul>
-                        <li><button><p>тест1</p></button></li>
-                        <li><button><p>тест2</p></button></li>
+                        <li><button><p>тест</p></button></li>
+                        <li><button><p>тест</p></button></li>
                         {
                             this.props.appState.isAuthorized == true ?
                                 <li><button onClick={this.signOut}><p>Выйти</p></button></li> :

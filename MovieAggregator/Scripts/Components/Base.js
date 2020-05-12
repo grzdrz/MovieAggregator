@@ -1,4 +1,13 @@
-﻿class Wrap extends React.Component {
+﻿const {
+    HashRouter,
+    Switch,
+    Route,
+    Link,
+    NavLink,
+    Redirect
+} = ReactRouterDOM;
+
+class Wrap extends React.Component {
     constructor(props) {
         super(props);
 
@@ -59,4 +68,8 @@
 }
 
 let targetElement = document.querySelector("#wrap");
-ReactDOM.render(<Wrap />, targetElement);
+ReactDOM.render(
+    <HashRouter>
+        <Wrap />
+    </HashRouter>,
+    targetElement);

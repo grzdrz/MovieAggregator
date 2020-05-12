@@ -14,48 +14,100 @@
 	}
 
 	render() {
-		//подмешиваем в глобальное состояние местный метод
-		let extendedAppState = { switchCColumnContainer: this.switchCColumnContainer };
-		for (let ePropName of Object.keys(this.props.appState)) {
-			extendedAppState[ePropName] = this.props.appState[ePropName];
-        }
+		////подмешиваем в глобальное состояние местный метод
+		//let extendedAppState = { switchCColumnContainer: this.switchCColumnContainer };
+		//for (let ePropName of Object.keys(this.props.appState)) {
+		//	extendedAppState[ePropName] = this.props.appState[ePropName];
+		//}
 
-		switch (this.state.contentToRender) {
-			case "moviesContainer": {
-				return (
-					<div id="column2">
-						{
-							this.props.appState.role === "admin" ?
-								<AddMovieBlockButton key={"AddMovieBlock0"} appState={extendedAppState} /> : null
-						}
-						<MoviesContainer key={"MContainer1"} appState={extendedAppState} />
-						<Pagination key={"Pagination2"} appState={extendedAppState} />
-					</div>
-				);
-			}
-			case "createMovieBlockForm": {
-				return (
-					<div id="column2">
-						<MovieBlockCreator appState={extendedAppState}/>
-					</div>
-				);
-			}
-			case "editMovieBlockForm": {
-				return (
-					<div id="column2">
-						<MovieBlockEditor appState={extendedAppState} curMovieBlockId={this.state.curMovieBlockId} />
-					</div>
-				);
-			}
-			case "movieFullInfoBlock": {
-				return (
-					<div id="column2">
-						<MovieFullInfoBlock appState={extendedAppState} curMovieBlockId={this.state.curMovieBlockId} />
-					</div>
-				);
-			}
-			default: return null;
-		}
+		return (
+			<Switch>
+				<Route
+					exact path="/"
+					render={() => {
+						return (
+							<div id="column2">
+								{
+									this.props.appState.role === "admin" ?
+										<AddMovieBlockButton key={"AddMovieBlock0"} appState={this.props.appState} /> : null
+								}
+								<MoviesContainer key={"MContainer1"} appState={this.props.appState} />
+								<Pagination key={"Pagination2"} appState={this.props.appState} />
+							</div>
+						);
+					}}
+				/>
+				<Route
+					exact path="/createMovieBlockForm"
+					render={() => {
+						return (
+							<div id="column2">
+								<MovieBlockCreator appState={this.props.appState} />
+							</div>
+						);
+					}}
+				/>
+				<Route
+					exact path="/editMovieBlockForm/:id"
+					render={(props) => {
+						return (
+							<div id="column2">
+								<MovieBlockEditor appState={this.props.appState} curMovieBlockId={props.match.params.id} />
+							</div>
+						);
+					}}
+				/>
+				<Route
+					exact path="/movieFullInfoBlock"
+					render={() => {
+						return (
+							<div id="column2">
+								<MovieFullInfoBlock appState={this.props.appState} curMovieBlockId={this.state.curMovieBlockId} />
+							</div>
+						);
+					}}
+				/>
+				<Route render={() => {
+					return (<p>Error, page not found</p>);
+				}} />
+			</Switch>
+		);
+		//switch (this.state.contentToRender) {
+		//	case "moviesContainer": {
+		//		return (
+		//			<div id="column2">
+		//				{
+		//					this.props.appState.role === "admin" ?
+		//						<AddMovieBlockButton key={"AddMovieBlock0"} appState={extendedAppState} /> : null
+		//				}
+		//				<MoviesContainer key={"MContainer1"} appState={extendedAppState} />
+		//				<Pagination key={"Pagination2"} appState={extendedAppState} />
+		//			</div>
+		//		);
+		//	}
+		//	case "createMovieBlockForm": {
+		//		return (
+		//			<div id="column2">
+		//				<MovieBlockCreator appState={extendedAppState}/>
+		//			</div>
+		//		);
+		//	}
+		//	case "editMovieBlockForm": {
+		//		return (
+		//			<div id="column2">
+		//				<MovieBlockEditor appState={extendedAppState} curMovieBlockId={this.state.curMovieBlockId} />
+		//			</div>
+		//		);
+		//	}
+		//	case "movieFullInfoBlock": {
+		//		return (
+		//			<div id="column2">
+		//				<MovieFullInfoBlock appState={extendedAppState} curMovieBlockId={this.state.curMovieBlockId} />
+		//			</div>
+		//		);
+		//	}
+		//	default: return null;
+		//}
 	}
 }
 
