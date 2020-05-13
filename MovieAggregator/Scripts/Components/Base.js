@@ -7,21 +7,13 @@
     Redirect
 } = ReactRouterDOM;
 
-class Wrap extends React.Component {
+class App extends React.Component {
     constructor(props) {
         super(props);
 
         this.updateClientRoleAndStatus = this.updateClientRoleAndStatus.bind(this);
-        this.getCurPage = this.getCurPage.bind(this);
-        this.setCurPageAndMoviesInfoArray = this.setCurPageAndMoviesInfoArray.bind(this);
-
         this.state = {
-            curPage: 1,
-            moviesInfoArray: [],
-
             updateClientRoleAndStatus: this.updateClientRoleAndStatus,
-            getCurPage: this.getCurPage,
-            setCurPageAndMoviesInfoArray: this.setCurPageAndMoviesInfoArray,
         };
     }
 
@@ -47,15 +39,6 @@ class Wrap extends React.Component {
             });
         }
     }
-    getCurPage() {
-        return this.state.curPage;
-    }
-    setCurPageAndMoviesInfoArray(curPage, moviesInfoArray) {
-        this.setState({
-            curPage: curPage,
-            moviesInfoArray: moviesInfoArray
-        });
-    }
 
     render() {
         let elem = [];
@@ -67,9 +50,9 @@ class Wrap extends React.Component {
     }
 }
 
-let targetElement = document.querySelector("#wrap");
+let targetElement = document.querySelector("#app");
 ReactDOM.render(
     <HashRouter>
-        <Wrap />
+        <App />
     </HashRouter>,
     targetElement);

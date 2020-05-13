@@ -1,68 +1,56 @@
-﻿class CentralColumn extends React.Component {
+﻿const dateFormatOptions = { year: "numeric", month: "2-digit", day: "2-digit", };
+
+class CentralColumn extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { contentToRender: "moviesContainer" };//по умолчанию рендерит контейнер с фильмами   
-
-		this.switchCColumnContainer = this.switchCColumnContainer.bind(this);
-	}
-
-	switchCColumnContainer(containerName, movieBlockId) {
-		this.setState({
-			contentToRender: containerName,
-			curMovieBlockId: movieBlockId//для контейнера на удаление/изменение
-		});
+		this.state = {};
 	}
 
 	render() {
-		////подмешиваем в глобальное состояние местный метод
-		//let extendedAppState = { switchCColumnContainer: this.switchCColumnContainer };
-		//for (let ePropName of Object.keys(this.props.appState)) {
-		//	extendedAppState[ePropName] = this.props.appState[ePropName];
-		//}
-
 		return (
 			<Switch>
 				<Route
-					exact path="/"
-					render={() => {
+					exact path="/:pageNumber(\d+)?"
+					render={(props) => {
 						return (
 							<div id="column2">
 								{
 									this.props.appState.role === "admin" ?
-										<AddMovieBlockButton key={"AddMovieBlock0"} appState={this.props.appState} /> : null
+										<CreateMovieBlockButton key={"AddMovieBlock0"} appState={this.props.appState} /> : null
 								}
-								<MoviesContainer key={"MContainer1"} appState={this.props.appState} />
+								<MoviesListContainer key={"MContainer1"} appState={this.props.appState}
+									curPageNumber={props.match.params.pageNumber ? props.match.params.pageNumber : 1} />
 								<Pagination key={"Pagination2"} appState={this.props.appState} />
 							</div>
 						);
 					}}
 				/>
 				<Route
-					exact path="/createMovieBlockForm"
+					exact path="/CreateMovieBlockForm"
 					render={() => {
 						return (
 							<div id="column2">
-								<MovieBlockCreator appState={this.props.appState} />
+								<CreateMovieBlockForm appState={this.props.appState} />
 							</div>
 						);
 					}}
 				/>
 				<Route
-					exact path="/editMovieBlockForm/:id"
+					exact path="/EditMovieBlockForm/:id"
 					render={(props) => {
 						return (
 							<div id="column2">
-								<MovieBlockEditor appState={this.props.appState} curMovieBlockId={props.match.params.id} />
+								<EditMovieBlockForm appState={this.props.appState} curMovieBlockId={props.match.params.id} />
 							</div>
 						);
 					}}
 				/>
 				<Route
-					exact path="/movieFullInfoBlock"
-					render={() => {
+					exact path="/FullMovieInfoBlock/:id"
+					render={(props) => {
 						return (
 							<div id="column2">
-								<MovieFullInfoBlock appState={this.props.appState} curMovieBlockId={this.state.curMovieBlockId} />
+								<FullMovieInfoBlock appState={this.props.appState} curMovieBlockId={props.match.params.id} />
 							</div>
 						);
 					}}
@@ -72,58 +60,46 @@
 				}} />
 			</Switch>
 		);
-		//switch (this.state.contentToRender) {
-		//	case "moviesContainer": {
-		//		return (
-		//			<div id="column2">
-		//				{
-		//					this.props.appState.role === "admin" ?
-		//						<AddMovieBlockButton key={"AddMovieBlock0"} appState={extendedAppState} /> : null
-		//				}
-		//				<MoviesContainer key={"MContainer1"} appState={extendedAppState} />
-		//				<Pagination key={"Pagination2"} appState={extendedAppState} />
-		//			</div>
-		//		);
-		//	}
-		//	case "createMovieBlockForm": {
-		//		return (
-		//			<div id="column2">
-		//				<MovieBlockCreator appState={extendedAppState}/>
-		//			</div>
-		//		);
-		//	}
-		//	case "editMovieBlockForm": {
-		//		return (
-		//			<div id="column2">
-		//				<MovieBlockEditor appState={extendedAppState} curMovieBlockId={this.state.curMovieBlockId} />
-		//			</div>
-		//		);
-		//	}
-		//	case "movieFullInfoBlock": {
-		//		return (
-		//			<div id="column2">
-		//				<MovieFullInfoBlock appState={extendedAppState} curMovieBlockId={this.state.curMovieBlockId} />
-		//			</div>
-		//		);
-		//	}
-		//	default: return null;
-		//}
 	}
 }
 
-class MoviesContainer extends React.Component {
+class MoviesListContainer extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
+
+		this.getMoviesInfoPage = this.getMoviesInfoPage.bind(this);
 	}
-	
+
+	componentWillMount() {
+		this.getMoviesInfoPage(this.props.curPageNumber);
+	}
+
+	componentWillUpdate(nextProps, nextState) {
+		if (nextProps.curPageNumber != this.props.curPageNumber)
+			//this.setState({
+			//	loaded: false
+			//});
+			this.getMoviesInfoPage(nextProps.curPageNumber);
+	}
+
+	//обработчик кликов по номерам страниц, подгружающий определенное количество данных
+	async getMoviesInfoPage(pageNumber) {
+		let url = 'https://localhost:44373/Home/GetMoviesInfoByPageNumber?pageNumber=' + pageNumber.toString();
+		let response = await fetch(url);
+
+		let moviesInfoArray = await response.json();
+
+		this.setState({ moviesInfoArray: moviesInfoArray });
+	}
+
 	render() {
-		if (this.props.appState.moviesInfoArray) {
+		if (this.state.moviesInfoArray) {
 			return (
 				<div id="moviesContainer">
 					<MoviesBlockList
 						key={"MoviesBlockList0"}
-						moviesInfoArray={this.props.appState.moviesInfoArray}
+						moviesInfoArray={this.state.moviesInfoArray}
 						appState={this.props.appState} />
 				</div>
 			);
@@ -141,37 +117,23 @@ class MoviesContainer extends React.Component {
 class Pagination extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state = { pageCount: 1 };
 
 		this.getPageCount = this.getPageCount.bind(this);
-		this.getMoviesInfo = this.getMoviesInfo.bind(this);
-		this.state = { pageCount: 1};
 	}
 
 	componentWillMount() {
-		this.getPageCount();//число кнопок пагинации
-		this.getMoviesInfo(this.props.appState.curPage);//заполняет контейнер 4мя фильмами(по умолчанию для первой страницы)
+		this.getPageCount();
 	}
 
 	async getPageCount() {
-		let url = 'https://localhost:44373/Home/GetMoviesCount';
+		let url = 'https://localhost:44373/Movies/GetMoviesInfoPageCount';
 		let response = await fetch(url);
 
-		let moviesCount = await response.text();
+		let pageCount = await response.text();
+		pageCount = parseInt(pageCount);
 
-		moviesCount = parseInt(moviesCount);
-		let pageCount = Math.ceil(moviesCount / 4);
-
-		this.setState({ pageCount: pageCount });
-	}
-
-	//обработчик кликов по номерам страниц, подгружающий определенное количество данных и вставляющий их в разметку
-	async getMoviesInfo(pageNumber) {
-		let url = 'https://localhost:44373/Home/GetMoviesInfoByPageNumber?pageNumber=' + pageNumber.toString();
-		let response = await fetch(url);
-
-		let moviesInfoArray = await response.json();
-
-		this.props.appState.setCurPageAndMoviesInfoArray(pageNumber, moviesInfoArray);
+		this.setState({ pageCount: pageCount});
 	}
 
 	render() {
@@ -187,8 +149,8 @@ class Pagination extends React.Component {
 						{
 							tempArr.map((e, i) => {
 								return (
-									<li key={i} onClick={this.getMoviesInfo.bind(this, i + 1)}>
-										<a href="#">{i + 1}</a>
+									<li key={"Pagination" + i}>
+										<NavLink key={"PaginationNavLink" + i} to={`/${i + 1}`}>{i + 1}</NavLink>
 									</li>
 								);
 							})
@@ -209,13 +171,13 @@ class MoviesBlockList extends React.Component {
 	}
 
 	render() {
-		if (this.props.appState.moviesInfoArray.length !== 0) {
+		if (this.props.moviesInfoArray.length !== 0) {
 			return (
-				this.props.appState.moviesInfoArray.map((arrElem) => {
+				this.props.moviesInfoArray.map((movieInfo) => {
 					return (
 						<MovieBlock
-							key={arrElem.Id}
-							moviesInfo={arrElem}
+							key={movieInfo.Id}
+							movieInfo={movieInfo}
 							appState={this.props.appState} />
 					);
 				})
@@ -232,70 +194,63 @@ class MovieBlock extends React.Component {
 	}
 
 	render() {
-		let parsedDateTimeStamp = this.props.moviesInfo.ReleaseDate.match(/[0-9]+/i)[0];
-		let date = new Date(parseInt(parsedDateTimeStamp));
-		let formattedDate = date.getDay().toString() + "." + date.getMonth().toString() + "." + date.getFullYear().toString();
+		let parsedDateTimeStamp = this.props.movieInfo.ReleaseDate.match(/[0-9]+/i)[0];
+		let formattedDate = new Intl.DateTimeFormat(dateFormatOptions).format(new Date(parseInt(parsedDateTimeStamp)));
 
 		return (
 			<div className="movieBlock">
 				{
 					this.props.appState.role === "admin" ?
-						<EditMovieBlock
-							key={"EditMovieBlock" + this.props.moviesInfo.Id}
-							id={this.props.moviesInfo.Id}
+						<EditMovieBlockButton
+							key={"EditMovieBlock" + this.props.movieInfo.Id}
+							id={this.props.movieInfo.Id}
 							appState={this.props.appState} />
 						: null
 				}
 				{
 					this.props.appState.role === "admin" ?
-						<RemoveMovieBlock
-							key={"RemoveMovieBlock" + this.props.moviesInfo.Id}
-							id={this.props.moviesInfo.Id}
+						<RemoveMovieBlockButton
+							key={"RemoveMovieBlock" + this.props.movieInfo.Id}
+							id={this.props.movieInfo.Id}
 							appState={this.props.appState} />
 						: null
 				}
 
 				<div className="mainInformationBlock clearfix">
-					{this.props.moviesInfo.ImgSrc ? <img src={"../Content/Images/" + this.props.moviesInfo.ImgSrc}></img> : null}
-					<h1>{this.props.moviesInfo.Name}</h1>
-					<p>Director: {this.props.moviesInfo.Director}</p>
-					<p>Writer: {this.props.moviesInfo.Writer}</p>
+					{this.props.movieInfo.ImgSrc ? <img src={"../Content/Images/" + this.props.movieInfo.ImgSrc}></img> : null}
+					<h1>{this.props.movieInfo.Name}</h1>
+					<p>Director: {this.props.movieInfo.Director}</p>
+					<p>Writer: {this.props.movieInfo.Writer}</p>
 					<p>Release date: {formattedDate}</p>
-					<p>{this.props.moviesInfo.Description}</p>
+					<p>{this.props.movieInfo.Description}</p>
 				</div>
 
-				<ShowMovieBlockFullInfoButton
-					key={"ShowMovieBlockFullInfoButton" + this.props.moviesInfo.Id}
-					id={this.props.moviesInfo.Id}
+				<ShowFullMovieBlockInfoButton
+					key={"ShowMovieBlockFullInfoButton" + this.props.movieInfo.Id}
+					id={this.props.movieInfo.Id}
 					appState={this.props.appState} />
 			</div>
 		);
 	}
 }
 
-class ShowMovieBlockFullInfoButton extends React.Component {
+class ShowFullMovieBlockInfoButton extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
-
-		this.setArgsToEventHandler = this.setArgsToEventHandler.bind(this);
-	}
-
-	setArgsToEventHandler() {//для вызова протянутого метода из ивента с аргументом
-		this.props.appState.switchCColumnContainer("movieFullInfoBlock", this.props.id);
 	}
 
 	render() {
 		return (
-			<button onClick={this.setArgsToEventHandler}><p>Show full info</p></button>
+			<button><NavLink to={`/FullMovieInfoBlock/${this.props.id}`}><p>Show full info</p></NavLink></button>
 		);
 	}
 }
 
-class MovieFullInfoBlock extends React.Component {
+class FullMovieInfoBlock extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { movieFullInfo: null };
+		this.state = { fullMovieInfo: null };
 
 		this.getFullMovieInfo = this.getFullMovieInfo.bind(this);
 	}
@@ -310,50 +265,49 @@ class MovieFullInfoBlock extends React.Component {
 		let result = await response.json();
 
 		if (result) {
-			this.setState({ movieFullInfo: result});
+			this.setState({ fullMovieInfo: result});
 		}
 	}
 
 	render() {
-		if (this.state.movieFullInfo) {
-			let parsedDateTimeStamp = this.state.movieFullInfo.ReleaseDate.match(/[0-9]+/i)[0];
-			let date = new Date(parseInt(parsedDateTimeStamp));
-			let formattedDate = date.getDay().toString() + "." + date.getMonth().toString() + "." + date.getFullYear().toString();
+		if (this.state.fullMovieInfo) {
+			let parsedDateTimeStamp = this.state.fullMovieInfo.ReleaseDate.match(/[0-9]+/i)[0];
+			let formattedDate = new Intl.DateTimeFormat(dateFormatOptions).format(new Date(parseInt(parsedDateTimeStamp)));
 
 			return (
 				<div className="movieBlock">
 					{
 						this.props.appState.role === "admin" ?
-							<EditMovieBlock
-								key={"EditMovieBlock" + this.state.movieFullInfo.Id}
-								id={this.state.movieFullInfo.Id}
+							<EditMovieBlockButton
+								key={"EditMovieBlock" + this.state.fullMovieInfo.Id}
+								id={this.state.fullMovieInfo.Id}
 								appState={this.props.appState} />
 							: null
 					}
 					{
 						this.props.appState.role === "admin" ?
-							<RemoveMovieBlock
-								key={"RemoveMovieBlock" + this.state.movieFullInfo.Id}
-								id={this.state.movieFullInfo.Id}
+							<RemoveMovieBlockButton
+								key={"RemoveMovieBlock" + this.state.fullMovieInfo.Id}
+								id={this.state.fullMovieInfo.Id}
 								appState={this.props.appState} />
 							: null
 					}
 
 					<div className="mainInformationBlock clearfix">
-						{this.state.movieFullInfo.ImgSrc ? <img src={"../Content/Images/" + this.state.movieFullInfo.ImgSrc}></img> : null}
-					    <h1>{this.state.movieFullInfo.Name}</h1>
-						<p>Director: {this.state.movieFullInfo.Director}</p>
-						<p>Writer: {this.state.movieFullInfo.Writer}</p>
+						{this.state.fullMovieInfo.ImgSrc ? <img src={"../Content/Images/" + this.state.fullMovieInfo.ImgSrc}></img> : null}
+					    <h1>{this.state.fullMovieInfo.Name}</h1>
+						<p>Director: {this.state.fullMovieInfo.Director}</p>
+						<p>Writer: {this.state.fullMovieInfo.Writer}</p>
 						<p>Release date: {formattedDate}</p>
-						<p>{this.state.movieFullInfo.Description}</p>
+						<p>{this.state.fullMovieInfo.Description}</p>
 					</div>
 
 					<div className="additionalInformationBlock">
 						<h1>Cast</h1>
 						{
-							this.state.movieFullInfo.Cast.map(a => {
+							this.state.fullMovieInfo.Cast.map(a => {
 								return (
-									<p key={a.FirstName + a.SecondName + a.Id}>
+									<p key={"FullMovieInfo" + a.FirstName + a.SecondName + a.Id}>
 										{a.FirstName} {a.SecondName}
 									</p>);
 							})
@@ -363,9 +317,9 @@ class MovieFullInfoBlock extends React.Component {
 					<div className="additionalInformationBlock">
 						<h1>Producers</h1>
 						{
-							this.state.movieFullInfo.Producers.map(p => {
+							this.state.fullMovieInfo.Producers.map(p => {
 								return (
-									<p key={p.FirstName + p.SecondName + p.Id}>
+									<p key={"FullMovieInfo" + p.FirstName + p.SecondName + p.Id}>
 										{p.FirstName} {p.SecondName}
 									</p>);
 							})

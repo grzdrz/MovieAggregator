@@ -148,6 +148,21 @@ namespace MovieAggregator.Controllers
             return Json(new { isDataReceivedSuccessfully = true }, JsonRequestBehavior.AllowGet);
         }
 
+
+        public string GetMoviesCount()
+        {
+            int moviesCount = db.Movies.Count();
+
+            return moviesCount.ToString();
+        }
+
+        public string GetMoviesInfoPageCount()
+        {
+            int moviesCount = db.Movies.Count();
+
+            return ((int)Math.Ceiling((double)moviesCount / 4d)).ToString();
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

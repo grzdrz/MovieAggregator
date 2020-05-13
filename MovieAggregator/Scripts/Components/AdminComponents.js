@@ -1,4 +1,4 @@
-﻿class AddMovieBlockButton extends React.Component {
+﻿class CreateMovieBlockButton extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
@@ -7,13 +7,13 @@
 	render() {
 		return (
 			<div id="createMovieBlockButton">
-				<button><NavLink to='/createMovieBlockForm'><p>Add movie block</p></NavLink></button>
+				<button><NavLink to='/CreateMovieBlockForm'><p>Add movie block</p></NavLink></button>
 			</div>
 			);
     }
 }
 
-class MovieBlockCreator extends React.Component {
+class CreateMovieBlockForm extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -21,9 +21,9 @@ class MovieBlockCreator extends React.Component {
 
 			//дефолтные поля формы
 			ImgSrc: "",
-			Name: "Name1",
-			Director: "Director1",
-			Writer: "Writer1",
+			Name: "Movie name",
+			Director: "Director name",
+			Writer: "Writer name",
 			ReleaseDate: Date.now(),
 			Description: "blablabla",
 
@@ -32,16 +32,16 @@ class MovieBlockCreator extends React.Component {
 			isCastSelectorVisible: false,
 			isProducersSelectorVisible: false,
 		};
-		this.buttonRef = React.createRef();
-		this.inputImageRef = React.createRef();
+		this.submitButtonRef = React.createRef();
+		this.imageInputRef = React.createRef();
 		this.formRef = React.createRef();
-		this.castSelectorRef = React.createRef();
-		this.producersSelectorRef = React.createRef();
+		//this.castSelectorRef = React.createRef();
+		//this.producersSelectorRef = React.createRef();
 
-		this.onChange = this.onChange.bind(this);
-		this.onChangeImage = this.onChangeImage.bind(this);
+		this.onChangeInput = this.onChangeInput.bind(this);
+		this.onChangeImageInput = this.onChangeImageInput.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
-		this.onSelectorClick = this.onSelectorClick.bind(this);
+		this.onClickSelector = this.onClickSelector.bind(this);
 		this.getDependentModels = this.getDependentModels.bind(this);
 	}
 
@@ -49,7 +49,7 @@ class MovieBlockCreator extends React.Component {
 		this.getDependentModels();
     }
 
-	onSelectorClick(event) {
+	onClickSelector(event) {
 		if (event.target.id === "castSelector") {
 			if (this.state.isCastSelectorVisible) this.setState({ isCastSelectorVisible: false });
 			else this.setState({ isCastSelectorVisible: true });
@@ -58,19 +58,21 @@ class MovieBlockCreator extends React.Component {
 			if (this.state.isProducersSelectorVisible) this.setState({ isProducersSelectorVisible: false });
 			else this.setState({ isProducersSelectorVisible: true });
 		}
-    }
-	onChange(event) {
+	}
+
+	onChangeInput(event) {
 		this.setState({
 			[event.target.name]: event.target.value
 		});
 	}
-	onChangeImage(event) {
-		this.inputImageRef.current.value = event.target.files[0].name;
+
+	onChangeImageInput(event) {
+		this.imageInputRef.current.value = event.target.files[0].name;
     }
 
 	async onSubmit(event) {
 		event.preventDefault();
-		this.buttonRef.current.style.display = "none";
+		this.submitButtonRef.current.style.display = "none";
 
 		let url = 'https://localhost:44373/Movies/Create';
 		let formBody = new FormData(this.formRef.current);
@@ -82,14 +84,14 @@ class MovieBlockCreator extends React.Component {
 		let result = await response.json();
 
 		if (result.isDataReceivedSuccessfully == true) {
-			//this.props.appState.switchCColumnContainer("moviesContainer");//возвращаем контейнер на отображение фильмов
 			this.setState({redirect: true});
 		}
 		else {
-			this.buttonRef.current.style.display = "inline-block";
+			this.submitButtonRef.current.style.display = "inline-block";
 			this.setState({ submitError: "error"});
 		}
 	}
+
 	async getDependentModels() {
 		let url = 'https://localhost:44373/Movies/DependentDetails';
 		let response = await fetch(url);
@@ -109,28 +111,28 @@ class MovieBlockCreator extends React.Component {
 			return (
 				<form id="createMovieBlockForm" onSubmit={this.onSubmit} ref={this.formRef}>
 					<lable>Постер:</lable>
-					<input type="file" name="image" onChange={this.onChangeImage} />
-					<input type="hidden" name="ImgSrc" ref={this.inputImageRef} />
+					<input type="file" name="image" onChange={this.onChangeImageInput} />
+					<input type="hidden" name="ImgSrc" ref={this.imageInputRef} />
 
 					<lable>Название фильма:</lable>
-					<input type="text" name="Name" value={this.state.Name} onChange={this.onChange} />
+					<input type="text" name="Name" value={this.state.Name} onChange={this.onChangeInput} />
 
 					<lable>Режисер:</lable>
-					<input type="text" name="Director" value={this.state.Director} onChange={this.onChange} />
+					<input type="text" name="Director" value={this.state.Director} onChange={this.onChangeInput} />
 
 					<lable>Сценаристы:</lable>
-					<input type="text" name="Writer" value={this.state.Writer} onChange={this.onChange} />
+					<input type="text" name="Writer" value={this.state.Writer} onChange={this.onChangeInput} />
 
 					<lable>Дата выхода:</lable>
-					<input type="date" name="ReleaseDate" value={this.state.ReleaseDate} onChange={this.onChange} />
+					<input type="date" name="ReleaseDate" value={this.state.ReleaseDate} onChange={this.onChangeInput} />
 
 					<lable>Описание:</lable>
-					<textarea name="Description" value={this.state.Description} onChange={this.onChange}>
+					<textarea name="Description" value={this.state.Description} onChange={this.onChangeInput}>
 					</textarea>
 
-					<p id="castSelector" onClick={this.onSelectorClick}>Актеры</p>
+					<p id="castSelector" onClick={this.onClickSelector}>Актеры</p>
 					<ul
-						ref={this.castSelectorRef}
+						//ref={this.castSelectorRef}
 						style={this.state.isCastSelectorVisible ?
 							{ display: "inline-block" } : { display: "none" }}>
 						{
@@ -145,9 +147,9 @@ class MovieBlockCreator extends React.Component {
 						}
 					</ul>
 
-					<p id="producersSelector" onClick={this.onSelectorClick}>Продюсеры</p>
+					<p id="producersSelector" onClick={this.onClickSelector}>Продюсеры</p>
 					<ul
-						ref={this.producersSelectorRef}
+						//ref={this.producersSelectorRef}
 						style={this.state.isProducersSelectorVisible ?
 							{ display: "inline-block" } : { display: "none" }}>
 						{
@@ -162,7 +164,7 @@ class MovieBlockCreator extends React.Component {
 						}
 					</ul>
 
-					<input id="submit" type="submit" value="Отправить" ref={this.buttonRef} />
+					<input id="submit" type="submit" value="Отправить" ref={this.submitButtonRef} />
 
 					{this.state.submitError == "error" ? <p>{"Ошибка, введите данные еще раз"}</p> : null}
 				</form>
@@ -171,7 +173,7 @@ class MovieBlockCreator extends React.Component {
 }
 
 
-class EditMovieBlock extends React.Component {
+class EditMovieBlockButton extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
@@ -179,12 +181,12 @@ class EditMovieBlock extends React.Component {
 
 	render() {
 		return (
-			<button><NavLink to={`/editMovieBlockForm/${this.props.id}`}><p>Edit</p></NavLink></button>
+			<button><NavLink to={`/EditMovieBlockForm/${this.props.id}`}><p>Edit</p></NavLink></button>
 		);
 	}
 }
 
-class MovieBlockEditor extends React.Component {
+class EditMovieBlockForm extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -192,22 +194,22 @@ class MovieBlockEditor extends React.Component {
 
 			dataIsLoaded: false,
 
-			fullCast: [],
-			fullProducers: [],
+			fullListOfCast: [],
+			fullListOfProducers: [],
 			isCastSelectorVisible: false,
 			isProducersSelectorVisible: false,
 		};
-		this.buttonRef = React.createRef();
-		this.inputImageRef = React.createRef();
+		this.submitButtonRef = React.createRef();
+		this.imageInputRef = React.createRef();
 		this.formRef = React.createRef();
-		this.castSelectorRef = React.createRef();
-		this.producersSelectorRef = React.createRef();
+		//this.castSelectorRef = React.createRef();
+		//this.producersSelectorRef = React.createRef();
 
-		this.onChange = this.onChange.bind(this);
-		this.onChangeImage = this.onChangeImage.bind(this);
+		this.onChangeInput = this.onChangeInput.bind(this);
+		this.onChangeImageInput = this.onChangeImageInput.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
-		this.getCurrentMovieBlockInfoAndDependentModels = this.getCurrentMovieBlockInfoAndDependentModels.bind(this);
 		this.onSelectorClick = this.onSelectorClick.bind(this);
+		this.getCurrentMovieBlockInfoAndDependentModels = this.getCurrentMovieBlockInfoAndDependentModels.bind(this);
 	}
 
 	componentDidMount() {
@@ -224,6 +226,7 @@ class MovieBlockEditor extends React.Component {
 			else this.setState({ isProducersSelectorVisible: true });
 		}
 	}
+
 	async getCurrentMovieBlockInfoAndDependentModels() {
 		let url = 'https://localhost:44373/Movies/Details?id=' + this.props.curMovieBlockId.toString();
 		let response = await fetch(url);
@@ -244,24 +247,26 @@ class MovieBlockEditor extends React.Component {
 				ReleaseDate: moviesInfo.ReleaseDate,
 				Description: moviesInfo.Description,
 
-				fullCast: fullDependentModels.cast,
-				fullProducers: fullDependentModels.producers,
-				Cast: moviesInfo.Cast,
-				Producers: moviesInfo.Producers,
+				fullListOfCast: fullDependentModels.cast,
+				fullListOfProducers: fullDependentModels.producers,
+				actualCast: moviesInfo.Cast,
+				actualProducers: moviesInfo.Producers,
 			});
 	}
 
-	onChange(event) {
+	onChangeInput(event) {
 		this.setState({
 			[event.target.name]: event.target.value
 		});
 	}
-	onChangeImage(event) {
-		this.inputImageRef.current.value = event.target.files[0].name;
+
+	onChangeImageInput(event) {
+		this.imageInputRef.current.value = event.target.files[0].name;
 	}
+
 	async onSubmit(event) {
 		event.preventDefault();
-		this.buttonRef.current.style.display = "none";
+		this.submitButtonRef.current.style.display = "none";
 
 		let url = 'https://localhost:44373/Movies/Edit';
 		let formBody = new FormData(this.formRef.current);
@@ -277,7 +282,7 @@ class MovieBlockEditor extends React.Component {
 			this.setState({ redirect: true });
 		}
 		else {
-			this.buttonRef.current.style.display = "inline-block";
+			this.submitButtonRef.current.style.display = "inline-block";
 			this.setState({ submitError: "error" });
 		}
 	}
@@ -286,41 +291,41 @@ class MovieBlockEditor extends React.Component {
 		if (this.state.redirect == true)
 			return <Redirect to='/' />;
 		else if (this.state.dataIsLoaded) {
-			let actualCastIdArr = this.state.Cast.map(a => a.Id);
-			let actualProducersIdArr = this.state.Producers.map(p => p.Id);
+			let actualCastIdArr = this.state.actualCast.map(a => a.Id);
+			let actualProducersIdArr = this.state.actualProducers.map(p => p.Id);
 
 			return (
 				<form id="editMovieBlockForm" onSubmit={this.onSubmit} ref={this.formRef}>
 					<input type="hidden" name="Id" value={this.state.Id} />
 
 					<lable>Постер:</lable>
-					<input type="file" name="image" onChange={this.onChangeImage} />
-					<input type="hidden" name="ImgSrc" ref={this.inputImageRef} />
+					<input type="file" name="image" onChange={this.onChangeImageInput} />
+					<input type="hidden" name="ImgSrc" ref={this.imageInputRef} />
 
 					<lable>Название фильма:</lable>
-					<input type="text" name="Name" value={this.state.Name} onChange={this.onChange} />
+					<input type="text" name="Name" value={this.state.Name} onChange={this.onChangeInput} />
 
 					<lable>Режисер:</lable>
-					<input type="text" name="Director" value={this.state.Director} onChange={this.onChange} />
+					<input type="text" name="Director" value={this.state.Director} onChange={this.onChangeInput} />
 
 					<lable>Сценаристы:</lable>
-					<input type="text" name="Writer" value={this.state.Writer} onChange={this.onChange} />
+					<input type="text" name="Writer" value={this.state.Writer} onChange={this.onChangeInput} />
 
 					<lable>Дата выхода:</lable>
 					<input type="date" name="ReleaseDate" defaultValue={this.state.ReleaseDate/*???*/} />
 
 					<lable>Описание:</lable>
-					<textarea name="Description" value={this.state.Description} onChange={this.onChange}>
+					<textarea name="Description" value={this.state.Description} onChange={this.onChangeInput}>
 					</textarea>
 
 					<p id="castSelector" onClick={this.onSelectorClick}>Актеры</p>
 					<ul
-						ref={this.castSelectorRef}
+						//ref={this.castSelectorRef}
 						style={this.state.isCastSelectorVisible ?
 							{ display: "inline-block" } : { display: "none" }}>
 						{
-							this.state.fullCast ?
-								this.state.fullCast.map((a, aIndex) => {
+							this.state.fullListOfCast ?
+								this.state.fullListOfCast.map((a, aIndex) => {
 									return (
 										<li key={"actorToSelectEdit" + aIndex}>
 											<input
@@ -336,12 +341,12 @@ class MovieBlockEditor extends React.Component {
 
 					<p id="producersSelector" onClick={this.onSelectorClick}>Продюсеры</p>
 					<ul
-						ref={this.producersSelectorRef}
+						//ref={this.producersSelectorRef}
 						style={this.state.isProducersSelectorVisible ?
 							{ display: "inline-block" } : { display: "none" }}>
 						{
-							this.state.fullProducers ?
-								this.state.fullProducers.map((p, pIndex) => {
+							this.state.fullListOfProducers ?
+								this.state.fullListOfProducers.map((p, pIndex) => {
 									return (
 										<li key={"producerToSelectEdit" + pIndex}>
 											<input
@@ -355,7 +360,7 @@ class MovieBlockEditor extends React.Component {
 						}
 					</ul>
 
-					<input id="submit" type="submit" value="Отправить" ref={this.buttonRef} />
+					<input id="submit" type="submit" value="Отправить" ref={this.submitButtonRef} />
 
 					{this.state.submitError == "error" ? <p>{"Ошибка, введите данные еще раз"}</p> : null}
 				</form>
@@ -365,7 +370,7 @@ class MovieBlockEditor extends React.Component {
 	}
 }
 
-class RemoveMovieBlock extends React.Component {
+class RemoveMovieBlockButton extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = { redirect: false,};
@@ -394,8 +399,10 @@ class RemoveMovieBlock extends React.Component {
 	}
 
 	render() {
-		if (this.state.redirect == true)
+		if (this.state.redirect == true) {
+			this.setState({ redirect: false });
 			return <Redirect to='/' />;
+		}
 		else
 			return (
 				<button

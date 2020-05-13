@@ -54,13 +54,6 @@ namespace MovieAggregator.Controllers
             return Json(movies, JsonRequestBehavior.AllowGet);
         }
 
-        public string GetMoviesCount()
-        {
-            int moviesCount = db.Movies.Count();
-
-            return moviesCount.ToString();
-        }
-
         protected override void Dispose(bool disposing)
         {
             if (disposing)
