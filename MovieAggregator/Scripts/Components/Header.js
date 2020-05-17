@@ -5,33 +5,45 @@
 
         this.signIn = this.signIn.bind(this);
         this.signOut = this.signOut.bind(this);
+        this.signInButtonWindow = React.createRef();
     }
 
     signIn(event) {
-        let b = document.querySelector("#signIn");
-        b.style.display = "flex";
-    }
-    signOut(event) {
+        event.preventDefault();
 
+        //let b = document.querySelector("#signIn");
+        //b.style.display = "flex";
+        this.signInButtonWindow.current.style.display = "flex";
+    }
+    async signOut(event) {
+        event.preventDefault();
+
+        let url = 'https://localhost:44373/Account/Logout';
+        let response = await fetch(url);
+        let result = await response.json();
+
+        if (result.isDataReceivedSuccessfully == true) {
+            this.props.appState.updateClientRoleAndStatus();
+        }    
     }
 
     render() {
         return (
             <div id="header">
                 <div id="menu">
-                    <button id="mainPage"><a href='https://localhost:44373/'><p>Главная</p></a></button>
+                    <a href='https://localhost:44373/' id="mainPage"><p>Главная</p></a>
                     <ul>
-                        <li><button><p>тест</p></button></li>
-                        <li><button><p>тест</p></button></li>
+                        <li><a href="#"><p>тест</p></a></li>
+                        <li><a href="#"><p>тест</p></a></li>
                         {
                             this.props.appState.isAuthorized == true ?
-                                <li><button onClick={this.signOut}><p>Выйти</p></button></li> :
-                                <li><button onClick={this.signIn}><p>Войти</p></button></li>
+                                <li><a onClick={this.signOut}><p>Выйти</p></a></li> :
+                                <li><a onClick={this.signIn}><p>Войти</p></a></li>
                         }
                     </ul>
                 </div>
-                <div id="signIn" style={{display: "none"}}>
-                    <SignIn appState={this.props.appState} />
+                <div ref={this.signInButtonWindow} id="signIn" style={{display: "none"}}>
+                    <SignIn appState={this.props.appState} signInButtonWindow={this.signInButtonWindow} />
                 </div>
             </div>
         );
@@ -68,8 +80,8 @@ class SignIn extends React.Component {
         let result = await response.json();
 
         if (result.isDataReceivedSuccessfully == true) {
-            let signin = document.querySelector("#signIn");
-            signin.style.display = "none";
+            this.buttonRef.current.style.display = "inline-block";
+            this.props.signInButtonWindow.current.style.display = "none";
 
             this.props.appState.updateClientRoleAndStatus();
         }
@@ -89,6 +101,10 @@ class SignIn extends React.Component {
                 <input type="password" name="Password" value={this.state.Password} onChange={this.onChange} />
 
                 <input type="submit" value="Отправить" ref={this.buttonRef} />
+                <button onClick={(event) => {
+                    event.preventDefault();
+                    this.props.signInButtonWindow.current.style.display = 'none';
+                }}>Cancel</button>
 
                 {this.state.submitError == "error" ? <p>{"Ошибка, введите данные еще раз"}</p> : null}
             </form>

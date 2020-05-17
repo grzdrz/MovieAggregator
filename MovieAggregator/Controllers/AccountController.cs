@@ -80,7 +80,11 @@ namespace MovieAggregator.Controllers
         public ActionResult Logout()
         {
             AuthManager.SignOut();
-            return RedirectToAction("Index", "Home");
+            //return RedirectToAction("Index", "Home");
+            return Json(
+                    new { isDataReceivedSuccessfully = true },
+                    "application/json",
+                    JsonRequestBehavior.AllowGet);
         }
 
         public JsonResult GetClientRole()

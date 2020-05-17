@@ -150,7 +150,7 @@ class Pagination extends React.Component {
 							tempArr.map((e, i) => {
 								return (
 									<li key={"Pagination" + i}>
-										<NavLink key={"PaginationNavLink" + i} to={`/${i + 1}`}>{i + 1}</NavLink>
+										<NavLink key={"PaginationNavLink" + i} to={`/${i + 1}`}><p>{i + 1}</p></NavLink>
 									</li>
 								);
 							})
@@ -242,7 +242,7 @@ class ShowFullMovieBlockInfoButton extends React.Component {
 
 	render() {
 		return (
-			<button><NavLink to={`/FullMovieInfoBlock/${this.props.id}`}><p>Show full info</p></NavLink></button>
+			<NavLink to={`/FullMovieInfoBlock/${this.props.id}`}><p>Show full info</p></NavLink>
 		);
 	}
 }

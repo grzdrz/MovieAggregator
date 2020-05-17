@@ -7,9 +7,9 @@
 }
 
 body {
-    background: #29223e;
-    color: white;
-}
+        background: #29223e;
+        color: white;
+    }
 
 #wrap {
     width: 100%;
@@ -31,34 +31,54 @@ body {
         justify-content: space-between;
         padding: 0px 20px;
     }
+        #header #menu p {
+            color: black;
+        }
         #header #menu #mainPage {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             text-decoration: none;
+            text-align: center;
             border: 1px solid #d8b440;
             border-radius: 5px;
             background: #d8b440;
             width: 10%;
             height: 30px;
         }
-        #header #menu ul {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 30%;
-        }
+            #header #menu #mainPage:hover {
+                background: #cc7a16;
+            }
+
+            #header #menu ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 30%;
+            }
             #header #menu ul li {
                 width: 30%;
             }
-                #header #menu ul li button {
+                #header #menu ul li a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-decoration: none;
+                    text-align: center;
+                    background: #c5b1ca;
                     height: 30px;
                     border-radius: 5px;
                 }
+                    #header #menu ul li a:hover {
+                        background: #79619d;
+                    }
 
 
-#content {
-    width: 100%;
-    display: flex;
-}
+                    #content {
+                        width: 100%;
+                        display: flex;
+                    }
 
     #content #column1, #column3 {
         width: 20%;
@@ -77,12 +97,22 @@ body {
             flex-direction: column;
             margin-bottom: 10px;
         }
-        #content #column2 #createMovieBlockButton button {
-            background: #d8b440;
-            height: 30px;
-            border-radius: 5px;
-        }
-            #content #column2 #createMovieBlockButton button p {
+            #content #column2 #createMovieBlockButton a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-decoration: none;
+                text-align: center;
+                background: #d8b440;
+                height: 30px;
+                border-radius: 5px;
+                transition: background 0.3s, height 0.3s;
+            }
+                #content #column2 #createMovieBlockButton a:hover {
+                    background: #cc7a16;
+                    height: 40px;
+                }
+            #content #column2 #createMovieBlockButton a p {
                 color: #29223e;
             }
 
@@ -111,21 +141,32 @@ body {
                 #content #column2 .movieBlock h1 {
                     color: #d8b440;
                 }
-                #content #column2 .movieBlock button {
+                #content #column2 .movieBlock a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-decoration: none;
+                    text-align: center;
                     background: #d8b440;
                     margin-top: 10px;
                     border-radius: 5px;
+                    height: 20px;
+                    transition: background 0.3s, height 0.3s;
                 }
-                    #content #column2 .movieBlock button:nth-of-type(1) {
+                    #content #column2 .movieBlock a:hover {
+                        background: #cc7a16;
+                        height: 30px;
+                    }
+                    #content #column2 .movieBlock a:nth-of-type(1) {
                         margin-top: 0px;
                     }
-                    #content #column2 .movieBlock button:nth-of-type(2) {
+                    #content #column2 .movieBlock a:nth-of-type(2) {
                         margin-bottom: 20px;
                     }
-                    #content #column2 .movieBlock button:last-of-type {
+                    #content #column2 .movieBlock a:last-of-type {
                         margin-top: 20px;
                     }
-                    #content #column2 .movieBlock button p {
+                    #content #column2 .movieBlock a p {
                         margin: 0px;
                         color: #29223e;
                     }
@@ -159,24 +200,37 @@ body {
                     display: flex;
                     justify-content: center;
                     width: 30px;
+                    height: 30px;
                     border: 1px solid #d8b440;
                     margin: 0px 5px;
-                    border-radius: 5px;
+                    border-radius: 3px;
+                    transition: width 0.3s, height 0.3s;
                 }
+                    #content #column2 #pagination ul li:hover {
+                        width: 40px;
+                        height: 40px;
+                    }
                     #content #column2 #pagination ul li a {
                         color: #d8b440;
                         text-align: center;
                         text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        transition: background 0.3s, color 0.3s;
                     }
+                        #content #column2 #pagination ul li a:hover {
+                            background: #eebb60;
+                            color: #29223e;
+                        }
 
 
 
-
-        #createMovieBlockForm, #editMovieBlockForm {
-            border: 1px solid #d8b440;
-            border-radius: 5px;
-            padding: 10px 20px;
-        }
+                        #createMovieBlockForm, #editMovieBlockForm {
+                            border: 1px solid #d8b440;
+                            border-radius: 5px;
+                            padding: 10px 20px;
+                        }
             #createMovieBlockForm lable, #editMovieBlockForm lable {
             }
             #createMovieBlockForm > input, #editMovieBlockForm > input {
@@ -236,7 +290,7 @@ body {
 
     display: none;
 }
-    #signIn form input {
+    #signIn form input, #signIn form button {
         padding: 5px 10px;
         margin-bottom: 20px;
         border-radius: 5px;

@@ -41,12 +41,20 @@ class App extends React.Component {
     }
 
     render() {
-        let elem = [];
-        elem.push(<Header key={"Header0"} appState={this.state}/>);
-        elem.push(<Content key={"Content1"} appState={this.state} />);
-        elem.push(<Footer key={"Footer2"} appState={this.state}/>);
+        //let elem = [];
+        //elem.push(<Header key={"Header0"} appState={this.state}/>);
+        //elem.push(<Content key={"Content1"} appState={this.state} />);
+        //elem.push(<Footer key={"Footer2"} appState={this.state}/>);
 
-        return elem.map(e => e);
+        //return elem.map(e => e);
+
+        return (
+            <React.Fragment>
+                <Header key={"Header0"} appState={this.state} />
+                <Content key={"Content1"} appState={this.state} />
+                <Footer key={"Footer2"} appState={this.state} />
+            </React.Fragment>
+        );
     }
 }
 
