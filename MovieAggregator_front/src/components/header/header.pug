@@ -1,0 +1,45 @@
+include ../button/button.pug
+include ../colored-logo/colored-logo.pug
+
+mixin header(options)
+    - 
+        const { isAuthorized, userFullName } = options;
+        const navList = [
+            {url: 'https://www.google.com/', text: 'О нас', hasDropdown: false},
+            {url: 'https://www.google.com/', text: 'Услуги', hasDropdown: true},
+            {url: 'https://www.google.com/', text: 'Вакансии', hasDropdown: false},
+            {url: 'https://www.google.com/', text: 'Новости', hasDropdown: false},
+            {url: 'https://www.google.com/', text: 'Соглашения', hasDropdown: true},
+        ]
+
+    header(class=["header"])
+        div(class=["header__colored-logo"])
+            +colored-logo()
+
+        nav(class=["header__navigation-menu"])
+            ul(class=["header__list"])
+                - for(let i = 0; i < navList.length; i += 1)
+                    li(class=["header__item"])
+                        a(class=["header__item-ref"] 
+                            href=navList[i].url target="_blank" rel="noopener noreferrer")= navList[i].text
+                        - if(navList[i].hasDropdown)
+                            span(class=["header__dropdown-arrow"]) expand_more
+        - if(isAuthorized)
+            p(class=["header__user-full-name"])
+                span(class=["header__name-text"])= userFullName
+        - else
+            div(class=["header__buttons"])
+                div(class=["header__sign-in-button"])
+                    +button({
+                        text: 'войти',
+                        isHollow:  true,
+                        buttonType: "a",
+                        hasArrow: false,
+                    })
+                div(class=["header__sign-up-button"])
+                    +button({
+                        text: 'зарегистрироваться',
+                        isHollow:  false,
+                        buttonType: "a",
+                        hasArrow: false,
+                    })

@@ -1,11 +1,21 @@
+@import './assets/fonts.scss';
+
 *,
 *::after,
 *::before {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat, Arial, monospace;
 }
 
-html{
+html {
     background: rgb(205, 199, 223);
+    font-size: 1px;
+}
+
+html,
+body {
+    min-width: 100%;
 }
