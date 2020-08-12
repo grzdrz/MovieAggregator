@@ -1,0 +1,153 @@
+{
+    "roomsInfo": [
+        {
+            "blockNumber": 0,
+            "photos": [
+                "test11",
+                "test22",
+                "test33",
+                "test44"
+            ],
+            "roomNumber": 888,
+            "roomStatus": "люкс",
+            "roomPrice": 9990,
+            "currencyType": "₽",
+            "reviewsCount": "145",
+            "numberOfCheckedStar": 5,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 1,
+            "photos": [
+                "test22"
+            ],
+            "roomNumber": 840,
+            "roomPrice": 9990,
+            "currencyType": "₽",
+            "reviewsCount": "65",
+            "numberOfCheckedStar": 4,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 2,
+            "photos": [
+                "test33"
+            ],
+            "roomNumber": 980,
+            "roomStatus": "люкс",
+            "roomPrice": 8500,
+            "currencyType": "₽",
+            "reviewsCount": "35",
+            "numberOfCheckedStar": 3,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 3,
+            "photos": [
+                "test44"
+            ],
+            "roomNumber": 856,
+            "roomPrice": 7300,
+            "currencyType": "₽",
+            "reviewsCount": "19",
+            "numberOfCheckedStar": 5,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 4,
+            "photos": [
+                "test55"
+            ],
+            "roomNumber": 740,
+            "roomPrice": 6000,
+            "currencyType": "₽",
+            "reviewsCount": "44",
+            "numberOfCheckedStar": 4,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 5,
+            "photos": [
+                "test66"
+            ],
+            "roomNumber": 982,
+            "roomPrice": 5800,
+            "currencyType": "₽",
+            "reviewsCount": "56",
+            "numberOfCheckedStar": 3,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 6,
+            "photos": [
+                "test77"
+            ],
+            "roomNumber": 678,
+            "roomPrice": 5500,
+            "currencyType": "₽",
+            "reviewsCount": "45",
+            "numberOfCheckedStar": 5,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 7,
+            "photos": [
+                "test88"
+            ],
+            "roomNumber": 450,
+            "roomPrice": 5300,
+            "currencyType": "₽",
+            "reviewsCount": "39",
+            "numberOfCheckedStar": 4,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 8,
+            "photos": [
+                "test99"
+            ],
+            "roomNumber": 350,
+            "roomPrice": 5000,
+            "currencyType": "₽",
+            "reviewsCount": "77",
+            "numberOfCheckedStar": 3,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 9,
+            "photos": [
+                "test110"
+            ],
+            "roomNumber": 666,
+            "roomPrice": 5000,
+            "currencyType": "₽",
+            "reviewsCount": "25",
+            "numberOfCheckedStar": 5,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 10,
+            "photos": [
+                "test120"
+            ],
+            "roomNumber": 444,
+            "roomPrice": 5000,
+            "currencyType": "₽",
+            "reviewsCount": "15",
+            "numberOfCheckedStar": 3,
+            "url": "room-details.html"
+        },
+        {
+            "blockNumber": 11,
+            "photos": [
+                "test130"
+            ],
+            "roomNumber": 352,
+            "roomPrice": 5000,
+            "currencyType": "₽",
+            "reviewsCount": "55",
+            "numberOfCheckedStar": 3,
+            "url": "room-details.html"
+        }
+    ]
+}

@@ -11,7 +11,7 @@ entries.forEach(e => {
     pluginsOptions.push(
         new HtmlWebpackPlugin({
             filename: `./${e.pageName}.html`,
-            template: `./src/${e.pageName}.html`,
+            template: `./src/pages/base/${e.pageName}.html`,
             inject: true,
             chunks: [e.pageName],
         })
@@ -22,7 +22,7 @@ pluginsOptions.push(new MiniCssExtractPlugin({
 }));
 
 module.exports = {
-    entry: { app: "./src/app.js" },
+    entry: { app: "./src/pages/base/app.js" },
 
     output: {
         path: path.resolve(__dirname, 'bandle'),

@@ -494,6 +494,24 @@
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75); }
 
+.room-info-list {
+  display: flex;
+  flex-direction: column; }
+  .room-info-list__room-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px; }
+  .room-info-list__list-item {
+    margin-bottom: 10px; }
+    .room-info-list__list-item:last-of-type {
+      margin-bottom: 0px; }
+  .room-info-list__pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0rem; }
+
 .footer {
   width: 100%;
   height: 6.25rem;
@@ -568,13 +586,4 @@ html {
 html,
 body {
   min-width: 100%; }
-
-.app {
-  display: flex;
-  flex-direction: column; }
-  .app__pagination {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 2.5rem 0rem; }
 
