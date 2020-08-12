@@ -4,27 +4,9 @@ import "./room-info.scss";
 class RoomInfo extends React.Component {
     constructor(props) {
         super(props);
-        let options = {};
-        Object.assign(options, props);
-        this.state = options;
 
         this.container = React.createRef();
     }
-
-    /* initialize() {
-        this.containerElement = this.outerContainerElement.querySelector(".room-info");
-        this.arrows = this.containerElement.querySelector(".room-info__arrows");
-        if (this.arrows) {
-            this.leftArrow = this.arrows.querySelector(".room-info__arrow-back");
-            this.rightArrow = this.arrows.querySelector(".room-info__arrow-forward");
-        }
-        this.radioButtons = Array.from(this.containerElement.querySelectorAll(".room-info__radio-button"));
-
-        if (this.leftArrow && this.rightArrow) {
-            this.leftArrow.onclick = this.handlerLeftArrowClick;
-            this.rightArrow.onclick = this.handlerRightArrowClick;
-        }
-    } */
 
     formateNumber(number) {
         return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
@@ -82,7 +64,7 @@ class RoomInfo extends React.Component {
             roomStatus,
             roomPrice,
             currencyType,
-        } = this.state;
+        } = this.props;
         const radio = [1, 0, 0, 0];
 
         return (

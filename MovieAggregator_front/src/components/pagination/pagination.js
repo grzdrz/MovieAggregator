@@ -4,70 +4,51 @@ import "./pagination.scss";
 class Pagination extends React.Component {
     constructor(props) {
         super(props);
-        let options = {};
-        Object.assign(options, props);
-        this.state = options;
     }
-
-    /* componentDidMount() {
-        this.writeBottomText();
-        this.setClickEventsToPagesLinks();
-    }
-
-    componentDidUpdate() {
-        this.writeBottomText();
-        this.setClickEventsToPagesLinks();
-    } */
-
-    /* setClickEventsToPagesLinks = () => {
-        const links = this.outerContainerElement.querySelectorAll(".js-pagination__link");
-        links.forEach((a) => {
-            a.onclick = this.handlerSelectPage;
-        });
-    } */
 
     writeBottomText = () => {
-        const { itemsCount, pagesCount, curPageNumber } = this.state;
-        const firstItemCountNumber = Math.round(itemsCount / pagesCount) * (curPageNumber - 1) + 1;
-        let lastItemCountNumber = Math.round(itemsCount / pagesCount) * curPageNumber;
-        if (lastItemCountNumber > itemsCount) lastItemCountNumber = itemsCount;
-        const itemsCountText = itemsCount > 100 ? "100+" : `${itemsCount}`;
+        const { totalItemsCount, pagesCount, pageNumber } = this.props;
+        const firstItemCountNumber = Math.round(totalItemsCount / pagesCount) * (pageNumber - 1) + 1;
+        let lastItemCountNumber = Math.round(totalItemsCount / pagesCount) * pageNumber;
+        if (lastItemCountNumber > totalItemsCount) lastItemCountNumber = totalItemsCount;
+        const totalItemsCountText = totalItemsCount > 100 ? "100+" : `${totalItemsCount}`;
 
-        return `${firstItemCountNumber} - ${lastItemCountNumber} из ${itemsCountText} вариантов аренды`;
+        return `${firstItemCountNumber} - ${lastItemCountNumber} из ${totalItemsCountText} вариантов аренды`;
     }
 
     handlerSelectPage = (event) => {
         event.preventDefault();
 
-        let { curPageNumber } = this.state;
+        let { pageNumber } = this.props;
 
         const selectedPageNumber = event.currentTarget.dataset.pageNumber;
         if (selectedPageNumber === "leftArrow") {
-            curPageNumber -= 1;
+            pageNumber -= 1;
         } else if (selectedPageNumber === "rightArrow") {
-            curPageNumber += 1;
+            pageNumber += 1;
         } else {
-            curPageNumber = Number.parseInt(selectedPageNumber, 10);
+            pageNumber = Number.parseInt(selectedPageNumber, 10);
         }
 
-        this.setState({
-            curPageNumber,
-        });
+        /* this.setState({
+            pageNumber,
+        }); */
+        this.props.handlerChangePage(pageNumber);
     }
 
     render() {
         const {
             title,
-            curPageNumber,
+            pageNumber,
             pagesCount,
-            itemsCount
-        } = this.state;
+            totalItemsCount
+        } = this.props;
 
         return (
-            <div className="pagination" data-pages-count={pagesCount} data-items-count={itemsCount} data-cur-page={curPageNumber}>
+            <div className="pagination" data-pages-count={pagesCount} data-items-count={totalItemsCount} data-cur-page={pageNumber}>
                 {title ? <p className="pagination__title">{title}</p> : null}
                 <div className="pagination__list">
-                    {curPageNumber !== 1 ?
+                    {pageNumber !== 1 ?
                         <React.Fragment>
                             <a className="pagination__left-arrow js-pagination__link" href="#" data-page-number="leftArrow"
                                 onClick={this.handlerSelectPage}>
@@ -80,51 +61,51 @@ class Pagination extends React.Component {
                         </React.Fragment>
                         : null
                     }
-                    {curPageNumber - 3 > 1 ?
+                    {pageNumber - 3 > 1 ?
                         <a className="pagination__link" href="#" data-page-number="...">
                             <span className="pagination__link-text">...</span>
                         </a>
                         : null
                     }
-                    {curPageNumber - 2 > 1 ?
-                        <a className="pagination__link js-pagination__link" href="#" data-page-number={curPageNumber - 2}
+                    {pageNumber - 2 > 1 ?
+                        <a className="pagination__link js-pagination__link" href="#" data-page-number={pageNumber - 2}
                             onClick={this.handlerSelectPage}>
-                            <span className="pagination__link-text">{curPageNumber - 2}</span>
+                            <span className="pagination__link-text">{pageNumber - 2}</span>
                         </a>
                         : null
                     }
-                    {curPageNumber - 1 > 1 ?
-                        <a className="pagination__link js-pagination__link" href="#" data-page-number={curPageNumber - 1}
+                    {pageNumber - 1 > 1 ?
+                        <a className="pagination__link js-pagination__link" href="#" data-page-number={pageNumber - 1}
                             onClick={this.handlerSelectPage}>
-                            <span className="pagination__link-text">{curPageNumber - 1}</span>
+                            <span className="pagination__link-text">{pageNumber - 1}</span>
                         </a>
                         : null
                     }
-                    <a className="pagination__link js-pagination__link pagination__link_target" href="#" data-page-number={curPageNumber}
+                    <a className="pagination__link js-pagination__link pagination__link_target" href="#" data-page-number={pageNumber}
                         onClick={this.handlerSelectPage}>
-                        <span className="pagination__link-text">{curPageNumber}</span>
+                        <span className="pagination__link-text">{pageNumber}</span>
                     </a>
-                    {curPageNumber + 1 < pagesCount ?
-                        <a className="pagination__link js-pagination__link" href="#" data-page-number={curPageNumber + 1}
+                    {pageNumber + 1 < pagesCount ?
+                        <a className="pagination__link js-pagination__link" href="#" data-page-number={pageNumber + 1}
                             onClick={this.handlerSelectPage}>
-                            <span className="pagination__link-text">{curPageNumber + 1}</span>
+                            <span className="pagination__link-text">{pageNumber + 1}</span>
                         </a>
                         : null
                     }
-                    {curPageNumber + 2 < pagesCount ?
-                        <a className="pagination__link js-pagination__link" href="#" data-page-number={curPageNumber + 2}
+                    {pageNumber + 2 < pagesCount ?
+                        <a className="pagination__link js-pagination__link" href="#" data-page-number={pageNumber + 2}
                             onClick={this.handlerSelectPage}>
-                            <span className="pagination__link-text">{curPageNumber + 2}</span>
+                            <span className="pagination__link-text">{pageNumber + 2}</span>
                         </a>
                         : null
                     }
-                    {curPageNumber + 3 < pagesCount ?
+                    {pageNumber + 3 < pagesCount ?
                         <a className="pagination__link" href="#" data-page-number="...">
                             <span className="pagination__link-text">...</span>
                         </a>
                         : null
                     }
-                    {curPageNumber !== pagesCount ?
+                    {pageNumber !== pagesCount ?
                         <React.Fragment>
                             <a className="pagination__link js-pagination__link" href="#" data-page-number={pagesCount}
                                 onClick={this.handlerSelectPage}>
