@@ -1,21 +1,13 @@
-@import './assets/fonts.scss';
+@import './base.scss';
 
-*,
-*::after,
-*::before {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    box-sizing: border-box;
-    font-family: Montserrat, Arial, monospace;
-}
+.app {
+    display: flex;
+    flex-direction: column;
 
-html {
-    background: rgb(205, 199, 223);
-    font-size: 1px;
-}
-
-html,
-body {
-    min-width: 100%;
+    &__pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2.5rem 0rem;
+    }
 }

@@ -141,6 +141,28 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/pagination/pagination.scss":
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/pagination/pagination.scss ***!
+  \**************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/pagination/pagination.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/room-info/room-info.scss":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/room-info/room-info.scss ***!
+  \************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/room-info/room-info.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -292,7 +314,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./data/img/poster1.jpg\": \"./src/data/img/poster1.jpg\",\n\t\"./data/img/poster2.jpg\": \"./src/data/img/poster2.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg)$?");
+eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/room-info/img/test11.png\": \"./src/components/room-info/img/test11.png\",\n\t\"./components/room-info/img/test110.png\": \"./src/components/room-info/img/test110.png\",\n\t\"./components/room-info/img/test120.png\": \"./src/components/room-info/img/test120.png\",\n\t\"./components/room-info/img/test130.png\": \"./src/components/room-info/img/test130.png\",\n\t\"./components/room-info/img/test22.png\": \"./src/components/room-info/img/test22.png\",\n\t\"./components/room-info/img/test33.png\": \"./src/components/room-info/img/test33.png\",\n\t\"./components/room-info/img/test44.png\": \"./src/components/room-info/img/test44.png\",\n\t\"./components/room-info/img/test55.png\": \"./src/components/room-info/img/test55.png\",\n\t\"./components/room-info/img/test66.png\": \"./src/components/room-info/img/test66.png\",\n\t\"./components/room-info/img/test77.png\": \"./src/components/room-info/img/test77.png\",\n\t\"./components/room-info/img/test88.png\": \"./src/components/room-info/img/test88.png\",\n\t\"./components/room-info/img/test99.png\": \"./src/components/room-info/img/test99.png\",\n\t\"./data/img/poster1.jpg\": \"./src/data/img/poster1.jpg\",\n\t\"./data/img/poster2.jpg\": \"./src/data/img/poster2.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg)$?");
 
 /***/ }),
 
@@ -304,7 +326,7 @@ eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header/header.js */ \"./src/components/header/header.js\");\n/* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/footer/footer.js */ \"./src/components/footer/footer.js\");\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.scss */ \"./src/app.scss\");\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n__webpack_require__(\"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\");\n\nclass App extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {\n  constructor(props) {\n    super(props);\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_header_header_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n      appState: this.state\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_footer_footer_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n      appState: this.state\n    }));\n  }\n\n}\n\nconst targetElement = document.querySelector(\".app\");\nreact_dom__WEBPACK_IMPORTED_MODULE_0___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(App, null), targetElement);\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header/header.js */ \"./src/components/header/header.js\");\n/* harmony import */ var _components_room_info_room_info_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/room-info/room-info.js */ \"./src/components/room-info/room-info.js\");\n/* harmony import */ var _components_pagination_pagination_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pagination/pagination.js */ \"./src/components/pagination/pagination.js\");\n/* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/footer/footer.js */ \"./src/components/footer/footer.js\");\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.scss */ \"./src/app.scss\");\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n__webpack_require__(\"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\");\n\nclass App extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {\n  constructor(props) {\n    super(props);\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_header_header_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n      appState: this.state\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"div\", {\n      className: \"app__room-list\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_room_info_room_info_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n      url: \"#\",\n      blockNumber: 0,\n      photos: [\"test11\", \"test22\", \"test33\", \"test44\"],\n      numberOfCheckedStar: 4,\n      reviewsCount: 11,\n      roomNumber: 789,\n      roomStatus: \"\\u043B\\u044E\\u043A\\u0441\",\n      roomPrice: 12345,\n      currencyType: \"$\"\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"div\", {\n      className: \"app__pagination\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_pagination_pagination_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n      title: \"Pagination\",\n      curPageNumber: 1,\n      pagesCount: 15,\n      itemsCount: 180\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_footer_footer_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n      appState: this.state\n    }));\n  }\n\n}\n\nconst targetElement = document.querySelector(\".app\");\nreact_dom__WEBPACK_IMPORTED_MODULE_0___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(App, null), targetElement);\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -876,6 +898,196 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./header.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/header/header.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/header/header.scss?");
+
+/***/ }),
+
+/***/ "./src/components/pagination/pagination.js":
+/*!*************************************************!*\
+  !*** ./src/components/pagination/pagination.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _pagination_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pagination.scss */ \"./src/components/pagination/pagination.scss\");\n/* harmony import */ var _pagination_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_pagination_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Pagination extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this.writeBottomText = () => {\n      const {\n        itemsCount,\n        pagesCount,\n        curPageNumber\n      } = this.state;\n      const firstItemCountNumber = Math.round(itemsCount / pagesCount) * (curPageNumber - 1) + 1;\n      let lastItemCountNumber = Math.round(itemsCount / pagesCount) * curPageNumber;\n      if (lastItemCountNumber > itemsCount) lastItemCountNumber = itemsCount;\n      const itemsCountText = itemsCount > 100 ? \"100+\" : `${itemsCount}`;\n      return `${firstItemCountNumber} - ${lastItemCountNumber} из ${itemsCountText} вариантов аренды`;\n    };\n\n    this.handlerSelectPage = event => {\n      event.preventDefault();\n      let {\n        curPageNumber\n      } = this.state;\n      const selectedPageNumber = event.currentTarget.dataset.pageNumber;\n\n      if (selectedPageNumber === \"leftArrow\") {\n        curPageNumber -= 1;\n      } else if (selectedPageNumber === \"rightArrow\") {\n        curPageNumber += 1;\n      } else {\n        curPageNumber = Number.parseInt(selectedPageNumber, 10);\n      }\n\n      this.setState({\n        curPageNumber\n      });\n    };\n\n    let options = {};\n    Object.assign(options, props);\n    this.state = options;\n  }\n  /* componentDidMount() {\r\n      this.writeBottomText();\r\n      this.setClickEventsToPagesLinks();\r\n  }\r\n    componentDidUpdate() {\r\n      this.writeBottomText();\r\n      this.setClickEventsToPagesLinks();\r\n  } */\n\n  /* setClickEventsToPagesLinks = () => {\r\n      const links = this.outerContainerElement.querySelectorAll(\".js-pagination__link\");\r\n      links.forEach((a) => {\r\n          a.onclick = this.handlerSelectPage;\r\n      });\r\n  } */\n\n\n  render() {\n    const {\n      title,\n      curPageNumber,\n      pagesCount,\n      itemsCount\n    } = this.state;\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"pagination\",\n      \"data-pages-count\": pagesCount,\n      \"data-items-count\": itemsCount,\n      \"data-cur-page\": curPageNumber\n    }, title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__title\"\n    }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"pagination__list\"\n    }, curPageNumber !== 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__left-arrow js-pagination__link\",\n      href: \"#\",\n      \"data-page-number\": \"leftArrow\",\n      onClick: this.handlerSelectPage\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__left-arrow-text\"\n    }, \"arrow_forward\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__link js-pagination__link\",\n      href: \"#\",\n      \"data-page-number\": \"1\",\n      onClick: this.handlerSelectPage\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, \"1\"))) : null, curPageNumber - 3 > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__link\",\n      href: \"#\",\n      \"data-page-number\": \"...\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, \"...\")) : null, curPageNumber - 2 > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__link js-pagination__link\",\n      href: \"#\",\n      \"data-page-number\": curPageNumber - 2,\n      onClick: this.handlerSelectPage\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, curPageNumber - 2)) : null, curPageNumber - 1 > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__link js-pagination__link\",\n      href: \"#\",\n      \"data-page-number\": curPageNumber - 1,\n      onClick: this.handlerSelectPage\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, curPageNumber - 1)) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__link js-pagination__link pagination__link_target\",\n      href: \"#\",\n      \"data-page-number\": curPageNumber,\n      onClick: this.handlerSelectPage\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, curPageNumber)), curPageNumber + 1 < pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__link js-pagination__link\",\n      href: \"#\",\n      \"data-page-number\": curPageNumber + 1,\n      onClick: this.handlerSelectPage\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, curPageNumber + 1)) : null, curPageNumber + 2 < pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__link js-pagination__link\",\n      href: \"#\",\n      \"data-page-number\": curPageNumber + 2,\n      onClick: this.handlerSelectPage\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, curPageNumber + 2)) : null, curPageNumber + 3 < pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__link\",\n      href: \"#\",\n      \"data-page-number\": \"...\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, \"...\")) : null, curPageNumber !== pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__link js-pagination__link\",\n      href: \"#\",\n      \"data-page-number\": pagesCount,\n      onClick: this.handlerSelectPage\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pagesCount)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"pagination__right-arrow js-pagination__link\",\n      href: \"#\",\n      \"data-page-number\": \"rightArrow\",\n      onClick: this.handlerSelectPage\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__right-arrow-text\"\n    }, \"arrow_forward\"))) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__bottom-text\"\n    }, this.writeBottomText()));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Pagination);\n\n//# sourceURL=webpack:///./src/components/pagination/pagination.js?");
+
+/***/ }),
+
+/***/ "./src/components/pagination/pagination.scss":
+/*!***************************************************!*\
+  !*** ./src/components/pagination/pagination.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./pagination.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/pagination/pagination.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/pagination/pagination.scss?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test11.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test11.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test11.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test110.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test110.png ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test110.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test120.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test120.png ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test120.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test130.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test130.png ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test130.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test22.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test22.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test22.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test33.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test33.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test33.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test44.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test44.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test44.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test55.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test55.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test55.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test66.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test66.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test66.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test77.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test77.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test77.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test88.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test88.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test88.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test99.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test99.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test99.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/room-info.js":
+/*!***********************************************!*\
+  !*** ./src/components/room-info/room-info.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _room_info_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./room-info.scss */ \"./src/components/room-info/room-info.scss\");\n/* harmony import */ var _room_info_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_room_info_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass RoomInfo extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this.handlerLeftArrowClick = event => {\n      if (event.currentTarget.disabled) return;\n      const radioButtons = Array.from(this.container.current.querySelectorAll(\".room-info__radio-button\"));\n      const checkedButton = radioButtons.find(button => button.checked);\n      if (!checkedButton.previousElementSibling) return;\n\n      if (checkedButton.dataset.serialNumber === \"2\") {\n        checkedButton.checked = false;\n        checkedButton.previousElementSibling.previousElementSibling.checked = true;\n      } else if (checkedButton.dataset.serialNumber === \"4\") {\n        checkedButton.checked = false;\n        checkedButton.previousElementSibling.previousElementSibling.checked = true;\n      } else {\n        checkedButton.checked = false;\n        checkedButton.previousElementSibling.previousElementSibling.checked = true;\n      }\n    };\n\n    this.handlerRightArrowClick = event => {\n      if (event.currentTarget.disabled) return;\n      const radioButtons = Array.from(this.container.current.querySelectorAll(\".room-info__radio-button\"));\n      const checkedButton = radioButtons.find(button => button.checked);\n      if (!checkedButton.nextElementSibling.nextElementSibling.matches(\".room-info__radio-button\")) return;\n      if (checkedButton.nextElementSibling.nextElementSibling.disabled) return;\n\n      if (checkedButton.dataset.serialNumber === \"3\") {\n        checkedButton.checked = false;\n        checkedButton.nextElementSibling.nextElementSibling.checked = true;\n      } else if (checkedButton.dataset.serialNumber === \"1\") {\n        checkedButton.checked = false;\n        checkedButton.nextElementSibling.nextElementSibling.checked = true;\n      } else {\n        checkedButton.checked = false;\n        checkedButton.nextElementSibling.nextElementSibling.checked = true;\n      }\n    };\n\n    let options = {};\n    Object.assign(options, props);\n    this.state = options;\n    this.container = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n  }\n  /* initialize() {\r\n      this.containerElement = this.outerContainerElement.querySelector(\".room-info\");\r\n      this.arrows = this.containerElement.querySelector(\".room-info__arrows\");\r\n      if (this.arrows) {\r\n          this.leftArrow = this.arrows.querySelector(\".room-info__arrow-back\");\r\n          this.rightArrow = this.arrows.querySelector(\".room-info__arrow-forward\");\r\n      }\r\n      this.radioButtons = Array.from(this.containerElement.querySelectorAll(\".room-info__radio-button\"));\r\n        if (this.leftArrow && this.rightArrow) {\r\n          this.leftArrow.onclick = this.handlerLeftArrowClick;\r\n          this.rightArrow.onclick = this.handlerRightArrowClick;\r\n      }\r\n  } */\n\n\n  formateNumber(number) {\n    return `${number}`.replace(/(\\d)(?=(\\d{3})+$)/g, '$1 ');\n  }\n\n  render() {\n    const {\n      url,\n      blockNumber,\n      photos,\n      numberOfCheckedStar,\n      reviewsCount,\n      roomNumber,\n      roomStatus,\n      roomPrice,\n      currencyType\n    } = this.state;\n    const radio = [1, 0, 0, 0];\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info\",\n      ref: this.container\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"room-info__ref\",\n      href: url\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__photos\"\n    }, radio.map((value, index) => {\n      let i = index + 1;\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {\n        key: `room-info__radio-button_${i}`\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n        className: `room-info__radio-button room-info__radio-button_${i}`,\n        type: \"radio\",\n        name: `photo_${blockNumber}`,\n        checked: value === 1,\n        disabled: i > photos.length,\n        \"data-serial-number\": i\n      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: \"room-info__radio-button-image\"\n      }));\n    }), photos.map((photo, i) => {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n        className: `room-info__photo room-info__photo_${i + 1}`,\n        key: `room-info__photo room-info__photo_${i + 1}`,\n        src: `./src/components/room-info/img/${photo}.png`,\n        alt: \"room photo\"\n      });\n    }), photos.length > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__arrows\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"room-info__arrow-back\",\n      onClick: this.handlerLeftArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__arrow-back-icon\"\n    }, \"expand_more\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"room-info__arrow-forward\",\n      onClick: this.handlerRightArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__arrow-forward-icon\"\n    }, \"expand_more\"))) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__text-info\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"room-info__title\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__number-symbol\"\n    }, \"\\u2116\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__room-number\"\n    }, roomNumber), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__room-status\"\n    }, roomStatus ? roomStatus : \"\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__room-price\"\n    }, `${this.formateNumber(roomPrice)}${currencyType}`), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__period-of-time\"\n    }, `в сутки`)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__room-rate\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"room-info__reviews-count\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__reviews-count-value\"\n    }, reviewsCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__reviews-count-text\"\n    }, \"\\u041E\\u0442\\u0437\\u044B\\u0432\\u043E\\u0432\")))));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (RoomInfo);\n\n//# sourceURL=webpack:///./src/components/room-info/room-info.js?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/room-info.scss":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/room-info.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./room-info.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/room-info/room-info.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/room-info/room-info.scss?");
 
 /***/ }),
 

@@ -1,0 +1,103 @@
+@import '../../assets/constants.scss';
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    $buttonSize: 2.5rem;
+
+    &__title {
+        margin-bottom: 1rem;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        text-transform: uppercase;
+        color: $color-dark-shade-100;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: transparent;
+    }
+
+    &__left-arrow,
+    &__right-arrow,
+    &__link {
+        width: $buttonSize;
+        height: $buttonSize;
+        text-decoration: none;
+    }
+
+    &__link {
+        &_target {
+            background: $gradient-purple-to-blue;
+            border-radius: 50%;
+            & > .pagination__link-text {
+                color: white;
+            }
+        }
+    }
+
+    &__left-arrow,
+    &__right-arrow {
+        background: $gradient-green-to-turquoise;
+        border-radius: 50%;
+    }
+
+    &__left-arrow-text,
+    &__right-arrow-text {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        color: white;
+    }
+
+    &__left-arrow-text {
+        transform: rotate(180deg);
+    }
+
+    &__link-text {
+        width: inherit;
+        height: inherit;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: $color-dark-shade-50;
+
+        &:hover {
+            width: inherit;
+            height: inherit;
+            border-radius: 50%;
+            background: $gradient-purple-to-blue-50;
+        }
+    }
+
+    &__bottom-text {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 0.4375rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: $color-dark-shade-75;
+    }
+}
