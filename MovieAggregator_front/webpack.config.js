@@ -31,6 +31,10 @@ module.exports = {
 
     plugins: pluginsOptions,
 
+    /* resolve: {
+        extensions: [".ts", ".tsx", ".js"]
+    }, */
+
     module: {
         rules: [
             {
@@ -44,6 +48,10 @@ module.exports = {
                     ]
                 }
             },
+            /* {
+                test: /\.tsx?$/,
+                use: "ts-loader",
+            }, */
             {
                 test: /\.(ttf|eot|woff|woff2|svg|png|jpg)$/,
                 loader: 'file-loader',

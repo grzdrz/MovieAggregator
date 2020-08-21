@@ -1,16 +1,20 @@
 import React from "react";
+import { connect } from "react-redux";
+import changePage from "../../store/actions/changePage";
+
 import RoomInfo from "../../components/room-info/room-info.js";
 import Pagination from "../../components/pagination/pagination.js";
+
 import "./room-info-list.scss";
 
 class RoomInfoList extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
+        /* this.state = {
             pageNumber: 2,
             itemsCount: 3,
             totalItemsCount: require("./data.json").roomsInfo.length,
-        };
+        }; */
     }
 
     getInfoBlocks() {
@@ -18,7 +22,7 @@ class RoomInfoList extends React.Component {
             pageNumber,
             itemsCount,
             totalItemsCount,
-        } = this.state;
+        } = this.props.pagination/* state */;
 
         const blocks = require("./data.json").roomsInfo;
 
@@ -34,7 +38,7 @@ class RoomInfoList extends React.Component {
             pageNumber,
             itemsCount,
             totalItemsCount,
-        } = this.state;
+        } = /* this.state */this.props.pagination;
 
         const test = totalItemsCount / itemsCount;
         const test2 = `${test}`.split(".", ",");
@@ -47,18 +51,25 @@ class RoomInfoList extends React.Component {
     }
 
     handlerChangePage = (pageNumber) => {
-        this.setState({
+        /* this.setState({
             pageNumber,
-        });
+        }); */
+        this.props.changePage(pageNumber);
     }
 
     render() {
+        const {
+            pageNumber,
+            itemsCount,
+            totalItemsCount,
+        } = /* this.state */this.props.pagination;
+
         return (
             <div className="room-info-list">
                 <div className="room-info-list__room-list">
                     {this.getInfoBlocks().map((block, index) => {
                         return (
-                            <div className="room-info-list__list-item" key={`room-info-list__list-item-${this.state.pageCount}-${index}`}>
+                            <div className="room-info-list__list-item" key={`room-info-list__list-item-${pageNumber}-${index}`}>
                                 <RoomInfo
                                     url={block.url}
                                     blockNumber={block.blockNumber}
@@ -77,9 +88,9 @@ class RoomInfoList extends React.Component {
                 <div className="room-info-list__pagination">
                     <Pagination
                         title="Pagination"
-                        pageNumber={this.state.pageNumber}
+                        pageNumber={pageNumber}
                         pagesCount={this.getPageCount()}
-                        totalItemsCount={this.state.totalItemsCount}
+                        totalItemsCount={totalItemsCount}
                         handlerChangePage={this.handlerChangePage}
                     />
                 </div>
@@ -88,4 +99,18 @@ class RoomInfoList extends React.Component {
     }
 }
 
-export default RoomInfoList;
+const mapStateToProps = function (state) {
+    return {
+        pagination: {
+            pageNumber: state.pagination.pageNumber,
+            itemsCount: state.pagination.itemsCount,
+            totalItemsCount: state.pagination.totalItemsCount,
+        },
+    }
+}
+
+const actions = {
+    changePage,
+};
+
+export default connect(mapStateToProps, actions)(RoomInfoList);

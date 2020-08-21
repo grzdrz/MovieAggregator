@@ -1,5 +1,7 @@
 import ReactDOM from "react-dom";
 import React from "react";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
 
 import Header from "../../components/header/header.js";
 import RoomInfoList from "../room-info-list/room-info-list.js";
@@ -17,16 +19,54 @@ class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Header appState={this.state} />
-                <RoomInfoList appState={this.state} />
-                <Footer appState={this.state} />
+                <Header />
+                <RoomInfoList />
+                <Footer />
             </React.Fragment>
         );
     }
 }
 
+const initialState = {
+    pagination: {
+        pageNumber: 2,
+        itemsCount: 3,
+        totalItemsCount: require("../room-info-list/data.json").roomsInfo.length,
+    },
+};
+
+const store = createStore((state = initialState, action) => {
+    switch (action.type) {
+        case "INIT_STATE": {
+            return state;
+            break;
+        }
+        case "CHANGE_PAGE": {
+            const updatedState = {
+                pagination: {
+                    pageNumber: action.pageNumber,
+                    itemsCount: state.pagination.itemsCount,
+                    totalItemsCount: state.pagination.totalItemsCount,
+                },
+            };
+            return updatedState;
+            break;
+        }
+        default:
+            return state;
+            break;
+    }
+});
+
+store.dispatch({
+    type: "INIT_STATE",
+    state: initialState,
+});
+
 const targetElement = document.querySelector(".app")
 ReactDOM.render(
-    <App />,
+    <Provider store={store}>
+        <App />
+    </Provider>,
     targetElement
 );
