@@ -1,128 +1,129 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./pagination.scss";
 
 class Pagination extends React.Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
+  }
+
+  writeBottomText = () => {
+    const { totalItemsCount, pagesCount, pageNumber } = this.props;
+    const firstItemCountNumber = Math.round(totalItemsCount / pagesCount) * (pageNumber - 1) + 1;
+    let lastItemCountNumber = Math.round(totalItemsCount / pagesCount) * pageNumber;
+    if (lastItemCountNumber > totalItemsCount) lastItemCountNumber = totalItemsCount;
+    const totalItemsCountText = totalItemsCount > 100 ? "100+" : `${totalItemsCount}`;
+
+    return `${firstItemCountNumber} - ${lastItemCountNumber} из ${totalItemsCountText} вариантов аренды`;
+  }
+
+  handlerSelectPage = (event) => {
+    event.preventDefault();
+
+    let { pageNumber } = this.props;
+
+    const selectedPageNumber = event.currentTarget.dataset.pageNumber;
+    if (selectedPageNumber === "leftArrow") {
+      pageNumber -= 1;
+    } else if (selectedPageNumber === "rightArrow") {
+      pageNumber += 1;
+    } else {
+      pageNumber = Number.parseInt(selectedPageNumber, 10);
     }
 
-    writeBottomText = () => {
-        const { totalItemsCount, pagesCount, pageNumber } = this.props;
-        const firstItemCountNumber = Math.round(totalItemsCount / pagesCount) * (pageNumber - 1) + 1;
-        let lastItemCountNumber = Math.round(totalItemsCount / pagesCount) * pageNumber;
-        if (lastItemCountNumber > totalItemsCount) lastItemCountNumber = totalItemsCount;
-        const totalItemsCountText = totalItemsCount > 100 ? "100+" : `${totalItemsCount}`;
+    /* this.setState({
+        pageNumber,
+    }); */
+    /* this.props.handlerChangePage(pageNumber); */
+  }
 
-        return `${firstItemCountNumber} - ${lastItemCountNumber} из ${totalItemsCountText} вариантов аренды`;
+  calculateArrowNumber(isLeft) {
+    const { pagesCount, pageNumber } = this.props;
+
+    if (isLeft) {
+      return Math.max(pageNumber - 1, 1);
     }
+    return Math.min(pageNumber + 1, pagesCount);
+  }
 
-    handlerSelectPage = (event) => {
-        event.preventDefault();
+  render() {
+    const {
+      title,
+      pageNumber,
+      pagesCount,
+      totalItemsCount
+    } = this.props;
 
-        let { pageNumber } = this.props;
-
-        const selectedPageNumber = event.currentTarget.dataset.pageNumber;
-        if (selectedPageNumber === "leftArrow") {
-            pageNumber -= 1;
-        } else if (selectedPageNumber === "rightArrow") {
-            pageNumber += 1;
-        } else {
-            pageNumber = Number.parseInt(selectedPageNumber, 10);
-        }
-
-        /* this.setState({
-            pageNumber,
-        }); */
-        this.props.handlerChangePage(pageNumber);
-    }
-
-    render() {
-        const {
-            title,
-            pageNumber,
-            pagesCount,
-            totalItemsCount
-        } = this.props;
-
-        return (
-            <div className="pagination" data-pages-count={pagesCount} data-items-count={totalItemsCount} data-cur-page={pageNumber}>
-                {title ? <p className="pagination__title">{title}</p> : null}
-                <div className="pagination__list">
-                    {pageNumber !== 1 ?
-                        <React.Fragment>
-                            <a className="pagination__left-arrow js-pagination__link" href="#" data-page-number="leftArrow"
-                                onClick={this.handlerSelectPage}>
-                                <span className="pagination__left-arrow-text">arrow_forward</span>
-                            </a>
-                            <a className="pagination__link js-pagination__link" href="#" data-page-number="1"
-                                onClick={this.handlerSelectPage}>
-                                <span className="pagination__link-text">1</span>
-                            </a>
-                        </React.Fragment>
-                        : null
-                    }
-                    {pageNumber - 3 > 1 ?
-                        <a className="pagination__link" href="#" data-page-number="...">
-                            <span className="pagination__link-text">...</span>
-                        </a>
-                        : null
-                    }
-                    {pageNumber - 2 > 1 ?
-                        <a className="pagination__link js-pagination__link" href="#" data-page-number={pageNumber - 2}
-                            onClick={this.handlerSelectPage}>
-                            <span className="pagination__link-text">{pageNumber - 2}</span>
-                        </a>
-                        : null
-                    }
-                    {pageNumber - 1 > 1 ?
-                        <a className="pagination__link js-pagination__link" href="#" data-page-number={pageNumber - 1}
-                            onClick={this.handlerSelectPage}>
-                            <span className="pagination__link-text">{pageNumber - 1}</span>
-                        </a>
-                        : null
-                    }
-                    <a className="pagination__link js-pagination__link pagination__link_target" href="#" data-page-number={pageNumber}
-                        onClick={this.handlerSelectPage}>
-                        <span className="pagination__link-text">{pageNumber}</span>
-                    </a>
-                    {pageNumber + 1 < pagesCount ?
-                        <a className="pagination__link js-pagination__link" href="#" data-page-number={pageNumber + 1}
-                            onClick={this.handlerSelectPage}>
-                            <span className="pagination__link-text">{pageNumber + 1}</span>
-                        </a>
-                        : null
-                    }
-                    {pageNumber + 2 < pagesCount ?
-                        <a className="pagination__link js-pagination__link" href="#" data-page-number={pageNumber + 2}
-                            onClick={this.handlerSelectPage}>
-                            <span className="pagination__link-text">{pageNumber + 2}</span>
-                        </a>
-                        : null
-                    }
-                    {pageNumber + 3 < pagesCount ?
-                        <a className="pagination__link" href="#" data-page-number="...">
-                            <span className="pagination__link-text">...</span>
-                        </a>
-                        : null
-                    }
-                    {pageNumber !== pagesCount ?
-                        <React.Fragment>
-                            <a className="pagination__link js-pagination__link" href="#" data-page-number={pagesCount}
-                                onClick={this.handlerSelectPage}>
-                                <span className="pagination__link-text">{pagesCount}</span>
-                            </a>
-                            <a className="pagination__right-arrow js-pagination__link" href="#" data-page-number="rightArrow"
-                                onClick={this.handlerSelectPage}>
-                                <span className="pagination__right-arrow-text">arrow_forward</span>
-                            </a>
-                        </React.Fragment>
-                        : null
-                    }
-                </div>
-                <p className="pagination__bottom-text">{this.writeBottomText()}</p>
-            </div>
-        );
-    }
+    return (
+      <div className="pagination">
+        {title ? <p className="pagination__title">{title}</p> : null}
+        <div className="pagination__list">
+          {pageNumber !== 1 ?
+            <React.Fragment>
+              <NavLink className="pagination__left-arrow" key={"pagination-arrow-back"} to={`/page/${this.calculateArrowNumber(true)}`}>
+                <span className="pagination__left-arrow-text">arrow_forward</span>
+              </NavLink>
+              <NavLink className="pagination__link" key={"pagination-first"} to={"/page/1"}>
+                <span className="pagination__link-text">1</span>
+              </NavLink>
+            </React.Fragment>
+            : null
+          }
+          {pageNumber - 3 > 1 ?
+            <p className="pagination__link" data-page-number="...">
+              <span className="pagination__link-text">...</span>
+            </p>
+            : null
+          }
+          {pageNumber - 2 > 1 ?
+            <NavLink exact className="pagination__link" key={"pagination--2"} to={`/page/${pageNumber - 2}`}>
+              <span className="pagination__link-text">{pageNumber - 2}</span>
+            </NavLink>
+            : null
+          }
+          {pageNumber - 1 > 1 ?
+            <NavLink className="pagination__link" key={"pagination--1"} to={`/page/${pageNumber - 1}`}>
+              <span className="pagination__link-text">{pageNumber - 1}</span>
+            </NavLink>
+            : null
+          }
+          <NavLink className="pagination__link pagination__link_target" key={"pagination-0"} to={`/page/${pageNumber}`}>
+            <span className="pagination__link-text">{pageNumber}</span>
+          </NavLink>
+          {pageNumber + 1 < pagesCount ?
+            <NavLink className="pagination__link" key={"pagination-1"} to={`/page/${pageNumber + 1}`}>
+              <span className="pagination__link-text">{pageNumber + 1}</span>
+            </NavLink>
+            : null
+          }
+          {pageNumber + 2 < pagesCount ?
+            <NavLink className="pagination__link" key={"pagination-2"} to={`/page/${pageNumber + 2}`}>
+              <span className="pagination__link-text">{pageNumber + 2}</span>
+            </NavLink>
+            : null
+          }
+          {pageNumber + 3 < pagesCount ?
+            <p className="pagination__link" data-page-number="...">
+              <span className="pagination__link-text">...</span>
+            </p>
+            : null
+          }
+          {pageNumber !== pagesCount ?
+            <React.Fragment>
+              <NavLink className="pagination__link" key={"pagination-last"} to={`/page/${pagesCount}`}>
+                <span className="pagination__link-text">{pagesCount}</span>
+              </NavLink>
+              <NavLink className="pagination__right-arrow" key={"pagination-arrow-forward"} to={`/page/${this.calculateArrowNumber(false)}`}>
+                <span className="pagination__right-arrow-text">arrow_forward</span>
+              </NavLink>
+            </React.Fragment>
+            : null
+          }
+        </div>
+        <p className="pagination__bottom-text">{this.writeBottomText()}</p>
+      </div>
+    );
+  }
 }
 
 export default Pagination;

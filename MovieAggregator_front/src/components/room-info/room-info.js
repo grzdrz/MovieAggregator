@@ -89,7 +89,7 @@ class RoomInfo extends React.Component {
                     {photos.map((photo, i) => {
                         return (
                             <img className={`room-info__photo room-info__photo_${i + 1}`} key={`room-info__photo room-info__photo_${i + 1}`}
-                                src={`./src/components/room-info/img/${photo}.png`}
+                                src={`/src/components/room-info/img/${photo}.png`}
                                 alt="room photo"></img>
                         );
                     })}
