@@ -51,7 +51,7 @@ class Pagination extends React.Component {
       title,
       pageNumber,
       pagesCount,
-      totalItemsCount
+      totalItemsCount,
     } = this.props;
 
     return (

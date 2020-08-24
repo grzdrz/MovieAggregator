@@ -13,36 +13,27 @@ class RoomInfoList extends React.Component {
   }
 
   getInfoBlocks() {
-    const {
-      /* pageNumber, */
-      itemsCount,
-      totalItemsCount,
-    } = this.props.pagination;
-    const { pageNumber } = this.props;
-
+    const { itemsCountOnPage, pageNumber } = this.props;
     const blocks = require("./data.json").roomsInfo;
 
-    const t1 = pageNumber * itemsCount;
+    const t1 = pageNumber * itemsCountOnPage;
     const result = blocks.filter((block, index) =>
-      (index >= t1 - itemsCount && index < t1)
+      (index >= t1 - itemsCountOnPage && index < t1)
     );
     return result;
   }
 
   getPageCount() {
-    const {
-      /* pageNumber, */
-      itemsCount,
-      totalItemsCount,
-    } = this.props.pagination;
-    const { pageNumber } = this.props;
+    const { itemsCountOnPage, pageNumber } = this.props;
+    const totalItemsCount = require("./data.json").roomsInfo.length;
 
-    const test = totalItemsCount / itemsCount;
-    const test2 = `${test}`.split(".", ",");
-    if (test2.length === 0) return test;
+    const test = totalItemsCount / itemsCountOnPage;
+    const test2 = `${test}`;
+    const test3 = test2.split(/\.|\,/);
+    if (test3.length === 0) return test;
 
-    const n1 = Number.parseInt(test2[0]);
-    const n2 = Number.parseInt(test2[1]);
+    const n1 = Number.parseInt(test3[0]);
+    const n2 = Number.parseInt(test3[1]);
     if (n2 === 0) return n1;
     return n1 + 1;
   }
@@ -52,11 +43,8 @@ class RoomInfoList extends React.Component {
   } */
 
   render() {
-    const {
-      itemsCount,
-      totalItemsCount,
-    } = this.props.pagination;
-    const { pageNumber } = this.props;
+    const { itemsCountOnPage, pageNumber } = this.props;
+    const totalItemsCount = require("./data.json").roomsInfo.length;
 
     return (
       <div className="room-info-list">
@@ -67,8 +55,8 @@ class RoomInfoList extends React.Component {
                 <RoomInfo
                   url={block.url}
                   blockNumber={block.blockNumber}
-                  photos={block.photos}
-                  numberOfCheckedStar={block.numberOfCheckedStar}
+                  photosCount={block.photosCount}
+                  checkedStarIndex={block.checkedStarIndex}
                   reviewsCount={block.reviewsCount}
                   roomNumber={block.roomNumber}
                   roomStatus={block.roomStatus}
@@ -95,11 +83,7 @@ class RoomInfoList extends React.Component {
 
 const mapStateToProps = function (state) {
   return {
-    pagination: {
-      /* pageNumber: state.pagination.pageNumber, */
-      itemsCount: state.pagination.itemsCount,
-      totalItemsCount: state.pagination.totalItemsCount,
-    },
+    itemsCountOnPage: state.itemsCountOnPage,
   }
 }
 

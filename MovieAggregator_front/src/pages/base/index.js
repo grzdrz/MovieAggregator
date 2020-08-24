@@ -40,11 +40,7 @@ class App extends React.Component {
 }
 
 const initialState = {
-  pagination: {
-    /* pageNumber: 2, */
-    itemsCount: 3,
-    totalItemsCount: require("../room-info-list/data.json").roomsInfo.length,
-  },
+  itemsCountOnPage: 5,
 };
 
 const reducer = (state = initialState, action) => {
@@ -55,11 +51,7 @@ const reducer = (state = initialState, action) => {
     }
     case "CHANGE_PAGE": {
       const updatedState = {
-        pagination: {
-          /* pageNumber: action.pageNumber, */
-          itemsCount: state.pagination.itemsCount,
-          totalItemsCount: state.pagination.totalItemsCount,
-        },
+        itemsCountOnPage: state.itemsCountOnPage,
       };
       return updatedState;
       break;

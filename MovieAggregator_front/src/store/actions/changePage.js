@@ -1,8 +1,8 @@
-const changePage = function (pageNumber) {
+/* const changePage = function (pageNumber) {
     return {
         type: "CHANGE_PAGE",
         pageNumber,
     }
 };
 
-export default changePage;
+export default changePage; */
