@@ -1,33 +1,33 @@
 import React from "react";
 import FormInput from "../form-input/form-input";
-import button from "../button/button.jsx";
+import Button from "../button/button.jsx";
 
-import "./create-item-form.scss";
+import "./create-form.scss";
 
-class CreateItemForm extends React.Component {
+class CreateForm extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <form className="create-item-form">
-        <div className="create-item-form__number">
+      <form className="create-form">
+        <div className="create-form__number">
           <FormInput />
         </div>
-        <div className="create-item-form__status">
+        <div className="create-form__status">
           <FormInput />
         </div>
-        <div className="create-item-form__price">
+        <div className="create-form__price">
           <FormInput />
         </div>
-        <div className="create-item-form__reviews-count">
+        <div className="create-form__reviews-count">
           <FormInput />
         </div>
-        <div className="create-item-form__checked-star-index">
+        <div className="create-form__checked-star-index">
           <FormInput />
         </div>
-        <div className="create-item-form__submit-button">
+        <div className="create-form__submit-button">
           <Button
             hasArrow={true}
             buttonType="submit"
@@ -38,3 +38,5 @@ class CreateItemForm extends React.Component {
     );
   }
 }
+
+export default CreateForm;

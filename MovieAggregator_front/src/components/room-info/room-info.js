@@ -1,5 +1,6 @@
 import React from "react";
-import CrudFormsLinks from "../crud-forms-links/crud-forms-links";
+import PlusButton from "../plus-button/plus-button";
+import MinusButton from "../minus-button/minus-button";
 
 import "./room-info.scss";
 
@@ -135,8 +136,13 @@ class RoomInfo extends React.Component {
             </p>
           </div>
         </div>
-        <div className="room-info__crud-forms-links">
-          <CrudFormsLinks />
+        <div className="room-info__buttons">
+          <div className="room-info__plus-button">
+            <PlusButton />
+          </div>
+          <div className="room-info__minus-button">
+            <MinusButton />
+          </div>
         </div>
       </div>
     );

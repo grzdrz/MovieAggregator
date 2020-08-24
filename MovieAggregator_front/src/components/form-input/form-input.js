@@ -28,7 +28,7 @@ function FormInput(props) {
           placeholder={placeholder}
           name={name}
           type={type}
-          value={value}></input>
+          defaultValue={value}></input>
         {hasSubmitButton ?
           <input className="form-input__submitter"
             type="submit"

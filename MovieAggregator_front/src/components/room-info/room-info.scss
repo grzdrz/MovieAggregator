@@ -222,8 +222,19 @@
     color: $color-dark-shade-50;
   }
 
-  &__crud-forms-links {
+  &__buttons {
     position: absolute;
     left: 16.875rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__plus-button {
+    position: absolute;
+  }
+
+  &__minus-button {
+    position: absolute;
+    top: 3.75rem;
   }
 }

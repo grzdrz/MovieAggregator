@@ -1,9 +1,9 @@
 @import '../../assets/constants.scss';
 
-.crud-forms-links {
+.plus-button {
   position: relative;
 
-  &__plus-button {
+  &__button-container {
     width: 3.125rem;
     height: 3.125rem;
     display: none;
@@ -18,7 +18,7 @@
     }
   }
 
-  &__plus-horizontal-part {
+  &__horizontal-part {
     width: 1.875rem;
     height: 0.5rem;
     position: absolute;
@@ -26,7 +26,7 @@
     border-radius: 0.125rem;
   }
 
-  &__plus-vertical-part {
+  &__vertical-part {
     width: 0.5rem;
     height: 1.875rem;
     position: absolute;
@@ -34,19 +34,16 @@
     border-radius: 0.125rem;
   }
 
-  &__links-to-forms {
+  &__update-form {
+    z-index: 99;
     width: 18.75rem;
     padding: 1.25rem;
     display: none;
+    position: absolute;
     background: white;
 
     &_opened {
       display: block;
     }
-  }
-
-  &__link {
-    height: 2.5rem;
-    margin-bottom: 0.625rem;
   }
 }

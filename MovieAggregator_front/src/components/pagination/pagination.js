@@ -17,7 +17,7 @@ class Pagination extends React.Component {
     return `${firstItemCountNumber} - ${lastItemCountNumber} из ${totalItemsCountText} вариантов аренды`;
   }
 
-  handlerSelectPage = (event) => {
+  /* handlerSelectPage = (event) => {
     event.preventDefault();
 
     let { pageNumber } = this.props;
@@ -29,13 +29,13 @@ class Pagination extends React.Component {
       pageNumber += 1;
     } else {
       pageNumber = Number.parseInt(selectedPageNumber, 10);
-    }
+    } */
 
     /* this.setState({
         pageNumber,
     }); */
     /* this.props.handlerChangePage(pageNumber); */
-  }
+  /* } */
 
   calculateArrowNumber(isLeft) {
     const { pagesCount, pageNumber } = this.props;

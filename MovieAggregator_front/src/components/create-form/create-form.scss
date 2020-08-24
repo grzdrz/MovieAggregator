@@ -1,0 +1,13 @@
+.create-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+
+  &__number,
+  &__status,
+  &__price,
+  &__reviews-count,
+  &__checked-star-index {
+    margin-bottom: 1.25rem;
+  }
+}
