@@ -1,0 +1,52 @@
+@import '../../assets/constants.scss';
+
+.crud-forms-links {
+  position: relative;
+
+  &__plus-button {
+    width: 3.125rem;
+    height: 3.125rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: $gradient-green-to-turquoise;
+    border-radius: 0.25rem;
+
+    &_opened {
+      display: flex;
+    }
+  }
+
+  &__plus-horizontal-part {
+    width: 1.875rem;
+    height: 0.5rem;
+    position: absolute;
+    background: white;
+    border-radius: 0.125rem;
+  }
+
+  &__plus-vertical-part {
+    width: 0.5rem;
+    height: 1.875rem;
+    position: absolute;
+    background: white;
+    border-radius: 0.125rem;
+  }
+
+  &__links-to-forms {
+    width: 18.75rem;
+    padding: 1.25rem;
+    display: none;
+    background: white;
+
+    &_opened {
+      display: block;
+    }
+  }
+
+  &__link {
+    height: 2.5rem;
+    margin-bottom: 0.625rem;
+  }
+}

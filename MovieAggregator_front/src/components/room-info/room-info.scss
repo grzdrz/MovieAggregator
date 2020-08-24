@@ -221,4 +221,9 @@
     text-align: right;
     color: $color-dark-shade-50;
   }
+
+  &__crud-forms-links {
+    position: absolute;
+    left: 16.875rem;
+  }
 }

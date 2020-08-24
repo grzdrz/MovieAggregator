@@ -1,8 +1,11 @@
 import ReactDOM from "react-dom";
 import React from "react";
-import { createStore } from "redux";
+import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+
+/* import initialState from "../../store/initialState"; */
+import paginationReducer from "../../store/reduers/paginationReducer";
 
 import Header from "../../components/header/header.js";
 import RoomInfoList from "../room-info-list/room-info-list.js";
@@ -39,34 +42,14 @@ class App extends React.Component {
   }
 }
 
-const initialState = {
-  itemsCountOnPage: 5,
-};
-
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "INIT_STATE": {
-      return state;
-      break;
-    }
-    case "CHANGE_PAGE": {
-      const updatedState = {
-        itemsCountOnPage: state.itemsCountOnPage,
-      };
-      return updatedState;
-      break;
-    }
-    default:
-      return state;
-      break;
-  }
-};
+const reducer = combineReducers({
+  pagination: paginationReducer,
+  /* counterState: counterReducer */
+});
 
 const store = createStore(reducer);
-
 store.dispatch({
-  type: "INIT_STATE",
-  state: initialState,
+  type: "default",
 });
 
 const targetElement = document.querySelector(".app")

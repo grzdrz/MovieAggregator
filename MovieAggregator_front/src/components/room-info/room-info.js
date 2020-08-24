@@ -1,4 +1,6 @@
 import React from "react";
+import CrudFormsLinks from "../crud-forms-links/crud-forms-links";
+
 import "./room-info.scss";
 
 class RoomInfo extends React.Component {
@@ -132,6 +134,9 @@ class RoomInfo extends React.Component {
               <span className="room-info__reviews-count-text">Отзывов</span>
             </p>
           </div>
+        </div>
+        <div className="room-info__crud-forms-links">
+          <CrudFormsLinks />
         </div>
       </div>
     );

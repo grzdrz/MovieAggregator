@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import changePage from "../../store/actions/changePage";
+import changeItemsCountOnPage from "../../store/actions/changeItemsCountOnPage";
 
 import RoomInfo from "../../components/room-info/room-info.js";
 import Pagination from "../../components/pagination/pagination.js";
@@ -13,7 +13,8 @@ class RoomInfoList extends React.Component {
   }
 
   getInfoBlocks() {
-    const { itemsCountOnPage, pageNumber } = this.props;
+    const { pagination, pageNumber } = this.props;
+    const { itemsCountOnPage } = pagination;
     const blocks = require("./data.json").roomsInfo;
 
     const t1 = pageNumber * itemsCountOnPage;
@@ -24,7 +25,8 @@ class RoomInfoList extends React.Component {
   }
 
   getPageCount() {
-    const { itemsCountOnPage, pageNumber } = this.props;
+    const { pagination, pageNumber } = this.props;
+    const { itemsCountOnPage } = pagination;
     const totalItemsCount = require("./data.json").roomsInfo.length;
 
     const test = totalItemsCount / itemsCountOnPage;
@@ -43,7 +45,8 @@ class RoomInfoList extends React.Component {
   } */
 
   render() {
-    const { itemsCountOnPage, pageNumber } = this.props;
+    const { pagination, pageNumber } = this.props;
+    const { itemsCountOnPage } = pagination;
     const totalItemsCount = require("./data.json").roomsInfo.length;
 
     return (
@@ -82,13 +85,11 @@ class RoomInfoList extends React.Component {
 }
 
 const mapStateToProps = function (state) {
-  return {
-    itemsCountOnPage: state.itemsCountOnPage,
-  }
+  return state;
 }
 
 const actions = {
-  changePage,
+  changeItemsCountOnPage,
 };
 
 export default connect(mapStateToProps, actions)(RoomInfoList);
