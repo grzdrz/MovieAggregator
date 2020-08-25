@@ -1,9 +1,9 @@
 import React from "react";
 import UpdateForm from "../update-form/update-form";
 
-import "./plus-button.scss";
+import "./update-button.scss";
 
-class PlusButton extends React.Component {
+class UpdateButton extends React.Component {
   constructor(props) {
     super(props);
     this.isOpened = false;
@@ -27,17 +27,17 @@ class PlusButton extends React.Component {
     const updateForm = this.updateForm.current;
     const plusButton = this.plusButton.current;
     if (this.isOpened) {
-      updateForm.classList.toggle('plus-button__update-form_opened', true);
-      plusButton.classList.toggle('plus-button__button-container_opened', false);
+      updateForm.classList.toggle('update-button__update-form_opened', true);
+      plusButton.classList.toggle('update-button__button-container_opened', false);
     } else {
-      updateForm.classList.toggle('plus-button__update-form_opened', false);
-      plusButton.classList.toggle('plus-button__button-container_opened', true);
+      updateForm.classList.toggle('update-button__update-form_opened', false);
+      plusButton.classList.toggle('update-button__button-container_opened', true);
     }
   }
 
   _handleDropdownLeave = (event) => {
     if (event.target.className.match) {
-      const updateForm = event.target.className.match(/(^plus-button)|(^plus-button__)|(^update-form)|(^form-input)/);
+      const updateForm = event.target.className.match(/(^update-button)|(^update-button__)|(^update-form)|(^form-input)/);
       if (!updateForm) {
         this._handleCloseDropdown();
       }
@@ -56,12 +56,12 @@ class PlusButton extends React.Component {
 
   render() {
     return (
-      <div className="plus-button">
-        <div className="plus-button__button-container" onClick={this._handlePlusWindowClick} ref={this.plusButton}>
-          <span className="plus-button__horizontal-part"></span>
-          <span className="plus-button__vertical-part"></span>
+      <div className="update-button">
+        <div className="update-button__button-container" onClick={this._handlePlusWindowClick} ref={this.plusButton}>
+          <span className="update-button__horizontal-part"></span>
+          <span className="update-button__vertical-part"></span>
         </div>
-        <div className="plus-button__update-form" ref={this.updateForm}>
+        <div className="update-button__update-form" ref={this.updateForm}>
           <UpdateForm />
         </div>
       </div>
@@ -69,4 +69,4 @@ class PlusButton extends React.Component {
   }
 }
 
-export default PlusButton;
+export default UpdateButton;

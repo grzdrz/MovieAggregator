@@ -10,7 +10,7 @@ function Button(props) {
     hasArrow,
     buttonType,
     text,
-    url
+    url,
   } = props;
   const containerClasses = (isHollow ? ["button_hollow"] : []);
 

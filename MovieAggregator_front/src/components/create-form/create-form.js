@@ -7,25 +7,34 @@ import "./create-form.scss";
 class CreateForm extends React.Component {
   constructor(props) {
     super(props);
+    this.form = React.createRef();
+  }
+
+  _handleSubmit = (event) => {
+    event.preventDefault();
+    const formBody = new FormData(this.form.current);
+    const test = Array.from(formBody);
+    const test2 = Object.fromEntries(test);
+    this.props.createItem(test2);
   }
 
   render() {
     return (
-      <form className="create-form">
+      <form className="create-form" ref={this.form} onSubmit={this._handleSubmit}>
         <div className="create-form__number">
-          <FormInput />
+          <FormInput name="number" type="number" />
         </div>
         <div className="create-form__status">
-          <FormInput />
+          <FormInput name="status" type="text" />
         </div>
         <div className="create-form__price">
-          <FormInput />
+          <FormInput name="price" type="number" />
         </div>
         <div className="create-form__reviews-count">
-          <FormInput />
+          <FormInput name="reviewsCount" type="number" />
         </div>
         <div className="create-form__checked-star-index">
-          <FormInput />
+          <FormInput name="checkedStarIndex" type="number" />
         </div>
         <div className="create-form__submit-button">
           <Button

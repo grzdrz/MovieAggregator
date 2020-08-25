@@ -1,9 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
 import changeItemsCountOnPage from "../../store/actions/changeItemsCountOnPage";
+import createItem from "../../store/actions/roomsInfoActions/createItem";
+import deleteItem from "../../store/actions/roomsInfoActions/deleteItem";
+import updateItem from "../../store/actions/roomsInfoActions/updateItem";
 
-import RoomInfo from "../../components/room-info/room-info.js";
-import Pagination from "../../components/pagination/pagination.js";
+import CreateButton from "../../components/create-button/create-button";
+import RoomInfo from "../../components/room-info/room-info";
+import Pagination from "../../components/pagination/pagination";
 
 import "./room-info-list.scss";
 
@@ -13,9 +17,10 @@ class RoomInfoList extends React.Component {
   }
 
   getInfoBlocks() {
-    const { pagination, pageNumber } = this.props;
+    const { pagination, roomsInfo, pageNumber } = this.props;
     const { itemsCountOnPage } = pagination;
-    const blocks = require("./data.json").roomsInfo;
+    const blocks = roomsInfo.roomsInfo;
+    const totalItemsCount = roomsInfo.roomsInfo.length;
 
     const t1 = pageNumber * itemsCountOnPage;
     const result = blocks.filter((block, index) =>
@@ -25,9 +30,9 @@ class RoomInfoList extends React.Component {
   }
 
   getPageCount() {
-    const { pagination, pageNumber } = this.props;
+    const { pagination, roomsInfo, pageNumber } = this.props;
     const { itemsCountOnPage } = pagination;
-    const totalItemsCount = require("./data.json").roomsInfo.length;
+    const totalItemsCount = roomsInfo.roomsInfo.length;
 
     const test = totalItemsCount / itemsCountOnPage;
     const test2 = `${test}`;
@@ -45,25 +50,29 @@ class RoomInfoList extends React.Component {
   } */
 
   render() {
-    const { pagination, pageNumber } = this.props;
+    const { pagination, roomsInfo, pageNumber } = this.props;
     const { itemsCountOnPage } = pagination;
-    const totalItemsCount = require("./data.json").roomsInfo.length;
+    const totalItemsCount = roomsInfo.roomsInfo.length;
+
 
     return (
       <div className="room-info-list">
         <div className="room-info-list__room-list">
+          <div className="room-info-list__create-button">
+            <CreateButton createItem={this.props.createItem}/>
+          </div>
           {this.getInfoBlocks().map((block, index) => {
             return (
               <div className="room-info-list__list-item" key={`room-info-list__list-item-${pageNumber}-${index}`}>
                 <RoomInfo
+                  id={block.id}
                   url={block.url}
-                  blockNumber={block.blockNumber}
                   photosCount={block.photosCount}
                   checkedStarIndex={block.checkedStarIndex}
                   reviewsCount={block.reviewsCount}
-                  roomNumber={block.roomNumber}
-                  roomStatus={block.roomStatus}
-                  roomPrice={block.roomPrice}
+                  number={block.number}
+                  status={block.status}
+                  price={block.price}
                   currencyType={block.currencyType}
                 />
               </div>
@@ -90,6 +99,9 @@ const mapStateToProps = function (state) {
 
 const actions = {
   changeItemsCountOnPage,
+  createItem,
+  deleteItem,
+  updateItem,
 };
 
 export default connect(mapStateToProps, actions)(RoomInfoList);

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-do
 
 /* import initialState from "../../store/initialState"; */
 import paginationReducer from "../../store/reduers/paginationReducer";
+import roomsInfoReducer from "../../store/reduers/roomsInfoReducer";
 
 import Header from "../../components/header/header.js";
 import RoomInfoList from "../room-info-list/room-info-list.js";
@@ -44,6 +45,7 @@ class App extends React.Component {
 
 const reducer = combineReducers({
   pagination: paginationReducer,
+  roomsInfo: roomsInfoReducer,
   /* counterState: counterReducer */
 });
 

@@ -142,7 +142,7 @@
     color: $color-dark-shade-100;
   }
 
-  &__room-number {
+  &__number {
     align-self: end;
     margin-right: 0.3125rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
@@ -154,7 +154,7 @@
     word-break: break-word;
   }
 
-  &__room-status {
+  &__status {
     align-self: end;
     font-weight: bold;
     font-size: 0.75rem;
@@ -163,7 +163,7 @@
     color: $color-purple;
   }
 
-  &__room-price {
+  &__price {
     justify-self: end;
     align-self: end;
     margin-right: 0.25rem;
@@ -185,7 +185,7 @@
     white-space: nowrap;
   }
 
-  &__room-rate {
+  &__rate {
     display: flex;
     justify-content: space-between;
     padding-top: 0.5rem;
@@ -229,11 +229,11 @@
     flex-direction: column;
   }
 
-  &__plus-button {
+  &__update-button {
     position: absolute;
   }
 
-  &__minus-button {
+  &__delete-button {
     position: absolute;
     top: 3.75rem;
   }

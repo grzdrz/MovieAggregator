@@ -1,6 +1,6 @@
 import React from "react";
-import PlusButton from "../plus-button/plus-button";
-import MinusButton from "../minus-button/minus-button";
+import UpdateButton from "../update-button/update-button";
+import DeleteButton from "../delete-button/delete-button";
 
 import "./room-info.scss";
 
@@ -69,14 +69,14 @@ class RoomInfo extends React.Component {
 
   render() {
     const {
+      id,
       url,
-      blockNumber,
-      photosCount = 4,
+      photosCount,
       checkedStarIndex,
       reviewsCount,
-      roomNumber,
-      roomStatus,
-      roomPrice,
+      number,
+      status,
+      price,
       currencyType,
     } = this.props;
     const iterationCount = (photosCount <= 4 ? 4 : photosCount);
@@ -100,7 +100,7 @@ class RoomInfo extends React.Component {
           {iterator.map((photo, i) => {
             return (
               <img className={`room-info__photo js-room-info__photo`} key={`room-info__photo room-info__photo-${i}`}
-                src={`/src/components/room-info/img/room-${roomNumber}${photosCount > 1 ? `-${i + 1}` : ""}.png`}
+                src={`/src/components/room-info/img/room-${number}${photosCount > 1 ? `-${i + 1}` : ""}.png`}
                 alt="room photo"
                 data-serial-number={i}></img>
             );
@@ -120,12 +120,12 @@ class RoomInfo extends React.Component {
         <div className="room-info__text-info">
           <p className="room-info__title">
             <span className="room-info__number-symbol">№</span>
-            <span className="room-info__room-number">{roomNumber}</span>
-            <span className="room-info__room-status">{roomStatus ? roomStatus : ""}</span>
-            <span className="room-info__room-price">{`${this._formateNumber(roomPrice)}${currencyType}`}</span>
+            <span className="room-info__number">{number}</span>
+            <span className="room-info__status">{status ? status : ""}</span>
+            <span className="room-info__price">{`${this._formateNumber(price)}${currencyType}`}</span>
             <span className="room-info__period-of-time">{`в сутки`}</span>
           </p>
-          <div className="room-info__room-rate">
+          <div className="room-info__rate">
             {/* +star-rating({
                             blockNumber: blockNumber,
                             checkedStarIndex: checkedStarIndex,
@@ -137,11 +137,11 @@ class RoomInfo extends React.Component {
           </div>
         </div>
         <div className="room-info__buttons">
-          <div className="room-info__plus-button">
-            <PlusButton />
+          <div className="room-info__update-button">
+            <UpdateButton />
           </div>
-          <div className="room-info__minus-button">
-            <MinusButton />
+          <div className="room-info__delete-button">
+            <DeleteButton />
           </div>
         </div>
       </div>

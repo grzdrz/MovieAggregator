@@ -1,0 +1,54 @@
+@import '../../assets/constants.scss';
+
+.update-button {
+  position: relative;
+
+  &__button-container {
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: $gradient-green-to-turquoise;
+    border-radius: 0.25rem;
+
+    &:hover {
+      background: $gradient-green-to-turquoise-50;
+    }
+
+    &_opened {
+      display: flex;
+    }
+  }
+
+  &__horizontal-part {
+    width: 1.875rem;
+    height: 0.5rem;
+    position: absolute;
+    background: white;
+    border-radius: 0.125rem;
+  }
+
+  &__vertical-part {
+    width: 0.5rem;
+    height: 1.875rem;
+    position: absolute;
+    background: white;
+    border-radius: 0.125rem;
+  }
+
+  &__update-form {
+    z-index: 99;
+    width: 18.75rem;
+    padding: 1.25rem;
+    display: none;
+    position: absolute;
+    background: white;
+
+    &_opened {
+      display: block;
+    }
+  }
+}
