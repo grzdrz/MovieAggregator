@@ -1,14 +1,4 @@
-const initialState = {
-  "id": 0,
-  "photosCount": 4,
-  "number": 888,
-  "status": "люкс",
-  "price": 9990,
-  "currencyType": "₽",
-  "reviewsCount": "145",
-  "checkedStarIndex": 5,
-  "url": "room-details.html"
-};
+const initialState =  require("../../data/data.json").roomsInfo;
 
 function roomsInfoReducer(state = initialState, action) {
   switch (action.type) {
@@ -36,10 +26,7 @@ function roomsInfoReducer(state = initialState, action) {
       break;
     }
     default: {
-      const roomsInfo = require("../../data/data.json").roomsInfo;
-      return {
-        roomsInfo,
-      };
+      return state;
       break;
     }
   }

@@ -1,2 +1,3 @@
-/MovieAggregator_front/node_modules/*
+/node_modules/*
+/bandle/*
 /coverage/*
