@@ -127,43 +127,24 @@
 
   &__title {
     display: grid;
-    grid-template-columns: max-content max-content max-content auto min-content;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
     margin-top: 0.1875rem;
     margin-bottom: 0.75rem;
   }
 
-  &__number-symbol {
+  &__name {
     align-self: end;
-    margin-right: 0.25rem;
-    font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 0.875rem;
-    line-height: 1.0625rem;
-    color: $color-dark-shade-100;
-  }
-
-  &__number {
-    align-self: end;
-    margin-right: 0.3125rem;
+    margin-bottom: 0.625rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
     font-weight: bold;
     font-size: 1.1875rem;
     line-height: 1.5rem;
     color: $color-dark-shade-100;
-    max-width: 3.125rem;
     word-break: break-word;
   }
 
-  &__status {
-    align-self: end;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    text-transform: uppercase;
-    color: $color-purple;
-  }
-
-  &__price {
+  &__price-number {
     justify-self: end;
     align-self: end;
     margin-right: 0.25rem;
@@ -172,17 +153,18 @@
     line-height: 0.9375rem;
     color: $color-dark-shade-50;
     max-width: 6.125rem;
+    min-width: 40px;
     word-break: break-word;
   }
 
-  &__period-of-time {
+  &__packaging-type {
     justify-self: end;
     align-self: end;
     margin-right: 0.0625rem;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     color: $color-dark-shade-50;
-    white-space: nowrap;
+    word-break: break-word;
   }
 
   &__rate {
@@ -197,6 +179,7 @@
   }
 
   &__reviews-count {
+    max-width: 6.875rem;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;

@@ -1,6 +1,7 @@
 import React from "react";
 import UpdateButton from "../update-button/update-button";
 import DeleteButton from "../delete-button/delete-button";
+import StarRating from "../star-rating/star-rating";
 
 import "./product-short-info.scss";
 
@@ -10,7 +11,6 @@ class ProductShortInfo extends React.Component {
     this.currentPhotoIndex = props.currentPhotoIndex !== undefined ? props.currentPhotoIndex : 0;
 
     this.container = React.createRef();
-    /* this._initialize(); */
   }
 
   componentDidMount() {
@@ -85,6 +85,8 @@ class ProductShortInfo extends React.Component {
       shelfLifeUnits,
       packaging,
       imageNames,
+      checkedStars,
+      reviewsCount,
     } = this.props.product;
 
     return (
@@ -126,19 +128,19 @@ class ProductShortInfo extends React.Component {
         </div>
         <div className="product-short-info__text-info">
           <p className="product-short-info__title">
-            <span className="product-short-info__number-symbol">№</span>
-            <span className="product-short-info__number">{}</span>
-            <span className="product-short-info__status">{}</span>
-            <span className="product-short-info__price">{`${this._formateNumber(price)}${currencyType}`}</span>
-            <span className="product-short-info__period-of-time">{`в сутки`}</span>
+            <span className="product-short-info__name">{name}</span>
+            <span className="product-short-info__price">
+              <span className="product-short-info__price-number">{`${this._formateNumber(price)}${currencyType}`}</span>
+              <span className="product-short-info__packaging-type">{`за ${packaging === "amount" ? "штуку" : "килограмм"}`}</span>
+            </span>
           </p>
           <div className="product-short-info__rate">
-            {/* +star-rating({
-                            blockNumber: blockNumber,
-                            checkedStarIndex: checkedStarIndex,
-                        }) */}
+            <StarRating
+              id={id}
+              checkedStars={checkedStars}
+            />
             <p className="product-short-info__reviews-count">
-              <span className="product-short-info__reviews-count-value">{}</span>
+              <span className="product-short-info__reviews-count-value">{reviewsCount}</span>
               <span className="product-short-info__reviews-count-text">Отзывов</span>
             </p>
           </div>

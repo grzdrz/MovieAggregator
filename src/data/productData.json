@@ -3,7 +3,7 @@
     {
       "id": 0,
       "name": "Дыня Ромашка",
-      "price": 100,
+      "price": 123,
       "currencyType": "₽",
       "descriptions": "Дыня Ромашка получила свое название благодаря оригинальному внешнему виду. Плод имеет округлую форму и будто разделен на сегменты (или, словно ромашка, на лепестки). Мякоть у нее сладкая, с нежным медовым ароматом. Дыня содержит совсем мало калорий (всего 34ккал), однако в ней много полезных веществ: витамины А, Р, С, каротин, фолиевая кислота, кальций, железо, калий. Пектин и клетчатка, входящие в состав, нормализуют работу пищеварительной системы и способствуют очищению организма. Дыня отлично подходит для десертного стола или фруктового салата, но вот с другими продуктами ее смешивать не рекомендуется.",
       "manufacturer": "ООО Четотам",
@@ -20,12 +20,14 @@
         1,
         2,
         3
-      ]
+      ],
+      "checkedStars": 5,
+      "reviewsCount": 23
     },
     {
       "id": 1,
       "name": "Арбуз Ромашка",
-      "price": 100,
+      "price": 56,
       "currencyType": "₽",
       "descriptions": "Арбуз блаблаблаблабла",
       "manufacturer": "ООО Четотам",
@@ -37,17 +39,19 @@
       "weightUnits": "г",
       "shelfLife": 7,
       "shelfLifeUnits": "день",
-      "packaging": "amount",
+      "packaging": "weight",
       "imageNames": [
         1,
         2,
         3
-      ]
+      ],
+      "checkedStars": 4,
+      "reviewsCount": 123
     },
     {
       "id": 2,
       "name": "Черешня",
-      "price": 100,
+      "price": 11,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
       "manufacturer": "ООО Четотам",
@@ -63,12 +67,14 @@
       "imageNames": [
         4,
         5
-      ]
+      ],
+      "checkedStars": 4,
+      "reviewsCount": 33
     },
     {
       "id": 3,
       "name": "Навоз",
-      "price": 100,
+      "price": 543,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
       "manufacturer": "ООО Четотам",
@@ -83,12 +89,14 @@
       "packaging": "amount",
       "imageNames": [
         6
-      ]
+      ],
+      "checkedStars": 2,
+      "reviewsCount": 3534
     },
     {
       "id": 4,
       "name": "Вишня",
-      "price": 100,
+      "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
       "manufacturer": "ООО Четотам",
@@ -100,15 +108,17 @@
       "weightUnits": "г",
       "shelfLife": 7,
       "shelfLifeUnits": "день",
-      "packaging": "amount",
+      "packaging": "weight",
       "imageNames": [
         6
-      ]
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
     },
     {
       "id": 5,
       "name": "Клубника",
-      "price": 100,
+      "price": 69,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
       "manufacturer": "ООО Четотам",
@@ -120,10 +130,16 @@
       "weightUnits": "г",
       "shelfLife": 7,
       "shelfLifeUnits": "день",
-      "packaging": "amount",
+      "packaging": "weight",
       "imageNames": [
-        6
-      ]
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "checkedStars": 5,
+      "reviewsCount": 0
     }
   ]
 }

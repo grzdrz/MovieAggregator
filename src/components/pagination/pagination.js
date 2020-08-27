@@ -14,7 +14,7 @@ class Pagination extends React.Component {
     if (lastItemCountNumber > totalItemsCount) lastItemCountNumber = totalItemsCount;
     const totalItemsCountText = totalItemsCount > 100 ? "100+" : `${totalItemsCount}`;
 
-    return `${firstItemCountNumber} - ${lastItemCountNumber} из ${totalItemsCountText} вариантов аренды`;
+    return `${firstItemCountNumber} - ${lastItemCountNumber} из ${totalItemsCountText} продуктов`;
   }
 
   calculateArrowNumber(isLeft) {
