@@ -1,4 +1,6 @@
-import initialState from "../initialState";
+const initialState = {
+  itemsCountOnPage: 4,
+};
 
 const paginationReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -10,10 +12,7 @@ const paginationReducer = (state = initialState, action) => {
       break;
     }
     default:
-      const defaultState = {
-        itemsCountOnPage: 5,
-      };
-      return defaultState;
+      return state;
       break;
   }
 };

@@ -1,16 +1,16 @@
-const initialState =  require("../../data/data.json").roomsInfo;
+const initialState = require("../../data/productData.json").products;
 
-function roomsInfoReducer(state = initialState, action) {
+function productsReducer(state = initialState, action) {
   switch (action.type) {
     case "CREATE": {
-      const newItem = createItem(action.roomInfo);
+      const newItem = createItem(action.product);
       if (newItem) {
         //обновляем стэйт
         const newState = Object.assign({}, state);
-        newState.roomsInfo.push(newItem);
+        newState.products.push(newItem);
         //обновляем б/д файл
         /* const newData = JSON.stringify({
-          roomsInfo: state.roomsInfo,
+          products: state.products,
         }); */
         // ...
         return newState;
@@ -32,10 +32,10 @@ function roomsInfoReducer(state = initialState, action) {
   }
 }
 
-function createItem(roomInfo) {
-  const blocks = require("../../data/data.json").roomsInfo;
-  if (roomInfo) {
-    const result = {
+function createItem(product) {
+  const blocks = require("../../data/productData.json").products;
+  if (product) {
+    /* const result = {
       id: findMaxId(blocks) + 1,
       photosCount: roomInfo.photosCount !== undefined ? roomInfo.photosCount : initialState.photosCount,
       number: roomInfo.number !== undefined ? roomInfo.number : initialState.number,
@@ -46,7 +46,7 @@ function createItem(roomInfo) {
       checkedStarIndex: roomInfo.checkedStarIndex !== undefined ? roomInfo.checkedStarIndex : initialState.checkedStarIndex,
       url: roomInfo.url !== undefined ? roomInfo.url : initialState.url,
     };
-    return result;
+    return result; */
   }
 }
 
@@ -62,4 +62,4 @@ function findMaxId(blocks) {
   return biggestId;
 }
 
-export default roomsInfoReducer;
+export default productsReducer;

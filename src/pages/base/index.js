@@ -4,12 +4,11 @@ import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 
-/* import initialState from "../../store/initialState"; */
 import paginationReducer from "../../store/reduers/paginationReducer";
-import roomsInfoReducer from "../../store/reduers/roomsInfoReducer";
+import productsReducer from "../../store/reduers/productsReducer";
 
 import Header from "../../components/header/header.js";
-import RoomInfoList from "../room-info-list/room-info-list.js";
+import ProductsList from "../products-list/products-list.js";
 import Footer from "../../components/footer/footer.js";
 
 import "./base.scss";
@@ -25,14 +24,14 @@ class App extends React.Component {
     return (
       <Switch>
         <Route
-          exact path="/page/:pageNumber(\d+)?"
+          exact path="/:pageNumber(\d+)?"
           render={(props) => {
             let pageNumber = props.match.params.pageNumber;
             if (pageNumber !== undefined) pageNumber = Number.parseInt(pageNumber);
             return (
               <React.Fragment>
                 <Header />
-                <RoomInfoList pageNumber={pageNumber !== undefined ? pageNumber : 1} />
+                <ProductsList pageNumber={pageNumber !== undefined ? pageNumber : 1} />
                 <Footer />
               </React.Fragment>
             );
@@ -45,7 +44,7 @@ class App extends React.Component {
 
 const reducer = combineReducers({
   pagination: paginationReducer,
-  roomsInfo: roomsInfoReducer,
+  products: productsReducer,
   /* counterState: counterReducer */
 });
 
@@ -59,7 +58,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Switch>
-        <Route path="/page" component={App} />
+        <Route path="/" component={App} />
       </Switch>
     </Router>
   </Provider>,

@@ -1,7 +1,7 @@
-function createItem(roomInfo) {
+function createItem(product) {
   return {
     type: "CREATE",
-    roomInfo,
+    product,
   };
 }
 
