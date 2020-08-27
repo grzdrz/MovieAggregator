@@ -180,14 +180,36 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/crud-forms-links/crud-forms-links.scss":
-/*!**************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/crud-forms-links/crud-forms-links.scss ***!
-  \**************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/create-button/create-button.scss":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/create-button/create-button.scss ***!
+  \********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/crud-forms-links/crud-forms-links.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/create-button/create-button.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/create-form/create-form.scss":
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/create-form/create-form.scss ***!
+  \****************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/create-form/create-form.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/delete-button/delete-button.scss":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/delete-button/delete-button.scss ***!
+  \********************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/delete-button/delete-button.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -199,6 +221,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/footer/footer.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/form-input/form-input.scss":
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/form-input/form-input.scss ***!
+  \**************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/form-input/form-input.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -224,14 +257,58 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/room-info/room-info.scss":
-/*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/room-info/room-info.scss ***!
-  \************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/product-short-info/product-short-info.scss":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/product-short-info/product-short-info.scss ***!
+  \******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/room-info/room-info.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/product-short-info/product-short-info.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/radio/radio.scss":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/radio/radio.scss ***!
+  \****************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/radio/radio.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/star-rating/star-rating.scss":
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/star-rating/star-rating.scss ***!
+  \****************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/star-rating/star-rating.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/update-button/update-button.scss":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/update-button/update-button.scss ***!
+  \********************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/update-button/update-button.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/update-form/update-form.scss":
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/update-form/update-form.scss ***!
+  \****************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/update-form/update-form.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -246,14 +323,25 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/room-info-list/room-info-list.scss":
-/*!*****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/room-info-list/room-info-list.scss ***!
-  \*****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/product-details/product-details.scss":
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/product-details/product-details.scss ***!
+  \*******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/room-info-list/room-info-list.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/product-details/product-details.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/products-list/products-list.scss":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/products-list/products-list.scss ***!
+  \***************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/products-list/products-list.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -883,7 +971,7 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/room-info/img/room-350.png\": \"./src/components/room-info/img/room-350.png\",\n\t\"./components/room-info/img/room-352.png\": \"./src/components/room-info/img/room-352.png\",\n\t\"./components/room-info/img/room-444.png\": \"./src/components/room-info/img/room-444.png\",\n\t\"./components/room-info/img/room-450.png\": \"./src/components/room-info/img/room-450.png\",\n\t\"./components/room-info/img/room-666.png\": \"./src/components/room-info/img/room-666.png\",\n\t\"./components/room-info/img/room-678.png\": \"./src/components/room-info/img/room-678.png\",\n\t\"./components/room-info/img/room-740.png\": \"./src/components/room-info/img/room-740.png\",\n\t\"./components/room-info/img/room-840.png\": \"./src/components/room-info/img/room-840.png\",\n\t\"./components/room-info/img/room-856.png\": \"./src/components/room-info/img/room-856.png\",\n\t\"./components/room-info/img/room-888-1.png\": \"./src/components/room-info/img/room-888-1.png\",\n\t\"./components/room-info/img/room-888-2.png\": \"./src/components/room-info/img/room-888-2.png\",\n\t\"./components/room-info/img/room-888-3.png\": \"./src/components/room-info/img/room-888-3.png\",\n\t\"./components/room-info/img/room-888-4.png\": \"./src/components/room-info/img/room-888-4.png\",\n\t\"./components/room-info/img/room-980.png\": \"./src/components/room-info/img/room-980.png\",\n\t\"./components/room-info/img/room-982.png\": \"./src/components/room-info/img/room-982.png\",\n\t\"./data/img/poster1.jpg\": \"./src/data/img/poster1.jpg\",\n\t\"./data/img/poster2.jpg\": \"./src/data/img/poster2.jpg\",\n\t\"./data/movieData.json\": \"./src/data/movieData.json\",\n\t\"./pages/room-info-list/data.json\": \"./src/pages/room-info-list/data.json\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg|json)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg%7Cjson)$?");
+eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./data/productData.json\": \"./src/data/productData.json\",\n\t\"./data/productImages/1.png\": \"./src/data/productImages/1.png\",\n\t\"./data/productImages/10.png\": \"./src/data/productImages/10.png\",\n\t\"./data/productImages/11.png\": \"./src/data/productImages/11.png\",\n\t\"./data/productImages/12.png\": \"./src/data/productImages/12.png\",\n\t\"./data/productImages/13.png\": \"./src/data/productImages/13.png\",\n\t\"./data/productImages/14.png\": \"./src/data/productImages/14.png\",\n\t\"./data/productImages/15.png\": \"./src/data/productImages/15.png\",\n\t\"./data/productImages/2.png\": \"./src/data/productImages/2.png\",\n\t\"./data/productImages/3.png\": \"./src/data/productImages/3.png\",\n\t\"./data/productImages/4.png\": \"./src/data/productImages/4.png\",\n\t\"./data/productImages/5.png\": \"./src/data/productImages/5.png\",\n\t\"./data/productImages/6.png\": \"./src/data/productImages/6.png\",\n\t\"./data/productImages/7.png\": \"./src/data/productImages/7.png\",\n\t\"./data/productImages/8.png\": \"./src/data/productImages/8.png\",\n\t\"./data/productImages/9.png\": \"./src/data/productImages/9.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg|json)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg%7Cjson)$?");
 
 /***/ }),
 
@@ -1377,26 +1465,72 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/components/crud-forms-links/crud-forms-links.js":
-/*!*************************************************************!*\
-  !*** ./src/components/crud-forms-links/crud-forms-links.js ***!
-  \*************************************************************/
+/***/ "./src/components/create-button/create-button.js":
+/*!*******************************************************!*\
+  !*** ./src/components/create-button/create-button.js ***!
+  \*******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _button_button_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../button/button.jsx */ \"./src/components/button/button.jsx\");\n/* harmony import */ var _crud_forms_links_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./crud-forms-links.scss */ \"./src/components/crud-forms-links/crud-forms-links.scss\");\n/* harmony import */ var _crud_forms_links_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_crud_forms_links_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass CrudFormsLinks extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this._handleDropdownLeave = event => {\n      if (event.target.className.match) {\n        const linksContainer = event.target.className.match(/(^crud-forms-links$)|(^crud-forms-links__)/);\n\n        if (!linksContainer) {\n          this._handleCloseDropdown();\n        }\n      } else this._handleCloseDropdown();\n    };\n\n    this._handleCloseDropdown = () => {\n      this.isOpened = false;\n\n      this._changeState();\n    };\n\n    this._handlePlusWindowClick = () => {\n      this.isOpened = true;\n\n      this._changeState();\n    };\n\n    this.isOpened = false;\n    this.plusButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n    this.linksContainer = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n  }\n\n  componentWillMount() {\n    document.addEventListener('click', this._handleDropdownLeave);\n  }\n\n  componentWillUnmount() {\n    document.removeEventListener('click', this._handleDropdownLeave);\n  }\n\n  componentDidMount() {\n    this._changeState();\n  }\n\n  _changeState() {\n    const linksContainer = this.linksContainer.current;\n    const plusButton = this.plusButton.current;\n\n    if (this.isOpened) {\n      linksContainer.classList.toggle('crud-forms-links__links-to-forms_opened', true);\n      plusButton.classList.toggle('crud-forms-links__plus-button_opened', false);\n    } else {\n      linksContainer.classList.toggle('crud-forms-links__links-to-forms_opened', false);\n      plusButton.classList.toggle('crud-forms-links__plus-button_opened', true);\n    }\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"crud-forms-links\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"crud-forms-links__plus-button\",\n      onClick: this._handlePlusWindowClick,\n      ref: this.plusButton\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"crud-forms-links__plus-horizontal-part\"\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"crud-forms-links__plus-vertical-part\"\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"crud-forms-links__links-to-forms\",\n      ref: this.linksContainer\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"crud-forms-links__link\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n      buttonType: \"nav\",\n      text: \"create\",\n      url: `/page/createItem`\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"crud-forms-links__link\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n      buttonType: \"nav\",\n      text: \"update\",\n      url: `/page/updateItem`\n    }))));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (CrudFormsLinks);\n\n//# sourceURL=webpack:///./src/components/crud-forms-links/crud-forms-links.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _create_form_create_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../create-form/create-form */ \"./src/components/create-form/create-form.js\");\n/* harmony import */ var _create_button_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./create-button.scss */ \"./src/components/create-button/create-button.scss\");\n/* harmony import */ var _create_button_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_create_button_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass CreateButton extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this._handleDropdownLeave = event => {\n      if (event.target.className.match) {\n        const updateForm = event.target.className.match(/(^create-button)|(^create-button__)|(^create-form)|(^form-input)|(^radio)/);\n\n        if (!updateForm) {\n          this._handleCloseDropdown();\n        }\n      } else this._handleCloseDropdown();\n    };\n\n    this._handleCloseDropdown = () => {\n      this.isOpened = false;\n\n      this._changeState();\n    };\n\n    this._handlePlusWindowClick = () => {\n      this.isOpened = true;\n\n      this._changeState();\n    };\n\n    this.isOpened = false;\n    this.plusButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n    this.updateForm = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n  }\n\n  componentWillMount() {\n    document.addEventListener('click', this._handleDropdownLeave);\n  }\n\n  componentWillUnmount() {\n    document.removeEventListener('click', this._handleDropdownLeave);\n  }\n\n  componentDidMount() {\n    this._changeState();\n  }\n\n  _changeState() {\n    const updateForm = this.updateForm.current;\n    const plusButton = this.plusButton.current;\n\n    if (this.isOpened) {\n      updateForm.classList.toggle('create-button__form_opened', true);\n      /* plusButton.classList.toggle('create-button__button-container_opened', false); */\n    } else {\n      updateForm.classList.toggle('create-button__form_opened', false);\n      /* plusButton.classList.toggle('create-button__button-container_opened', true); */\n    }\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-button__form\",\n      ref: this.updateForm\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_create_form_create_form__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n      createItem: this.props.createItem\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-button__button-container\",\n      onClick: this._handlePlusWindowClick,\n      ref: this.plusButton\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"create-button__text\"\n    }, \"\\u0421\\u043E\\u0437\\u0434\\u0430\\u0442\\u044C \\u044D\\u043B\\u0435\\u043C\\u0435\\u043D\\u0442\")));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (CreateButton);\n\n//# sourceURL=webpack:///./src/components/create-button/create-button.js?");
 
 /***/ }),
 
-/***/ "./src/components/crud-forms-links/crud-forms-links.scss":
-/*!***************************************************************!*\
-  !*** ./src/components/crud-forms-links/crud-forms-links.scss ***!
-  \***************************************************************/
+/***/ "./src/components/create-button/create-button.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/create-button/create-button.scss ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./crud-forms-links.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/crud-forms-links/crud-forms-links.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/crud-forms-links/crud-forms-links.scss?");
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./create-button.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/create-button/create-button.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/create-button/create-button.scss?");
+
+/***/ }),
+
+/***/ "./src/components/create-form/create-form.js":
+/*!***************************************************!*\
+  !*** ./src/components/create-form/create-form.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _form_input_form_input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../form-input/form-input */ \"./src/components/form-input/form-input.js\");\n/* harmony import */ var _button_button_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../button/button.jsx */ \"./src/components/button/button.jsx\");\n/* harmony import */ var _radio_radio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../radio/radio */ \"./src/components/radio/radio.js\");\n/* harmony import */ var _create_form_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./create-form.scss */ \"./src/components/create-form/create-form.scss\");\n/* harmony import */ var _create_form_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_create_form_scss__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\nclass CreateForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this._handleSubmit = event => {\n      event.preventDefault();\n      const formBody = new FormData(this.form.current);\n      const test = Array.from(formBody);\n      const test2 = Object.fromEntries(test);\n      this.props.createItem(test2);\n    };\n\n    this.form = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"form\", {\n      className: \"create-form\",\n      ref: this.form,\n      onSubmit: this._handleSubmit\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-form__name\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_input_form_input__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n      name: \"name\",\n      type: \"text\",\n      value: \"\\u0422\\u043E\\u0440\\u0442 \\u0441 \\u0433\\u043E\\u0432\\u043D\\u043E\\u043C\",\n      title: \"\\u041D\\u0430\\u0438\\u043C\\u0435\\u043D\\u043E\\u0432\\u0430\\u043D\\u0438\\u0435\",\n      placeholder: \"\\u041D\\u0430\\u0438\\u043C\\u0435\\u043D\\u043E\\u0432\\u0430\\u043D\\u0438\\u0435\"\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-form__price\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-form__price-number\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_input_form_input__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n      name: \"price\",\n      type: \"number\",\n      value: 1234,\n      title: \"\\u0426\\u0435\\u043D\\u0430\",\n      placeholder: \"\\u0426\\u0435\\u043D\\u0430\"\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-form__currency-type\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_input_form_input__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n      name: \"currencyType\",\n      type: \"text\",\n      value: \"\\u20BD\",\n      title: \"\\u0412\\u0430\\u043B\\u044E\\u0442\\u0430\",\n      placeholder: \"\\u0412\\u0430\\u043B\\u044E\\u0442\\u0430\"\n    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-form__manufacturer\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_input_form_input__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n      name: \"manufacturer\",\n      type: \"text\",\n      value: \"\\u041E\\u041E\\u041E \\u0438 \\u043A\\u043E\",\n      title: \"\\u041F\\u0440\\u043E\\u0438\\u0437\\u0432\\u043E\\u0434\\u0438\\u0442\\u0435\\u043B\\u044C\"\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-form__packaging\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_radio_radio__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n      title: \"\\u0422\\u0438\\u043F \\u0444\\u0430\\u0441\\u043E\\u0432\\u043A\\u0438\",\n      buttonsList: [{\n        text: \"поштучно\",\n        isChecked: false\n      }, {\n        text: \"взвешиванием\",\n        isChecked: true\n      }]\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"create-form__submit-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n      hasArrow: true,\n      buttonType: \"submit\",\n      text: \"\\u041E\\u0442\\u043F\\u0440\\u0430\\u0432\\u0438\\u0442\\u044C\"\n    })));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (CreateForm);\n\n//# sourceURL=webpack:///./src/components/create-form/create-form.js?");
+
+/***/ }),
+
+/***/ "./src/components/create-form/create-form.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/create-form/create-form.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./create-form.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/create-form/create-form.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/create-form/create-form.scss?");
+
+/***/ }),
+
+/***/ "./src/components/delete-button/delete-button.js":
+/*!*******************************************************!*\
+  !*** ./src/components/delete-button/delete-button.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _update_form_update_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../update-form/update-form */ \"./src/components/update-form/update-form.js\");\n/* harmony import */ var _delete_button_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./delete-button.scss */ \"./src/components/delete-button/delete-button.scss\");\n/* harmony import */ var _delete_button_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_delete_button_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass DeleteButton extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this._handleWindowClick = event => {};\n\n    this.isOpened = false;\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"delete-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"delete-button__button-container\",\n      onClick: this._handleWindowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"delete-button__horizontal-part\"\n    })));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (DeleteButton);\n\n//# sourceURL=webpack:///./src/components/delete-button/delete-button.js?");
+
+/***/ }),
+
+/***/ "./src/components/delete-button/delete-button.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/delete-button/delete-button.scss ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./delete-button.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/delete-button/delete-button.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/delete-button/delete-button.scss?");
 
 /***/ }),
 
@@ -1432,6 +1566,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./footer.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/footer/footer.scss?");
+
+/***/ }),
+
+/***/ "./src/components/form-input/form-input.js":
+/*!*************************************************!*\
+  !*** ./src/components/form-input/form-input.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _form_input_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./form-input.scss */ \"./src/components/form-input/form-input.scss\");\n/* harmony import */ var _form_input_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_form_input_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction FormInput(props) {\n  const {\n    title = \"\",\n    additionalTitle = \"\",\n    placeholder = \"Email\",\n    name = \"email\",\n    type = \"email\",\n    value = \"\",\n    hasSubmitButton = false\n  } = props;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"form-input\"\n  }, title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    className: \"form-input__title\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: \"form-input__title-text\"\n  }, title), additionalTitle ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: \"form-input__additional-title-text\"\n  }, additionalTitle) : null) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"form-input__input-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n    className: \"form-input__input\",\n    placeholder: placeholder,\n    name: name,\n    type: type,\n    defaultValue: value\n  }), hasSubmitButton ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n    className: \"form-input__submitter\",\n    type: \"submit\",\n    value: \"arrow_forward\"\n  }) : null));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (FormInput);\n\n//# sourceURL=webpack:///./src/components/form-input/form-input.js?");
+
+/***/ }),
+
+/***/ "./src/components/form-input/form-input.scss":
+/*!***************************************************!*\
+  !*** ./src/components/form-input/form-input.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./form-input.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/form-input/form-input.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/form-input/form-input.scss?");
 
 /***/ }),
 
@@ -1478,7 +1635,7 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _pagination_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pagination.scss */ \"./src/components/pagination/pagination.scss\");\n/* harmony import */ var _pagination_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pagination_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass Pagination extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this.writeBottomText = () => {\n      const {\n        totalItemsCount,\n        pagesCount,\n        pageNumber\n      } = this.props;\n      const firstItemCountNumber = Math.round(totalItemsCount / pagesCount) * (pageNumber - 1) + 1;\n      let lastItemCountNumber = Math.round(totalItemsCount / pagesCount) * pageNumber;\n      if (lastItemCountNumber > totalItemsCount) lastItemCountNumber = totalItemsCount;\n      const totalItemsCountText = totalItemsCount > 100 ? \"100+\" : `${totalItemsCount}`;\n      return `${firstItemCountNumber} - ${lastItemCountNumber} из ${totalItemsCountText} вариантов аренды`;\n    };\n\n    this.handlerSelectPage = event => {\n      event.preventDefault();\n      let {\n        pageNumber\n      } = this.props;\n      const selectedPageNumber = event.currentTarget.dataset.pageNumber;\n\n      if (selectedPageNumber === \"leftArrow\") {\n        pageNumber -= 1;\n      } else if (selectedPageNumber === \"rightArrow\") {\n        pageNumber += 1;\n      } else {\n        pageNumber = Number.parseInt(selectedPageNumber, 10);\n      }\n      /* this.setState({\r\n          pageNumber,\r\n      }); */\n\n      /* this.props.handlerChangePage(pageNumber); */\n\n    };\n  }\n\n  calculateArrowNumber(isLeft) {\n    const {\n      pagesCount,\n      pageNumber\n    } = this.props;\n\n    if (isLeft) {\n      return Math.max(pageNumber - 1, 1);\n    }\n\n    return Math.min(pageNumber + 1, pagesCount);\n  }\n\n  render() {\n    const {\n      title,\n      pageNumber,\n      pagesCount,\n      totalItemsCount\n    } = this.props;\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"pagination\"\n    }, title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__title\"\n    }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"pagination__list\"\n    }, pageNumber !== 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__left-arrow\",\n      key: \"pagination-arrow-back\",\n      to: `/page/${this.calculateArrowNumber(true)}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__left-arrow-text\"\n    }, \"arrow_forward\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination-first\",\n      to: \"/page/1\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, \"1\"))) : null, pageNumber - 3 > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__link\",\n      \"data-page-number\": \"...\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, \"...\")) : null, pageNumber - 2 > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      exact: true,\n      className: \"pagination__link\",\n      key: \"pagination--2\",\n      to: `/page/${pageNumber - 2}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber - 2)) : null, pageNumber - 1 > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination--1\",\n      to: `/page/${pageNumber - 1}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber - 1)) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link pagination__link_target\",\n      key: \"pagination-0\",\n      to: `/page/${pageNumber}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber)), pageNumber + 1 < pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination-1\",\n      to: `/page/${pageNumber + 1}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber + 1)) : null, pageNumber + 2 < pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination-2\",\n      to: `/page/${pageNumber + 2}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber + 2)) : null, pageNumber + 3 < pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__link\",\n      \"data-page-number\": \"...\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, \"...\")) : null, pageNumber !== pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination-last\",\n      to: `/page/${pagesCount}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pagesCount)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__right-arrow\",\n      key: \"pagination-arrow-forward\",\n      to: `/page/${this.calculateArrowNumber(false)}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__right-arrow-text\"\n    }, \"arrow_forward\"))) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__bottom-text\"\n    }, this.writeBottomText()));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Pagination);\n\n//# sourceURL=webpack:///./src/components/pagination/pagination.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _pagination_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pagination.scss */ \"./src/components/pagination/pagination.scss\");\n/* harmony import */ var _pagination_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pagination_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass Pagination extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this.writeBottomText = () => {\n      const {\n        totalItemsCount,\n        pagesCount,\n        pageNumber\n      } = this.props;\n      const firstItemCountNumber = Math.round(totalItemsCount / pagesCount) * (pageNumber - 1) + 1;\n      let lastItemCountNumber = Math.round(totalItemsCount / pagesCount) * pageNumber;\n      if (lastItemCountNumber > totalItemsCount) lastItemCountNumber = totalItemsCount;\n      const totalItemsCountText = totalItemsCount > 100 ? \"100+\" : `${totalItemsCount}`;\n      return `${firstItemCountNumber} - ${lastItemCountNumber} из ${totalItemsCountText} продуктов`;\n    };\n  }\n\n  calculateArrowNumber(isLeft) {\n    const {\n      pagesCount,\n      pageNumber\n    } = this.props;\n\n    if (isLeft) {\n      return Math.max(pageNumber - 1, 1);\n    }\n\n    return Math.min(pageNumber + 1, pagesCount);\n  }\n\n  render() {\n    const {\n      title,\n      pageNumber,\n      pagesCount,\n      totalItemsCount\n    } = this.props;\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"pagination\"\n    }, title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__title\"\n    }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"pagination__list\"\n    }, pageNumber !== 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__left-arrow\",\n      key: \"pagination-arrow-back\",\n      to: `/${this.calculateArrowNumber(true)}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__left-arrow-text\"\n    }, \"arrow_forward\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination-first\",\n      to: \"/1\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, \"1\"))) : null, pageNumber - 3 > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__link\",\n      \"data-page-number\": \"...\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, \"...\")) : null, pageNumber - 2 > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      exact: true,\n      className: \"pagination__link\",\n      key: \"pagination--2\",\n      to: `/${pageNumber - 2}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber - 2)) : null, pageNumber - 1 > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination--1\",\n      to: `/${pageNumber - 1}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber - 1)) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link pagination__link_target\",\n      key: \"pagination-0\",\n      to: `/${pageNumber}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber)), pageNumber + 1 < pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination-1\",\n      to: `/${pageNumber + 1}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber + 1)) : null, pageNumber + 2 < pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination-2\",\n      to: `/${pageNumber + 2}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pageNumber + 2)) : null, pageNumber + 3 < pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__link\",\n      \"data-page-number\": \"...\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, \"...\")) : null, pageNumber !== pagesCount ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__link\",\n      key: \"pagination-last\",\n      to: `/${pagesCount}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__link-text\"\n    }, pagesCount)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"pagination__right-arrow\",\n      key: \"pagination-arrow-forward\",\n      to: `/${this.calculateArrowNumber(false)}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"pagination__right-arrow-text\"\n    }, \"arrow_forward\"))) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"pagination__bottom-text\"\n    }, this.writeBottomText()));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Pagination);\n\n//# sourceURL=webpack:///./src/components/pagination/pagination.js?");
 
 /***/ }),
 
@@ -1493,241 +1650,309 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/room-350.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-350.png ***!
-  \***************************************************/
+/***/ "./src/components/product-short-info/product-short-info.js":
+/*!*****************************************************************!*\
+  !*** ./src/components/product-short-info/product-short-info.js ***!
+  \*****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-350.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-350.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _update_button_update_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../update-button/update-button */ \"./src/components/update-button/update-button.js\");\n/* harmony import */ var _delete_button_delete_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../delete-button/delete-button */ \"./src/components/delete-button/delete-button.js\");\n/* harmony import */ var _star_rating_star_rating__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../star-rating/star-rating */ \"./src/components/star-rating/star-rating.js\");\n/* harmony import */ var _product_short_info_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./product-short-info.scss */ \"./src/components/product-short-info/product-short-info.scss\");\n/* harmony import */ var _product_short_info_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_product_short_info_scss__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\nclass ProductShortInfo extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this._handleLeftArrowClick = () => {\n      this._move(false);\n\n      this._update();\n    };\n\n    this._handleRightArrowClick = () => {\n      this._move(true);\n\n      this._update();\n    };\n\n    this.currentPhotoIndex = props.currentPhotoIndex !== undefined ? props.currentPhotoIndex : 0;\n    this.container = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n  }\n\n  componentDidMount() {\n    const containerElement = this.container.current;\n    this.arrows = containerElement.querySelector('.js-product-short-info__arrows');\n\n    if (this.arrows) {\n      this.leftArrow = this.arrows.querySelector('.js-product-short-info__arrow-back');\n      this.rightArrow = this.arrows.querySelector('.js-product-short-info__arrow-forward');\n    }\n\n    this.radioButtons = Array.from(containerElement.querySelectorAll('.js-product-short-info__radio-button'));\n    this.photos = Array.from(containerElement.querySelectorAll('.js-product-short-info__photo'));\n\n    if (this.leftArrow && this.rightArrow) {\n      this.leftArrow.addEventListener('click', this._handleLeftArrowClick);\n      this.rightArrow.addEventListener('click', this._handleRightArrowClick);\n    }\n\n    this._update();\n  }\n\n  _move(isDirectionForward) {\n    if (isDirectionForward) {\n      if (this.currentPhotoIndex === this.radioButtons.length - 1) return;\n      this.currentPhotoIndex += 1;\n    } else {\n      if (this.currentPhotoIndex === 0) return;\n      this.currentPhotoIndex -= 1;\n    }\n  }\n\n  _update() {\n    this.radioButtons.forEach((button, index) => {\n      if (index === this.currentPhotoIndex) button.classList.toggle('product-short-info__radio-button_checked', true);else button.classList.toggle('product-short-info__radio-button_checked', false);\n    });\n    this.photos.forEach((photo, index) => {\n      if (index === this.currentPhotoIndex) photo.classList.toggle('product-short-info__photo_current', true);else photo.classList.toggle('product-short-info__photo_current', false);\n    });\n  }\n\n  _formateNumber(number) {\n    return `${number}`.replace(/(\\d)(?=(\\d{3})+$)/g, '$1 ');\n  }\n\n  render() {\n    const {\n      id,\n      name,\n      price,\n      currencyType,\n      descriptions,\n      manufacturer,\n      energyValue,\n      proteins,\n      fats,\n      carbohydrates,\n      energyUnits,\n      weightUnits,\n      shelfLife,\n      shelfLifeUnits,\n      packaging,\n      imageNames,\n      checkedStars,\n      reviewsCount\n    } = this.props.product;\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info js-product-short-info\",\n      ref: this.container\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"product-short-info__ref\",\n      to: `/page-details/${id}`\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__photos\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__radio-buttons\"\n    }, imageNames.map((name, index) => {\n      let i = index + 1;\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n        className: `product-short-info__radio-button js-product-short-info__radio-button`,\n        \"data-serial-number\": i,\n        key: `product-short-info__radio-button-${i}`\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n        className: \"product-short-info__radio-button-image js-product-short-info__radio-button-image\"\n      }));\n    })), imageNames.map((name, i) => {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n        className: `product-short-info__photo js-product-short-info__photo`,\n        key: `product-short-info__photo product-short-info__photo-${i}`,\n        src: `/src/data/productImages/${name}.png`,\n        alt: \"room photo\",\n        \"data-serial-number\": i\n      });\n    }), imageNames.length > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__arrows js-product-short-info__arrows\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"product-short-info__arrow-back js-product-short-info__arrow-back\",\n      onClick: this.handlerLeftArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__arrow-back-icon\"\n    }, \"expand_more\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"product-short-info__arrow-forward js-product-short-info__arrow-forward\",\n      onClick: this.handlerRightArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__arrow-forward-icon\"\n    }, \"expand_more\"))) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__text-info\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-short-info__title\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__name\"\n    }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__price\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__price-number\"\n    }, `${this._formateNumber(price)}${currencyType}`), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__packaging-type\"\n    }, `за ${packaging === \"amount\" ? \"штуку\" : \"килограмм\"}`))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__rate\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_star_rating_star_rating__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n      id: id,\n      checkedStars: checkedStars\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-short-info__reviews-count\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__reviews-count-value\"\n    }, reviewsCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__reviews-count-text\"\n    }, \"\\u041E\\u0442\\u0437\\u044B\\u0432\\u043E\\u0432\")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__buttons\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__update-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_update_button_update_button__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__delete-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_delete_button_delete_button__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null))));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ProductShortInfo);\n\n//# sourceURL=webpack:///./src/components/product-short-info/product-short-info.js?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/room-352.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-352.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-352.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-352.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-444.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-444.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-444.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-444.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-450.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-450.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-450.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-450.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-666.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-666.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-666.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-666.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-678.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-678.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-678.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-678.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-740.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-740.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-740.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-740.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-840.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-840.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-840.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-840.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-856.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-856.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-856.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-856.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-888-1.png":
-/*!*****************************************************!*\
-  !*** ./src/components/room-info/img/room-888-1.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-1.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-1.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-888-2.png":
-/*!*****************************************************!*\
-  !*** ./src/components/room-info/img/room-888-2.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-2.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-2.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-888-3.png":
-/*!*****************************************************!*\
-  !*** ./src/components/room-info/img/room-888-3.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-3.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-3.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-888-4.png":
-/*!*****************************************************!*\
-  !*** ./src/components/room-info/img/room-888-4.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-4.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-4.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-980.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-980.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-980.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-980.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/img/room-982.png":
-/*!***************************************************!*\
-  !*** ./src/components/room-info/img/room-982.png ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-982.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-982.png?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/room-info.js":
-/*!***********************************************!*\
-  !*** ./src/components/room-info/room-info.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _crud_forms_links_crud_forms_links__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../crud-forms-links/crud-forms-links */ \"./src/components/crud-forms-links/crud-forms-links.js\");\n/* harmony import */ var _room_info_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./room-info.scss */ \"./src/components/room-info/room-info.scss\");\n/* harmony import */ var _room_info_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_room_info_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass RoomInfo extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this._handleLeftArrowClick = () => {\n      this._move(false);\n\n      this._update();\n    };\n\n    this._handleRightArrowClick = () => {\n      this._move(true);\n\n      this._update();\n    };\n\n    this.currentPhotoIndex = props.currentPhotoIndex !== undefined ? props.currentPhotoIndex : 0;\n    this.container = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n    /* this._initialize(); */\n  }\n\n  componentDidMount() {\n    const containerElement = this.container.current;\n    this.arrows = containerElement.querySelector('.js-room-info__arrows');\n\n    if (this.arrows) {\n      this.leftArrow = this.arrows.querySelector('.js-room-info__arrow-back');\n      this.rightArrow = this.arrows.querySelector('.js-room-info__arrow-forward');\n    }\n\n    this.radioButtons = Array.from(containerElement.querySelectorAll('.js-room-info__radio-button'));\n    this.photos = Array.from(containerElement.querySelectorAll('.js-room-info__photo'));\n\n    if (this.leftArrow && this.rightArrow) {\n      this.leftArrow.addEventListener('click', this._handleLeftArrowClick);\n      this.rightArrow.addEventListener('click', this._handleRightArrowClick);\n    }\n\n    this._update();\n  }\n\n  _move(isDirectionForward) {\n    if (isDirectionForward) {\n      if (this.currentPhotoIndex === this.radioButtons.length - 1) return;\n      this.currentPhotoIndex += 1;\n    } else {\n      if (this.currentPhotoIndex === 0) return;\n      this.currentPhotoIndex -= 1;\n    }\n  }\n\n  _update() {\n    this.radioButtons.forEach((button, index) => {\n      if (index === this.currentPhotoIndex) button.classList.toggle('room-info__radio-button_checked', true);else button.classList.toggle('room-info__radio-button_checked', false);\n    });\n    this.photos.forEach((photo, index) => {\n      if (index === this.currentPhotoIndex) photo.classList.toggle('room-info__photo_current', true);else photo.classList.toggle('room-info__photo_current', false);\n    });\n  }\n\n  _formateNumber(number) {\n    return `${number}`.replace(/(\\d)(?=(\\d{3})+$)/g, '$1 ');\n  }\n\n  render() {\n    const {\n      url,\n      blockNumber,\n      photosCount = 4,\n      checkedStarIndex,\n      reviewsCount,\n      roomNumber,\n      roomStatus,\n      roomPrice,\n      currencyType\n    } = this.props;\n    const iterationCount = photosCount <= 4 ? 4 : photosCount;\n    const iterator = [];\n\n    for (let i = 0; i < iterationCount; i += 1) iterator.push(0);\n\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info js-room-info\",\n      ref: this.container\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      className: \"room-info__ref\",\n      href: url\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__photos\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__radio-buttons\"\n    }, iterator.map((value, index) => {\n      let i = index + 1;\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n        className: `room-info__radio-button js-room-info__radio-button`,\n        \"data-serial-number\": i,\n        key: `room-info__radio-button-${i}`\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n        className: \"room-info__radio-button-image js-room-info__radio-button-image\"\n      }));\n    })), iterator.map((photo, i) => {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n        className: `room-info__photo js-room-info__photo`,\n        key: `room-info__photo room-info__photo-${i}`,\n        src: `/src/components/room-info/img/room-${roomNumber}${photosCount > 1 ? `-${i + 1}` : \"\"}.png`,\n        alt: \"room photo\",\n        \"data-serial-number\": i\n      });\n    }), photosCount > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__arrows js-room-info__arrows\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"room-info__arrow-back js-room-info__arrow-back\",\n      onClick: this.handlerLeftArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__arrow-back-icon\"\n    }, \"expand_more\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"room-info__arrow-forward js-room-info__arrow-forward\",\n      onClick: this.handlerRightArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__arrow-forward-icon\"\n    }, \"expand_more\"))) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__text-info\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"room-info__title\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__number-symbol\"\n    }, \"\\u2116\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__room-number\"\n    }, roomNumber), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__room-status\"\n    }, roomStatus ? roomStatus : \"\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__room-price\"\n    }, `${this._formateNumber(roomPrice)}${currencyType}`), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__period-of-time\"\n    }, `в сутки`)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__room-rate\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"room-info__reviews-count\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__reviews-count-value\"\n    }, reviewsCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"room-info__reviews-count-text\"\n    }, \"\\u041E\\u0442\\u0437\\u044B\\u0432\\u043E\\u0432\")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info__crud-forms-links\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_crud_forms_links_crud_forms_links__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null)));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (RoomInfo);\n\n//# sourceURL=webpack:///./src/components/room-info/room-info.js?");
-
-/***/ }),
-
-/***/ "./src/components/room-info/room-info.scss":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/room-info.scss ***!
-  \*************************************************/
+/***/ "./src/components/product-short-info/product-short-info.scss":
+/*!*******************************************************************!*\
+  !*** ./src/components/product-short-info/product-short-info.scss ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./room-info.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/room-info/room-info.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/room-info/room-info.scss?");
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./product-short-info.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/product-short-info/product-short-info.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/product-short-info/product-short-info.scss?");
 
 /***/ }),
 
-/***/ "./src/data/img/poster1.jpg":
-/*!**********************************!*\
-  !*** ./src/data/img/poster1.jpg ***!
-  \**********************************/
+/***/ "./src/components/radio/radio.js":
+/*!***************************************!*\
+  !*** ./src/components/radio/radio.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/img/poster1.jpg\");\n\n//# sourceURL=webpack:///./src/data/img/poster1.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _radio_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./radio.scss */ \"./src/components/radio/radio.scss\");\n/* harmony import */ var _radio_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_radio_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction Radio(props) {\n  const {\n    id = 0,\n    title = \"\",\n    buttonsList = [{\n      text: \"amount\",\n      isChecked: true\n    }, {\n      text: \"weight\",\n      isChecked: false\n    }],\n    name = \"packaging\"\n  } = props;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"radio\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    className: \"radio__title\"\n  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"radio__inputs\"\n  }, buttonsList.map((button, index) => {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"label\", {\n      className: \"radio__label\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n      className: \"radio__input\",\n      type: \"radio\",\n      name: `${name}-${id}`,\n      defaultChecked: button.isChecked\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"radio__button-image\"\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"radio__text\"\n    }, button.text));\n  })));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Radio);\n\n//# sourceURL=webpack:///./src/components/radio/radio.js?");
 
 /***/ }),
 
-/***/ "./src/data/img/poster2.jpg":
-/*!**********************************!*\
-  !*** ./src/data/img/poster2.jpg ***!
-  \**********************************/
+/***/ "./src/components/radio/radio.scss":
+/*!*****************************************!*\
+  !*** ./src/components/radio/radio.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./radio.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/radio/radio.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/radio/radio.scss?");
+
+/***/ }),
+
+/***/ "./src/components/star-rating/star-rating.js":
+/*!***************************************************!*\
+  !*** ./src/components/star-rating/star-rating.js ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/img/poster2.jpg\");\n\n//# sourceURL=webpack:///./src/data/img/poster2.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _star_rating_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./star-rating.scss */ \"./src/components/star-rating/star-rating.scss\");\n/* harmony import */ var _star_rating_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_star_rating_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction StarRating(props) {\n  const {\n    id = 0,\n    checkedStars = 0\n  } = props;\n  const iterator = [0, 0, 0, 0, 0];\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"star-rating\"\n  }, iterator.map((value, i) => {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {\n      key: `star-rating__${5 - i}`\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n      className: \"star-rating__input\",\n      type: \"radio\",\n      name: `star-rating-${id}`,\n      value: 5 - i,\n      defaultChecked: checkedStars === 5 - i\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"star-rating__image\",\n      title: `Оценка «${5 - i}»`\n    }));\n  }));\n}\n/* for (let i = 5; i >= 1; i -= 1) { */\n\n/* } */\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (StarRating);\n\n//# sourceURL=webpack:///./src/components/star-rating/star-rating.js?");
 
 /***/ }),
 
-/***/ "./src/data/movieData.json":
-/*!*********************************!*\
-  !*** ./src/data/movieData.json ***!
-  \*********************************/
-/*! exports provided: Id, Name, Director, Writer, ReleaseDate, Description, Genres, Country, ImgSrc, Cast, Producers, default */
+/***/ "./src/components/star-rating/star-rating.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/star-rating/star-rating.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./star-rating.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/star-rating/star-rating.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/star-rating/star-rating.scss?");
+
+/***/ }),
+
+/***/ "./src/components/update-button/update-button.js":
+/*!*******************************************************!*\
+  !*** ./src/components/update-button/update-button.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _update_form_update_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../update-form/update-form */ \"./src/components/update-form/update-form.js\");\n/* harmony import */ var _update_button_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./update-button.scss */ \"./src/components/update-button/update-button.scss\");\n/* harmony import */ var _update_button_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_update_button_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass UpdateButton extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this._handleDropdownLeave = event => {\n      if (event.target.className.match) {\n        const updateForm = event.target.className.match(/(^update-button)|(^update-button__)|(^update-form)|(^form-input)/);\n\n        if (!updateForm) {\n          this._handleCloseDropdown();\n        }\n      } else this._handleCloseDropdown();\n    };\n\n    this._handleCloseDropdown = () => {\n      this.isOpened = false;\n\n      this._changeState();\n    };\n\n    this._handlePlusWindowClick = () => {\n      this.isOpened = true;\n\n      this._changeState();\n    };\n\n    this.isOpened = false;\n    this.plusButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n    this.updateForm = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n  }\n\n  componentWillMount() {\n    document.addEventListener('click', this._handleDropdownLeave);\n  }\n\n  componentWillUnmount() {\n    document.removeEventListener('click', this._handleDropdownLeave);\n  }\n\n  componentDidMount() {\n    this._changeState();\n  }\n\n  _changeState() {\n    const updateForm = this.updateForm.current;\n    const plusButton = this.plusButton.current;\n\n    if (this.isOpened) {\n      updateForm.classList.toggle('update-button__update-form_opened', true);\n      plusButton.classList.toggle('update-button__button-container_opened', false);\n    } else {\n      updateForm.classList.toggle('update-button__update-form_opened', false);\n      plusButton.classList.toggle('update-button__button-container_opened', true);\n    }\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"update-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"update-button__button-container\",\n      onClick: this._handlePlusWindowClick,\n      ref: this.plusButton\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"update-button__horizontal-part\"\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"update-button__vertical-part\"\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"update-button__update-form\",\n      ref: this.updateForm\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_update_form_update_form__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null)));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (UpdateButton);\n\n//# sourceURL=webpack:///./src/components/update-button/update-button.js?");
+
+/***/ }),
+
+/***/ "./src/components/update-button/update-button.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/update-button/update-button.scss ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./update-button.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/update-button/update-button.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/update-button/update-button.scss?");
+
+/***/ }),
+
+/***/ "./src/components/update-form/update-form.js":
+/*!***************************************************!*\
+  !*** ./src/components/update-form/update-form.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _form_input_form_input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../form-input/form-input */ \"./src/components/form-input/form-input.js\");\n/* harmony import */ var _button_button_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../button/button.jsx */ \"./src/components/button/button.jsx\");\n/* harmony import */ var _update_form_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./update-form.scss */ \"./src/components/update-form/update-form.scss\");\n/* harmony import */ var _update_form_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_update_form_scss__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\nclass UpdateForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"form\", {\n      className: \"update-form\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"update-form__number\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_input_form_input__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n      title: \"Room number\",\n      additionalTitle: \"\",\n      placeholder: \"Room number\",\n      name: \"room-number\",\n      type: \"number\",\n      hasSubmitButton: false\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"update-form__status\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_input_form_input__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"update-form__price\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_input_form_input__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"update-form__reviews-count\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_input_form_input__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"update-form__checked-star-index\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_input_form_input__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"update-form__submit-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n      hasArrow: true,\n      buttonType: \"submit\",\n      text: \"\\u041E\\u0442\\u043F\\u0440\\u0430\\u0432\\u0438\\u0442\\u044C\"\n    })));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (UpdateForm);\n\n//# sourceURL=webpack:///./src/components/update-form/update-form.js?");
+
+/***/ }),
+
+/***/ "./src/components/update-form/update-form.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/update-form/update-form.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./update-form.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/update-form/update-form.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/update-form/update-form.scss?");
+
+/***/ }),
+
+/***/ "./src/data/productData.json":
+/*!***********************************!*\
+  !*** ./src/data/productData.json ***!
+  \***********************************/
+/*! exports provided: products, default */
 /***/ (function(module) {
 
-eval("module.exports = JSON.parse(\"{\\\"Id\\\":0,\\\"Name\\\":\\\"name1\\\",\\\"Director\\\":\\\"director1\\\",\\\"Writer\\\":\\\"writer1\\\",\\\"ReleaseDate\\\":\\\"rd1\\\",\\\"Description\\\":\\\"description1\\\",\\\"Genres\\\":\\\"genres1\\\",\\\"Country\\\":\\\"country1\\\",\\\"ImgSrc\\\":\\\"./src/data/img/poster1.jpg\\\",\\\"Cast\\\":\\\"Cast1\\\",\\\"Producers\\\":\\\"Producers1\\\"}\");\n\n//# sourceURL=webpack:///./src/data/movieData.json?");
+eval("module.exports = JSON.parse(\"{\\\"products\\\":[{\\\"id\\\":0,\\\"name\\\":\\\"Дыня Ромашка\\\",\\\"price\\\":123,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"Дыня Ромашка получила свое название благодаря оригинальному внешнему виду. Плод имеет округлую форму и будто разделен на сегменты (или, словно ромашка, на лепестки). Мякоть у нее сладкая, с нежным медовым ароматом. Дыня содержит совсем мало калорий (всего 34ккал), однако в ней много полезных веществ: витамины А, Р, С, каротин, фолиевая кислота, кальций, железо, калий. Пектин и клетчатка, входящие в состав, нормализуют работу пищеварительной системы и способствуют очищению организма. Дыня отлично подходит для десертного стола или фруктового салата, но вот с другими продуктами ее смешивать не рекомендуется.\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"amount\\\",\\\"imageNames\\\":[1,2,3],\\\"checkedStars\\\":5,\\\"reviewsCount\\\":23},{\\\"id\\\":1,\\\"name\\\":\\\"Арбуз Ромашка\\\",\\\"price\\\":56,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"Арбуз блаблаблаблабла\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"weight\\\",\\\"imageNames\\\":[1,2,3],\\\"checkedStars\\\":4,\\\"reviewsCount\\\":123},{\\\"id\\\":2,\\\"name\\\":\\\"Черешня\\\",\\\"price\\\":11,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"выпаыпываыпвпап\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"amount\\\",\\\"imageNames\\\":[4,5],\\\"checkedStars\\\":4,\\\"reviewsCount\\\":33},{\\\"id\\\":3,\\\"name\\\":\\\"Навоз\\\",\\\"price\\\":543,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"выпаыпываыпвпап\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"amount\\\",\\\"imageNames\\\":[6],\\\"checkedStars\\\":2,\\\"reviewsCount\\\":3534},{\\\"id\\\":4,\\\"name\\\":\\\"Вишня\\\",\\\"price\\\":1488,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"выпаыпываыпвпап\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"weight\\\",\\\"imageNames\\\":[6],\\\"checkedStars\\\":1,\\\"reviewsCount\\\":333},{\\\"id\\\":5,\\\"name\\\":\\\"Клубника\\\",\\\"price\\\":69,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"выпаыпываыпвпап\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"weight\\\",\\\"imageNames\\\":[6,7,8,9,10],\\\"checkedStars\\\":5,\\\"reviewsCount\\\":0}]}\");\n\n//# sourceURL=webpack:///./src/data/productData.json?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/1.png":
+/*!**************************************!*\
+  !*** ./src/data/productImages/1.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/1.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/1.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/10.png":
+/*!***************************************!*\
+  !*** ./src/data/productImages/10.png ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/10.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/10.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/11.png":
+/*!***************************************!*\
+  !*** ./src/data/productImages/11.png ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/11.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/11.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/12.png":
+/*!***************************************!*\
+  !*** ./src/data/productImages/12.png ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/12.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/12.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/13.png":
+/*!***************************************!*\
+  !*** ./src/data/productImages/13.png ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/13.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/13.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/14.png":
+/*!***************************************!*\
+  !*** ./src/data/productImages/14.png ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/14.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/14.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/15.png":
+/*!***************************************!*\
+  !*** ./src/data/productImages/15.png ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/15.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/15.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/2.png":
+/*!**************************************!*\
+  !*** ./src/data/productImages/2.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/2.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/2.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/3.png":
+/*!**************************************!*\
+  !*** ./src/data/productImages/3.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/3.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/3.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/4.png":
+/*!**************************************!*\
+  !*** ./src/data/productImages/4.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/4.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/4.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/5.png":
+/*!**************************************!*\
+  !*** ./src/data/productImages/5.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/5.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/5.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/6.png":
+/*!**************************************!*\
+  !*** ./src/data/productImages/6.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/6.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/6.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/7.png":
+/*!**************************************!*\
+  !*** ./src/data/productImages/7.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/7.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/7.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/8.png":
+/*!**************************************!*\
+  !*** ./src/data/productImages/8.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/8.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/8.png?");
+
+/***/ }),
+
+/***/ "./src/data/productImages/9.png":
+/*!**************************************!*\
+  !*** ./src/data/productImages/9.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/9.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/9.png?");
 
 /***/ }),
 
@@ -1750,41 +1975,53 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _store_reduers_paginationReducer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../store/reduers/paginationReducer */ \"./src/store/reduers/paginationReducer.js\");\n/* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/header/header.js */ \"./src/components/header/header.js\");\n/* harmony import */ var _room_info_list_room_info_list_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../room-info-list/room-info-list.js */ \"./src/pages/room-info-list/room-info-list.js\");\n/* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/footer/footer.js */ \"./src/components/footer/footer.js\");\n/* harmony import */ var _base_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./base.scss */ \"./src/pages/base/base.scss\");\n/* harmony import */ var _base_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_base_scss__WEBPACK_IMPORTED_MODULE_9__);\n\n\n\n\n\n/* import initialState from \"../../store/initialState\"; */\n\n\n\n\n\n\n\n__webpack_require__(\"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg|json)$\");\n\nclass App extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {\n  constructor(props) {\n    super(props);\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"Switch\"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"Route\"], {\n      exact: true,\n      path: \"/page/:pageNumber(\\\\d+)?\",\n      render: props => {\n        let pageNumber = props.match.params.pageNumber;\n        if (pageNumber !== undefined) pageNumber = Number.parseInt(pageNumber);\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_header_header_js__WEBPACK_IMPORTED_MODULE_6__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_room_info_list_room_info_list_js__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n          pageNumber: pageNumber !== undefined ? pageNumber : 1\n        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_footer_footer_js__WEBPACK_IMPORTED_MODULE_8__[\"default\"], null));\n      }\n    }));\n  }\n\n}\n\nconst reducer = Object(redux__WEBPACK_IMPORTED_MODULE_2__[\"combineReducers\"])({\n  pagination: _store_reduers_paginationReducer__WEBPACK_IMPORTED_MODULE_5__[\"default\"]\n  /* counterState: counterReducer */\n\n});\nconst store = Object(redux__WEBPACK_IMPORTED_MODULE_2__[\"createStore\"])(reducer);\nstore.dispatch({\n  type: \"default\"\n});\nconst targetElement = document.querySelector(\".app\");\nreact_dom__WEBPACK_IMPORTED_MODULE_0___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__[\"Provider\"], {\n  store: store\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"BrowserRouter\"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"Switch\"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"Route\"], {\n  path: \"/page\",\n  component: App\n})))), targetElement);\n\n//# sourceURL=webpack:///./src/pages/base/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _store_reduers_paginationReducer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../store/reduers/paginationReducer */ \"./src/store/reduers/paginationReducer.js\");\n/* harmony import */ var _store_reduers_productsReducer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../store/reduers/productsReducer */ \"./src/store/reduers/productsReducer.js\");\n/* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/header/header.js */ \"./src/components/header/header.js\");\n/* harmony import */ var _products_list_products_list_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../products-list/products-list.js */ \"./src/pages/products-list/products-list.js\");\n/* harmony import */ var _product_details_product_details__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../product-details/product-details */ \"./src/pages/product-details/product-details.js\");\n/* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/footer/footer.js */ \"./src/components/footer/footer.js\");\n/* harmony import */ var _base_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./base.scss */ \"./src/pages/base/base.scss\");\n/* harmony import */ var _base_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_base_scss__WEBPACK_IMPORTED_MODULE_11__);\n\n\n\n\n\n\n\n\n\n\n\n\n\n__webpack_require__(\"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg|json)$\");\n\nclass App extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {\n  constructor(props) {\n    super(props);\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_header_header_js__WEBPACK_IMPORTED_MODULE_7__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"Switch\"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"Route\"], {\n      exact: true,\n      path: \"/page-details/:productId(\\\\d+)?\",\n      render: props => {\n        const productId = props.match.params.productId;\n        const id = Number.parseInt(productId ? productId : 0, 10);\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_product_details_product_details__WEBPACK_IMPORTED_MODULE_9__[\"default\"], {\n          id: id\n        });\n      }\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"Route\"], {\n      exact: true,\n      path: \"/:pageNumber(\\\\d+)?\",\n      render: props => {\n        let pageNumber = props.match.params.pageNumber;\n        if (pageNumber !== undefined) pageNumber = Number.parseInt(pageNumber);\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_products_list_products_list_js__WEBPACK_IMPORTED_MODULE_8__[\"default\"], {\n          pageNumber: pageNumber !== undefined ? pageNumber : 1\n        }));\n      }\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_footer_footer_js__WEBPACK_IMPORTED_MODULE_10__[\"default\"], null));\n  }\n\n}\n\nconst reducer = Object(redux__WEBPACK_IMPORTED_MODULE_2__[\"combineReducers\"])({\n  pagination: _store_reduers_paginationReducer__WEBPACK_IMPORTED_MODULE_5__[\"default\"],\n  products: _store_reduers_productsReducer__WEBPACK_IMPORTED_MODULE_6__[\"default\"]\n});\nconst store = Object(redux__WEBPACK_IMPORTED_MODULE_2__[\"createStore\"])(reducer);\nstore.dispatch({\n  type: \"default\"\n});\nconst targetElement = document.querySelector(\".app\");\nreact_dom__WEBPACK_IMPORTED_MODULE_0___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__[\"Provider\"], {\n  store: store\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"BrowserRouter\"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"Switch\"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__[\"Route\"], {\n  path: \"/\",\n  component: App\n})))), targetElement);\n\n//# sourceURL=webpack:///./src/pages/base/index.js?");
 
 /***/ }),
 
-/***/ "./src/pages/room-info-list/data.json":
-/*!********************************************!*\
-  !*** ./src/pages/room-info-list/data.json ***!
-  \********************************************/
-/*! exports provided: roomsInfo, default */
-/***/ (function(module) {
-
-eval("module.exports = JSON.parse(\"{\\\"roomsInfo\\\":[{\\\"blockNumber\\\":0,\\\"photosCount\\\":4,\\\"roomNumber\\\":888,\\\"roomStatus\\\":\\\"люкс\\\",\\\"roomPrice\\\":9990,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"145\\\",\\\"checkedStarIndex\\\":5,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":1,\\\"photosCount\\\":1,\\\"roomNumber\\\":840,\\\"roomPrice\\\":9990,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"65\\\",\\\"checkedStarIndex\\\":4,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":2,\\\"photosCount\\\":1,\\\"roomNumber\\\":980,\\\"roomStatus\\\":\\\"люкс\\\",\\\"roomPrice\\\":8500,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"35\\\",\\\"checkedStarIndex\\\":3,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":3,\\\"photosCount\\\":1,\\\"roomNumber\\\":856,\\\"roomPrice\\\":7300,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"19\\\",\\\"checkedStarIndex\\\":5,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":4,\\\"photosCount\\\":1,\\\"roomNumber\\\":740,\\\"roomPrice\\\":6000,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"44\\\",\\\"checkedStarIndex\\\":4,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":5,\\\"photosCount\\\":1,\\\"roomNumber\\\":982,\\\"roomPrice\\\":5800,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"56\\\",\\\"checkedStarIndex\\\":3,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":6,\\\"photosCount\\\":1,\\\"roomNumber\\\":678,\\\"roomPrice\\\":5500,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"45\\\",\\\"checkedStarIndex\\\":5,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":7,\\\"photosCount\\\":1,\\\"roomNumber\\\":450,\\\"roomPrice\\\":5300,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"39\\\",\\\"checkedStarIndex\\\":4,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":8,\\\"photosCount\\\":1,\\\"roomNumber\\\":350,\\\"roomPrice\\\":5000,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"77\\\",\\\"checkedStarIndex\\\":3,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":9,\\\"photosCount\\\":1,\\\"roomNumber\\\":666,\\\"roomPrice\\\":5000,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"25\\\",\\\"checkedStarIndex\\\":5,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":10,\\\"photosCount\\\":1,\\\"roomNumber\\\":444,\\\"roomPrice\\\":5000,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"15\\\",\\\"checkedStarIndex\\\":3,\\\"url\\\":\\\"room-details.html\\\"},{\\\"blockNumber\\\":11,\\\"photosCount\\\":1,\\\"roomNumber\\\":352,\\\"roomPrice\\\":5000,\\\"currencyType\\\":\\\"₽\\\",\\\"reviewsCount\\\":\\\"55\\\",\\\"checkedStarIndex\\\":3,\\\"url\\\":\\\"room-details.html\\\"}]}\");\n\n//# sourceURL=webpack:///./src/pages/room-info-list/data.json?");
-
-/***/ }),
-
-/***/ "./src/pages/room-info-list/room-info-list.js":
-/*!****************************************************!*\
-  !*** ./src/pages/room-info-list/room-info-list.js ***!
-  \****************************************************/
+/***/ "./src/pages/product-details/product-details.js":
+/*!******************************************************!*\
+  !*** ./src/pages/product-details/product-details.js ***!
+  \******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _store_actions_changeItemsCountOnPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../store/actions/changeItemsCountOnPage */ \"./src/store/actions/changeItemsCountOnPage.js\");\n/* harmony import */ var _components_room_info_room_info_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/room-info/room-info.js */ \"./src/components/room-info/room-info.js\");\n/* harmony import */ var _components_pagination_pagination_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/pagination/pagination.js */ \"./src/components/pagination/pagination.js\");\n/* harmony import */ var _room_info_list_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./room-info-list.scss */ \"./src/pages/room-info-list/room-info-list.scss\");\n/* harmony import */ var _room_info_list_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_room_info_list_scss__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\nclass RoomInfoList extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n  }\n\n  getInfoBlocks() {\n    const {\n      pagination,\n      pageNumber\n    } = this.props;\n    const {\n      itemsCountOnPage\n    } = pagination;\n\n    const blocks = __webpack_require__(/*! ./data.json */ \"./src/pages/room-info-list/data.json\").roomsInfo;\n\n    const t1 = pageNumber * itemsCountOnPage;\n    const result = blocks.filter((block, index) => index >= t1 - itemsCountOnPage && index < t1);\n    return result;\n  }\n\n  getPageCount() {\n    const {\n      pagination,\n      pageNumber\n    } = this.props;\n    const {\n      itemsCountOnPage\n    } = pagination;\n\n    const totalItemsCount = __webpack_require__(/*! ./data.json */ \"./src/pages/room-info-list/data.json\").roomsInfo.length;\n\n    const test = totalItemsCount / itemsCountOnPage;\n    const test2 = `${test}`;\n    const test3 = test2.split(/\\.|\\,/);\n    if (test3.length === 0) return test;\n    const n1 = Number.parseInt(test3[0]);\n    const n2 = Number.parseInt(test3[1]);\n    if (n2 === 0) return n1;\n    return n1 + 1;\n  }\n  /* handlerChangePage = (pageNumber) => {\r\n      this.props.changePage(pageNumber);\r\n  } */\n\n\n  render() {\n    const {\n      pagination,\n      pageNumber\n    } = this.props;\n    const {\n      itemsCountOnPage\n    } = pagination;\n\n    const totalItemsCount = __webpack_require__(/*! ./data.json */ \"./src/pages/room-info-list/data.json\").roomsInfo.length;\n\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info-list\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info-list__room-list\"\n    }, this.getInfoBlocks().map((block, index) => {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: \"room-info-list__list-item\",\n        key: `room-info-list__list-item-${pageNumber}-${index}`\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_room_info_room_info_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n        url: block.url,\n        blockNumber: block.blockNumber,\n        photosCount: block.photosCount,\n        checkedStarIndex: block.checkedStarIndex,\n        reviewsCount: block.reviewsCount,\n        roomNumber: block.roomNumber,\n        roomStatus: block.roomStatus,\n        roomPrice: block.roomPrice,\n        currencyType: block.currencyType\n      }));\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"room-info-list__pagination\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_pagination_pagination_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n      title: \"Pagination\",\n      pageNumber: pageNumber,\n      pagesCount: this.getPageCount(),\n      totalItemsCount: totalItemsCount\n      /* handlerChangePage={this.handlerChangePage} */\n\n    })));\n  }\n\n}\n\nconst mapStateToProps = function (state) {\n  return state;\n};\n\nconst actions = {\n  changeItemsCountOnPage: _store_actions_changeItemsCountOnPage__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__[\"connect\"])(mapStateToProps, actions)(RoomInfoList));\n\n//# sourceURL=webpack:///./src/pages/room-info-list/room-info-list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _product_details_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./product-details.scss */ \"./src/pages/product-details/product-details.scss\");\n/* harmony import */ var _product_details_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_product_details_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass ProductDetails extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n  }\n\n  render() {\n    const product = this.props.products.find(product => product.id === this.props.id);\n    const {\n      id,\n      name,\n      price,\n      currencyType,\n      descriptions,\n      manufacturer,\n      energyValue,\n      proteins,\n      fats,\n      carbohydrates,\n      energyUnits,\n      weightUnits,\n      shelfLife,\n      shelfLifeUnits,\n      packaging,\n      imageNames,\n      checkedStars,\n      reviewsCount\n    } = product;\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-details\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-details__name\"\n    }, \"\\u041D\\u0430\\u0438\\u043C\\u0435\\u043D\\u043E\\u0432\\u0430\\u043D\\u0438\\u0435: \", name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-details__price\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-details__price-number\"\n    }, \"\\u0426\\u0435\\u043D\\u0430: \", price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-details__price-currency-type\"\n    }, currencyType)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-details__manufacturer\"\n    }, \"\\u041F\\u0440\\u043E\\u0438\\u0437\\u0432\\u043E\\u0434\\u0438\\u0442\\u0435\\u043B\\u044C: \", manufacturer), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-details__shelf-life\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-details__shelf-life-number\"\n    }, \"\\u0421\\u0440\\u043E\\u043A \\u0433\\u043E\\u0434\\u043D\\u043E\\u0441\\u0442\\u0438: \", shelfLife), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-details__shelf-life-units\"\n    }, shelfLifeUnits)));\n  }\n\n}\n\nconst mapStateToProps = function (state) {\n  return state;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__[\"connect\"])(mapStateToProps)(ProductDetails));\n\n//# sourceURL=webpack:///./src/pages/product-details/product-details.js?");
 
 /***/ }),
 
-/***/ "./src/pages/room-info-list/room-info-list.scss":
-/*!******************************************************!*\
-  !*** ./src/pages/room-info-list/room-info-list.scss ***!
-  \******************************************************/
+/***/ "./src/pages/product-details/product-details.scss":
+/*!********************************************************!*\
+  !*** ./src/pages/product-details/product-details.scss ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./room-info-list.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/room-info-list/room-info-list.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/room-info-list/room-info-list.scss?");
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./product-details.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/product-details/product-details.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/product-details/product-details.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/products-list/products-list.js":
+/*!**************************************************!*\
+  !*** ./src/pages/products-list/products-list.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _store_actions_changeItemsCountOnPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../store/actions/changeItemsCountOnPage */ \"./src/store/actions/changeItemsCountOnPage.js\");\n/* harmony import */ var _store_actions_roomsInfoActions_createItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../store/actions/roomsInfoActions/createItem */ \"./src/store/actions/roomsInfoActions/createItem.js\");\n/* harmony import */ var _store_actions_roomsInfoActions_deleteItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../store/actions/roomsInfoActions/deleteItem */ \"./src/store/actions/roomsInfoActions/deleteItem.js\");\n/* harmony import */ var _store_actions_roomsInfoActions_deleteItem__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_store_actions_roomsInfoActions_deleteItem__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _store_actions_roomsInfoActions_updateItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../store/actions/roomsInfoActions/updateItem */ \"./src/store/actions/roomsInfoActions/updateItem.js\");\n/* harmony import */ var _store_actions_roomsInfoActions_updateItem__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_store_actions_roomsInfoActions_updateItem__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _components_create_button_create_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/create-button/create-button */ \"./src/components/create-button/create-button.js\");\n/* harmony import */ var _components_product_short_info_product_short_info__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/product-short-info/product-short-info */ \"./src/components/product-short-info/product-short-info.js\");\n/* harmony import */ var _components_pagination_pagination__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/pagination/pagination */ \"./src/components/pagination/pagination.js\");\n/* harmony import */ var _products_list_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./products-list.scss */ \"./src/pages/products-list/products-list.scss\");\n/* harmony import */ var _products_list_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_products_list_scss__WEBPACK_IMPORTED_MODULE_9__);\n\n\n\n\n\n\n\n\n\n\n\nclass ProductsList extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n  }\n\n  getProducts() {\n    const {\n      pagination,\n      products,\n      pageNumber\n    } = this.props;\n    const {\n      itemsCountOnPage\n    } = pagination;\n    const totalItemsCount = products.length;\n    const t1 = pageNumber * itemsCountOnPage;\n    const result = products.filter((product, index) => index >= t1 - itemsCountOnPage && index < t1);\n    return result;\n  }\n\n  calculatePagesCount() {\n    const {\n      pagination,\n      products,\n      pageNumber\n    } = this.props;\n    const {\n      itemsCountOnPage\n    } = pagination;\n    const totalItemsCount = products.length;\n    const test = totalItemsCount / itemsCountOnPage;\n    const test2 = `${test}`;\n    const test3 = test2.split(/\\.|\\,/);\n    if (test3.length < 2) return test;\n    const n1 = Number.parseInt(test3[0]);\n    /* const n2 = Number.parseInt(test3[1]);\r\n    if (n2 === 0) return n1; */\n\n    return n1 + 1;\n  }\n  /* handlerChangePage = (pageNumber) => {\r\n      this.props.changePage(pageNumber);\r\n  } */\n\n\n  render() {\n    const {\n      pagination,\n      products,\n      pageNumber\n    } = this.props;\n    const {\n      itemsCountOnPage\n    } = pagination;\n    const totalItemsCount = products.length;\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"products-list\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"products-list__room-list\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"products-list__create-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_button_create_button__WEBPACK_IMPORTED_MODULE_6__[\"default\"], {\n      createItem: this.props.createItem\n    })), this.getProducts().map((product, index) => {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: \"products-list__list-item\",\n        key: `products-list__list-item-${pageNumber}-${index}`\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_product_short_info_product_short_info__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n        product: product\n      }));\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"products-list__pagination\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_pagination_pagination__WEBPACK_IMPORTED_MODULE_8__[\"default\"], {\n      title: \"Pagination\",\n      pageNumber: pageNumber,\n      pagesCount: this.calculatePagesCount(),\n      totalItemsCount: totalItemsCount\n      /* handlerChangePage={this.handlerChangePage} */\n\n    })));\n  }\n\n}\n\nconst mapStateToProps = function (state) {\n  return state;\n};\n\nconst actions = {\n  changeItemsCountOnPage: _store_actions_changeItemsCountOnPage__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  createItem: _store_actions_roomsInfoActions_createItem__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n  deleteItem: (_store_actions_roomsInfoActions_deleteItem__WEBPACK_IMPORTED_MODULE_4___default()),\n  updateItem: (_store_actions_roomsInfoActions_updateItem__WEBPACK_IMPORTED_MODULE_5___default())\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__[\"connect\"])(mapStateToProps, actions)(ProductsList));\n\n//# sourceURL=webpack:///./src/pages/products-list/products-list.js?");
+
+/***/ }),
+
+/***/ "./src/pages/products-list/products-list.scss":
+/*!****************************************************!*\
+  !*** ./src/pages/products-list/products-list.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./products-list.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/products-list/products-list.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/products-list/products-list.scss?");
 
 /***/ }),
 
@@ -1796,19 +2033,41 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst changeItemsCountOnPage = function (pageNumber) {\n  return {\n    type: \"change_items_count_on_page\",\n    pageNumber\n  };\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (changeItemsCountOnPage);\n\n//# sourceURL=webpack:///./src/store/actions/changeItemsCountOnPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst changeItemsCountOnPage = function (itemsCount) {\n  return {\n    type: \"change_items_count_on_page\",\n    itemsCount\n  };\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (changeItemsCountOnPage);\n\n//# sourceURL=webpack:///./src/store/actions/changeItemsCountOnPage.js?");
 
 /***/ }),
 
-/***/ "./src/store/initialState.js":
-/*!***********************************!*\
-  !*** ./src/store/initialState.js ***!
-  \***********************************/
+/***/ "./src/store/actions/roomsInfoActions/createItem.js":
+/*!**********************************************************!*\
+  !*** ./src/store/actions/roomsInfoActions/createItem.js ***!
+  \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst initialState = {\n  itemsCountOnPage: 5\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (initialState);\n\n//# sourceURL=webpack:///./src/store/initialState.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction createItem(product) {\n  return {\n    type: \"CREATE\",\n    product\n  };\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (createItem);\n\n//# sourceURL=webpack:///./src/store/actions/roomsInfoActions/createItem.js?");
+
+/***/ }),
+
+/***/ "./src/store/actions/roomsInfoActions/deleteItem.js":
+/*!**********************************************************!*\
+  !*** ./src/store/actions/roomsInfoActions/deleteItem.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/store/actions/roomsInfoActions/deleteItem.js?");
+
+/***/ }),
+
+/***/ "./src/store/actions/roomsInfoActions/updateItem.js":
+/*!**********************************************************!*\
+  !*** ./src/store/actions/roomsInfoActions/updateItem.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/store/actions/roomsInfoActions/updateItem.js?");
 
 /***/ }),
 
@@ -1820,7 +2079,19 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst initialState = {\n  ite
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initialState__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../initialState */ \"./src/store/initialState.js\");\n\n\nconst paginationReducer = (state = _initialState__WEBPACK_IMPORTED_MODULE_0__[\"default\"], action) => {\n  switch (action.type) {\n    case \"change_items_count_on_page\":\n      {\n        const updatedState = {\n          itemsCountOnPage: action.itemsCountOnPage\n        };\n        return updatedState;\n        break;\n      }\n\n    default:\n      const defaultState = {\n        itemsCountOnPage: 5\n      };\n      return defaultState;\n      break;\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (paginationReducer);\n\n//# sourceURL=webpack:///./src/store/reduers/paginationReducer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst initialState = {\n  itemsCountOnPage: 4\n};\n\nconst paginationReducer = (state = initialState, action) => {\n  switch (action.type) {\n    case \"change_items_count_on_page\":\n      {\n        const updatedState = {\n          itemsCountOnPage: action.itemsCountOnPage\n        };\n        return updatedState;\n        break;\n      }\n\n    default:\n      return state;\n      break;\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (paginationReducer);\n\n//# sourceURL=webpack:///./src/store/reduers/paginationReducer.js?");
+
+/***/ }),
+
+/***/ "./src/store/reduers/productsReducer.js":
+/*!**********************************************!*\
+  !*** ./src/store/reduers/productsReducer.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst initialState = __webpack_require__(/*! ../../data/productData.json */ \"./src/data/productData.json\").products;\n\nconst initialProduct = {\n  \"id\": 3,\n  \"name\": \"Навоз\",\n  \"price\": 543,\n  \"currencyType\": \"₽\",\n  \"descriptions\": \"выпаыпываыпвпап\",\n  \"manufacturer\": \"ООО Четотам\",\n  \"energyValue\": 34,\n  \"proteins\": 0.8,\n  \"fats\": 0.2,\n  \"carbohydrates\": 8,\n  \"energyUnits\": \"кКал\",\n  \"weightUnits\": \"г\",\n  \"shelfLife\": 7,\n  \"shelfLifeUnits\": \"день\",\n  \"packaging\": \"amount\",\n  \"imageNames\": [6, 1, 11],\n  \"checkedStars\": 2,\n  \"reviewsCount\": 3534\n};\n\nfunction productsReducer(state = initialState, action) {\n  switch (action.type) {\n    case \"CREATE\":\n      {\n        const newItem = createItem(action.product);\n\n        if (newItem) {\n          //обновляем стэйт\n          const newState = state.map(e => e);\n          newState.push(newItem); //обновляем б/д файл\n\n          /* const newData = JSON.stringify({\r\n            products: state.products,\r\n          }); */\n          // ...\n\n          return newState;\n        }\n\n        break;\n      }\n\n    case \"UPDATE\":\n      {\n        break;\n      }\n\n    case \"DELETE\":\n      {\n        break;\n      }\n\n    default:\n      {\n        return state;\n        break;\n      }\n  }\n}\n\nfunction createItem(product) {\n  const blocks = __webpack_require__(/*! ../../data/productData.json */ \"./src/data/productData.json\").products;\n\n  if (product) {\n    const result = { ...initialProduct\n    };\n\n    for (let propertyName in product) {\n      result[propertyName] = product[propertyName];\n    }\n\n    result.id = findMaxId(blocks) + 1;\n    return result;\n  }\n}\n\nfunction findMaxId(blocks) {\n  const arrayOfId = blocks.map(block => {\n    return Number.parseInt(block.id);\n  });\n  const firstId = arrayOfId[0] !== undefined ? arrayOfId[0] : 0;\n  const biggestId = arrayOfId.reduce((prevId, curId) => {\n    return Math.max(prevId, curId);\n  }, firstId);\n  return biggestId;\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (productsReducer);\n/* {\r\n  \"id\": 3,\r\n  \"name\": \"Навоз\",\r\n  \"price\": 543,\r\n  \"currencyType\": \"₽\",\r\n  \"descriptions\": \"выпаыпываыпвпап\",\r\n  \"manufacturer\": \"ООО Четотам\",\r\n  \"energyValue\": 34,\r\n  \"proteins\": 0.8,\r\n  \"fats\": 0.2,\r\n  \"carbohydrates\": 8,\r\n  \"energyUnits\": \"кКал\",\r\n  \"weightUnits\": \"г\",\r\n  \"shelfLife\": 7,\r\n  \"shelfLifeUnits\": \"день\",\r\n  \"packaging\": \"amount\",\r\n  \"imageNames\": [\r\n    6\r\n  ],\r\n  \"checkedStars\": 2,\r\n  \"reviewsCount\": 3534\r\n}, */\n\n//# sourceURL=webpack:///./src/store/reduers/productsReducer.js?");
 
 /***/ })
 
