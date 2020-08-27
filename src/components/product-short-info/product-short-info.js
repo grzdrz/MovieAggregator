@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import UpdateButton from "../update-button/update-button";
 import DeleteButton from "../delete-button/delete-button";
 import StarRating from "../star-rating/star-rating";
@@ -91,7 +93,7 @@ class ProductShortInfo extends React.Component {
 
     return (
       <div className="product-short-info js-product-short-info" ref={this.container} >
-        <a className="product-short-info__ref" href={"#"}></a>
+        <NavLink className="product-short-info__ref" to={`/page-details/${id}`}></NavLink>
         <div className="product-short-info__photos">
           <div className="product-short-info__radio-buttons">
             {imageNames.map((name, index) => {

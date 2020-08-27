@@ -9,6 +9,7 @@ import productsReducer from "../../store/reduers/productsReducer";
 
 import Header from "../../components/header/header.js";
 import ProductsList from "../products-list/products-list.js";
+import ProductDetails from "../product-details/product-details";
 import Footer from "../../components/footer/footer.js";
 
 import "./base.scss";
@@ -23,17 +24,27 @@ class App extends React.Component {
   render() {
     return (
       <Switch>
+        <Route exact path="/page-details/:productId(\d+)?"
+          render={(props) => {
+            const productId = props.match.params.productId;
+            const id = Number.parseInt(productId ? productId : 0, 10);
+            return (
+              <ProductDetails
+                id={id}
+              />
+            );
+          }} />
         <Route
           exact path="/:pageNumber(\d+)?"
           render={(props) => {
             let pageNumber = props.match.params.pageNumber;
             if (pageNumber !== undefined) pageNumber = Number.parseInt(pageNumber);
             return (
-              <React.Fragment>
+              <>
                 <Header />
                 <ProductsList pageNumber={pageNumber !== undefined ? pageNumber : 1} />
                 <Footer />
-              </React.Fragment>
+              </>
             );
           }}
         />
@@ -45,7 +56,6 @@ class App extends React.Component {
 const reducer = combineReducers({
   pagination: paginationReducer,
   products: productsReducer,
-  /* counterState: counterReducer */
 });
 
 const store = createStore(reducer);
