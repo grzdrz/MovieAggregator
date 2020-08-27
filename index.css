@@ -889,3 +889,6 @@ html,
 body {
   min-width: 100%; }
 
+.app__navigation {
+  font-weight: bold; }
+
