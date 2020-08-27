@@ -23,32 +23,36 @@ class App extends React.Component {
 
   render() {
     return (
-      <Switch>
-        <Route exact path="/page-details/:productId(\d+)?"
-          render={(props) => {
-            const productId = props.match.params.productId;
-            const id = Number.parseInt(productId ? productId : 0, 10);
-            return (
-              <ProductDetails
-                id={id}
-              />
-            );
-          }} />
-        <Route
-          exact path="/:pageNumber(\d+)?"
-          render={(props) => {
-            let pageNumber = props.match.params.pageNumber;
-            if (pageNumber !== undefined) pageNumber = Number.parseInt(pageNumber);
-            return (
-              <>
-                <Header />
-                <ProductsList pageNumber={pageNumber !== undefined ? pageNumber : 1} />
-                <Footer />
-              </>
-            );
-          }}
-        />
-      </Switch>
+      <>
+        <Header />
+        <Switch>
+          <Route exact path="/page-details/:productId(\d+)?"
+            render={(props) => {
+              const productId = props.match.params.productId;
+              const id = Number.parseInt(productId ? productId : 0, 10);
+              return (
+                <ProductDetails
+                  id={id}
+                />
+              );
+            }} />
+          <Route
+            exact path="/:pageNumber(\d+)?"
+            render={(props) => {
+              let pageNumber = props.match.params.pageNumber;
+              if (pageNumber !== undefined) pageNumber = Number.parseInt(pageNumber);
+              return (
+                <>
+
+                  <ProductsList pageNumber={pageNumber !== undefined ? pageNumber : 1} />
+
+                </>
+              );
+            }}
+          />
+        </Switch>
+        <Footer />
+      </>
     );
   }
 }

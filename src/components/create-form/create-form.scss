@@ -3,16 +3,23 @@
   flex-direction: column;
   padding: 1.25rem;
 
-  &__number,
-  &__status,
-  &__price,
-  &__reviews-count,
-  &__checked-star-index {
+  & > div:nth-of-type(n) {
     margin-bottom: 1.25rem;
+  }
+
+  &__price {
+    display: grid;
+    grid-template-columns: auto min-content;
+  }
+
+  &__currency-type {
+    justify-self: end;
+    margin-left: 1.25rem;
   }
 
   &__submit-button {
     width: 100%;
     height: 2.5rem;
+    margin-top: 1.25rem;
   }
 }

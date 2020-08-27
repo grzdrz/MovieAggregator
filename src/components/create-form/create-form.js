@@ -1,6 +1,7 @@
 import React from "react";
 import FormInput from "../form-input/form-input";
 import Button from "../button/button.jsx";
+import Radio from "../radio/radio";
 
 import "./create-form.scss";
 
@@ -21,20 +22,26 @@ class CreateForm extends React.Component {
   render() {
     return (
       <form className="create-form" ref={this.form} onSubmit={this._handleSubmit}>
-        <div className="create-form__number">
-          <FormInput name="number" type="number" />
-        </div>
-        <div className="create-form__status">
-          <FormInput name="status" type="text" />
+        <div className="create-form__name">
+          <FormInput name="name" type="text" value="Торт с говном" title="Наименование" placeholder="Наименование" />
         </div>
         <div className="create-form__price">
-          <FormInput name="price" type="number" />
+          <div className="create-form__price-number">
+            <FormInput name="price" type="number" value={1234} title="Цена" placeholder="Цена" />
+          </div>
+          <div className="create-form__currency-type">
+            <FormInput name="currencyType" type="text" value="₽" title="Валюта" placeholder="Валюта" />
+          </div>
         </div>
-        <div className="create-form__reviews-count">
-          <FormInput name="reviewsCount" type="number" />
+        <div className="create-form__manufacturer">
+          <FormInput name="manufacturer" type="text" value="ООО и ко" title="Производитель" />
         </div>
-        <div className="create-form__checked-star-index">
-          <FormInput name="checkedStarIndex" type="number" />
+        <div className="create-form__packaging">
+          <Radio title="Тип фасовки"
+            buttonsList={[
+              { text: "поштучно", isChecked: false },
+              { text: "взвешиванием", isChecked: true },
+            ]} />
         </div>
         <div className="create-form__submit-button">
           <Button

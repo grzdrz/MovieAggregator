@@ -27,17 +27,19 @@ class CreateButton extends React.Component {
     const updateForm = this.updateForm.current;
     const plusButton = this.plusButton.current;
     if (this.isOpened) {
-      updateForm.classList.toggle('create-button__update-form_opened', true);
-      plusButton.classList.toggle('create-button__button-container_opened', false);
+      updateForm.classList.toggle('create-button__form_opened', true);
+      /* plusButton.classList.toggle('create-button__button-container_opened', false); */
     } else {
-      updateForm.classList.toggle('create-button__update-form_opened', false);
-      plusButton.classList.toggle('create-button__button-container_opened', true);
+      updateForm.classList.toggle('create-button__form_opened', false);
+      /* plusButton.classList.toggle('create-button__button-container_opened', true); */
     }
   }
 
   _handleDropdownLeave = (event) => {
     if (event.target.className.match) {
-      const updateForm = event.target.className.match(/(^create-button)|(^create-button__)|(^update-form)|(^form-input)/);
+      const updateForm = event.target.className.match(
+        /(^create-button)|(^create-button__)|(^create-form)|(^form-input)|(^radio)/
+      );
       if (!updateForm) {
         this._handleCloseDropdown();
       }
@@ -57,11 +59,11 @@ class CreateButton extends React.Component {
   render() {
     return (
       <div className="create-button">
+        <div className="create-button__form" ref={this.updateForm}>
+          <CreateForm createItem={this.props.createItem} />
+        </div>
         <div className="create-button__button-container" onClick={this._handlePlusWindowClick} ref={this.plusButton}>
           <span className="create-button__text">Создать элемент</span>
-        </div>
-        <div className="create-button__update-form" ref={this.updateForm}>
-          <CreateForm createItem={this.props.createItem}/>
         </div>
       </div>
     );

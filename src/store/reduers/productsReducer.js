@@ -1,4 +1,26 @@
 const initialState = require("../../data/productData.json").products;
+const initialProduct = {
+  "id": 3,
+  "name": "Навоз",
+  "price": 543,
+  "currencyType": "₽",
+  "descriptions": "выпаыпываыпвпап",
+  "manufacturer": "ООО Четотам",
+  "energyValue": 34,
+  "proteins": 0.8,
+  "fats": 0.2,
+  "carbohydrates": 8,
+  "energyUnits": "кКал",
+  "weightUnits": "г",
+  "shelfLife": 7,
+  "shelfLifeUnits": "день",
+  "packaging": "amount",
+  "imageNames": [
+    6, 1, 11
+  ],
+  "checkedStars": 2,
+  "reviewsCount": 3534
+};
 
 function productsReducer(state = initialState, action) {
   switch (action.type) {
@@ -6,8 +28,8 @@ function productsReducer(state = initialState, action) {
       const newItem = createItem(action.product);
       if (newItem) {
         //обновляем стэйт
-        const newState = Object.assign({}, state);
-        newState.products.push(newItem);
+        const newState = state.map(e => e);
+        newState.push(newItem);
         //обновляем б/д файл
         /* const newData = JSON.stringify({
           products: state.products,
@@ -35,18 +57,12 @@ function productsReducer(state = initialState, action) {
 function createItem(product) {
   const blocks = require("../../data/productData.json").products;
   if (product) {
-    /* const result = {
-      id: findMaxId(blocks) + 1,
-      photosCount: roomInfo.photosCount !== undefined ? roomInfo.photosCount : initialState.photosCount,
-      number: roomInfo.number !== undefined ? roomInfo.number : initialState.number,
-      status: roomInfo.status !== undefined ? roomInfo.status : initialState.status,
-      price: roomInfo.price !== undefined ? roomInfo.price : initialState.price,
-      currencyType: roomInfo.currencyType !== undefined ? roomInfo.currencyType : initialState.currencyType,
-      reviewsCount: roomInfo.reviewsCount !== undefined ? roomInfo.reviewsCount : initialState.reviewsCount,
-      checkedStarIndex: roomInfo.checkedStarIndex !== undefined ? roomInfo.checkedStarIndex : initialState.checkedStarIndex,
-      url: roomInfo.url !== undefined ? roomInfo.url : initialState.url,
-    };
-    return result; */
+    const result = { ...initialProduct };
+    for (let propertyName in product) {
+      result[propertyName] = product[propertyName];
+    }
+    result.id = findMaxId(blocks) + 1;
+    return result;
   }
 }
 
@@ -63,3 +79,26 @@ function findMaxId(blocks) {
 }
 
 export default productsReducer;
+
+/* {
+  "id": 3,
+  "name": "Навоз",
+  "price": 543,
+  "currencyType": "₽",
+  "descriptions": "выпаыпываыпвпап",
+  "manufacturer": "ООО Четотам",
+  "energyValue": 34,
+  "proteins": 0.8,
+  "fats": 0.2,
+  "carbohydrates": 8,
+  "energyUnits": "кКал",
+  "weightUnits": "г",
+  "shelfLife": 7,
+  "shelfLifeUnits": "день",
+  "packaging": "amount",
+  "imageNames": [
+    6
+  ],
+  "checkedStars": 2,
+  "reviewsCount": 3534
+}, */
