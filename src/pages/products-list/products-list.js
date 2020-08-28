@@ -61,7 +61,9 @@ class ProductsList extends React.Component {
           {this.getProducts().map((product, index) => {
             return (
               <div className="products-list__list-item" key={`products-list__list-item-${pageNumber}-${index}`}>
-                <ProductShortInfo product={product} />
+                <ProductShortInfo
+                  product={product}
+                  updateItem={this.props.updateItem} />
               </div>
             );
           })}
@@ -87,8 +89,8 @@ const mapStateToProps = function (state) {
 const actions = {
   changeItemsCountOnPage,
   createItem,
-  deleteItem,
   updateItem,
+  deleteItem,
 };
 
 export default connect(mapStateToProps, actions)(ProductsList);

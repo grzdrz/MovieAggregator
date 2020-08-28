@@ -27,7 +27,6 @@ function productsReducer(state = initialState, action) {
     case "CREATE": {
       const newItem = createItem(action.product);
       if (newItem) {
-        //обновляем стэйт
         const newState = state.map(e => e);
         newState.push(newItem);
         //обновляем б/д файл
@@ -40,7 +39,10 @@ function productsReducer(state = initialState, action) {
       break;
     }
     case "UPDATE": {
-
+      if (action.product) {
+        const updatedProducts = updateItem(action.product);
+        return updatedProducts;
+      }
       break;
     }
     case "DELETE": {
@@ -64,6 +66,22 @@ function createItem(product) {
     result.id = findMaxId(blocks) + 1;
     return result;
   }
+}
+
+function updateItem(product) {
+  const blocks = require("../../data/productData.json").products;
+  const result = blocks.map((block, index) => {
+    if (block.id === Number.parseFloat(product.id)) {
+      const copyOfBlock = { ...block };
+      for (let propertyName in product) {
+        copyOfBlock[propertyName] = product[propertyName];
+      }
+      return copyOfBlock;
+    };
+    return block;
+  });
+
+  return result;
 }
 
 function findMaxId(blocks) {

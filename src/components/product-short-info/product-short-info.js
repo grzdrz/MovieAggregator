@@ -93,7 +93,7 @@ class ProductShortInfo extends React.Component {
 
     return (
       <div className="product-short-info js-product-short-info" ref={this.container} >
-        <NavLink className="product-short-info__ref" to={`/page-details/${id}`}></NavLink>
+        <NavLink className="product-short-info__ref" to={`/ProductSupermarket/pageDetails/${id}`}></NavLink>
         <div className="product-short-info__photos">
           <div className="product-short-info__radio-buttons">
             {imageNames.map((name, index) => {
@@ -149,7 +149,9 @@ class ProductShortInfo extends React.Component {
         </div>
         <div className="product-short-info__buttons">
           <div className="product-short-info__update-button">
-            <UpdateButton />
+            <UpdateButton
+              product={this.props.product}
+              updateItem={this.props.updateItem} />
           </div>
           <div className="product-short-info__delete-button">
             <DeleteButton />

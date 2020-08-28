@@ -2,7 +2,7 @@ import ReactDOM from "react-dom";
 import React from "react";
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink, Link, Redirect } from "react-router-dom";
 
 import paginationReducer from "../../store/reduers/paginationReducer";
 import productsReducer from "../../store/reduers/productsReducer";
@@ -12,7 +12,8 @@ import ProductsList from "../products-list/products-list.js";
 import ProductDetails from "../product-details/product-details";
 import Footer from "../../components/footer/footer.js";
 
-import "./base.scss";
+import "../base/base.scss";
+import "./index.scss";
 
 require.context("../../", true, /\.(ttf|eot|woff|woff2|svg|png|jpg|json)$/);
 
@@ -20,33 +21,26 @@ class App extends React.Component {
   constructor(props) {
     super(props);
   }
-
+  /* /page-details */
   render() {
     return (
       <>
         <Header />
         <Switch>
-          <Route exact path="/page-details/:productId(\d+)?"
+          <Route path="/ProductSupermarket/pageDetails/:productId(\d+)?"
             render={(props) => {
               const productId = props.match.params.productId;
               const id = Number.parseInt(productId ? productId : 0, 10);
               return (
-                <ProductDetails
-                  id={id}
-                />
+                <ProductDetails id={id} />
               );
             }} />
-          <Route
-            exact path="/:pageNumber(\d+)?"
+          <Route path="/ProductSupermarket/productList/:pageNumber(\d+)?"
             render={(props) => {
               let pageNumber = props.match.params.pageNumber;
               if (pageNumber !== undefined) pageNumber = Number.parseInt(pageNumber);
               return (
-                <>
-
-                  <ProductsList pageNumber={pageNumber !== undefined ? pageNumber : 1} />
-
-                </>
+                <ProductsList pageNumber={pageNumber !== undefined ? pageNumber : 1} />
               );
             }}
           />
@@ -72,7 +66,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Switch>
-        <Route path="/" component={App} />
+        <Route exact path="/" render={() => <Redirect to="/ProductSupermarket" />} />
+        <Route path="/ProductSupermarket/" component={App} />
       </Switch>
     </Router>
   </Provider>,

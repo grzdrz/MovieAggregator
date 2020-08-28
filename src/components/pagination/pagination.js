@@ -40,10 +40,10 @@ class Pagination extends React.Component {
         <div className="pagination__list">
           {pageNumber !== 1 ?
             <React.Fragment>
-              <NavLink className="pagination__left-arrow" key={"pagination-arrow-back"} to={`/${this.calculateArrowNumber(true)}`}>
+              <NavLink className="pagination__left-arrow" key={"pagination-arrow-back"} to={`/ProductSupermarket/productList/${this.calculateArrowNumber(true)}`}>
                 <span className="pagination__left-arrow-text">arrow_forward</span>
               </NavLink>
-              <NavLink className="pagination__link" key={"pagination-first"} to={"/1"}>
+              <NavLink className="pagination__link" key={"pagination-first"} to={"/ProductSupermarket/productList/1"}>
                 <span className="pagination__link-text">1</span>
               </NavLink>
             </React.Fragment>
@@ -56,28 +56,28 @@ class Pagination extends React.Component {
             : null
           }
           {pageNumber - 2 > 1 ?
-            <NavLink exact className="pagination__link" key={"pagination--2"} to={`/${pageNumber - 2}`}>
+            <NavLink exact className="pagination__link" key={"pagination--2"} to={`/ProductSupermarket/productList/${pageNumber - 2}`}>
               <span className="pagination__link-text">{pageNumber - 2}</span>
             </NavLink>
             : null
           }
           {pageNumber - 1 > 1 ?
-            <NavLink className="pagination__link" key={"pagination--1"} to={`/${pageNumber - 1}`}>
+            <NavLink className="pagination__link" key={"pagination--1"} to={`/ProductSupermarket/productList/${pageNumber - 1}`}>
               <span className="pagination__link-text">{pageNumber - 1}</span>
             </NavLink>
             : null
           }
-          <NavLink className="pagination__link pagination__link_target" key={"pagination-0"} to={`/${pageNumber}`}>
+          <NavLink className="pagination__link pagination__link_target" key={"pagination-0"} to={`/ProductSupermarket/productList/${pageNumber}`}>
             <span className="pagination__link-text">{pageNumber}</span>
           </NavLink>
           {pageNumber + 1 < pagesCount ?
-            <NavLink className="pagination__link" key={"pagination-1"} to={`/${pageNumber + 1}`}>
+            <NavLink className="pagination__link" key={"pagination-1"} to={`/ProductSupermarket/productList/${pageNumber + 1}`}>
               <span className="pagination__link-text">{pageNumber + 1}</span>
             </NavLink>
             : null
           }
           {pageNumber + 2 < pagesCount ?
-            <NavLink className="pagination__link" key={"pagination-2"} to={`/${pageNumber + 2}`}>
+            <NavLink className="pagination__link" key={"pagination-2"} to={`/ProductSupermarket/productList/${pageNumber + 2}`}>
               <span className="pagination__link-text">{pageNumber + 2}</span>
             </NavLink>
             : null
@@ -90,10 +90,10 @@ class Pagination extends React.Component {
           }
           {pageNumber !== pagesCount ?
             <React.Fragment>
-              <NavLink className="pagination__link" key={"pagination-last"} to={`/${pagesCount}`}>
+              <NavLink className="pagination__link" key={"pagination-last"} to={`/ProductSupermarket/productList/${pagesCount}`}>
                 <span className="pagination__link-text">{pagesCount}</span>
               </NavLink>
-              <NavLink className="pagination__right-arrow" key={"pagination-arrow-forward"} to={`/${this.calculateArrowNumber(false)}`}>
+              <NavLink className="pagination__right-arrow" key={"pagination-arrow-forward"} to={`/ProductSupermarket/productList/${this.calculateArrowNumber(false)}`}>
                 <span className="pagination__right-arrow-text">arrow_forward</span>
               </NavLink>
             </React.Fragment>

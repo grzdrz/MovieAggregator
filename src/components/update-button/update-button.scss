@@ -7,7 +7,7 @@
     cursor: pointer;
     width: 3.125rem;
     height: 3.125rem;
-    display: none;
+    display: flex/* none */;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -18,9 +18,9 @@
       background: $gradient-green-to-turquoise-50;
     }
 
-    &_opened {
+   /*  &_opened {
       display: flex;
-    }
+    } */
   }
 
   &__horizontal-part {
@@ -39,9 +39,9 @@
     border-radius: 0.125rem;
   }
 
-  &__update-form {
+  &__form {
     z-index: 99;
-    width: 18.75rem;
+    width: 25rem;
     padding: 1.25rem;
     display: none;
     position: absolute;
