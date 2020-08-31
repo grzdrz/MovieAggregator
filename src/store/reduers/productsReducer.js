@@ -25,7 +25,7 @@ const initialProduct = {
 function productsReducer(state = initialState, action) {
   switch (action.type) {
     case "CREATE": {
-      const newItem = createItem(action.product);
+      const newItem = createItem(action.product, state);
       if (newItem) {
         const newState = state.map(e => e);
         newState.push(newItem);
@@ -40,7 +40,7 @@ function productsReducer(state = initialState, action) {
     }
     case "UPDATE": {
       if (action.product) {
-        const updatedProducts = updateItem(action.product);
+        const updatedProducts = updateItem(action.product, state);
         return updatedProducts;
       }
       break;
@@ -56,8 +56,8 @@ function productsReducer(state = initialState, action) {
   }
 }
 
-function createItem(product) {
-  const blocks = require("../../data/productData.json").products;
+function createItem(product, blocks) {
+  // const blocks = require("../../data/productData.json").products;
   if (product) {
     const result = { ...initialProduct };
     for (let propertyName in product) {
@@ -68,8 +68,8 @@ function createItem(product) {
   }
 }
 
-function updateItem(product) {
-  const blocks = require("../../data/productData.json").products;
+function updateItem(product, blocks) {
+  // const blocks = require("../../data/productData.json").products;
   const result = blocks.map((block, index) => {
     if (block.id === Number.parseFloat(product.id)) {
       const copyOfBlock = { ...block };

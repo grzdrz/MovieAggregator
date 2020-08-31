@@ -16,6 +16,10 @@ class UpdateForm extends React.Component {
     const formBody = new FormData(this.form.current);
     const test = Array.from(formBody);
     const test2 = Object.fromEntries(test);
+    
+    test2.id = Number.parseFloat(test2.id);
+    test2.price = Number.parseFloat(test2.price);
+
     this.props.updateItem(test2);
   }
 

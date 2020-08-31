@@ -19,7 +19,7 @@ function Radio(props) {
       <div className="radio__inputs">
         {buttonsList.map((button, index) => {
           return (
-            <label className="radio__label">
+            <label className="radio__label" key={`radio__label_${index}`}>
               <input className="radio__input"
                 type="radio"
                 name={`${name}-${id}`}

@@ -140,6 +140,316 @@
       ],
       "checkedStars": 5,
       "reviewsCount": 0
+    },
+    {
+      "id": 6,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 7,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 8,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 9,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 10,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+
+    {
+      "id": 11,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 12,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 13,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 14,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 15,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 16,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 17,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+
+    {
+      "id": 18,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
+    },
+    {
+      "id": 19,
+      "name": "Вишня",
+      "price": 1488,
+      "currencyType": "₽",
+      "descriptions": "выпаыпываыпвпап",
+      "manufacturer": "ООО Четотам",
+      "energyValue": 34,
+      "proteins": 0.8,
+      "fats": 0.2,
+      "carbohydrates": 8,
+      "energyUnits": "кКал",
+      "weightUnits": "г",
+      "shelfLife": 7,
+      "shelfLifeUnits": "день",
+      "packaging": "weight",
+      "imageNames": [
+        6
+      ],
+      "checkedStars": 1,
+      "reviewsCount": 333
     }
   ]
 }
