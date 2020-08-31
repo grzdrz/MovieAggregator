@@ -402,6 +402,127 @@
     .create-button__form_opened {
       display: block; }
 
+.checkbox-list {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto; }
+  .checkbox-list_type_expandable .checkbox-list__title {
+    cursor: pointer;
+    margin-bottom: 0.23rem; }
+  .checkbox-list_type_expandable .checkbox-list__item {
+    margin-bottom: 0.56rem; }
+  .checkbox-list_type_expandable .checkbox-list__item-text {
+    line-height: 1.34rem; }
+  .checkbox-list_type_rich .checkbox-list__title {
+    margin-bottom: 0.9rem; }
+  .checkbox-list_type_rich .checkbox-list__item {
+    margin-bottom: 0.665rem; }
+  .checkbox-list__title {
+    cursor: context-menu;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.04rem; }
+  .checkbox-list__title-text {
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+    color: #1f2041;
+    word-break: break-word; }
+  .checkbox-list__dropdown-arrow {
+    width: 2.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background: rgba(31, 32, 65, 0.75);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Material Icons;
+    font-size: 1.5rem;
+    line-height: 2.625rem;
+    transform: rotate(180deg); }
+    .checkbox-list__dropdown-arrow_closed {
+      transform: none; }
+  .checkbox-list__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column; }
+    .checkbox-list__list_closed {
+      display: none; }
+  .checkbox-list__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.68rem; }
+    .checkbox-list__item:last-child {
+      margin-bottom: 0rem; }
+  .checkbox-list__label {
+    display: flex;
+    align-items: end; }
+  .checkbox-list__input {
+    width: 1.25rem;
+    height: 1.25rem;
+    position: relative;
+    margin-right: 0.625rem;
+    opacity: 0; }
+    .checkbox-list__input:not(:checked) + .checkbox-list__check-mark {
+      opacity: 0; }
+    .checkbox-list__input:not(:checked) ~ .checkbox-list__frame {
+      border: 0.0625rem solid #adb5bd; }
+    .checkbox-list__input:checked + .checkbox-list__check-mark {
+      opacity: 1; }
+    .checkbox-list__input:checked ~ .checkbox-list__frame {
+      border: 0.0625rem solid #bc9cff; }
+  .checkbox-list__check-mark {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-bottom: 0.125rem; }
+  .checkbox-list__check-mark-image {
+    width: 0.625rem;
+    height: 0.625rem;
+    display: flex; }
+  .checkbox-list__frame {
+    cursor: pointer;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    border-radius: 0.25rem;
+    position: absolute; }
+  .checkbox-list__item-text {
+    cursor: context-menu;
+    width: 12.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.24rem;
+    color: rgba(31, 32, 65, 0.5);
+    word-break: break-word; }
+    .checkbox-list__item-text_complex {
+      width: max-content;
+      font-weight: bold;
+      color: rgba(31, 32, 65, 0.75); }
+  .checkbox-list__item-additional-text {
+    cursor: context-menu;
+    width: 14.375rem;
+    margin-left: 1.875rem;
+    margin-top: 0.3125rem;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: rgba(31, 32, 65, 0.5);
+    word-break: break-word; }
+
+.sorter-form {
+  width: 15.625rem; }
+
 .update-form {
   display: flex;
   flex-direction: column;
@@ -673,7 +794,7 @@
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5);
     max-width: 6.125rem;
-    min-width: 40px;
+    min-width: 2.5rem;
     word-break: break-word; }
   .product-short-info__packaging-type {
     justify-self: end;
@@ -797,21 +918,27 @@
 
 .products-list {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 1.875rem; }
+  .products-list__filters-and-sorters {
+    width: 15.625rem; }
   .products-list__create-button {
     width: 100%;
     margin-bottom: 0.625rem; }
-  .products-list__room-list {
+  .products-list__list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2.5rem 0rem; }
-  .products-list__list-item {
-    margin-bottom: 0.625rem; }
-    .products-list__list-item:last-of-type {
+    flex-direction: column; }
+  .products-list__products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center; }
+  .products-list__item {
+    margin-bottom: 1.25rem;
+    margin-right: 4.375rem; }
+    .products-list__item:last-of-type {
       margin-bottom: 0rem; }
   .products-list__pagination {
     width: 100%;
