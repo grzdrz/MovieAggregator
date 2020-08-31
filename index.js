@@ -982,7 +982,7 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./data/productData.json\": \"./src/data/productData.json\",\n\t\"./data/productImages/1.png\": \"./src/data/productImages/1.png\",\n\t\"./data/productImages/10.png\": \"./src/data/productImages/10.png\",\n\t\"./data/productImages/11.png\": \"./src/data/productImages/11.png\",\n\t\"./data/productImages/12.png\": \"./src/data/productImages/12.png\",\n\t\"./data/productImages/13.png\": \"./src/data/productImages/13.png\",\n\t\"./data/productImages/14.png\": \"./src/data/productImages/14.png\",\n\t\"./data/productImages/15.png\": \"./src/data/productImages/15.png\",\n\t\"./data/productImages/2.png\": \"./src/data/productImages/2.png\",\n\t\"./data/productImages/3.png\": \"./src/data/productImages/3.png\",\n\t\"./data/productImages/4.png\": \"./src/data/productImages/4.png\",\n\t\"./data/productImages/5.png\": \"./src/data/productImages/5.png\",\n\t\"./data/productImages/6.png\": \"./src/data/productImages/6.png\",\n\t\"./data/productImages/7.png\": \"./src/data/productImages/7.png\",\n\t\"./data/productImages/8.png\": \"./src/data/productImages/8.png\",\n\t\"./data/productImages/9.png\": \"./src/data/productImages/9.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg|json)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg%7Cjson)$?");
+eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/product-short-info/images/1.png\": \"./src/components/product-short-info/images/1.png\",\n\t\"./components/product-short-info/images/10.png\": \"./src/components/product-short-info/images/10.png\",\n\t\"./components/product-short-info/images/11.png\": \"./src/components/product-short-info/images/11.png\",\n\t\"./components/product-short-info/images/12.png\": \"./src/components/product-short-info/images/12.png\",\n\t\"./components/product-short-info/images/13.png\": \"./src/components/product-short-info/images/13.png\",\n\t\"./components/product-short-info/images/14.png\": \"./src/components/product-short-info/images/14.png\",\n\t\"./components/product-short-info/images/15.png\": \"./src/components/product-short-info/images/15.png\",\n\t\"./components/product-short-info/images/2.png\": \"./src/components/product-short-info/images/2.png\",\n\t\"./components/product-short-info/images/3.png\": \"./src/components/product-short-info/images/3.png\",\n\t\"./components/product-short-info/images/4.png\": \"./src/components/product-short-info/images/4.png\",\n\t\"./components/product-short-info/images/5.png\": \"./src/components/product-short-info/images/5.png\",\n\t\"./components/product-short-info/images/6.png\": \"./src/components/product-short-info/images/6.png\",\n\t\"./components/product-short-info/images/7.png\": \"./src/components/product-short-info/images/7.png\",\n\t\"./components/product-short-info/images/8.png\": \"./src/components/product-short-info/images/8.png\",\n\t\"./components/product-short-info/images/9.png\": \"./src/components/product-short-info/images/9.png\",\n\t\"./data/productData.json\": \"./src/data/productData.json\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg|json)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg%7Cjson)$?");
 
 /***/ }),
 
@@ -1661,6 +1661,186 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 
 /***/ }),
 
+/***/ "./src/components/product-short-info/images/1.png":
+/*!********************************************************!*\
+  !*** ./src/components/product-short-info/images/1.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/1.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/1.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/10.png":
+/*!*********************************************************!*\
+  !*** ./src/components/product-short-info/images/10.png ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/10.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/10.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/11.png":
+/*!*********************************************************!*\
+  !*** ./src/components/product-short-info/images/11.png ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/11.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/11.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/12.png":
+/*!*********************************************************!*\
+  !*** ./src/components/product-short-info/images/12.png ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/12.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/12.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/13.png":
+/*!*********************************************************!*\
+  !*** ./src/components/product-short-info/images/13.png ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/13.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/13.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/14.png":
+/*!*********************************************************!*\
+  !*** ./src/components/product-short-info/images/14.png ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/14.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/14.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/15.png":
+/*!*********************************************************!*\
+  !*** ./src/components/product-short-info/images/15.png ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/15.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/15.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/2.png":
+/*!********************************************************!*\
+  !*** ./src/components/product-short-info/images/2.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/2.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/2.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/3.png":
+/*!********************************************************!*\
+  !*** ./src/components/product-short-info/images/3.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/3.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/3.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/4.png":
+/*!********************************************************!*\
+  !*** ./src/components/product-short-info/images/4.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/4.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/4.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/5.png":
+/*!********************************************************!*\
+  !*** ./src/components/product-short-info/images/5.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/5.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/5.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/6.png":
+/*!********************************************************!*\
+  !*** ./src/components/product-short-info/images/6.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/6.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/6.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/7.png":
+/*!********************************************************!*\
+  !*** ./src/components/product-short-info/images/7.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/7.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/7.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/8.png":
+/*!********************************************************!*\
+  !*** ./src/components/product-short-info/images/8.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/8.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/8.png?");
+
+/***/ }),
+
+/***/ "./src/components/product-short-info/images/9.png":
+/*!********************************************************!*\
+  !*** ./src/components/product-short-info/images/9.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/product-short-info/images/9.png\");\n\n//# sourceURL=webpack:///./src/components/product-short-info/images/9.png?");
+
+/***/ }),
+
 /***/ "./src/components/product-short-info/product-short-info.js":
 /*!*****************************************************************!*\
   !*** ./src/components/product-short-info/product-short-info.js ***!
@@ -1669,7 +1849,7 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _update_button_update_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../update-button/update-button */ \"./src/components/update-button/update-button.js\");\n/* harmony import */ var _delete_button_delete_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../delete-button/delete-button */ \"./src/components/delete-button/delete-button.js\");\n/* harmony import */ var _star_rating_star_rating__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../star-rating/star-rating */ \"./src/components/star-rating/star-rating.js\");\n/* harmony import */ var _product_short_info_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./product-short-info.scss */ \"./src/components/product-short-info/product-short-info.scss\");\n/* harmony import */ var _product_short_info_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_product_short_info_scss__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\nclass ProductShortInfo extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this._handleLeftArrowClick = () => {\n      this._move(false);\n\n      this._update();\n    };\n\n    this._handleRightArrowClick = () => {\n      this._move(true);\n\n      this._update();\n    };\n\n    this.currentPhotoIndex = props.currentPhotoIndex !== undefined ? props.currentPhotoIndex : 0;\n    this.container = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n  }\n\n  componentDidMount() {\n    const containerElement = this.container.current;\n    this.arrows = containerElement.querySelector('.js-product-short-info__arrows');\n\n    if (this.arrows) {\n      this.leftArrow = this.arrows.querySelector('.js-product-short-info__arrow-back');\n      this.rightArrow = this.arrows.querySelector('.js-product-short-info__arrow-forward');\n    }\n\n    this.radioButtons = Array.from(containerElement.querySelectorAll('.js-product-short-info__radio-button'));\n    this.photos = Array.from(containerElement.querySelectorAll('.js-product-short-info__photo'));\n\n    if (this.leftArrow && this.rightArrow) {\n      this.leftArrow.addEventListener('click', this._handleLeftArrowClick);\n      this.rightArrow.addEventListener('click', this._handleRightArrowClick);\n    }\n\n    this._update();\n  }\n\n  _move(isDirectionForward) {\n    if (isDirectionForward) {\n      if (this.currentPhotoIndex === this.radioButtons.length - 1) return;\n      this.currentPhotoIndex += 1;\n    } else {\n      if (this.currentPhotoIndex === 0) return;\n      this.currentPhotoIndex -= 1;\n    }\n  }\n\n  _update() {\n    this.radioButtons.forEach((button, index) => {\n      if (index === this.currentPhotoIndex) button.classList.toggle('product-short-info__radio-button_checked', true);else button.classList.toggle('product-short-info__radio-button_checked', false);\n    });\n    this.photos.forEach((photo, index) => {\n      if (index === this.currentPhotoIndex) photo.classList.toggle('product-short-info__photo_current', true);else photo.classList.toggle('product-short-info__photo_current', false);\n    });\n  }\n\n  _formateNumber(number) {\n    return `${number}`.replace(/(\\d)(?=(\\d{3})+$)/g, '$1 ');\n  }\n\n  render() {\n    const {\n      id,\n      name,\n      price,\n      currencyType,\n      descriptions,\n      manufacturer,\n      energyValue,\n      proteins,\n      fats,\n      carbohydrates,\n      energyUnits,\n      weightUnits,\n      shelfLife,\n      shelfLifeUnits,\n      packaging,\n      imageNames,\n      checkedStars,\n      reviewsCount\n    } = this.props.product;\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info js-product-short-info\",\n      ref: this.container\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"product-short-info__ref\",\n      to: `/ProductSupermarket/pageDetails/${id}`\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__photos\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__radio-buttons\"\n    }, imageNames.map((name, index) => {\n      let i = index + 1;\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n        className: `product-short-info__radio-button js-product-short-info__radio-button`,\n        \"data-serial-number\": i,\n        key: `product-short-info__radio-button-${i}`\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n        className: \"product-short-info__radio-button-image js-product-short-info__radio-button-image\"\n      }));\n    })), imageNames.map((name, i) => {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n        className: `product-short-info__photo js-product-short-info__photo`,\n        key: `product-short-info__photo product-short-info__photo-${i}`,\n        src: `/src/data/productImages/${name}.png`,\n        alt: \"room photo\",\n        \"data-serial-number\": i\n      });\n    }), imageNames.length > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__arrows js-product-short-info__arrows\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"product-short-info__arrow-back js-product-short-info__arrow-back\",\n      onClick: this.handlerLeftArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__arrow-back-icon\"\n    }, \"expand_more\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"product-short-info__arrow-forward js-product-short-info__arrow-forward\",\n      onClick: this.handlerRightArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__arrow-forward-icon\"\n    }, \"expand_more\"))) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__text-info\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-short-info__title\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__name\"\n    }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__price\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__price-number\"\n    }, `${this._formateNumber(price)}${currencyType}`), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__packaging-type\"\n    }, `за ${packaging === \"amount\" ? \"штуку\" : \"килограмм\"}`))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__rate\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_star_rating_star_rating__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n      id: id,\n      checkedStars: checkedStars\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-short-info__reviews-count\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__reviews-count-value\"\n    }, reviewsCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__reviews-count-text\"\n    }, \"\\u041E\\u0442\\u0437\\u044B\\u0432\\u043E\\u0432\")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__buttons\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__update-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_update_button_update_button__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n      product: this.props.product,\n      updateItem: this.props.updateItem\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__delete-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_delete_button_delete_button__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null))));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ProductShortInfo);\n\n//# sourceURL=webpack:///./src/components/product-short-info/product-short-info.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _update_button_update_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../update-button/update-button */ \"./src/components/update-button/update-button.js\");\n/* harmony import */ var _delete_button_delete_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../delete-button/delete-button */ \"./src/components/delete-button/delete-button.js\");\n/* harmony import */ var _star_rating_star_rating__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../star-rating/star-rating */ \"./src/components/star-rating/star-rating.js\");\n/* harmony import */ var _product_short_info_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./product-short-info.scss */ \"./src/components/product-short-info/product-short-info.scss\");\n/* harmony import */ var _product_short_info_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_product_short_info_scss__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\nclass ProductShortInfo extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor(props) {\n    super(props);\n\n    this._handleLeftArrowClick = () => {\n      this._move(false);\n\n      this._update();\n    };\n\n    this._handleRightArrowClick = () => {\n      this._move(true);\n\n      this._update();\n    };\n\n    this.currentPhotoIndex = props.currentPhotoIndex !== undefined ? props.currentPhotoIndex : 0;\n    this.container = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();\n  }\n\n  componentDidMount() {\n    const containerElement = this.container.current;\n    this.arrows = containerElement.querySelector('.js-product-short-info__arrows');\n\n    if (this.arrows) {\n      this.leftArrow = this.arrows.querySelector('.js-product-short-info__arrow-back');\n      this.rightArrow = this.arrows.querySelector('.js-product-short-info__arrow-forward');\n    }\n\n    this.radioButtons = Array.from(containerElement.querySelectorAll('.js-product-short-info__radio-button'));\n    this.photos = Array.from(containerElement.querySelectorAll('.js-product-short-info__photo'));\n\n    if (this.leftArrow && this.rightArrow) {\n      this.leftArrow.addEventListener('click', this._handleLeftArrowClick);\n      this.rightArrow.addEventListener('click', this._handleRightArrowClick);\n    }\n\n    this._update();\n  }\n\n  _move(isDirectionForward) {\n    if (isDirectionForward) {\n      if (this.currentPhotoIndex === this.radioButtons.length - 1) return;\n      this.currentPhotoIndex += 1;\n    } else {\n      if (this.currentPhotoIndex === 0) return;\n      this.currentPhotoIndex -= 1;\n    }\n  }\n\n  _update() {\n    this.radioButtons.forEach((button, index) => {\n      if (index === this.currentPhotoIndex) button.classList.toggle('product-short-info__radio-button_checked', true);else button.classList.toggle('product-short-info__radio-button_checked', false);\n    });\n    this.photos.forEach((photo, index) => {\n      if (index === this.currentPhotoIndex) photo.classList.toggle('product-short-info__photo_current', true);else photo.classList.toggle('product-short-info__photo_current', false);\n    });\n  }\n\n  _formateNumber(number) {\n    return `${number}`.replace(/(\\d)(?=(\\d{3})+$)/g, '$1 ');\n  }\n\n  render() {\n    const {\n      id,\n      name,\n      price,\n      currencyType,\n      descriptions,\n      manufacturer,\n      energyValue,\n      proteins,\n      fats,\n      carbohydrates,\n      energyUnits,\n      weightUnits,\n      shelfLife,\n      shelfLifeUnits,\n      packaging,\n      imageNames,\n      checkedStars,\n      reviewsCount\n    } = this.props.product;\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info js-product-short-info\",\n      ref: this.container\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"NavLink\"], {\n      className: \"product-short-info__ref\",\n      to: `/ProductSupermarket/pageDetails/${id}`\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__photos\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__radio-buttons\"\n    }, imageNames.map((name, index) => {\n      let i = index + 1;\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n        className: `product-short-info__radio-button js-product-short-info__radio-button`,\n        \"data-serial-number\": i,\n        key: `product-short-info__radio-button-${i}`\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n        className: \"product-short-info__radio-button-image js-product-short-info__radio-button-image\"\n      }));\n    })), imageNames.map((name, i) => {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n        className: `product-short-info__photo js-product-short-info__photo`,\n        key: `product-short-info__photo product-short-info__photo-${i}`,\n        src: `./src/data/productImages/${name}.png`,\n        alt: \"room photo\",\n        \"data-serial-number\": i\n      });\n    }), imageNames.length > 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__arrows js-product-short-info__arrows\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"product-short-info__arrow-back js-product-short-info__arrow-back\",\n      onClick: this.handlerLeftArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__arrow-back-icon\"\n    }, \"expand_more\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n      className: \"product-short-info__arrow-forward js-product-short-info__arrow-forward\",\n      onClick: this.handlerRightArrowClick\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__arrow-forward-icon\"\n    }, \"expand_more\"))) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__text-info\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-short-info__title\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__name\"\n    }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__price\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__price-number\"\n    }, `${this._formateNumber(price)}${currencyType}`), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__packaging-type\"\n    }, `за ${packaging === \"amount\" ? \"штуку\" : \"килограмм\"}`))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__rate\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_star_rating_star_rating__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n      id: id,\n      checkedStars: checkedStars\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      className: \"product-short-info__reviews-count\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__reviews-count-value\"\n    }, reviewsCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n      className: \"product-short-info__reviews-count-text\"\n    }, \"\\u041E\\u0442\\u0437\\u044B\\u0432\\u043E\\u0432\")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__buttons\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__update-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_update_button_update_button__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n      product: this.props.product,\n      updateItem: this.props.updateItem\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"product-short-info__delete-button\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_delete_button_delete_button__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null))));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ProductShortInfo);\n\n//# sourceURL=webpack:///./src/components/product-short-info/product-short-info.js?");
 
 /***/ }),
 
@@ -1784,186 +1964,6 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module) {
 
 eval("module.exports = JSON.parse(\"{\\\"products\\\":[{\\\"id\\\":0,\\\"name\\\":\\\"Дыня Ромашка\\\",\\\"price\\\":123,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"Дыня Ромашка получила свое название благодаря оригинальному внешнему виду. Плод имеет округлую форму и будто разделен на сегменты (или, словно ромашка, на лепестки). Мякоть у нее сладкая, с нежным медовым ароматом. Дыня содержит совсем мало калорий (всего 34ккал), однако в ней много полезных веществ: витамины А, Р, С, каротин, фолиевая кислота, кальций, железо, калий. Пектин и клетчатка, входящие в состав, нормализуют работу пищеварительной системы и способствуют очищению организма. Дыня отлично подходит для десертного стола или фруктового салата, но вот с другими продуктами ее смешивать не рекомендуется.\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"amount\\\",\\\"imageNames\\\":[1,2,3],\\\"checkedStars\\\":5,\\\"reviewsCount\\\":23},{\\\"id\\\":1,\\\"name\\\":\\\"Арбуз Ромашка\\\",\\\"price\\\":56,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"Арбуз блаблаблаблабла\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"weight\\\",\\\"imageNames\\\":[1,2,3],\\\"checkedStars\\\":4,\\\"reviewsCount\\\":123},{\\\"id\\\":2,\\\"name\\\":\\\"Черешня\\\",\\\"price\\\":11,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"выпаыпываыпвпап\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"amount\\\",\\\"imageNames\\\":[4,5],\\\"checkedStars\\\":4,\\\"reviewsCount\\\":33},{\\\"id\\\":3,\\\"name\\\":\\\"Навоз\\\",\\\"price\\\":543,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"выпаыпываыпвпап\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"amount\\\",\\\"imageNames\\\":[6],\\\"checkedStars\\\":2,\\\"reviewsCount\\\":3534},{\\\"id\\\":4,\\\"name\\\":\\\"Вишня\\\",\\\"price\\\":1488,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"выпаыпываыпвпап\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"weight\\\",\\\"imageNames\\\":[6],\\\"checkedStars\\\":1,\\\"reviewsCount\\\":333},{\\\"id\\\":5,\\\"name\\\":\\\"Клубника\\\",\\\"price\\\":69,\\\"currencyType\\\":\\\"₽\\\",\\\"descriptions\\\":\\\"выпаыпываыпвпап\\\",\\\"manufacturer\\\":\\\"ООО Четотам\\\",\\\"energyValue\\\":34,\\\"proteins\\\":0.8,\\\"fats\\\":0.2,\\\"carbohydrates\\\":8,\\\"energyUnits\\\":\\\"кКал\\\",\\\"weightUnits\\\":\\\"г\\\",\\\"shelfLife\\\":7,\\\"shelfLifeUnits\\\":\\\"день\\\",\\\"packaging\\\":\\\"weight\\\",\\\"imageNames\\\":[6,7,8,9,10],\\\"checkedStars\\\":5,\\\"reviewsCount\\\":0}]}\");\n\n//# sourceURL=webpack:///./src/data/productData.json?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/1.png":
-/*!**************************************!*\
-  !*** ./src/data/productImages/1.png ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/1.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/1.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/10.png":
-/*!***************************************!*\
-  !*** ./src/data/productImages/10.png ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/10.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/10.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/11.png":
-/*!***************************************!*\
-  !*** ./src/data/productImages/11.png ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/11.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/11.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/12.png":
-/*!***************************************!*\
-  !*** ./src/data/productImages/12.png ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/12.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/12.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/13.png":
-/*!***************************************!*\
-  !*** ./src/data/productImages/13.png ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/13.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/13.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/14.png":
-/*!***************************************!*\
-  !*** ./src/data/productImages/14.png ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/14.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/14.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/15.png":
-/*!***************************************!*\
-  !*** ./src/data/productImages/15.png ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/15.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/15.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/2.png":
-/*!**************************************!*\
-  !*** ./src/data/productImages/2.png ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/2.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/2.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/3.png":
-/*!**************************************!*\
-  !*** ./src/data/productImages/3.png ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/3.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/3.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/4.png":
-/*!**************************************!*\
-  !*** ./src/data/productImages/4.png ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/4.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/4.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/5.png":
-/*!**************************************!*\
-  !*** ./src/data/productImages/5.png ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/5.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/5.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/6.png":
-/*!**************************************!*\
-  !*** ./src/data/productImages/6.png ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/6.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/6.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/7.png":
-/*!**************************************!*\
-  !*** ./src/data/productImages/7.png ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/7.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/7.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/8.png":
-/*!**************************************!*\
-  !*** ./src/data/productImages/8.png ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/8.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/8.png?");
-
-/***/ }),
-
-/***/ "./src/data/productImages/9.png":
-/*!**************************************!*\
-  !*** ./src/data/productImages/9.png ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/data/productImages/9.png\");\n\n//# sourceURL=webpack:///./src/data/productImages/9.png?");
 
 /***/ }),
 
