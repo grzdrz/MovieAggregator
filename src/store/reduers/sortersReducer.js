@@ -4,7 +4,7 @@ const initialState = [
 
 const sortersReducer = (state = initialState, action) => {
   if (action.sorters) return [...action.sorters];
-  return initialState;
+  return state;
 };
 
 export default sortersReducer;

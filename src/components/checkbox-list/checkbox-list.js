@@ -90,7 +90,7 @@ class CheckboxList extends React.Component {
                     onClick={inputClick ? inputClick : () => { }}></input>
                   <div className="checkbox-list__check-mark">
                     <img className="checkbox-list__check-mark-image"
-                      src="/ProductSupermarket/src/components/checkbox-list/img/check-mark.svg" alt="check-mark"></img>
+                      src="/src/components/checkbox-list/img/check-mark.svg" alt="check-mark"></img>
                   </div>
                   <div className="checkbox-list__frame"></div>
                   <p className={["checkbox-list__item-text"].concat(itemTextClasses).join(" ")}>{item.text}</p>

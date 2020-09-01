@@ -111,7 +111,7 @@ class ProductShortInfo extends React.Component {
             return (
               <img className={`product-short-info__photo js-product-short-info__photo`}
                 key={`product-short-info__photo product-short-info__photo-${i}`}
-                src={`/ProductSupermarket/src/components/product-short-info/images/${name}.png`}
+                src={`/src/components/product-short-info/images/${name}.png`}
                 alt="room photo"
                 data-serial-number={i}></img>
             );

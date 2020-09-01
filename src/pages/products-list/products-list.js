@@ -93,7 +93,7 @@ class ProductsList extends React.Component {
           <div className="products-list__products">
             {this.getProducts().map((product, index) => {
               return (
-                <div className="products-list__item" key={`products-list__item-${pageNumber}-${index}`}>
+                <div className="products-list__item" key={`products-list__item-${product.id}`}>
                   <ProductShortInfo
                     product={product}
                     updateItem={this.props.updateItem} />
