@@ -1,3 +1,5 @@
+import compilationOptions from "../../compilationOptions";
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -90,6 +92,7 @@ class ProductShortInfo extends React.Component {
       checkedStars,
       reviewsCount,
     } = this.props.product;
+    const test = compilationOptions.forGithubPages;
 
     return (
       <div className="product-short-info js-product-short-info" ref={this.container} >
@@ -111,7 +114,7 @@ class ProductShortInfo extends React.Component {
             return (
               <img className={`product-short-info__photo js-product-short-info__photo`}
                 key={`product-short-info__photo product-short-info__photo-${i}`}
-                src={`/src/components/product-short-info/images/${name}.png`}
+                src={`${compilationOptions.forGithubPages ? "/ProductSupermarket" : ""}/src/components/product-short-info/images/${name}.png`}
                 alt="room photo"
                 data-serial-number={i}></img>
             );
@@ -163,4 +166,3 @@ class ProductShortInfo extends React.Component {
 }
 
 export default ProductShortInfo;
-// /ProductSupermarket

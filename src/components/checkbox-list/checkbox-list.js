@@ -1,3 +1,5 @@
+import compilationOptions from "../../compilationOptions";
+
 import React from "react";
 
 import "./checkbox-list.scss";
@@ -90,7 +92,8 @@ class CheckboxList extends React.Component {
                     onClick={inputClick ? inputClick : () => { }}></input>
                   <div className="checkbox-list__check-mark">
                     <img className="checkbox-list__check-mark-image"
-                      src="/src/components/checkbox-list/img/check-mark.svg" alt="check-mark"></img>
+                      src={`${compilationOptions.forGithubPages ? "/ProductSupermarket" : ""}/src/components/checkbox-list/img/check-mark.svg`}
+                      alt="check-mark"></img>
                   </div>
                   <div className="checkbox-list__frame"></div>
                   <p className={["checkbox-list__item-text"].concat(itemTextClasses).join(" ")}>{item.text}</p>
@@ -109,4 +112,3 @@ class CheckboxList extends React.Component {
 }
 
 export default CheckboxList;
-// /ProductSupermarket

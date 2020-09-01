@@ -1,10 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
+
 import changeItemsCountOnPage from "../../store/actions/changeItemsCountOnPage";
 import createItem from "../../store/actions/roomsInfoActions/createItem";
 import deleteItem from "../../store/actions/roomsInfoActions/deleteItem";
 import updateItem from "../../store/actions/roomsInfoActions/updateItem";
 import sorter from "../../store/actions/sortersActions/sorter";
+import filterByCategory from "../../store/actions/filtersActions/filterByCategory";
 
 import CreateButton from "../../components/create-button/create-button";
 import SorterForm from "../../components/sorter-form/sorter-form";
@@ -19,19 +21,31 @@ class ProductsList extends React.Component {
     super(props);
   }
 
-  getProducts() {
-    let { pagination, products, sorters, pageNumber } = this.props;
+  selectProductsForPage(products) {
+    let {
+      pagination,
+      pageNumber
+    } = this.props;
     const { itemsCountOnPage } = pagination;
-    const totalItemsCount = products.length;
 
-    const t1 = pageNumber * itemsCountOnPage;
-
-    if (sorters.length !== 0) products = this.sortProducts(products, sorters);
-
+    const maxProducts = pageNumber * itemsCountOnPage;
     const result = products.filter((product, index) =>
-      (index >= t1 - itemsCountOnPage && index < t1)
+      (index >= maxProducts - itemsCountOnPage && index < maxProducts)
     );
     return result;
+  }
+
+  filterAndSortProducts() {
+    let {
+      products,
+      sorters,
+      filters,
+    } = this.props;
+
+    if (sorters.length !== 0) products = this.sortProducts(products, sorters);
+    if (filters.byCategory.length !== 0) products = this.filterProductsByCategory(products, filters.byCategory);
+
+    return products;
   }
 
   sortProducts(products, sorters) {
@@ -39,6 +53,14 @@ class ProductsList extends React.Component {
     sorters.forEach((sorterName) => {
       const comparer = this.makeObjectComparer(sorterName);
       productsCopy = productsCopy.sort(comparer);
+    });
+    return productsCopy;
+  }
+
+  filterProductsByCategory(products, filter) {
+    let productsCopy = [...products];
+    productsCopy = productsCopy.filter((product) => {
+      if (filter.includes(product.category)) return product;
     });
     return productsCopy;
   }
@@ -55,8 +77,8 @@ class ProductsList extends React.Component {
     }
   }
 
-  calculatePagesCount() {
-    const { pagination, products, pageNumber } = this.props;
+  calculatePagesCount(products) {
+    const { pagination } = this.props;
     const { itemsCountOnPage } = pagination;
     const totalItemsCount = products.length;
 
@@ -75,8 +97,11 @@ class ProductsList extends React.Component {
   } */
 
   render() {
-    const { pagination, products, pageNumber } = this.props;
+    const { pagination, pageNumber } = this.props;
     const { itemsCountOnPage } = pagination;
+
+    const products = this.filterAndSortProducts();
+    const productsForPage = this.selectProductsForPage(products);
     const totalItemsCount = products.length;
 
     return (
@@ -86,12 +111,16 @@ class ProductsList extends React.Component {
             <CreateButton createItem={this.props.createItem} />
           </div>
           <div className="products-list__sorter-form">
-            <SorterForm sorter={this.props.sorter} sorters={this.props.sorters} />
+            <SorterForm
+              sorter={this.props.sorter}
+              filterByCategory={this.props.filterByCategory}
+              sorters={this.props.sorters}
+              filters={this.props.filters} />
           </div>
         </div>
         <div className="products-list__list">
           <div className="products-list__products">
-            {this.getProducts().map((product, index) => {
+            {productsForPage.map((product, index) => {
               return (
                 <div className="products-list__item" key={`products-list__item-${product.id}`}>
                   <ProductShortInfo
@@ -102,13 +131,15 @@ class ProductsList extends React.Component {
             })}
           </div>
           <div className="products-list__pagination">
-            <Pagination
-              title="Pagination"
-              pageNumber={pageNumber}
-              pagesCount={this.calculatePagesCount()}
-              totalItemsCount={totalItemsCount}
-            /* handlerChangePage={this.handlerChangePage} */
-            />
+            {totalItemsCount > 0 ?
+              <Pagination
+                title="Pagination"
+                pageNumber={pageNumber}
+                pagesCount={this.calculatePagesCount(products)}
+                totalItemsCount={totalItemsCount}
+              /* handlerChangePage={this.handlerChangePage} */
+              /> : null
+            }
           </div>
         </div>
       </div>
@@ -126,6 +157,7 @@ const actions = {
   updateItem,
   deleteItem,
   sorter,
+  filterByCategory,
 };
 
 export default connect(mapStateToProps, actions)(ProductsList);

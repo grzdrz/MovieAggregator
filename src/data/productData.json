@@ -22,11 +22,12 @@
         3
       ],
       "checkedStars": 5,
-      "reviewsCount": 23
+      "reviewsCount": 23,
+      "category": "berry"
     },
     {
       "id": 1,
-      "name": "Арбуз Ромашка",
+      "name": "Арбуз",
       "price": 56,
       "currencyType": "₽",
       "descriptions": "Арбуз блаблаблаблабла",
@@ -46,11 +47,12 @@
         3
       ],
       "checkedStars": 4,
-      "reviewsCount": 123
+      "reviewsCount": 123,
+      "category": "berry"
     },
     {
       "id": 2,
-      "name": "Черешня",
+      "name": "Пельмени",
       "price": 11,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -69,11 +71,12 @@
         5
       ],
       "checkedStars": 4,
-      "reviewsCount": 33
+      "reviewsCount": 33,
+      "category": "meat"
     },
     {
       "id": 3,
-      "name": "Навоз",
+      "name": "Йогурт",
       "price": 543,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -91,11 +94,12 @@
         6
       ],
       "checkedStars": 2,
-      "reviewsCount": 3534
+      "reviewsCount": 3534,
+      "category": "milk"
     },
     {
       "id": 4,
-      "name": "Вишня",
+      "name": "Манго",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -113,7 +117,8 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "fruit"
     },
     {
       "id": 5,
@@ -139,11 +144,12 @@
         10
       ],
       "checkedStars": 5,
-      "reviewsCount": 0
+      "reviewsCount": 0,
+      "category": "berry"
     },
     {
       "id": 6,
-      "name": "Вишня",
+      "name": "Апельсин",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -161,11 +167,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "fruit"
     },
     {
       "id": 7,
-      "name": "Вишня",
+      "name": "Груша",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -183,11 +190,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "fruit"
     },
     {
       "id": 8,
-      "name": "Вишня",
+      "name": "Черешня",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -205,11 +213,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "berry"
     },
     {
       "id": 9,
-      "name": "Вишня",
+      "name": "Ананас",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -227,7 +236,8 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "fruit"
     },
     {
       "id": 10,
@@ -249,12 +259,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "berry"
     },
-
     {
       "id": 11,
-      "name": "Вишня",
+      "name": "Куриный фарш",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -272,11 +282,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "meat"
     },
     {
       "id": 12,
-      "name": "Вишня",
+      "name": "Молоко",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -294,11 +305,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "milk"
     },
     {
       "id": 13,
-      "name": "Вишня",
+      "name": "Кефир",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -316,11 +328,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "milk"
     },
     {
       "id": 14,
-      "name": "Вишня",
+      "name": "Яблоки",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -338,11 +351,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "fruit"
     },
     {
       "id": 15,
-      "name": "Вишня",
+      "name": "Бананы",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -360,11 +374,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "berry"
     },
     {
       "id": 16,
-      "name": "Вишня",
+      "name": "Лосось",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -382,11 +397,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "fish"
     },
     {
       "id": 17,
-      "name": "Вишня",
+      "name": "Котлеты",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -404,12 +420,12 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "meat"
     },
-
     {
       "id": 18,
-      "name": "Вишня",
+      "name": "Сосиски",
       "price": 1488,
       "currencyType": "₽",
       "descriptions": "выпаыпываыпвпап",
@@ -427,7 +443,8 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "meat"
     },
     {
       "id": 19,
@@ -449,7 +466,8 @@
         6
       ],
       "checkedStars": 1,
-      "reviewsCount": 333
+      "reviewsCount": 333,
+      "category": "berry"
     }
   ]
 }

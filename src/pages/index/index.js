@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink, Link, Redirect } from 
 import paginationReducer from "../../store/reduers/paginationReducer";
 import productsReducer from "../../store/reduers/productsReducer";
 import sortersReducer from "../../store/reduers/sortersReducer";
+import filtersReducer from "../../store/reduers/filtersReducer";
 
 import Header from "../../components/header/header.js";
 import ProductsList from "../products-list/products-list.js";
@@ -56,6 +57,7 @@ const reducer = combineReducers({
   pagination: paginationReducer,
   products: productsReducer,
   sorters: sortersReducer,
+  filters: filtersReducer,
 });
 
 const store = createStore(reducer);
