@@ -1,0 +1,38 @@
+@import '../../assets/constants.scss';
+
+.shopping-cart {
+  height: 3.125rem;
+  width: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__main-image {
+    font-size: 1.875rem;
+    font-family: 'Material Icons';
+    color: $color-dark-shade-75;
+  }
+
+  &__products-count {
+    min-width: 1.25rem;
+    max-width: 6.25rem;
+    width: max-content;
+    min-height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1.875rem;
+    top: 0rem;
+    background: red;
+    border-radius: 1rem;
+  }
+
+  &__products-count-number {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.625rem;
+    color: white;
+    word-break: break-all;
+  }
+}

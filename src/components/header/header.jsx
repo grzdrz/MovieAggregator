@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import ColoredLogo from "../colored-logo/colored-logo.jsx";
 import Button from "../button/button.jsx";
+import ShoppingCart from "../shopping-cart/shopping-cart";
 
 function HeaderComponent(props) {
 
@@ -65,6 +66,9 @@ function HeaderComponent(props) {
             </div>
           </div>
       }
+      <div className="header__shopping-cart">
+        <ShoppingCart />
+      </div>
     </header >
   );
 }
