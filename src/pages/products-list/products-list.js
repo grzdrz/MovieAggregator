@@ -7,6 +7,7 @@ import deleteItem from "../../store/actions/roomsInfoActions/deleteItem";
 import updateItem from "../../store/actions/roomsInfoActions/updateItem";
 import sorter from "../../store/actions/sortersActions/sorter";
 import filterByCategory from "../../store/actions/filtersActions/filterByCategory";
+import shoppingCartAction from "../../store/actions/shoppingCart/shoppingCartAction";
 
 import CreateButton from "../../components/create-button/create-button";
 import SorterForm from "../../components/sorter-form/sorter-form";
@@ -125,7 +126,9 @@ class ProductsList extends React.Component {
                 <div className="products-list__item" key={`products-list__item-${product.id}`}>
                   <ProductShortInfo
                     product={product}
-                    updateItem={this.props.updateItem} />
+                    updateItem={this.props.updateItem}
+                    shoppingCart={this.props.shoppingCart}
+                    shoppingCartAction={this.props.shoppingCartAction} />
                 </div>
               );
             })}
@@ -158,6 +161,7 @@ const actions = {
   deleteItem,
   sorter,
   filterByCategory,
+  shoppingCartAction,
 };
 
 export default connect(mapStateToProps, actions)(ProductsList);

@@ -14,7 +14,7 @@
   &__ref {
     z-index: 3;
     width: 16.875rem;
-    height: 6.6875rem;
+    height: 5.3875rem;
     position: absolute;
     bottom: 0rem;
     opacity: 0;
@@ -127,7 +127,7 @@
 
   &__title {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto max-content;
     grid-template-rows: auto auto;
     margin-top: 0.1875rem;
     margin-bottom: 0.75rem;

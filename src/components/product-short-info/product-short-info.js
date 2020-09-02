@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import UpdateButton from "../update-button/update-button";
 import DeleteButton from "../delete-button/delete-button";
 import StarRating from "../star-rating/star-rating";
+import ProductCounter from "../product-counter/product-counter";
 
 import "./product-short-info.scss";
 
@@ -134,6 +135,10 @@ class ProductShortInfo extends React.Component {
         <div className="product-short-info__text-info">
           <p className="product-short-info__title">
             <span className="product-short-info__name">{name}</span>
+            <ProductCounter
+              shoppingCart={this.props.shoppingCart}
+              shoppingCartAction={this.props.shoppingCartAction}
+              productId={id} />
             <span className="product-short-info__price">
               <span className="product-short-info__price-number">{`${this._formateNumber(price)}${currencyType}`}</span>
               <span className="product-short-info__packaging-type">{`за ${packaging === "amount" ? "штуку" : "килограмм"}`}</span>

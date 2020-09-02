@@ -8,6 +8,7 @@ import paginationReducer from "../../store/reduers/paginationReducer";
 import productsReducer from "../../store/reduers/productsReducer";
 import sortersReducer from "../../store/reduers/sortersReducer";
 import filtersReducer from "../../store/reduers/filtersReducer";
+import shoppingCartReducer from "../../store/reduers/shoppingCartReducer";
 
 import Header from "../../components/header/header.js";
 import ProductsList from "../products-list/products-list.js";
@@ -58,6 +59,7 @@ const reducer = combineReducers({
   products: productsReducer,
   sorters: sortersReducer,
   filters: filtersReducer,
+  shoppingCart: shoppingCartReducer,
 });
 
 const store = createStore(reducer);

@@ -1,0 +1,36 @@
+@import '../../assets/constants.scss';
+
+.product-counter {
+  &__minus-button,
+  &__plus-button {
+    cursor: pointer;
+    width: 1.875rem;
+    border-radius: 1.9375rem;
+    border: 0.0625rem solid $color-dark-shade-50;
+    background: transparent;
+    outline: none;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-dark-shade-100;
+  }
+
+  &__minus-button {
+    opacity: 0.38;
+
+    &_active {
+      opacity: 1;
+    }
+  }
+
+  &__value {
+    margin: 0rem 0.3125rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-dark-shade-100;
+  }
+}

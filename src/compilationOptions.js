@@ -1,5 +1,5 @@
 const compilationOptions = {
-  forGithubPages: false,
+  forGithubPages: true,
 };
 
 export default compilationOptions;
