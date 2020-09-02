@@ -7,7 +7,8 @@ import deleteItem from "../../store/actions/roomsInfoActions/deleteItem";
 import updateItem from "../../store/actions/roomsInfoActions/updateItem";
 import sorter from "../../store/actions/sortersActions/sorter";
 import filterByCategory from "../../store/actions/filtersActions/filterByCategory";
-import shoppingCartAction from "../../store/actions/shoppingCart/shoppingCartAction";
+import shoppingCartPlusAction from "../../store/actions/shoppingCart/shoppingCartPlusAction";
+import shoppingCartMinusAction from "../../store/actions/shoppingCart/shoppingCartMinusAction";
 
 import CreateButton from "../../components/create-button/create-button";
 import SorterForm from "../../components/sorter-form/sorter-form";
@@ -128,7 +129,8 @@ class ProductsList extends React.Component {
                     product={product}
                     updateItem={this.props.updateItem}
                     shoppingCart={this.props.shoppingCart}
-                    shoppingCartAction={this.props.shoppingCartAction} />
+                    shoppingCartPlusAction={this.props.shoppingCartPlusAction}
+                    shoppingCartMinusAction={this.props.shoppingCartMinusAction} />
                 </div>
               );
             })}
@@ -161,7 +163,8 @@ const actions = {
   deleteItem,
   sorter,
   filterByCategory,
-  shoppingCartAction,
+  shoppingCartPlusAction,
+  shoppingCartMinusAction,
 };
 
 export default connect(mapStateToProps, actions)(ProductsList);

@@ -27,7 +27,7 @@ class CreateForm extends React.Component {
     return (
       <form className="create-form" ref={this.form} onSubmit={this._handleSubmit}>
         <div className="create-form__name">
-          <FormInput name="name" type="text" value="Торт с говном" title="Наименование" placeholder="Наименование" />
+          <FormInput name="name" type="text" value="Чевапчичи" title="Наименование" placeholder="Наименование" />
         </div>
         <div className="create-form__price">
           <div className="create-form__price-number">

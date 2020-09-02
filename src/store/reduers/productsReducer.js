@@ -1,7 +1,6 @@
 const initialState = require("../../data/productData.json").products;
 const initialProduct = {
-  "id": 3,
-  "name": "Навоз",
+  "name": "Чевапчичи",
   "price": 543,
   "currencyType": "₽",
   "descriptions": "выпаыпываыпвпап",
@@ -19,7 +18,8 @@ const initialProduct = {
     6, 1, 11
   ],
   "checkedStars": 2,
-  "reviewsCount": 3534
+  "reviewsCount": 3534,
+  "category": "meat"
 };
 
 function productsReducer(state = initialState, action) {

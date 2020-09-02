@@ -137,7 +137,8 @@ class ProductShortInfo extends React.Component {
             <span className="product-short-info__name">{name}</span>
             <ProductCounter
               shoppingCart={this.props.shoppingCart}
-              shoppingCartAction={this.props.shoppingCartAction}
+              shoppingCartPlusAction={this.props.shoppingCartPlusAction}
+              shoppingCartMinusAction={this.props.shoppingCartMinusAction}
               productId={id} />
             <span className="product-short-info__price">
               <span className="product-short-info__price-number">{`${this._formateNumber(price)}${currencyType}`}</span>

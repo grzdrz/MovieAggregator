@@ -10,14 +10,23 @@ class ProductCounter extends React.Component {
   handlePlusButtonClick = (event) => {
     event.preventDefault();
 
-    this.props.shoppingCartAction(this.props.productId);
+    this.props.shoppingCartPlusAction(this.props.productId);
   };
+
+  handleMinusButtonClick = (event) => {
+    event.preventDefault();
+
+    this.props.shoppingCartMinusAction(this.props.productId);
+  }
 
   render() {
     const targetProduct = this.props.shoppingCart.find((product) => product.productId === this.props.productId);
     return (
       <div className="product-counter">
-        <button className="product-counter__minus-button" /* onClick={} */>-</button>
+        <button className={
+          `product-counter__minus-button 
+          ${targetProduct && targetProduct.productCount > 0 ? "product-counter__minus-button_active" : ""}`}
+          onClick={this.handleMinusButtonClick}>-</button>
         <span className="product-counter__value">{targetProduct ? targetProduct.productCount : 0}</span>
         <button className="product-counter__plus-button" onClick={this.handlePlusButtonClick}>+</button>
       </div>
