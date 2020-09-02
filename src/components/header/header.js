@@ -6,6 +6,9 @@ import ColoredLogo from "../colored-logo/colored-logo.jsx";
 import Button from "../button/button.jsx";
 import ShoppingCart from "../shopping-cart/shopping-cart";
 
+import shoppingCartPlusAction from "../../store/actions/shoppingCart/shoppingCartPlusAction";
+import shoppingCartMinusAction from "../../store/actions/shoppingCart/shoppingCartMinusAction";
+
 import "./header.scss";
 
 class Header extends React.Component {
@@ -75,7 +78,11 @@ class Header extends React.Component {
             </div>
         }
         <div className="header__shopping-cart">
-          <ShoppingCart shoppingCart={this.props.shoppingCart} />
+          <ShoppingCart
+            shoppingCart={this.props.shoppingCart}
+            shoppingCartPlusAction={this.props.shoppingCartPlusAction}
+            shoppingCartMinusAction={this.props.shoppingCartMinusAction}
+          />
         </div>
       </header >
     );
@@ -86,4 +93,9 @@ const mapStateToProps = function (state) {
   return state;
 }
 
-export default connect(mapStateToProps)(Header);
+const actions = {
+  shoppingCartPlusAction,
+  shoppingCartMinusAction,
+};
+
+export default connect(mapStateToProps, actions)(Header);
