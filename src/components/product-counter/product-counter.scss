@@ -1,6 +1,10 @@
 @import '../../assets/constants.scss';
 
 .product-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &__minus-button,
   &__plus-button {
     cursor: pointer;

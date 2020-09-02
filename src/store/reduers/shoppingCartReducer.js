@@ -28,12 +28,12 @@ function shoppingCartReducer(state = initialState, action) {
         targetProduct.productCount -= 1;
       } else if (targetProduct && targetProduct.productCount === 0) {
         targetProduct.productCount = 0;
-      } else {
+      } /* else {
         stateCopy.push({
           productId: action.productId,
           productCount: 0,
         });
-      }
+      } */
       return stateCopy;
       break;
     }

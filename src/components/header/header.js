@@ -79,6 +79,7 @@ class Header extends React.Component {
         }
         <div className="header__shopping-cart">
           <ShoppingCart
+            products={this.props.products}
             shoppingCart={this.props.shoppingCart}
             shoppingCartPlusAction={this.props.shoppingCartPlusAction}
             shoppingCartMinusAction={this.props.shoppingCartMinusAction}

@@ -50,8 +50,8 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    right: 0px;
-    padding: 0.625rem;
+    right: 0rem;
+    padding: 1.325rem;
     background: white;
     border-radius: 0.25rem;
 
@@ -60,24 +60,92 @@
     }
   }
 
-  &__form-product {
-    display: flex;
-    flex-direction: row;
-
+  &__form-title {
     &-id {
-      /* display: none; */
-      width: 50px;
-      height: 20px;
+      margin-right: 10px;
     }
 
     &-count {
-      /* display: none; */
-      width: 50px;
-      height: 20px;
+      margin-right: 10px;
+    }
+
+    &-name {
+      margin-right: 10px;
+    }
+
+    &-counter {
+      margin-right: 0px;
+    }
+  }
+
+  &__form-product {
+    display: flex;
+    flex-direction: row;
+    padding: 0.625rem 0rem;
+    border-bottom: 0.0625rem solid $color-dark-shade-50;
+
+    &:first-of-type {
+      border-top: 0.0625rem solid $color-dark-shade-50;
+    }
+
+    &-id {
+      width: 3.125rem;
+      height: 1.25rem;
+      background: transparent;
+    }
+
+    &-count {
+      width: 3.125rem;
+      height: 1.25rem;
+      margin-right: 40px;
+      background: transparent;
+    }
+
+    &-name {
+      margin-right: 2.625rem;
     }
 
     &-counter {
       width: max-content;
+      margin-left: auto;
+    }
+  }
+
+  &__total-value {
+    display: flex;
+    padding: 15px 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: $color-dark-shade-25;
+
+    &-text {
+      width: max-content;
+      margin-right: 20px;
+    }
+
+    &-input {
+      width: 100px;
+      margin-left: auto;
+      background: transparent;
+    }
+  }
+
+  &__total-price {
+    display: flex;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: $color-dark-shade-25;
+
+    &-text {
+      width: max-content;
+      margin-right: 20px;
+    }
+
+    &-value {
+    }
+
+    &-currency {
     }
   }
 }
