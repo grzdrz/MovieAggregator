@@ -2778,7 +2778,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction sorter(sorters) {\n 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst initialState = {\n  byCategory: [\"meat\", \"fish\"\n  /* \"milk\",\r\n  \"fruit\",\r\n  \"berry\", */\n  ]\n};\n\nfunction filtersReducer(state = initialState, action) {\n  switch (action.type) {\n    case \"BY_CATEGORY\":\n      {\n        const stateCopy = { ...state\n        };\n        stateCopy.byCategory = [...action.filter];\n        return stateCopy;\n        break;\n      }\n\n    default:\n      {\n        return state;\n        break;\n      }\n  }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (filtersReducer);\n\n//# sourceURL=webpack:///./src/store/reduers/filtersReducer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst initialState = {\n  byCategory: [\"meat\", \"fish\", \"milk\", \"fruit\", \"berry\"]\n};\n\nfunction filtersReducer(state = initialState, action) {\n  switch (action.type) {\n    case \"BY_CATEGORY\":\n      {\n        const stateCopy = { ...state\n        };\n        stateCopy.byCategory = [...action.filter];\n        return stateCopy;\n        break;\n      }\n\n    default:\n      {\n        return state;\n        break;\n      }\n  }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (filtersReducer);\n\n//# sourceURL=webpack:///./src/store/reduers/filtersReducer.js?");
 
 /***/ }),
 
