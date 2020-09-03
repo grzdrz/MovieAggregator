@@ -111,11 +111,11 @@ class ProductShortInfo extends React.Component {
               );
             })}
           </div>
-          {imageNames.map((name, i) => {
+          {imageNames.map((imageName, i) => {
             return (
               <img className={`product-short-info__photo js-product-short-info__photo`}
                 key={`product-short-info__photo product-short-info__photo-${i}`}
-                src={`${compilationOptions.forGithubPages ? "/ProductSupermarket" : ""}/src/components/product-short-info/images/${name}.png`}
+                src={`${compilationOptions.forGithubPages ? "/ProductSupermarket" : ""}/src/data/images/products/${imageName}.jpg`}
                 alt="room photo"
                 data-serial-number={i}></img>
             );

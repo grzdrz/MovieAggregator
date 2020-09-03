@@ -2,9 +2,9 @@ const initialState = {
   byCategory: [
     "meat",
     "fish",
-    /* "milk",
+    "milk",
     "fruit",
-    "berry", */
+    "berry",
   ],
 };
 
