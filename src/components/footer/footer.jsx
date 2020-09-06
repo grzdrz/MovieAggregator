@@ -1,14 +1,10 @@
+import React from 'react';
+import './footer.scss';
 
-import React from "react";
-
-function FooterComponent(props) {
-    return (
-        props.texts.map((text, index) =>
-            <p className="footer__test-text" key={`footer__test-text-${index}`}>
-                {`${text}: ${index}`}
-            </p>
-        )
-    );
+function Footer() {
+  return (
+    <footer className='footer' />
+  );
 }
 
-export default FooterComponent;
+export default Footer;
