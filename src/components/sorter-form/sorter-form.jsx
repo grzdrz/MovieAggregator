@@ -12,10 +12,12 @@ class SorterForm extends React.Component {
     const form = input.closest('form');
     const formBody = new FormData(form);
     const test = Array.from(formBody);
-    const result = test.map((pair) => {
-      const splitedWord = pair[0].split('checkbox-list_');
-      return splitedWord[1];
-    });
+    const result = test
+      .map((pair) => {
+        const splitedWord = pair[0].split('checkbox-list_sorters_');
+        return splitedWord[1];
+      })
+      .filter((pair) => pair !== undefined);
 
     sorter(result);
   }
@@ -27,19 +29,18 @@ class SorterForm extends React.Component {
     const form = input.closest('form');
     const formBody = new FormData(form);
     const test = Array.from(formBody);
-    const result = test.map((pair) => {
-      const splitedWord = pair[0].split('checkbox-list_');
-      return splitedWord[1];
-    });
+    const result = test
+      .map((pair) => {
+        const splitedWord = pair[0].split('checkbox-list_by-category_');
+        return splitedWord[1];
+      })
+      .filter((pair) => pair !== undefined);
 
     filterByCategory(result);
   }
 
   render() {
-    const {
-      sorters,
-      filters,
-    } = this.props;
+    const { filters } = this.props;
 
     return (
       <form className='sorter-form' onSubmit={(event) => { event.preventDefault() }}>
@@ -47,9 +48,9 @@ class SorterForm extends React.Component {
           <CheckboxList
             inputClick={this.handleSorterClick}
             list={[
-              { isChecked: sorters.includes('price'), text: 'Цена', name: 'price' },
-              { isChecked: sorters.includes('reviewsCount'), text: 'Отзывы', name: 'reviewsCount' },
-              { isChecked: sorters.includes('name'), text: 'Имени', name: 'name' },
+              { isChecked: filters.sorters.includes('price'), text: 'Цена', name: 'price', type: 'sorters' },
+              { isChecked: filters.sorters.includes('reviewsCount'), text: 'Отзывы', name: 'reviewsCount', type: 'sorters' },
+              { isChecked: filters.sorters.includes('name'), text: 'Имени', name: 'name', type: 'sorters' },
             ]}
           />
         </div>
@@ -58,11 +59,11 @@ class SorterForm extends React.Component {
             inputClick={this.handleFilterByCategoryClick}
             title='Категория продукта:'
             list={[
-              { isChecked: filters.byCategory.includes('meat'), text: 'Мясо', name: 'meat' },
-              { isChecked: filters.byCategory.includes('fish'), text: 'Рыба', name: 'fish' },
-              { isChecked: filters.byCategory.includes('milk'), text: 'Кисломолочное изделие', name: 'milk' },
-              { isChecked: filters.byCategory.includes('fruit'), text: 'Фрукт', name: 'fruit' },
-              { isChecked: filters.byCategory.includes('berry'), text: 'Ягода', name: 'berry' },
+              { isChecked: filters.byCategory.includes('meat'), text: 'Мясо', name: 'meat', type: 'by-category' },
+              { isChecked: filters.byCategory.includes('fish'), text: 'Рыба', name: 'fish', type: 'by-category' },
+              { isChecked: filters.byCategory.includes('milk'), text: 'Кисломолочное изделие', name: 'milk', type: 'by-category' },
+              { isChecked: filters.byCategory.includes('fruit'), text: 'Фрукт', name: 'fruit', type: 'by-category' },
+              { isChecked: filters.byCategory.includes('berry'), text: 'Ягода', name: 'berry', type: 'by-category' },
             ]}
           />
         </div>

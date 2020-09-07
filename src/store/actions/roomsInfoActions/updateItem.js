@@ -1,6 +1,6 @@
 function updateItem(product) {
   return {
-    type: "UPDATE",
+    type: 'UPDATE',
     product,
   };
 }

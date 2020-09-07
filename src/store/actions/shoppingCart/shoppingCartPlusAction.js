@@ -1,6 +1,6 @@
 function shoppingCartPlusAction(productId) {
   return {
-    type: "PRODUCT_COUNT_PLUS",
+    type: 'PRODUCT_COUNT_PLUS',
     productId,
   };
 }

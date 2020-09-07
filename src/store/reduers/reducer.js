@@ -1,6 +1,7 @@
 class Reducer {
-  constructor(reducerManager) {
+  constructor(reducerManager, state) {
     this.reducerManager = reducerManager;
+    this.state = state;
     this.onStateChange = { // временная реализация ивента
       handlers: [],
       subscribe(handler) {

@@ -5,7 +5,7 @@ import changeCurrentPage from '../../store/actions/changeCurrentPage';
 import createItem from '../../store/actions/roomsInfoActions/createItem';
 import deleteItem from '../../store/actions/roomsInfoActions/deleteItem';
 import updateItem from '../../store/actions/roomsInfoActions/updateItem';
-import sorter from '../../store/actions/sortersActions/sorter';
+import sorter from '../../store/actions/filtersActions/sorter';
 import filterByCategory from '../../store/actions/filtersActions/filterByCategory';
 import shoppingCartPlusAction from '../../store/actions/shoppingCart/shoppingCartPlusAction';
 import shoppingCartMinusAction from '../../store/actions/shoppingCart/shoppingCartMinusAction';
@@ -18,28 +18,8 @@ import Pagination from '../../components/pagination/pagination.jsx';
 import './products-list.scss';
 
 class ProductsList extends React.Component {
-  /* filterAndSortProducts() {
-    let {
-      products,
-      sorters,
-      filters,
-    } = this.props;
-
-    if (sorters.length !== 0) products = this.sortProducts(products, sorters);
-    if (filters.byCategory.length !== 0) products = this.filterProductsByCategory(products, filters.byCategory);
-
-    return products;
-  } */
-
-  /*   validatePageNummber(pagesCount, pageNumber) {
-      if (pageNumber >= pagesCount) return pagesCount;
-      return pageNumber;
-    } */
-
   selectProductsForPage(products, pageNumber) {
-    let {
-      pagination,
-    } = this.props;
+    const { pagination } = this.props;
     const { itemsCountOnPage } = pagination;
 
     const maxProducts = pageNumber * itemsCountOnPage;
@@ -47,57 +27,14 @@ class ProductsList extends React.Component {
     return result;
   }
 
-  /* sortProducts(products, sorters) {
-    let productsCopy = [...products];
-    sorters.forEach((sorterName) => {
-      const comparer = this.makeObjectComparer(sorterName);
-      productsCopy = productsCopy.sort(comparer);
-    });
-    return productsCopy;
-  } */
-
-  /* filterProductsByCategory(products, filter) {
-    let productsCopy = [...products];
-    productsCopy = productsCopy.filter((product) => {
-      if (filter.includes(product.category)) return product;
-    });
-    return productsCopy;
-  } */
-
-  /* makeObjectComparer(propertyName) {
-    return (objectA, objectB) => {
-      if (objectA[propertyName] < objectB[propertyName]) {
-        return -1;
-      }
-      if (objectA[propertyName] > objectB[propertyName]) {
-        return 1;
-      }
-      return 0;
-    };
-  } */
-
-  /* calculatePagesCount(products) {
-    const { pagination } = this.props;
-    const { itemsCountOnPage } = pagination;
-    const totalItemsCount = products.length;
-
-    const test = totalItemsCount / itemsCountOnPage;
-    const test2 = `${test}`;
-    const test3 = test2.split(/\.|\,/);
-    if (test3.length < 2) return test;
-    const n1 = Number.parseInt(test3[0], 10);
-    return n1 + 1;
-  } */
-
   render() {
     const {
       products,
       pagination,
-      /* pageNumber, */
       createItem,
       sorter,
       filterByCategory,
-      sorters,
+      /* sorters, */
       filters,
       updateItem,
       shoppingCart,
@@ -106,7 +43,6 @@ class ProductsList extends React.Component {
       changeCurrentPage,
     } = this.props;
 
-    /* const products = this.filterAndSortProducts(); */
     const { activeProducts } = products;
     const { pagesCount, pageNumber } = pagination;
     const productsForPage = this.selectProductsForPage(activeProducts, pageNumber);
@@ -122,7 +58,7 @@ class ProductsList extends React.Component {
             <SorterForm
               sorter={sorter}
               filterByCategory={filterByCategory}
-              sorters={sorters}
+              /* sorters={sorters} */
               filters={filters}
             />
           </div>
@@ -134,7 +70,7 @@ class ProductsList extends React.Component {
                 <ProductShortInfo
                   product={product}
                   updateItem={updateItem}
-                  shoppingCart={shoppingCart}
+                  shoppingCart={shoppingCart.chosenProducts}
                   shoppingCartPlusAction={shoppingCartPlusAction}
                   shoppingCartMinusAction={shoppingCartMinusAction}
                 />

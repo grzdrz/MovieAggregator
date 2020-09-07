@@ -31,26 +31,25 @@ const baseProduct = {
 };
 
 class ProductsReducer extends Reducer {
-  constructor(reducerManager) {
-    super(reducerManager);
-    this.state = { ...initialState };
+  constructor(reducerManager, state = { ...initialState }) {
+    super(reducerManager, state);
   }
 
-  createItem(product/* , blocks */) {
+  createItem(product) {
     if (product) {
       const result = { ...baseProduct };
       const productKeys = Object.keys(product);
       productKeys.forEach((key) => {
         result[key] = product[key];
       });
-      result.id = this.findMaxId(/* blocks */this.state.allProducts) + 1;
+      result.id = this.findMaxId(this.state.allProducts) + 1;
       return result;
     }
     return undefined;
   }
 
-  updateItem(product/* , blocks */) {
-    const result = /* blocks */this.state.allProducts.map((block) => {
+  updateItem(product) {
+    const result = this.state.allProducts.map((block) => {
       if (block.id === Number.parseFloat(product.id)) {
         const blockCopy = { ...block };
         const productKeys = Object.keys(product);
@@ -74,13 +73,11 @@ class ProductsReducer extends Reducer {
 
   filterProductsByCategory(products, filter) {
     let productsCopy = [...products];
-    productsCopy = productsCopy.filter((product) => {
-      if (filter.includes(product.category)) return product;
-    });
+    productsCopy = productsCopy.filter((product) => filter.includes(product.category));
     return productsCopy;
   }
 
-  /* sortProducts(products, sorters) {
+  sortProducts(products, sorters) {
     let productsCopy = [...products];
     sorters.forEach((sorterName) => {
       const comparer = this.makeObjectComparer(sorterName);
@@ -89,7 +86,7 @@ class ProductsReducer extends Reducer {
     return productsCopy;
   }
 
-   makeObjectComparer(propertyName) {
+  makeObjectComparer(propertyName) {
     return (objectA, objectB) => {
       if (objectA[propertyName] < objectB[propertyName]) {
         return -1;
@@ -99,13 +96,13 @@ class ProductsReducer extends Reducer {
       }
       return 0;
     };
-  } */
+  }
 
   obtainActiveProducts() {
     let products = [...this.state.allProducts];
     const filters = this.reducerManager.filtersReducer.state;
 
-    // if (sorters.length !== 0) products = this.sortProducts(products, sorters);
+    if (filters.sorters.length !== 0) products = this.sortProducts(products, filters.sorters);
     if (filters.byCategory.length !== 0) products = this.filterProductsByCategory(products, filters.byCategory);
 
     return products;

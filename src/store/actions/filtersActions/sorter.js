@@ -1,7 +1,7 @@
 function sorter(sorters) {
   return {
-    type: "SORTER_NAME",
-    sorters: sorters,
+    type: 'SORTERS',
+    sorters,
   };
 }
 

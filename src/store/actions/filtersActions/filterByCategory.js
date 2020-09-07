@@ -1,6 +1,6 @@
 function filterByCategory(filter) {
   return {
-    type: "BY_CATEGORY",
+    type: 'BY_CATEGORY',
     filter,
   };
 }

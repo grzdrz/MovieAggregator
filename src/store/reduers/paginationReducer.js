@@ -7,9 +7,8 @@ const initialState = {
 };
 
 class PaginationReducer extends Reducer {
-  constructor(reducerManager) {
-    super(reducerManager);
-    this.state = { ...initialState };
+  constructor(reducerManager, state = { ...initialState }) {
+    super(reducerManager, state);
   }
 
   validatePageNummber() {

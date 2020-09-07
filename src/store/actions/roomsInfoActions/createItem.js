@@ -1,6 +1,6 @@
 function createItem(product) {
   return {
-    type: "CREATE",
+    type: 'CREATE',
     product,
   };
 }

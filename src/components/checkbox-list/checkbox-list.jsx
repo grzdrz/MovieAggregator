@@ -26,9 +26,7 @@ class CheckboxList extends React.Component {
       isOpened = false,
       hasAdditionalText = false,
       list = [
-        { isChecked: false, text: 'Цена', name: 'price' },
-        { isChecked: true, text: 'Отзывы', name: 'reviewsCount' },
-        { isChecked: true, text: 'Имени', name: 'name' },
+        { isChecked: false, text: 'Цена', name: 'price', type: 'sorter' },
       ],
     } = this.props;
     const { isClosed = true } = this.state;
@@ -71,7 +69,7 @@ class CheckboxList extends React.Component {
                 <input
                   className='checkbox-list__input'
                   type='checkbox'
-                  name={`checkbox-list_${item.name}`}
+                  name={`checkbox-list_${item.type}_${item.name}`}
                   defaultChecked={item.isChecked}
                   onClick={inputClick || (() => { })}
                 />

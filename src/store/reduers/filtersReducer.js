@@ -1,6 +1,9 @@
 import Reducer from './reducer';
 
 const initialState = {
+  sorters: [
+    'price',
+  ],
   byCategory: [
     'meat',
     'fish',
@@ -11,9 +14,8 @@ const initialState = {
 };
 
 class FiltersReducer extends Reducer {
-  constructor(reducerManager) {
-    super(reducerManager);
-    this.state = { ...initialState };
+  constructor(reducerManager, state = { ...initialState }) {
+    super(reducerManager, state);
   }
 
   reduce = (state = this.state, action) => {
@@ -21,9 +23,11 @@ class FiltersReducer extends Reducer {
     switch (action.type) {
       case 'BY_CATEGORY': {
         this.state.byCategory = [...action.filter];
-
         // this.onStateChange.invoke();
-
+        return this.state;
+      }
+      case 'SORTERS': {
+        this.state.sorters = [...action.sorters];
         return this.state;
       }
       default: {
