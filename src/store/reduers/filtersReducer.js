@@ -1,26 +1,36 @@
+import Reducer from './reducer';
+
 const initialState = {
   byCategory: [
-    "meat",
-    "fish",
-    "milk",
-    "fruit",
-    "berry",
+    'meat',
+    'fish',
+    'milk',
+    'fruit',
+    'berry',
   ],
 };
 
-function filtersReducer(state = initialState, action) {
-  switch (action.type) {
-    case "BY_CATEGORY": {
-      const stateCopy = { ...state };
-      stateCopy.byCategory = [...action.filter];
-      return stateCopy;
-      break;
-    }
-    default: {
-      return state;
-      break;
+class FiltersReducer extends Reducer {
+  constructor(reducerManager) {
+    super(reducerManager);
+    this.state = { ...initialState };
+  }
+
+  reduce = (state = this.state, action) => {
+    this.state = { ...state };
+    switch (action.type) {
+      case 'BY_CATEGORY': {
+        this.state.byCategory = [...action.filter];
+
+        // this.onStateChange.invoke();
+
+        return this.state;
+      }
+      default: {
+        return this.state;
+      }
     }
   }
 }
 
-export default filtersReducer;
+export default FiltersReducer;

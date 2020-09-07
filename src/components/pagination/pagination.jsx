@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './pagination.scss';
@@ -22,12 +23,18 @@ class Pagination extends React.Component {
     return Math.min(pageNumber + 1, pagesCount);
   }
 
+  setPageNumber(number) {
+    const { changeCurrentPage } = this.props;
+    changeCurrentPage(number);
+  }
+
   render() {
     const {
       title,
       pageNumber,
       pagesCount,
       totalItemsCount,
+      changeCurrentPage,
     } = this.props;
 
     return (
@@ -37,10 +44,18 @@ class Pagination extends React.Component {
           {pageNumber !== 1
             ? (
               <>
-                <NavLink className='pagination__left-arrow' to={`/ProductSupermarket/productList/${this.calculateArrowNumber(true)}`}>
+                <NavLink
+                  className='pagination__left-arrow'
+                  to={`/ProductSupermarket/productList/${this.calculateArrowNumber(true)}`}
+                  onClick={this.setPageNumber.bind(this, this.calculateArrowNumber(true))}
+                >
                   <span className='pagination__left-arrow-text'>arrow_forward</span>
                 </NavLink>
-                <NavLink className='pagination__link' to='/ProductSupermarket/productList/1'>
+                <NavLink
+                  className='pagination__link'
+                  to='/ProductSupermarket/productList/1'
+                  onClick={this.setPageNumber.bind(this, 1)}
+                >
                   <span className='pagination__link-text'>1</span>
                 </NavLink>
               </>
@@ -55,30 +70,50 @@ class Pagination extends React.Component {
             : null}
           {pageNumber - 2 > 1
             ? (
-              <NavLink exact className='pagination__link' to={`/ProductSupermarket/productList/${pageNumber - 2}`}>
+              <NavLink
+                className='pagination__link'
+                to={`/ProductSupermarket/productList/${pageNumber - 2}`}
+                onClick={this.setPageNumber.bind(this, pageNumber - 2)}
+              >
                 <span className='pagination__link-text'>{pageNumber - 2}</span>
               </NavLink>
             )
             : null}
           {pageNumber - 1 > 1
             ? (
-              <NavLink className='pagination__link' to={`/ProductSupermarket/productList/${pageNumber - 1}`}>
+              <NavLink
+                className='pagination__link'
+                to={`/ProductSupermarket/productList/${pageNumber - 1}`}
+                onClick={this.setPageNumber.bind(this, pageNumber - 1)}
+              >
                 <span className='pagination__link-text'>{pageNumber - 1}</span>
               </NavLink>
             )
             : null}
-          <NavLink className='pagination__link pagination__link_target' to={`/ProductSupermarket/productList/${pageNumber}`}>
+          <NavLink
+            className='pagination__link pagination__link_target'
+            to={`/ProductSupermarket/productList/${pageNumber}`}
+            onClick={this.setPageNumber.bind(this, pageNumber)}
+          >
             <span className='pagination__link-text'>{pageNumber}</span>
           </NavLink>
           {pageNumber + 1 < pagesCount
             ? (
-              <NavLink className='pagination__link' to={`/ProductSupermarket/productList/${pageNumber + 1}`}>
+              <NavLink
+                className='pagination__link'
+                to={`/ProductSupermarket/productList/${pageNumber + 1}`}
+                onClick={this.setPageNumber.bind(this, pageNumber + 1)}
+              >
                 <span className='pagination__link-text'>{pageNumber + 1}</span>
               </NavLink>
             ) : null}
           {pageNumber + 2 < pagesCount
             ? (
-              <NavLink className='pagination__link' to={`/ProductSupermarket/productList/${pageNumber + 2}`}>
+              <NavLink
+                className='pagination__link'
+                to={`/ProductSupermarket/productList/${pageNumber + 2}`}
+                onClick={this.setPageNumber.bind(this, pageNumber + 2)}
+              >
                 <span className='pagination__link-text'>{pageNumber + 2}</span>
               </NavLink>
             ) : null}
@@ -91,10 +126,18 @@ class Pagination extends React.Component {
           {pageNumber !== pagesCount
             ? (
               <>
-                <NavLink className='pagination__link' to={`/ProductSupermarket/productList/${pagesCount}`}>
+                <NavLink
+                  className='pagination__link'
+                  to={`/ProductSupermarket/productList/${pagesCount}`}
+                  onClick={this.setPageNumber.bind(this, pagesCount)}
+                >
                   <span className='pagination__link-text'>{pagesCount}</span>
                 </NavLink>
-                <NavLink className='pagination__right-arrow' to={`/ProductSupermarket/productList/${this.calculateArrowNumber(false)}`}>
+                <NavLink
+                  className='pagination__right-arrow'
+                  to={`/ProductSupermarket/productList/${this.calculateArrowNumber(false)}`}
+                  onClick={this.setPageNumber.bind(this, this.calculateArrowNumber(false))}
+                >
                   <span className='pagination__right-arrow-text'>arrow_forward</span>
                 </NavLink>
               </>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import changeItemsCountOnPage from '../../store/actions/changeItemsCountOnPage';
+import changeCurrentPage from '../../store/actions/changeCurrentPage';
 import createItem from '../../store/actions/roomsInfoActions/createItem';
 import deleteItem from '../../store/actions/roomsInfoActions/deleteItem';
 import updateItem from '../../store/actions/roomsInfoActions/updateItem';
@@ -18,19 +18,7 @@ import Pagination from '../../components/pagination/pagination.jsx';
 import './products-list.scss';
 
 class ProductsList extends React.Component {
-  selectProductsForPage(products) {
-    let {
-      pagination,
-      pageNumber,
-    } = this.props;
-    const { itemsCountOnPage } = pagination;
-
-    const maxProducts = pageNumber * itemsCountOnPage;
-    const result = products.filter((product, index) => index >= maxProducts - itemsCountOnPage && index < maxProducts);
-    return result;
-  }
-
-  filterAndSortProducts() {
+  /* filterAndSortProducts() {
     let {
       products,
       sorters,
@@ -41,26 +29,42 @@ class ProductsList extends React.Component {
     if (filters.byCategory.length !== 0) products = this.filterProductsByCategory(products, filters.byCategory);
 
     return products;
+  } */
+
+  /*   validatePageNummber(pagesCount, pageNumber) {
+      if (pageNumber >= pagesCount) return pagesCount;
+      return pageNumber;
+    } */
+
+  selectProductsForPage(products, pageNumber) {
+    let {
+      pagination,
+    } = this.props;
+    const { itemsCountOnPage } = pagination;
+
+    const maxProducts = pageNumber * itemsCountOnPage;
+    const result = products.filter((product, index) => index >= maxProducts - itemsCountOnPage && index < maxProducts);
+    return result;
   }
 
-  sortProducts(products, sorters) {
+  /* sortProducts(products, sorters) {
     let productsCopy = [...products];
     sorters.forEach((sorterName) => {
       const comparer = this.makeObjectComparer(sorterName);
       productsCopy = productsCopy.sort(comparer);
     });
     return productsCopy;
-  }
+  } */
 
-  filterProductsByCategory(products, filter) {
+  /* filterProductsByCategory(products, filter) {
     let productsCopy = [...products];
     productsCopy = productsCopy.filter((product) => {
       if (filter.includes(product.category)) return product;
     });
     return productsCopy;
-  }
+  } */
 
-  makeObjectComparer(propertyName) {
+  /* makeObjectComparer(propertyName) {
     return (objectA, objectB) => {
       if (objectA[propertyName] < objectB[propertyName]) {
         return -1;
@@ -69,10 +73,10 @@ class ProductsList extends React.Component {
         return 1;
       }
       return 0;
-    }
-  }
+    };
+  } */
 
-  calculatePagesCount(products) {
+  /* calculatePagesCount(products) {
     const { pagination } = this.props;
     const { itemsCountOnPage } = pagination;
     const totalItemsCount = products.length;
@@ -83,12 +87,13 @@ class ProductsList extends React.Component {
     if (test3.length < 2) return test;
     const n1 = Number.parseInt(test3[0], 10);
     return n1 + 1;
-  }
+  } */
 
   render() {
     const {
+      products,
       pagination,
-      pageNumber,
+      /* pageNumber, */
       createItem,
       sorter,
       filterByCategory,
@@ -98,11 +103,14 @@ class ProductsList extends React.Component {
       shoppingCart,
       shoppingCartPlusAction,
       shoppingCartMinusAction,
+      changeCurrentPage,
     } = this.props;
 
-    const products = this.filterAndSortProducts();
-    const productsForPage = this.selectProductsForPage(products);
-    const totalItemsCount = products.length;
+    /* const products = this.filterAndSortProducts(); */
+    const { activeProducts } = products;
+    const { pagesCount, pageNumber } = pagination;
+    const productsForPage = this.selectProductsForPage(activeProducts, pageNumber);
+    const totalItemsCount = activeProducts.length;
 
     return (
       <div className='products-list'>
@@ -139,8 +147,9 @@ class ProductsList extends React.Component {
                 <Pagination
                   title='Pagination'
                   pageNumber={pageNumber}
-                  pagesCount={this.calculatePagesCount(products)}
+                  pagesCount={pagesCount}
                   totalItemsCount={totalItemsCount}
+                  changeCurrentPage={changeCurrentPage}
                 />
               ) : null}
           </div>
@@ -155,7 +164,7 @@ const mapStateToProps = function (state) {
 };
 
 const actions = {
-  changeItemsCountOnPage,
+  changeCurrentPage,
   createItem,
   updateItem,
   deleteItem,

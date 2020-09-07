@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import { createStore, combineReducers } from 'redux';
+import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import {
   BrowserRouter as Router,
@@ -9,11 +9,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 
-import paginationReducer from '../../store/reduers/paginationReducer';
-import productsReducer from '../../store/reduers/productsReducer';
-import sortersReducer from '../../store/reduers/sortersReducer';
-import filtersReducer from '../../store/reduers/filtersReducer';
-import shoppingCartReducer from '../../store/reduers/shoppingCartReducer';
+import StoreManager from '../../store/storeManager';
 
 import Header from '../../components/header/header.jsx';
 import ProductsList from '../products-list/products-list.jsx';
@@ -56,15 +52,9 @@ function App() {
   );
 }
 
-const reducer = combineReducers({
-  pagination: paginationReducer,
-  products: productsReducer,
-  sorters: sortersReducer,
-  filters: filtersReducer,
-  shoppingCart: shoppingCartReducer,
-});
+const storeManager = new StoreManager();
 
-const store = createStore(reducer);
+const store = createStore(storeManager.reducer);
 store.dispatch({
   type: 'default',
 });

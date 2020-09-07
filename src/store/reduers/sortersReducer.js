@@ -1,10 +1,19 @@
+import Reducer from './reducer';
+
 const initialState = [
-  "price",
+  'price',
 ];
 
-const sortersReducer = (state = initialState, action) => {
-  if (action.sorters) return [...action.sorters];
-  return state;
-};
+class SortersReducer extends Reducer {
+  constructor(reducerManager) {
+    super(reducerManager);
+    this.state = [...initialState];
+  }
 
-export default sortersReducer;
+  reduce = (state = this.state, action) => {
+    if (action.sorters) return [...action.sorters];
+    return state;
+  }
+}
+
+export default SortersReducer;

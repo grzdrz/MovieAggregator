@@ -1,122 +1,170 @@
-const initialState = require("../../data/productData.json").products;
-const initialProduct = {
-  "name": "Чевапчичи",
-  "price": 543,
-  "currencyType": "₽",
-  "descriptions": "выпаыпываыпвпап",
-  "manufacturer": "ООО Четотам",
-  "energyValue": 34,
-  "proteins": 0.8,
-  "fats": 0.2,
-  "carbohydrates": 8,
-  "energyUnits": "кКал",
-  "weightUnits": "г",
-  "shelfLife": 7,
-  "shelfLifeUnits": "день",
-  "packaging": "amount",
-  "imageNames": [
-    6, 1, 11
-  ],
-  "checkedStars": 2,
-  "reviewsCount": 3534,
-  "category": "meat"
+import Reducer from './reducer';
+
+const allProducts = require('../../data/productData.json').products;
+
+const initialState = {
+  allProducts,
+  activeProducts: [],
 };
 
-function productsReducer(state = initialState, action) {
-  switch (action.type) {
-    case "CREATE": {
-      const newItem = createItem(action.product, state);
-      if (newItem) {
-        const newState = state.map(e => e);
-        newState.push(newItem);
-        //обновляем б/д файл
-        /* const newData = JSON.stringify({
-          products: state.products,
-        }); */
-        // ...
-        return newState;
-      }
-      break;
-    }
-    case "UPDATE": {
-      if (action.product) {
-        const updatedProducts = updateItem(action.product, state);
-        return updatedProducts;
-      }
-      break;
-    }
-    case "DELETE": {
+const baseProduct = {
+  name: 'Чевапчичи',
+  price: 543,
+  currencyType: '₽',
+  descriptions: 'выпаыпываыпвпап',
+  manufacturer: 'ООО Четотам',
+  energyValue: 34,
+  proteins: 0.8,
+  fats: 0.2,
+  carbohydrates: 8,
+  energyUnits: 'кКал',
+  weightUnits: 'г',
+  shelfLife: 7,
+  shelfLifeUnits: 'день',
+  packaging: 'amount',
+  imageNames: [
+    6, 1, 11,
+  ],
+  checkedStars: 2,
+  reviewsCount: 3534,
+  category: 'meat',
+};
 
-      break;
-    }
-    default: {
-      return state;
-      break;
-    }
+class ProductsReducer extends Reducer {
+  constructor(reducerManager) {
+    super(reducerManager);
+    this.state = { ...initialState };
   }
-}
 
-function createItem(product, blocks) {
-  // const blocks = require("../../data/productData.json").products;
-  if (product) {
-    const result = { ...initialProduct };
-    for (let propertyName in product) {
-      result[propertyName] = product[propertyName];
+  createItem(product/* , blocks */) {
+    if (product) {
+      const result = { ...baseProduct };
+      const productKeys = Object.keys(product);
+      productKeys.forEach((key) => {
+        result[key] = product[key];
+      });
+      result.id = this.findMaxId(/* blocks */this.state.allProducts) + 1;
+      return result;
     }
-    result.id = findMaxId(blocks) + 1;
+    return undefined;
+  }
+
+  updateItem(product/* , blocks */) {
+    const result = /* blocks */this.state.allProducts.map((block) => {
+      if (block.id === Number.parseFloat(product.id)) {
+        const blockCopy = { ...block };
+        const productKeys = Object.keys(product);
+        productKeys.forEach((key) => {
+          blockCopy[key] = product[key];
+        });
+        return blockCopy;
+      }
+      return block;
+    });
+
     return result;
   }
-}
 
-function updateItem(product, blocks) {
-  // const blocks = require("../../data/productData.json").products;
-  const result = blocks.map((block, index) => {
-    if (block.id === Number.parseFloat(product.id)) {
-      const copyOfBlock = { ...block };
-      for (let propertyName in product) {
-        copyOfBlock[propertyName] = product[propertyName];
+  findMaxId(blocks) {
+    const arrayOfId = blocks.map((block) => Number.parseInt(block.id, 10));
+    const firstId = arrayOfId[0] !== undefined ? arrayOfId[0] : 0;
+    const biggestId = arrayOfId.reduce((prevId, curId) => Math.max(prevId, curId), firstId);
+    return biggestId;
+  }
+
+  filterProductsByCategory(products, filter) {
+    let productsCopy = [...products];
+    productsCopy = productsCopy.filter((product) => {
+      if (filter.includes(product.category)) return product;
+    });
+    return productsCopy;
+  }
+
+  /* sortProducts(products, sorters) {
+    let productsCopy = [...products];
+    sorters.forEach((sorterName) => {
+      const comparer = this.makeObjectComparer(sorterName);
+      productsCopy = productsCopy.sort(comparer);
+    });
+    return productsCopy;
+  }
+
+   makeObjectComparer(propertyName) {
+    return (objectA, objectB) => {
+      if (objectA[propertyName] < objectB[propertyName]) {
+        return -1;
       }
-      return copyOfBlock;
+      if (objectA[propertyName] > objectB[propertyName]) {
+        return 1;
+      }
+      return 0;
     };
-    return block;
-  });
+  } */
 
-  return result;
+  obtainActiveProducts() {
+    let products = [...this.state.allProducts];
+    const filters = this.reducerManager.filtersReducer.state;
+
+    // if (sorters.length !== 0) products = this.sortProducts(products, sorters);
+    if (filters.byCategory.length !== 0) products = this.filterProductsByCategory(products, filters.byCategory);
+
+    return products;
+  }
+
+  reduce = (state = this.state, action) => {
+    this.state = { ...state };
+    this.state.activeProducts = this.obtainActiveProducts();
+
+    switch (action.type) {
+      case 'CREATE': {
+        const newItem = this.createItem(action.product);
+        this.state.allProducts.push(newItem);
+        // обновляем б/д файл
+        // const newData = JSON.stringify({
+        //   products: state.products,
+        // });
+        // ...
+        return this.state;
+      }
+      case 'UPDATE': {
+        if (action.product) {
+          const updatedProducts = this.updateItem(action.product);
+          return updatedProducts;
+        }
+        return state;
+      }
+      /* case 'DELETE': {
+
+        break;
+      } */
+      default: {
+        return this.state;
+      }
+    }
+  }
 }
 
-function findMaxId(blocks) {
-  const arrayOfId = blocks.map((block) => {
-    return Number.parseInt(block.id);
-  });
-  const firstId = arrayOfId[0] !== undefined ? arrayOfId[0] : 0;
-  const biggestId = arrayOfId.reduce((prevId, curId) => {
-    return Math.max(prevId, curId);
-  }, firstId);
-
-  return biggestId;
-}
-
-export default productsReducer;
+export default ProductsReducer;
 
 /* {
-  "id": 3,
-  "name": "Навоз",
-  "price": 543,
-  "currencyType": "₽",
-  "descriptions": "выпаыпываыпвпап",
-  "manufacturer": "ООО Четотам",
-  "energyValue": 34,
-  "proteins": 0.8,
-  "fats": 0.2,
-  "carbohydrates": 8,
-  "energyUnits": "кКал",
-  "weightUnits": "г",
-  "shelfLife": 7,
-  "shelfLifeUnits": "день",
-  "packaging": "amount",
-  "imageNames": [
+  'id': 3,
+  'name': 'Навоз',
+  'price': 543,
+  'currencyType': '₽',
+  'descriptions': 'выпаыпываыпвпап',
+  'manufacturer': 'ООО Четотам',
+  'energyValue': 34,
+  'proteins': 0.8,
+  'fats': 0.2,
+  'carbohydrates': 8,
+  'energyUnits': 'кКал',
+  'weightUnits': 'г',
+  'shelfLife': 7,
+  'shelfLifeUnits': 'день',
+  'packaging': 'amount',
+  'imageNames': [
     6
   ],
-  "checkedStars": 2,
-  "reviewsCount": 3534
+  'checkedStars': 2,
+  'reviewsCount': 3534
 }, */
