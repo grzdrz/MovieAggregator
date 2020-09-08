@@ -5,7 +5,7 @@ import './product-details.scss';
 
 function ProductDetails(props) {
   const { products } = props;
-  const product = products.find((item) => item.id === props.id);
+  const product = products.allProducts.find((item) => item.id === props.id);
   const {
     id,
     name,
@@ -46,6 +46,9 @@ function ProductDetails(props) {
           Срок годности: {shelfLife}
         </span>
         <span className='product-details__shelf-life-units'>{shelfLifeUnits}</span>
+      </p>
+      <p className='product-details__descriptions'>
+        Описание: {descriptions}
       </p>
     </div>
   );

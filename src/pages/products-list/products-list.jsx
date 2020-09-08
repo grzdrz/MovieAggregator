@@ -19,6 +19,7 @@ function ProductsList(props) {
     filterByCategory,
     filters,
     updateItem,
+    deleteItem,
     shoppingCart,
     shoppingCartPlusAction,
     shoppingCartMinusAction,
@@ -50,6 +51,7 @@ function ProductsList(props) {
               <ProductShortInfo
                 product={product}
                 updateItem={updateItem}
+                deleteItem={deleteItem}
                 shoppingCart={shoppingCart.chosenProducts}
                 shoppingCartPlusAction={shoppingCartPlusAction}
                 shoppingCartMinusAction={shoppingCartMinusAction}

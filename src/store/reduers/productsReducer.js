@@ -62,6 +62,11 @@ class ProductsReducer extends Reducer {
     return result;
   }
 
+  deleteItem(productId) {
+    const result = this.state.allProducts.filter((block) => block.id !== productId);
+    return result;
+  }
+
   findMaxId(blocks) {
     const arrayOfId = blocks.map((block) => Number.parseInt(block.id, 10));
     const firstId = arrayOfId[0] !== undefined ? arrayOfId[0] : 0;
@@ -124,9 +129,11 @@ class ProductsReducer extends Reducer {
         this.state.allProducts = updatedProducts;
         break;
       }
-      /* case 'DELETE': {
+      case 'DELETE': {
+        const updatedProducts = this.deleteItem(action.productId);
+        this.state.allProducts = updatedProducts;
         break;
-      } */
+      }
       default: {
         break;
       }

@@ -14,6 +14,15 @@ class ShoppingCartReducer extends Reducer {
     super(reducerManager, state);
   }
 
+  validateProducts() {
+    const { allProducts } = this.reducerManager.productsReducer.state;
+
+    this.state.chosenProducts = this.state.chosenProducts.filter((product) => {
+      const hasProduct = allProducts.find((item) => item.id === product.productId);
+      return hasProduct;
+    });
+  }
+
   reduce = (state = this.state, action) => {
     this.state = { ...state };
 
@@ -28,7 +37,7 @@ class ShoppingCartReducer extends Reducer {
             productCount: 1,
           });
         }
-        return this.state;
+        break;
       }
       case 'PRODUCT_COUNT_MINUS': {
         const targetProduct = this.state.chosenProducts.find((product) => product.productId === action.productId);
@@ -37,12 +46,15 @@ class ShoppingCartReducer extends Reducer {
         } else if (targetProduct && targetProduct.productCount === 0) {
           targetProduct.productCount = 0;
         }
-        return this.state;
+        break;
       }
       default: {
-        return state;
+        break;
       }
     }
+
+    this.validateProducts();
+    return this.state;
   }
 }
 

@@ -96,6 +96,7 @@ class ProductShortInfo extends React.Component {
       shoppingCartMinusAction,
       product,
       updateItem,
+      deleteItem,
     } = this.props;
 
     return (
@@ -188,7 +189,10 @@ class ProductShortInfo extends React.Component {
             />
           </div>
           <div className='product-short-info__delete-button'>
-            <DeleteButton />
+            <DeleteButton
+              productId={product.id}
+              deleteItem={deleteItem}
+            />
           </div>
         </div>
       </div>
