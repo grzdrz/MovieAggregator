@@ -7,8 +7,7 @@ import ColoredLogo from '../colored-logo/colored-logo.jsx';
 import Button from '../button/button.jsx';
 import ShoppingCart from '../shopping-cart/shopping-cart.jsx';
 
-import shoppingCartPlusAction from '../../store/actions/shoppingCart/shoppingCartPlusAction';
-import shoppingCartMinusAction from '../../store/actions/shoppingCart/shoppingCartMinusAction';
+import actions from './actions';
 
 import './header.scss';
 
@@ -108,11 +107,6 @@ class Header extends React.Component {
 
 const mapStateToProps = function (state) {
   return state;
-};
-
-const actions = {
-  shoppingCartPlusAction,
-  shoppingCartMinusAction,
 };
 
 export default connect(mapStateToProps, actions)(Header);

@@ -12,9 +12,6 @@ class StoreManager {
     this.productsReducer = new ProductsReducer(this);
     this.shoppingCartReducer = new ShoppingCartReducer(this);
 
-    /* this.filtersReducer.onStateChange.subscribe(this.productsReducer.validateProducts);
-    this.filtersReducer.onStateChange.subscribe(this.paginationReducer.validatePageNummber); */
-
     this.reducer = combineReducers({
       filters: this.filtersReducer.reduce,
       products: this.productsReducer.reduce,

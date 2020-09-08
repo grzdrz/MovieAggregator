@@ -116,15 +116,25 @@ class ProductShortInfo extends React.Component {
               );
             })}
           </div>
-          {imageNames.map((imageName, i) => (
-            <img
-              className='product-short-info__photo js-product-short-info__photo'
-              key={`product-short-info__photo product-short-info__photo-${imageName}`}
-              src={`${compilationOptions.forGithubPages ? '/ProductSupermarket' : ''}/src/data/images/products/${imageName}.jpg`}
-              alt={imageName}
-              data-serial-number={i}
-            />
-          ))}
+          {imageNames.length > 0
+            ? imageNames.map((imageName, i) => (
+              <img
+                className='product-short-info__photo js-product-short-info__photo'
+                key={`product-short-info__photo product-short-info__photo-${imageName}`}
+                src={`${compilationOptions.forGithubPages ? '/ProductSupermarket' : ''}/src/data/images/products/${imageName}.jpg`}
+                alt={imageName}
+                data-serial-number={i}
+              />
+            ))
+            : (
+              <img
+                className='product-short-info__photo js-product-short-info__photo'
+                key='product-short-info__photo product-short-info__photo-no-image'
+                src={`${compilationOptions.forGithubPages ? '/ProductSupermarket' : ''}/src/data/images/products/no-image.jpg`}
+                alt="нет изображения"
+                data-serial-number={0}
+              />
+            )}
           {imageNames.length > 1
             ? (
               <div className='product-short-info__arrows js-product-short-info__arrows'>

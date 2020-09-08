@@ -22,9 +22,7 @@ const baseProduct = {
   shelfLife: 7,
   shelfLifeUnits: 'день',
   packaging: 'amount',
-  imageNames: [
-    6, 1, 11,
-  ],
+  imageNames: [],
   checkedStars: 2,
   reviewsCount: 3534,
   category: 'meat',

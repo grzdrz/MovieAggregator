@@ -59,6 +59,14 @@
     &_opened {
       display: flex;
     }
+
+    @media screen and (max-width: 1400px) {
+      right: auto;
+      left: 0rem;
+    }
+    @media screen and (max-width: 470px) {
+      width: max-content;
+    }
   }
 
   &__form-title {
@@ -125,8 +133,7 @@
     }
 
     &-input {
-      width: 100px;
-      margin-left: auto;
+      width: min-content;
       background: transparent;
     }
   }

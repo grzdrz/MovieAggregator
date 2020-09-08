@@ -1,64 +1,46 @@
 @import '../../assets/constants.scss';
 @import '../../assets/mixins.scss';
 
-/* @import '../colored-logo/colored-logo.scss';
-@import '../button/button.scss'; */
-
 .header {
   width: 100%;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: min-content auto min-content min-content;
+  grid-template-columns: auto min-content min-content min-content;
   align-items: center;
   justify-items: start;
   padding: 0.9375rem scalePixelsAsPercentage(140, 1440);
   background: white;
   box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
 
-  @media screen and (max-width: 1150px) and (min-width: 768px) {
+  @media screen and (max-width: 1400px) {
     display: grid;
-    grid-template-columns: min-content auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: min-content;
+    grid-template-rows: min-content 60px 60px max-content;
   }
   @media screen and (max-width: 768px) {
     display: grid;
-    grid-template-columns: min-content auto;
-    grid-template-rows: min-content auto;
+    grid-template-columns: auto;
+    grid-template-rows: min-content max-content 60px max-content;
+    justify-content: flex-start;
   }
   @media screen and (max-width: 550px) {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: min-content min-content min-content;
-    justify-content: flex-start;
+    grid-template-rows: min-content max-content 120px max-content;
   }
 
   &__colored-logo {
     @media screen and (max-width: 768px) {
-      justify-self: flex-start;
     }
   }
 
   &__navigation-menu {
-    justify-self: end;
     margin-right: 1.25rem;
 
-    @media screen and (max-width: 1150px) and (min-width: 768px) {
-      order: 2;
-      margin-right: 0rem;
-      margin-top: 1.25rem;
-      grid-column-start: 2;
-      grid-column-end: 3;
-    }
     @media screen and (max-width: 768px) {
-      order: 2;
       margin-right: 0rem;
       margin-top: 1.25rem;
       margin-left: 0.3125rem;
       display: flex;
       flex-direction: column;
-    }
-    @media screen and (max-width: 550px) {
-      justify-self: flex-start;
     }
   }
 
@@ -143,14 +125,6 @@
       padding-right: 1.25rem;
     }
 
-    @media screen and (max-width: 1150px) and (min-width: 768px) {
-      order: 1;
-      justify-self: end;
-    }
-    @media screen and (max-width: 768px) {
-      order: 1;
-      justify-self: end;
-    }
     @media screen and (max-width: 550px) {
       margin-top: 1.25rem;
     }
@@ -159,14 +133,6 @@
   &__buttons {
     display: flex;
 
-    @media screen and (max-width: 1150px) and (min-width: 768px) {
-      order: 1;
-      justify-self: end;
-    }
-    @media screen and (max-width: 48rem) {
-      order: 1;
-      justify-self: end;
-    }
     @media screen and (max-width: 550px) {
       display: grid;
       grid-template-rows: auto auto;
@@ -193,5 +159,9 @@
 
   &__shopping-cart {
     margin-left: 1.25rem;
+
+    @media screen and (max-width: 1400px) {
+      margin-left: 0rem;
+    }
   }
 }

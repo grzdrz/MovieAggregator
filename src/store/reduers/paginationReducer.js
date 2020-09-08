@@ -4,6 +4,7 @@ const initialState = {
   itemsCountOnPage: 9,
   pageNumber: 1,
   pagesCount: 0,
+  productsOfPage: [],
 };
 
 class PaginationReducer extends Reducer {
@@ -29,19 +30,32 @@ class PaginationReducer extends Reducer {
     return n1 + 1;
   }
 
+  selectProductsForPage = () => {
+    const { itemsCountOnPage, pageNumber } = this.state;
+    const { activeProducts } = this.reducerManager.productsReducer.state;
+
+    const maxProducts = pageNumber * itemsCountOnPage;
+    const result = activeProducts.filter((product, index) => index >= maxProducts - itemsCountOnPage && index < maxProducts);
+    return result;
+  }
+
   reduce = (state = this.state, action) => {
     this.state = { ...state };
-    this.state.pagesCount = this.calculatePagesCount();
-    this.state.pageNumber = this.validatePageNummber();
 
     switch (action.type) {
       case 'CHANGE_CURRENT_PAGE': {
         this.state.pageNumber = action.pageNumber;
-        return this.state;
+        break;
       }
       default:
-        return this.state;
+        break;
     }
+
+    this.state.pagesCount = this.calculatePagesCount();
+    this.state.pageNumber = this.validatePageNummber();
+    this.state.productsOfPage = this.selectProductsForPage();
+
+    return this.state;
   }
 }
 

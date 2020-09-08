@@ -114,12 +114,13 @@ class ShoppingCart extends React.Component {
           })}
           <div className='shopping-cart__total-value'>
             <span className='shopping-cart__total-value-text'>Суммарное количество: </span>
-            <input
+            <span className='shopping-cart__total-value-input'>{sumCount}</span>
+            {/* <input
               className='shopping-cart__total-value-input'
               value={sumCount}
               disabled
               onChange={() => { }}
-            />
+            /> */}
           </div>
           <div className='shopping-cart__total-price'>
             <span className='shopping-cart__total-price-text'>Суммарная цена: </span>
