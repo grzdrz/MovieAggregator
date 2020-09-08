@@ -69,67 +69,41 @@
     }
   }
 
-  &__form-title {
-    &-id {
-      margin-right: 10px;
-    }
-
-    &-count {
-      margin-right: 10px;
-    }
-
-    &-name {
-      margin-right: 10px;
-    }
-
-    &-counter {
-      margin-right: 0px;
-    }
+  &__selected-products-table {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 0.625rem;
   }
 
-  &__form-product {
-    display: flex;
-    flex-direction: row;
-    padding: 0.625rem 0rem;
-    border-bottom: 0.0625rem solid $color-dark-shade-50;
+  &__table-cell {
+    max-width: 12.5rem;
+    word-break: break-all;
+    color: $color-dark-shade-75;
+  }
 
-    &:first-of-type {
-      border-top: 0.0625rem solid $color-dark-shade-50;
-    }
+  &__title-cell {
+    color: $color-dark-shade-75;
+    font-weight: bold;
+  }
 
-    &-id {
-      width: 3.125rem;
-      height: 1.25rem;
-      background: transparent;
-    }
-
-    &-count {
-      width: 3.125rem;
-      height: 1.25rem;
-      margin-right: 40px;
-      background: transparent;
-    }
-
-    &-name {
-      margin-right: 2.625rem;
-    }
-
-    &-counter {
-      width: max-content;
-      margin-left: auto;
-    }
+  &__cell-input {
+    width: 6.25rem;
+    font-size: 0.875rem;
+    color: $color-dark-shade-75;
   }
 
   &__total-value {
     display: flex;
-    padding: 15px 10px;
-    margin-top: 15px;
-    border-radius: 10px;
+    padding: 0.9375rem 0.625rem;
+    margin-top: 0.9375rem;
+    border-radius: 0.625rem;
     background: $color-dark-shade-25;
+    color: $color-dark-shade-100;
 
     &-text {
       width: max-content;
-      margin-right: 20px;
+      margin-right: 1.25rem;
     }
 
     &-input {
@@ -140,20 +114,15 @@
 
   &__total-price {
     display: flex;
-    padding: 15px 10px;
-    margin-top: 10px;
-    border-radius: 10px;
+    padding: 0.9375rem 0.625rem;
+    margin-top: 0.625rem;
+    border-radius: 0.625rem;
     background: $color-dark-shade-25;
+    color: $color-dark-shade-100;
 
     &-text {
       width: max-content;
-      margin-right: 20px;
-    }
-
-    &-value {
-    }
-
-    &-currency {
+      margin-right: 1.25rem;
     }
   }
 }

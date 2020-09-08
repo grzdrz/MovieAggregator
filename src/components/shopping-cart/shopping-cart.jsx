@@ -75,43 +75,47 @@ class ShoppingCart extends React.Component {
           className={`shopping-cart__form ${isFormOpened ? 'shopping-cart__form_opened' : ''}`}
           onSubmit={this.handleFormSubmit}
         >
-          <p className='shopping-cart__form-title'>
-            <span className='shopping-cart__form-title-id'>id</span>
-            <span className='shopping-cart__form-title-count'>Количество</span>
-            <span className='shopping-cart__form-title-name'>Наименование</span>
-            <span className='shopping-cart__form-title-counter'>Счетчик</span>
-          </p>
-          {shoppingCart.map((product) => {
-            if (product.productCount > 0) {
-              return (
-                <div className='shopping-cart__form-product' key={`shopping-cart__form-product_${product.productId}`}>
-                  <input
-                    className='shopping-cart__form-product-id'
-                    type='text'
-                    value={product.productId}
-                    disabled
-                    onChange={() => { }}
-                  />
-                  <input
-                    className='shopping-cart__form-product-count'
-                    type='text'
-                    value={product.productCount}
-                    disabled
-                    onChange={() => { }}
-                  />
-                  <p className='shopping-cart__form-product-name'>{products.find((item) => item.id === product.productId).name}</p>
-                  <div className='shopping-cart__form-product-counter'>
-                    <ProductCounter
-                      shoppingCart={shoppingCart}
-                      shoppingCartPlusAction={shoppingCartPlusAction}
-                      shoppingCartMinusAction={shoppingCartMinusAction}
-                      productId={product.productId}
-                    />
-                  </div>
-                </div>
-              );
-            }
-          })}
+          <div className='shopping-cart__selected-products-table'>
+            <div className='shopping-cart__table-cell shopping-cart__title-cell'>id</div>
+            <div className='shopping-cart__table-cell shopping-cart__title-cell'>Количество</div>
+            <div className='shopping-cart__table-cell shopping-cart__title-cell'>Наименование</div>
+            <div className='shopping-cart__table-cell shopping-cart__title-cell'>Счетчик</div>
+            {shoppingCart.map((product) => {
+              if (product.productCount > 0) {
+                return (
+                  <React.Fragment key={`shopping-cart__form-product_${product.productId}`}>
+                    <div className='shopping-cart__table-cell'>
+                      <input
+                        className='shopping-cart__cell-input'
+                        type='text'
+                        defaultValue={product.productId}
+                        /* disabled */
+                        onChange={() => { }}
+                      />
+                    </div>
+                    <div className='shopping-cart__table-cell'>
+                      <input
+                        className='shopping-cart__cell-input'
+                        type='text'
+                        defaultValue={product.productCount}
+                        /* disabled */
+                        onChange={() => { }}
+                      />
+                    </div>
+                    <div className='shopping-cart__table-cell'>{products.find((item) => item.id === product.productId).name}</div>
+                    <div className='shopping-cart__table-cell'>
+                      <ProductCounter
+                        shoppingCart={shoppingCart}
+                        shoppingCartPlusAction={shoppingCartPlusAction}
+                        shoppingCartMinusAction={shoppingCartMinusAction}
+                        productId={product.productId}
+                      />
+                    </div>
+                  </React.Fragment>
+                );
+              }
+            })}
+          </div>
           <div className='shopping-cart__total-value'>
             <span className='shopping-cart__total-value-text'>Суммарное количество: </span>
             <span className='shopping-cart__total-value-input'>{sumCount}</span>

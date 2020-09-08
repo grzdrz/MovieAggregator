@@ -8,13 +8,14 @@
   &__minus-button,
   &__plus-button {
     cursor: pointer;
+    min-width: 1.875rem;
     width: 1.875rem;
+    height: 1.875rem;
     border-radius: 1.9375rem;
     border: 0.0625rem solid $color-dark-shade-50;
     background: transparent;
     outline: none;
     font-size: 1.125rem;
-    line-height: 1.75rem;
     text-align: center;
     text-transform: uppercase;
     color: $color-dark-shade-100;
