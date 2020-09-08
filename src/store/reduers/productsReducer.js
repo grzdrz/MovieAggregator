@@ -110,7 +110,6 @@ class ProductsReducer extends Reducer {
 
   reduce = (state = this.state, action) => {
     this.state = { ...state };
-    this.state.activeProducts = this.obtainActiveProducts();
 
     switch (action.type) {
       case 'CREATE': {
@@ -120,24 +119,23 @@ class ProductsReducer extends Reducer {
         // const newData = JSON.stringify({
         //   products: state.products,
         // });
-        // ...
-        return this.state;
+        break;
       }
       case 'UPDATE': {
-        if (action.product) {
-          const updatedProducts = this.updateItem(action.product);
-          return updatedProducts;
-        }
-        return state;
+        const updatedProducts = this.updateItem(action.product);
+        this.state.allProducts = updatedProducts;
+        break;
       }
       /* case 'DELETE': {
-
         break;
       } */
       default: {
-        return this.state;
+        break;
       }
     }
+
+    this.state.activeProducts = this.obtainActiveProducts();
+    return this.state;
   }
 }
 

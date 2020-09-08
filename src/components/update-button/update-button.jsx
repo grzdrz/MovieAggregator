@@ -12,22 +12,17 @@ class UpdateButton extends React.Component {
   }
 
   componentDidMount() {
-    document.addEventListener('click', this._handleDropdownLeave);
+    document.addEventListener('click', this.handleDropdownLeave);
     this._changeState();
   }
 
-  _handleDropdownLeave = (event) => {
-    if (event.target.className.match) {
-      const updateForm = event.target.className.match(/(^update-button)|(^update-button__)|(^update-form)|(^form-input)|(^radio)/);
-      if (!updateForm) {
-        this._handleCloseDropdown();
-      }
-    } else this._handleCloseDropdown();
-  }
-
-  _handleCloseDropdown = () => {
-    this.isOpened = false;
-    this._changeState();
+  handleDropdownLeave = (event) => {
+    const button = event.target.closest('.update-button');
+    const submitButton = event.target.closest('.update-form__submit-button');
+    if (!button || submitButton) {
+      this.isOpened = false;
+      this._changeState();
+    }
   }
 
   _handlePlusWindowClick = () => {
@@ -46,7 +41,7 @@ class UpdateButton extends React.Component {
 
   // eslint-disable-next-line react/sort-comp
   componentWillUnmount() {
-    document.removeEventListener('click', this._handleDropdownLeave);
+    document.removeEventListener('click', this.handleDropdownLeave);
   }
 
   render() {

@@ -12,6 +12,8 @@ class ShoppingCart extends React.Component {
     this.state = {
       isFormOpened: false,
     };
+
+    document.addEventListener('click', this.handleDropdownLeave);
   }
 
   handleFormSubmit = (event) => {
@@ -23,6 +25,16 @@ class ShoppingCart extends React.Component {
     this.setState({
       isFormOpened: !isFormOpened,
     });
+  }
+
+  handleDropdownLeave = (event) => {
+    const cart = event.target.closest('.shopping-cart');
+    const isMinusButton = event.target.classList.contains('product-counter__minus-button');
+    if (!cart && !isMinusButton) {
+      this.setState({
+        isFormOpened: false,
+      });
+    }
   }
 
   render() {

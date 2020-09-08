@@ -11,24 +11,17 @@ class CreateButton extends React.Component {
   }
 
   componentDidMount() {
-    document.addEventListener('click', this._handleDropdownLeave);
+    document.addEventListener('click', this.handleDropdownLeave);
     this._changeState();
   }
 
-  _handleDropdownLeave = (event) => {
-    if (event.target.className.match) {
-      const updateForm = event.target.className.match(
-        /(^create-button)|(^create-button__)|(^create-form)|(^form-input)|(^radio)/,
-      );
-      if (!updateForm) {
-        this._handleCloseDropdown();
-      }
-    } else this._handleCloseDropdown();
-  }
-
-  _handleCloseDropdown = () => {
-    this.isOpened = false;
-    this._changeState();
+  handleDropdownLeave = (event) => {
+    const button = event.target.closest('.create-button');
+    const submitButton = event.target.closest('.create-form__submit-button');
+    if (!button || submitButton) {
+      this.isOpened = false;
+      this._changeState();
+    }
   }
 
   _handlePlusWindowClick = () => {
@@ -47,7 +40,7 @@ class CreateButton extends React.Component {
 
   // eslint-disable-next-line react/sort-comp
   componentWillUnmount() {
-    document.removeEventListener('click', this._handleDropdownLeave);
+    document.removeEventListener('click', this.handleDropdownLeave);
   }
 
   render() {
