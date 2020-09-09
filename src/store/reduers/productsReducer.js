@@ -106,7 +106,7 @@ class ProductsReducer extends Reducer {
     const filters = this.reducerManager.filtersReducer.state;
 
     if (filters.sorters.length !== 0) products = this.sortProducts(products, filters.sorters);
-    if (filters.byCategory.length !== 0) products = this.filterProductsByCategory(products, filters.byCategory);
+    /* if (filters.byCategory.length !== 0) */ products = this.filterProductsByCategory(products, filters.byCategory);
 
     return products;
   }

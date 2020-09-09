@@ -14,6 +14,7 @@ class PaginationReducer extends Reducer {
 
   validatePageNummber() {
     if (this.state.pageNumber > this.state.pagesCount) return this.state.pagesCount;
+    if (this.state.pageNumber <= 0) return 1;
     return this.state.pageNumber;
   }
 
