@@ -25,6 +25,7 @@ class Header extends React.Component {
       shoppingCart,
       shoppingCartPlusAction,
       shoppingCartMinusAction,
+      signUpButtonAction,
     } = this.props;
     const navList = [
       { url: '/ProductSupermarket/productList/1', text: 'Список продуктов', hasDropdown: false, isNavLink: true },
@@ -87,6 +88,7 @@ class Header extends React.Component {
                     isHollow={false}
                     buttonType='a'
                     hasArrow={false}
+                    handleClick={signUpButtonAction}
                   />
                 </div>
               </div>
