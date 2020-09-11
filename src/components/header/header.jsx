@@ -19,13 +19,15 @@ class Header extends React.Component {
 
   render() {
     const {
-      isAuthorized,
+      /* isAuthorized, */
       userFullName,
       products,
       shoppingCart,
       shoppingCartPlusAction,
       shoppingCartMinusAction,
       signUpButtonAction,
+      signInButtonAction,
+      authorization,
     } = this.props;
     const navList = [
       { url: '/ProductSupermarket/productList/1', text: 'Список продуктов', hasDropdown: false, isNavLink: true },
@@ -66,10 +68,10 @@ class Header extends React.Component {
           </ul>
         </nav>
         {
-          isAuthorized
+          authorization.cookie
             ? (
               <p className='header__user-full-name'>
-                <span className='header__name-text'>{userFullName}</span>
+                <span className='header__name-text'>{authorization.login}</span>
               </p>
             )
             : (
@@ -80,6 +82,7 @@ class Header extends React.Component {
                     isHollow
                     buttonType='a'
                     hasArrow={false}
+                    handleClick={signInButtonAction}
                   />
                 </div>
                 <div className='header__sign-up-button'>

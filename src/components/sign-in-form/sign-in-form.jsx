@@ -6,12 +6,11 @@ import Button from '../button/button.jsx';
 
 import actions from './actions';
 
-import './sign-up-form.scss';
+import './sign-in-form.scss';
 
-class SignUpForm extends React.Component {
+class SignInForm extends React.Component {
   constructor(props) {
     super(props);
-
     this.formRef = React.createRef();
   }
 
@@ -26,21 +25,21 @@ class SignUpForm extends React.Component {
   handleSubmitButton = (event) => {
     event.preventDefault();
 
-    const { signUpAction, signUpButtonAction } = this.props;
+    const { signInAction, signInButtonAction } = this.props;
 
     const formBody = new FormData(this.formRef.current);
     const test = Array.from(formBody);
     const user = Object.fromEntries(test);
 
-    signUpAction(user);
+    signInAction(user);
   }
 
   handleFormLeave = (event) => {
-    const { signUpButtonAction } = this.props;
+    const { signInButtonAction } = this.props;
 
-    const form = event.target.closest('.sign-up-form');
-    const button = event.target.closest('.header__sign-up-button');
-    if (!form && !button) signUpButtonAction(true);
+    const form = event.target.closest('.sign-in-form');
+    const button = event.target.closest('.header__sign-in-button');
+    if (!form && !button) signInButtonAction(true);
   }
 
   render() {
@@ -48,12 +47,12 @@ class SignUpForm extends React.Component {
 
     return (
       <form
-        className={`sign-up-form ${authorization.isSignUpFormHidden ? 'sign-up-form_hidden' : ''}`}
+        className={`sign-in-form ${authorization.isSignInFormHidden ? 'sign-in-form_hidden' : ''}`}
         onSubmit={this.handleSubmitButton}
         ref={this.formRef}
       >
-        <p className='sign-up-form__title'>Регистрация</p>
-        <div className='sign-up-form__login-input'>
+        <p className='sign-in-form__title'>Авторизация</p>
+        <div className='sign-in-form__login-input'>
           <FormInput
             name='login'
             type='text'
@@ -61,7 +60,7 @@ class SignUpForm extends React.Component {
             placeholder='login'
           />
         </div>
-        <div className='sign-up-form__password-input'>
+        <div className='sign-in-form__password-input'>
           <FormInput
             name='password'
             type='password'
@@ -69,7 +68,7 @@ class SignUpForm extends React.Component {
             placeholder='password'
           />
         </div>
-        <div className='sign-up-form__submit-button'>
+        <div className='sign-in-form__submit-button'>
           <Button
             hasArrow
             buttonType='submit'
@@ -85,4 +84,4 @@ const mapStateToProps = function (state) {
   return state;
 };
 
-export default connect(mapStateToProps, actions)(SignUpForm);
+export default connect(mapStateToProps, actions)(SignInForm);

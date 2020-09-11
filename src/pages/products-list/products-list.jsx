@@ -24,6 +24,7 @@ function ProductsList(props) {
     shoppingCartPlusAction,
     shoppingCartMinusAction,
     changeCurrentPage,
+    authorization,
   } = props;
 
   const { activeProducts } = products;
@@ -33,9 +34,12 @@ function ProductsList(props) {
   return (
     <div className='products-list'>
       <div className='products-list__filters-and-sorters'>
-        <div className='products-list__create-button'>
-          <CreateButton createItem={createItem} />
-        </div>
+        {authorization.cookie
+          ? (
+            <div className='products-list__create-button'>
+              <CreateButton createItem={createItem} />
+            </div>
+          ) : null}
         <div className='products-list__sorter-form'>
           <SorterForm
             sorter={sorter}
@@ -55,6 +59,7 @@ function ProductsList(props) {
                 shoppingCart={shoppingCart.chosenProducts}
                 shoppingCartPlusAction={shoppingCartPlusAction}
                 shoppingCartMinusAction={shoppingCartMinusAction}
+                cookie={authorization.cookie}
               />
             </div>
           ))}

@@ -97,6 +97,7 @@ class ProductShortInfo extends React.Component {
       product,
       updateItem,
       deleteItem,
+      cookie,
     } = this.props;
 
     return (
@@ -181,20 +182,24 @@ class ProductShortInfo extends React.Component {
             </p>
           </div>
         </div>
-        <div className='product-short-info__buttons'>
-          <div className='product-short-info__update-button'>
-            <UpdateButton
-              product={product}
-              updateItem={updateItem}
-            />
-          </div>
-          <div className='product-short-info__delete-button'>
-            <DeleteButton
-              productId={product.id}
-              deleteItem={deleteItem}
-            />
-          </div>
-        </div>
+        {cookie
+          ? (
+            <div className='product-short-info__buttons'>
+              <div className='product-short-info__update-button'>
+                <UpdateButton
+                  product={product}
+                  updateItem={updateItem}
+                />
+              </div>
+              <div className='product-short-info__delete-button'>
+                <DeleteButton
+                  productId={product.id}
+                  deleteItem={deleteItem}
+                />
+              </div>
+            </div>
+          )
+          : null}
       </div>
     );
   }

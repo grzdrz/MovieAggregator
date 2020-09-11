@@ -1,4 +1,3 @@
-import { createTrue } from 'typescript';
 import Reducer from './reducer';
 
 const initialState = {
@@ -32,6 +31,10 @@ class AuthorizationReducer extends Reducer {
         this.state.isSignUpFormHidden = action.isSignUpFormHidden || !this.state.isSignUpFormHidden;
         break;
       }
+      case 'SIGN_IN_BUTTON': {
+        this.state.isSignInFormHidden = action.isSignInFormHidden || !this.state.isSignInFormHidden;
+        break;
+      }
       case 'SIGN_UP': {
         this.state.isSignUpFormHidden = true;
         const userCollision = this.state.users.find((user) => user.login === action.user.login);
@@ -47,9 +50,9 @@ class AuthorizationReducer extends Reducer {
         this.state.isSignInFormHidden = true;
         const userCollision = this.state.users.find((user) => user.login === action.user.login && user.password === action.user.password);
         if (userCollision) {
+          userCollision.cookie = 'active';
           this.state.login = userCollision.login;
           this.state.cookie = userCollision.cookie;
-          userCollision.cookie = 'active';
         }
         break;
       }
