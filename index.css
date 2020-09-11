@@ -1070,6 +1070,58 @@
     font-weight: bold;
     color: #161636; }
 
+.sign-up-form {
+  z-index: 99;
+  width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0rem;
+  left: 0rem;
+  top: 0rem;
+  margin: 3.125rem auto;
+  padding: 1.25rem;
+  box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.5);
+  border-radius: 0.25rem;
+  background: white; }
+  .sign-up-form_hidden {
+    display: none; }
+  .sign-up-form__title {
+    font-weight: bold;
+    text-transform: uppercase; }
+  .sign-up-form > *:nth-of-type(n) {
+    margin-bottom: 1.25rem; }
+  .sign-up-form__submit-button {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 1.25rem; }
+
+.sign-in-form {
+  z-index: 99;
+  width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0rem;
+  left: 0rem;
+  top: 0rem;
+  margin: 3.125rem auto;
+  padding: 1.25rem;
+  box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.5);
+  border-radius: 0.25rem;
+  background: white; }
+  .sign-in-form_hidden {
+    display: none; }
+  .sign-in-form__title {
+    font-weight: bold;
+    text-transform: uppercase; }
+  .sign-in-form > *:nth-of-type(n) {
+    margin-bottom: 1.25rem; }
+  .sign-in-form__submit-button {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 1.25rem; }
+
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
