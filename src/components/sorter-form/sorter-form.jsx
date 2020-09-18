@@ -6,7 +6,7 @@ import './sorter-form.scss';
 
 class SorterForm extends React.Component {
   handleSorterClick = (event) => {
-    const { sorter } = this.props;
+    const { sorterAction } = this.props;
 
     const input = event.currentTarget;
     const form = input.closest('form');
@@ -19,11 +19,11 @@ class SorterForm extends React.Component {
       })
       .filter((pair) => pair !== undefined);
 
-    sorter(result);
+    sorterAction(result);
   }
 
   handleFilterByCategoryClick = (event) => {
-    const { filterByCategory } = this.props;
+    const { filterByCategoryAction } = this.props;
 
     const input = event.currentTarget;
     const form = input.closest('form');
@@ -36,14 +36,14 @@ class SorterForm extends React.Component {
       })
       .filter((pair) => pair !== undefined);
 
-    filterByCategory(result);
+    filterByCategoryAction(result);
   }
 
   render() {
     const { filters } = this.props;
 
     return (
-      <form className='sorter-form' onSubmit={(event) => { event.preventDefault() }}>
+      <form className='sorter-form' onSubmit={(event) => { event.preventDefault(); }}>
         <div className='sorter-form__checkbox-list_type_sorter'>
           <CheckboxList
             inputClick={this.handleSorterClick}

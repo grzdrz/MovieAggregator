@@ -47,7 +47,7 @@ class UpdateButton extends React.Component {
   render() {
     const {
       product,
-      updateItem,
+      updateItemAction,
     } = this.props;
     return (
       <div className='update-button'>
@@ -58,7 +58,7 @@ class UpdateButton extends React.Component {
         <div className='update-button__form' ref={this.updateForm}>
           <UpdateForm
             product={product}
-            updateItem={updateItem}
+            updateItemAction={updateItemAction}
           />
         </div>
       </div>

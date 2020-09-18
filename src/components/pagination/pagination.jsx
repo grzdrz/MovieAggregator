@@ -24,8 +24,8 @@ class Pagination extends React.Component {
   }
 
   setPageNumber(number) {
-    const { changeCurrentPage } = this.props;
-    changeCurrentPage(number);
+    const { changeCurrentPageAction } = this.props;
+    changeCurrentPageAction(number);
   }
 
   render() {
@@ -34,7 +34,7 @@ class Pagination extends React.Component {
       pageNumber,
       pagesCount,
       totalItemsCount,
-      changeCurrentPage,
+      changeCurrentPageAction,
     } = this.props;
 
     return (

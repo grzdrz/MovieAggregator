@@ -1,7 +1,7 @@
-import shoppingCartPlusAction from '../../store/actions/shoppingCart/shoppingCartPlusAction';
-import shoppingCartMinusAction from '../../store/actions/shoppingCart/shoppingCartMinusAction';
-import signUpButtonAction from '../../store/actions/authorizationActions/signUpButtonAction';
-import signInButtonAction from '../../store/actions/authorizationActions/signInButtonAction';
+import shoppingCartPlusAction from '../../store/ShoppingCart/actions/shoppingCartPlusAction';
+import shoppingCartMinusAction from '../../store/ShoppingCart/actions/shoppingCartMinusAction';
+import signUpButtonAction from '../../store/Authorization/actions/signUpButtonAction';
+import signInButtonAction from '../../store/Authorization/actions/signInButtonAction';
 
 const actions = {
   shoppingCartPlusAction,

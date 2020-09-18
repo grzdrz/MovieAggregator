@@ -12,7 +12,7 @@ class CreateForm extends React.Component {
 
   _handleSubmit = (event) => {
     event.preventDefault();
-    const { createItem } = this.props;
+    const { createItemAction } = this.props;
 
     const formBody = new FormData(this.form.current);
     const test = Array.from(formBody);
@@ -21,7 +21,7 @@ class CreateForm extends React.Component {
     test2.id = Number.parseFloat(test2.id);
     test2.price = Number.parseFloat(test2.price);
 
-    createItem(test2);
+    createItemAction(test2);
   }
 
   render() {

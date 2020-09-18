@@ -1,4 +1,4 @@
-import Reducer from './reducer';
+import Reducer from '../reducer';
 
 const allProducts = require('../../data/productData.json').products;
 

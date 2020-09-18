@@ -54,8 +54,5 @@ function ProductDetails(props) {
   );
 }
 
-const mapStateToProps = function (state) {
-  return state;
-};
-
+const mapStateToProps = (state) => state;
 export default connect(mapStateToProps)(ProductDetails);

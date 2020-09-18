@@ -13,7 +13,7 @@ class UpdateForm extends React.Component {
 
   _handleSubmit = (event) => {
     event.preventDefault();
-    const { updateItem } = this.props;
+    const { updateItemAction } = this.props;
 
     const formBody = new FormData(this.form.current);
     const test = Array.from(formBody);
@@ -22,7 +22,7 @@ class UpdateForm extends React.Component {
     test2.id = Number.parseFloat(test2.id);
     test2.price = Number.parseFloat(test2.price);
 
-    updateItem(test2);
+    updateItemAction(test2);
   }
 
   render() {

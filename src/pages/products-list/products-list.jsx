@@ -14,17 +14,17 @@ function ProductsList(props) {
   const {
     products,
     pagination,
-    createItem,
-    sorter,
-    filterByCategory,
     filters,
-    updateItem,
-    deleteItem,
     shoppingCart,
+    authorization,
+    createItemAction,
+    sorterAction,
+    filterByCategoryAction,
+    updateItemAction,
+    deleteItemAction,
     shoppingCartPlusAction,
     shoppingCartMinusAction,
-    changeCurrentPage,
-    authorization,
+    changeCurrentPageAction,
   } = props;
 
   const { activeProducts } = products;
@@ -37,13 +37,13 @@ function ProductsList(props) {
         {authorization.cookie
           ? (
             <div className='products-list__create-button'>
-              <CreateButton createItem={createItem} />
+              <CreateButton createItemAction={createItemAction} />
             </div>
           ) : null}
         <div className='products-list__sorter-form'>
           <SorterForm
-            sorter={sorter}
-            filterByCategory={filterByCategory}
+            sorterAction={sorterAction}
+            filterByCategoryAction={filterByCategoryAction}
             filters={filters}
           />
         </div>
@@ -54,8 +54,8 @@ function ProductsList(props) {
             <div className='products-list__item' key={`products-list__item-${product.id}`}>
               <ProductShortInfo
                 product={product}
-                updateItem={updateItem}
-                deleteItem={deleteItem}
+                updateItemAction={updateItemAction}
+                deleteItemAction={deleteItemAction}
                 shoppingCart={shoppingCart.chosenProducts}
                 shoppingCartPlusAction={shoppingCartPlusAction}
                 shoppingCartMinusAction={shoppingCartMinusAction}
@@ -72,7 +72,7 @@ function ProductsList(props) {
                 pageNumber={pageNumber}
                 pagesCount={pagesCount}
                 totalItemsCount={totalItemsCount}
-                changeCurrentPage={changeCurrentPage}
+                changeCurrentPageAction={changeCurrentPageAction}
               />
             ) : null}
         </div>

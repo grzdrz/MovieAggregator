@@ -1,5 +1,5 @@
-import signUpAction from '../../store/actions/authorizationActions/signUpAction';
-import signUpButtonAction from '../../store/actions/authorizationActions/signUpButtonAction';
+import signUpAction from '../../store/Authorization/actions/signUpAction';
+import signUpButtonAction from '../../store/Authorization/actions/signUpButtonAction';
 
 const actions = {
   signUpAction,

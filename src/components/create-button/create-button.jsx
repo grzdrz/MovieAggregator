@@ -44,12 +44,12 @@ class CreateButton extends React.Component {
   }
 
   render() {
-    const { createItem } = this.props;
+    const { createItemAction } = this.props;
 
     return (
       <div className='create-button'>
         <div className='create-button__form' ref={this.updateForm}>
-          <CreateForm createItem={createItem} />
+          <CreateForm createItemAction={createItemAction} />
         </div>
         <button
           className='create-button__button-container'

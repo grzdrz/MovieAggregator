@@ -1,4 +1,4 @@
-import Reducer from './reducer';
+import Reducer from '../reducer';
 
 const initialState = {
   chosenProducts: [

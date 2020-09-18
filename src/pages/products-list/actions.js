@@ -1,19 +1,19 @@
-import changeCurrentPage from '../../store/actions/changeCurrentPage';
-import createItem from '../../store/actions/productsActions/createItem';
-import deleteItem from '../../store/actions/productsActions/deleteItem';
-import updateItem from '../../store/actions/productsActions/updateItem';
-import sorter from '../../store/actions/filtersActions/sorter';
-import filterByCategory from '../../store/actions/filtersActions/filterByCategory';
-import shoppingCartPlusAction from '../../store/actions/shoppingCart/shoppingCartPlusAction';
-import shoppingCartMinusAction from '../../store/actions/shoppingCart/shoppingCartMinusAction';
+import changeCurrentPageAction from '../../store/Pagination/actions/changeCurrentPageAction';
+import createItemAction from '../../store/Products/actions/createItemAction';
+import deleteItemAction from '../../store/Products/actions/deleteItemAction';
+import updateItemAction from '../../store/Products/actions/updateItemAction';
+import sorterAction from '../../store/Filters/actions/sorterAction';
+import filterByCategoryAction from '../../store/Filters/actions/filterByCategoryAction';
+import shoppingCartPlusAction from '../../store/ShoppingCart/actions/shoppingCartPlusAction';
+import shoppingCartMinusAction from '../../store/ShoppingCart/actions/shoppingCartMinusAction';
 
 const actions = {
-  changeCurrentPage,
-  createItem,
-  updateItem,
-  deleteItem,
-  sorter,
-  filterByCategory,
+  changeCurrentPageAction,
+  createItemAction,
+  updateItemAction,
+  deleteItemAction,
+  sorterAction,
+  filterByCategoryAction,
   shoppingCartPlusAction,
   shoppingCartMinusAction,
 };

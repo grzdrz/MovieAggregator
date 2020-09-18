@@ -23,11 +23,11 @@ class Header extends React.Component {
       userFullName,
       products,
       shoppingCart,
+      authorization,
       shoppingCartPlusAction,
       shoppingCartMinusAction,
       signUpButtonAction,
       signInButtonAction,
-      authorization,
     } = this.props;
     const navList = [
       { url: '/ProductSupermarket/productList/1', text: 'Список продуктов', hasDropdown: false, isNavLink: true },

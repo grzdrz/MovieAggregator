@@ -8,9 +8,9 @@ class DeleteButton extends React.Component {
   }
 
   _handleButtonClick = () => {
-    const { deleteItem, productId } = this.props;
+    const { deleteItemAction, productId } = this.props;
 
-    deleteItem(productId);
+    deleteItemAction(productId);
   }
 
   render() {
