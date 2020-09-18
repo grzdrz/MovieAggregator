@@ -70,8 +70,8 @@ class SignInForm extends React.Component {
         </div>
         <div className='sign-in-form__submit-button'>
           <Button
-            hasArrow
-            buttonType='submit'
+            hasArrowА
+            basisType='submit'
             text='Отправить'
           />
         </div>

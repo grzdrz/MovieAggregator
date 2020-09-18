@@ -72,7 +72,7 @@ class SignUpForm extends React.Component {
         <div className='sign-up-form__submit-button'>
           <Button
             hasArrow
-            buttonType='submit'
+            basisType='submit'
             text='Отправить'
           />
         </div>

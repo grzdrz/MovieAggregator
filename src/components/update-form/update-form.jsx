@@ -76,7 +76,7 @@ class UpdateForm extends React.Component {
         <div className='update-form__submit-button'>
           <Button
             hasArrow
-            buttonType='submit'
+            basisType='submit'
             text='Отправить'
           />
         </div>

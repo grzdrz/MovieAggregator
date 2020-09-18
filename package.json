@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
     "server": "webpack-dev-server --open --mode development",
     "deploy": "gh-pages -d bandle",
-    "test": "jest",
+    "test": "jest --watch",
+    "test_debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
     "coverage": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",

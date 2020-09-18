@@ -53,7 +53,7 @@ class CreateForm extends React.Component {
         <div className='create-form__submit-button'>
           <Button
             hasArrow
-            buttonType='submit'
+            basisType='submit'
             text='Отправить'
           />
         </div>

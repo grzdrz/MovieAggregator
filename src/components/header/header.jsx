@@ -80,7 +80,8 @@ class Header extends React.Component {
                   <Button
                     text='войти'
                     isHollow
-                    buttonType='a'
+                    forHeader
+                    basisType='a'
                     hasArrow={false}
                     handleClick={signInButtonAction}
                   />
@@ -89,7 +90,8 @@ class Header extends React.Component {
                   <Button
                     text='зарегистрироваться'
                     isHollow={false}
-                    buttonType='a'
+                    forHeader
+                    basisType='a'
                     hasArrow={false}
                     handleClick={signUpButtonAction}
                   />
