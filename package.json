@@ -8,9 +8,10 @@
     "prod": "webpack --mode production",
     "server": "webpack-dev-server --open --mode development",
     "deploy": "gh-pages -d bandle",
-    "test": "jest --watch",
+    "test": "jest --watch --no-cache",
     "test_debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx src"
   },
   "author": "",
   "license": "ISC",
@@ -58,9 +59,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "jest": {
-    "transform": {
-      "^.+\\.jsx$": "babel-jest"
-    },
     "moduleNameMapper": {
       "\\.(css|scss)$": "<rootDir>/tests/__mocks__/styleMock.js"
     },
