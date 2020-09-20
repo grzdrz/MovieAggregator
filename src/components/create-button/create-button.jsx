@@ -1,67 +1,57 @@
-import React from 'react';
+/* eslint-disable react/destructuring-assignment */
+import React, { useState, useEffect/* , useRef */ } from 'react';
+import PropTypes from 'prop-types';
 import CreateForm from '../create-form/create-form.jsx';
 import './create-button.scss';
 
-class CreateButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.isOpened = false;
-    this.plusButton = React.createRef();
-    this.updateForm = React.createRef();
-  }
+function CreateButton(props) {
+  const { createItemAction } = props;
 
-  componentDidMount() {
-    document.addEventListener('click', this.handleDropdownLeave);
-    this._changeState();
-  }
+  const [isOpened, setIsOpened] = useState(props.isOpened);
 
-  handleDropdownLeave = (event) => {
+  const handleDropdownLeave = (event) => {
     const button = event.target.closest('.create-button');
     const submitButton = event.target.closest('.create-form__submit-button');
     if (!button || submitButton) {
-      this.isOpened = false;
-      this._changeState();
+      setIsOpened(false);
     }
-  }
+  };
 
-  _handlePlusWindowClick = () => {
-    this.isOpened = true;
-    this._changeState();
-  }
+  const handlePlusButtonClick = () => {
+    setIsOpened(true);
+  };
 
-  _changeState() {
-    const updateForm = this.updateForm.current;
-    if (this.isOpened) {
-      updateForm.classList.toggle('create-button__form_opened', true);
-    } else {
-      updateForm.classList.toggle('create-button__form_opened', false);
-    }
-  }
+  useEffect(() => {
+    document.addEventListener('click', handleDropdownLeave);
+    return () => {
+      document.removeEventListener('click', handleDropdownLeave);
+    };
+  }, []);
 
-  // eslint-disable-next-line react/sort-comp
-  componentWillUnmount() {
-    document.removeEventListener('click', this.handleDropdownLeave);
-  }
-
-  render() {
-    const { createItemAction } = this.props;
-
-    return (
-      <div className='create-button'>
-        <div className='create-button__form' ref={this.updateForm}>
-          <CreateForm createItemAction={createItemAction} />
-        </div>
-        <button
-          className='create-button__button-container'
-          onClick={this._handlePlusWindowClick}
-          ref={this.plusButton}
-          type='button'
-        >
-          <span className='create-button__text'>Создать элемент</span>
-        </button>
+  return (
+    <div className='create-button'>
+      <div className={`create-button__form ${isOpened ? 'create-button__form_opened' : ''}`}>
+        <CreateForm createItemAction={createItemAction} />
       </div>
-    );
-  }
+      <button
+        className='create-button__button-container'
+        onClick={handlePlusButtonClick}
+        type='button'
+      >
+        <span className='create-button__text'>Создать элемент</span>
+      </button>
+    </div>
+  );
 }
+
+CreateButton.propTypes = {
+  isOpened: PropTypes.bool,
+  createItemAction: PropTypes.func,
+};
+
+CreateButton.defaultProps = {
+  isOpened: false,
+  createItemAction: () => { },
+};
 
 export default CreateButton;

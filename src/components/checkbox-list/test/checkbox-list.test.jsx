@@ -120,7 +120,7 @@ describe('props values', () => {
 });
 
 describe('handleCheckboxExpand', () => {
-  it('invoke setIsClosed handler', () => { // вызов обработчика с переключением стейта закрытия выпадающего списка
+  it('invoke setIsClosed handler', () => { // вызов обработчика который переключает стейт закрывающий выпадающий список
     act(() => {
       render(<CheckboxList title='adfsdfs' />, container);
     });
