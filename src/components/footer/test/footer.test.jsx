@@ -1,13 +1,14 @@
+/* eslint-disable object-curly-newline */
 /* eslint-disable no-undef */
 import React from 'react';
 import { unmountComponentAtNode, render } from 'react-dom';
 import { act } from 'react-dom/test-utils';
-import FormInput from '../form-input';
+import Footer from '../footer';
 
 let container;
 beforeEach(() => {
   container = document.createElement('div');
-  document.body.appendChild(container);
+  document.body.append(container);
 });
 
 afterEach(() => {
@@ -16,10 +17,11 @@ afterEach(() => {
   container = undefined;
 });
 
-it('renders with or without a name', () => {
+it('render', () => {
   act(() => {
-    render(<FormInput />, container);
+    render(<Footer />, container);
   });
-  const input = container.querySelector('.form-input__input');
-  expect(input.value).toBe('');
+
+  const footer = container.querySelector('.footer');
+  expect(footer).toBeInstanceOf(HTMLElement);
 });

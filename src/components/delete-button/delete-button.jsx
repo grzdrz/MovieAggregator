@@ -1,27 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './delete-button.scss';
 
-class DeleteButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.isOpened = false;
-  }
+function DeleteButton(props) {
+  const { productId, deleteItemAction } = props;
 
-  _handleButtonClick = () => {
-    const { deleteItemAction, productId } = this.props;
-
+  const handleButtonClick = () => {
+    if (productId < 0) return;
     deleteItemAction(productId);
-  }
+  };
 
-  render() {
-    return (
-      <div className='delete-button'>
-        <button className='delete-button__button-container' onClick={this._handleButtonClick} type="button">
-          <span className='delete-button__horizontal-part' />
-        </button>
-      </div>
-    );
-  }
+  return (
+    <div className='delete-button'>
+      <button className='delete-button__button-container' onClick={handleButtonClick} type="button">
+        <span className='delete-button__horizontal-part' />
+      </button>
+    </div>
+  );
 }
+
+DeleteButton.propTypes = {
+  productId: PropTypes.number,
+  deleteItemAction: PropTypes.func,
+};
+
+DeleteButton.defaultProps = {
+  productId: -1,
+  deleteItemAction: () => { },
+};
 
 export default DeleteButton;

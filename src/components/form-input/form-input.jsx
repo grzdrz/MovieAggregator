@@ -1,15 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './form-input.scss';
 
 function FormInput(props) {
   const {
-    title = '',
-    additionalTitle = '',
-    placeholder = 'Email',
-    name = 'email',
-    type = 'email',
-    value = '',
-    hasSubmitButton = false
+    title,
+    additionalTitle,
+    placeholder,
+    name,
+    type,
+    value,
+    hasSubmitButton,
   } = props;
 
   return (
@@ -41,5 +42,25 @@ function FormInput(props) {
     </div>
   );
 }
+
+FormInput.propTypes = {
+  title: PropTypes.string,
+  additionalTitle: PropTypes.string,
+  placeholder: PropTypes.string,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  value: PropTypes.string,
+  hasSubmitButton: PropTypes.bool,
+};
+
+FormInput.defaultProps = {
+  title: '',
+  additionalTitle: '',
+  placeholder: 'Email',
+  name: 'email',
+  type: 'email',
+  value: '',
+  hasSubmitButton: false,
+};
 
 export default FormInput;

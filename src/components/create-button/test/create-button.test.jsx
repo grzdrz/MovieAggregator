@@ -44,12 +44,16 @@ describe('click handlers', () => {
 
     // нажимаем на кнопку и открываем форму
     const button = container.querySelector('.create-button__button-container');
-    button.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    act(() => {
+      button.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    });
 
     // нажимаем на элемент заглушку, инвокая клик ивент в document и закрываем форму
     const mockElement = document.createElement('div');
     document.body.append(mockElement);
-    mockElement.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    act(() => {
+      mockElement.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    });
     openedButton = container.querySelector('.create-button__form_opened');
     expect(openedButton).toBeNull();
   });

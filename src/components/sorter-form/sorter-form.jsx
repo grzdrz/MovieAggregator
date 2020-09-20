@@ -47,6 +47,7 @@ class SorterForm extends React.Component {
         <div className='sorter-form__checkbox-list_type_sorter'>
           <CheckboxList
             inputClick={this.handleSorterClick}
+            title='Сортировать по:'
             list={[
               { isChecked: filters.sorters.includes('price'), text: 'Цена', name: 'price', type: 'sorters' },
               { isChecked: filters.sorters.includes('reviewsCount'), text: 'Отзывы', name: 'reviewsCount', type: 'sorters' },

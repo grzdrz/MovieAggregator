@@ -1,13 +1,5 @@
 import Reducer from '../reducer';
-
-const initialState = {
-  chosenProducts: [
-    {
-      productId: 0,
-      productCount: 0,
-    },
-  ],
-};
+import initialState from './initialState';
 
 class ShoppingCartReducer extends Reducer {
   constructor(reducerManager, state = { ...initialState }) {

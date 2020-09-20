@@ -1,23 +1,5 @@
 import Reducer from '../reducer';
-
-const initialState = {
-  isSignUpFormHidden: true,
-  isSignInFormHidden: true,
-  login: '',
-  cookie: '',
-  users: [ // т.к. бэка нет, то этот редюсер дополнительно его имитирует
-    {
-      login: 'login1',
-      password: 'qwerty1',
-      cookie: 'active',
-    },
-    {
-      login: 'login2',
-      password: 'qwerty2',
-      cookie: '',
-    },
-  ],
-};
+import initialState from './initialState';
 
 class AuthorizationReducer extends Reducer {
   constructor(reducerManager, state = { ...initialState }) {
