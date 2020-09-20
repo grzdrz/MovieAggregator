@@ -4,8 +4,6 @@ import { unmountComponentAtNode, render } from 'react-dom';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect,
 } from 'react-router-dom';
 import { act } from 'react-dom/test-utils';
 import Button from '../button';
@@ -95,7 +93,6 @@ describe('props values', () => {
       render(
         <Router>
           <Switch>
-            <Route exact path='/' render={() => <Redirect to='/ProductSupermarket' />} />
             <Button basisType='nav' />
           </Switch>
         </Router>,

@@ -3,7 +3,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Header from '../../components/header/header.jsx';
+import Header from '../../components/header/header-container.jsx';
 import ProductsList from '../products-list/products-list.jsx';
 import ProductDetails from '../product-details/product-details.jsx';
 import Footer from '../../components/footer/footer.jsx';

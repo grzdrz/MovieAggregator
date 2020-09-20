@@ -1,6 +1,5 @@
 ﻿/* eslint-disable object-curly-newline */
 import React from 'react';
-import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -8,11 +7,10 @@ import ColoredLogo from '../colored-logo/colored-logo.jsx';
 import Button from '../button/button.jsx';
 import ShoppingCart from '../shopping-cart/shopping-cart.jsx';
 
-import actions from './actions';
-
 import defaultAuthorization from '../../store/Authorization/initialState';
 import defaultShoppingCart from '../../store/ShoppingCart/initialState';
 import defaultProducts from '../../store/Products/initialState';
+import productType from '../../store/Products/productType';
 
 import './header.scss';
 
@@ -109,25 +107,25 @@ function Header(props) {
 }
 
 Header.propTypes = {
-  products: PropTypes.objectOf({
-    allProducts: PropTypes.array,
-    activeProducts: PropTypes.array,
+  products: PropTypes.shape({
+    allProducts: PropTypes.arrayOf(PropTypes.shape(productType)),
+    activeProducts: PropTypes.arrayOf(PropTypes.shape(productType)),
   }),
-  shoppingCart: PropTypes.objectOf({
+  shoppingCart: PropTypes.shape({
     chosenProducts: PropTypes.arrayOf(
-      PropTypes.objectOf({
+      PropTypes.shape({
         productId: PropTypes.number,
         productCount: PropTypes.number,
       }),
     ),
   }),
-  authorization: PropTypes.objectOf({
+  authorization: PropTypes.shape({
     isSignUpFormHidden: PropTypes.bool,
     isSignInFormHidden: PropTypes.bool,
     login: PropTypes.string,
     cookie: PropTypes.string,
     users: PropTypes.arrayOf(
-      PropTypes.objectOf({
+      PropTypes.shape({
         login: PropTypes.string,
         password: PropTypes.string,
         cookie: PropTypes.string,
@@ -150,6 +148,4 @@ Header.defaultProps = {
   signInButtonAction: () => { },
 };
 
-const mapStateToProps = (state) => state;
-
-export default connect(mapStateToProps, actions)(Header);
+export default Header;
