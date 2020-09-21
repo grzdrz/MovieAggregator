@@ -97,7 +97,7 @@ function Header(props) {
       <div className='header__shopping-cart'>
         <ShoppingCart
           products={products.allProducts}
-          shoppingCart={shoppingCart.chosenProducts}
+          chosenProducts={shoppingCart.chosenProducts}
           shoppingCartPlusAction={shoppingCartPlusAction}
           shoppingCartMinusAction={shoppingCartMinusAction}
         />

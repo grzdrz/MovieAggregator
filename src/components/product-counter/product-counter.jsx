@@ -1,46 +1,66 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import defaultShoppingCart from '../../store/ShoppingCart/initialState';
+import ChosenProductsType from '../../store/ShoppingCart/ChosenProductsType';
 import './product-counter.scss';
 
-class ProductCounter extends React.Component {
-  handlePlusButtonClick = (event) => {
-    event.preventDefault();
-    const { productId, shoppingCartPlusAction } = this.props;
+function ProductCounter(props) {
+  const {
+    productId,
+    chosenProducts,
+    shoppingCartPlusAction,
+    shoppingCartMinusAction,
+  } = props;
 
+  const handlePlusButtonClick = (event) => {
+    event.preventDefault();
+    if (productId < 0) return;
     shoppingCartPlusAction(productId);
   };
 
-  handleMinusButtonClick = (event) => {
+  const handleMinusButtonClick = (event) => {
     event.preventDefault();
-    const { productId, shoppingCartMinusAction } = this.props;
-
+    if (productId < 0) return;
     shoppingCartMinusAction(productId);
-  }
+  };
 
-  render() {
-    const { shoppingCart, productId } = this.props;
-    const targetProduct = shoppingCart.find((product) => product.productId === productId);
-    return (
-      <div className='product-counter'>
-        <button
-          className={
-            `product-counter__minus-button 
-          ${targetProduct && targetProduct.productCount > 0 ? 'product-counter__minus-button_active' : ''}`}
-          onClick={this.handleMinusButtonClick}
-          type="button"
-        >
-          -
-        </button>
-        <span className='product-counter__value'>{targetProduct ? targetProduct.productCount : 0}</span>
-        <button
-          className='product-counter__plus-button'
-          onClick={this.handlePlusButtonClick}
-          type="button"
-        >
-          +
-        </button>
-      </div>
-    );
-  }
+  const targetProduct = chosenProducts.find((product) => product.productId === productId);
+  return (
+    <div className='product-counter'>
+      <button
+        className={
+          `product-counter__minus-button 
+          ${targetProduct && targetProduct.productCount > 0 ? 'product-counter__minus-button_active' : ''}`
+        }
+        onClick={handleMinusButtonClick}
+        type="button"
+      >
+        -
+      </button>
+      <span className='product-counter__value'>{targetProduct ? targetProduct.productCount : 0}</span>
+      <button
+        className='product-counter__plus-button'
+        onClick={handlePlusButtonClick}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+  );
 }
+
+ProductCounter.propTypes = {
+  productId: PropTypes.number,
+  chosenProducts: ChosenProductsType,
+  shoppingCartPlusAction: PropTypes.func,
+  shoppingCartMinusAction: PropTypes.func,
+};
+
+ProductCounter.defaultProps = {
+  productId: -1,
+  chosenProducts: defaultShoppingCart.chosenProducts,
+  shoppingCartPlusAction: () => { },
+  shoppingCartMinusAction: () => { },
+};
 
 export default ProductCounter;

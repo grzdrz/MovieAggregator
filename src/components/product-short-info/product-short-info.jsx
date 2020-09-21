@@ -91,7 +91,7 @@ class ProductShortInfo extends React.Component {
       reviewsCount,
     } = this.props.product;
     const {
-      shoppingCart,
+      chosenProducts,
       product,
       shoppingCartPlusAction,
       shoppingCartMinusAction,
@@ -161,7 +161,7 @@ class ProductShortInfo extends React.Component {
           <div className='product-short-info__title'>
             <span className='product-short-info__name'>{name}</span>
             <ProductCounter
-              shoppingCart={shoppingCart}
+              chosenProducts={chosenProducts}
               shoppingCartPlusAction={shoppingCartPlusAction}
               shoppingCartMinusAction={shoppingCartMinusAction}
               productId={id}

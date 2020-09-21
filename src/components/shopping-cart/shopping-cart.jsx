@@ -40,13 +40,13 @@ class ShoppingCart extends React.Component {
   render() {
     const {
       products,
-      shoppingCart,
+      chosenProducts,
       shoppingCartPlusAction,
       shoppingCartMinusAction,
     } = this.props;
     const { isFormOpened } = this.state;
 
-    const sumCount = shoppingCart.reduce((sum, product) => {
+    const sumCount = chosenProducts.reduce((sum, product) => {
       if (product.productCount !== undefined) {
         const newSum = sum + product.productCount;
         return newSum;
@@ -54,7 +54,7 @@ class ShoppingCart extends React.Component {
       return sum;
     }, 0);
     const sumPrice = products.reduce((sum, product) => {
-      const shoppingCartProduct = shoppingCart.find((item) => item.productId === product.id);
+      const shoppingCartProduct = chosenProducts.find((item) => item.productId === product.id);
       if (shoppingCartProduct) {
         const newSum = sum + product.price * shoppingCartProduct.productCount;
         return newSum;
@@ -80,7 +80,7 @@ class ShoppingCart extends React.Component {
             <div className='shopping-cart__table-cell shopping-cart__title-cell'>Количество</div>
             <div className='shopping-cart__table-cell shopping-cart__title-cell'>Наименование</div>
             <div className='shopping-cart__table-cell shopping-cart__title-cell'>Счетчик</div>
-            {shoppingCart.map((product) => {
+            {chosenProducts.map((product) => {
               if (product.productCount > 0) {
                 return (
                   <React.Fragment key={`shopping-cart__form-product_${product.productId}`}>
@@ -105,7 +105,7 @@ class ShoppingCart extends React.Component {
                     <div className='shopping-cart__table-cell'>{products.find((item) => item.id === product.productId).name}</div>
                     <div className='shopping-cart__table-cell'>
                       <ProductCounter
-                        shoppingCart={shoppingCart}
+                        chosenProducts={chosenProducts}
                         shoppingCartPlusAction={shoppingCartPlusAction}
                         shoppingCartMinusAction={shoppingCartMinusAction}
                         productId={product.productId}

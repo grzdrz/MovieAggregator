@@ -56,7 +56,7 @@ function ProductsList(props) {
                 product={product}
                 updateItemAction={updateItemAction}
                 deleteItemAction={deleteItemAction}
-                shoppingCart={shoppingCart.chosenProducts}
+                chosenProducts={shoppingCart.chosenProducts}
                 shoppingCartPlusAction={shoppingCartPlusAction}
                 shoppingCartMinusAction={shoppingCartMinusAction}
                 cookie={authorization.cookie}

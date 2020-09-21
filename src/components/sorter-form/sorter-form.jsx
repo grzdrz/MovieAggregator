@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-newline */
 import React from 'react';
 
 import CheckboxList from '../checkbox-list/checkbox-list.jsx';
@@ -51,7 +52,7 @@ class SorterForm extends React.Component {
             list={[
               { isChecked: filters.sorters.includes('price'), text: 'Цена', name: 'price', type: 'sorters' },
               { isChecked: filters.sorters.includes('reviewsCount'), text: 'Отзывы', name: 'reviewsCount', type: 'sorters' },
-              { isChecked: filters.sorters.includes('name'), text: 'Имени', name: 'name', type: 'sorters' },
+              { isChecked: filters.sorters.includes('name'), text: 'Название', name: 'name', type: 'sorters' },
             ]}
           />
         </div>
