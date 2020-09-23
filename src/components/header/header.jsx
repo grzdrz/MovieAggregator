@@ -10,7 +10,7 @@ import ShoppingCart from '../shopping-cart/shopping-cart.jsx';
 import defaultAuthorization from '../../store/Authorization/initialState';
 import defaultShoppingCart from '../../store/ShoppingCart/initialState';
 import defaultProducts from '../../store/Products/initialState';
-import productType from '../../store/Products/productType';
+import ProductType from '../../store/Products/ProductType';
 
 import './header.scss';
 
@@ -108,8 +108,8 @@ function Header(props) {
 
 Header.propTypes = {
   products: PropTypes.shape({
-    allProducts: PropTypes.arrayOf(PropTypes.shape(productType)),
-    activeProducts: PropTypes.arrayOf(PropTypes.shape(productType)),
+    allProducts: PropTypes.arrayOf(PropTypes.shape(ProductType)),
+    activeProducts: PropTypes.arrayOf(PropTypes.shape(ProductType)),
   }),
   shoppingCart: PropTypes.shape({
     chosenProducts: PropTypes.arrayOf(

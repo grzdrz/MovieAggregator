@@ -1,15 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './radio.scss';
 
 function Radio(props) {
   const {
-    id = 0,
-    title = '',
-    buttonsList = [
-      { text: 'amount', isChecked: true },
-      { text: 'weight', isChecked: false },
-    ],
-    name = 'packaging',
+    id,
+    title,
+    buttonsList,
+    name,
   } = props;
 
   return (
@@ -32,5 +30,27 @@ function Radio(props) {
     </div>
   );
 }
+
+Radio.propTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string,
+  buttonsList: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string,
+      isChecked: PropTypes.bool,
+    }),
+  ),
+  name: PropTypes.string,
+};
+
+Radio.defaultProps = {
+  id: 0,
+  title: '',
+  buttonsList: [
+    { text: 'amount', isChecked: true },
+    { text: 'weight', isChecked: false },
+  ],
+  name: 'packaging',
+};
 
 export default Radio;

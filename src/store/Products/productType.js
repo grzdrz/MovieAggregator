@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const productType = {
+const ProductType = PropTypes.shape({
   name: PropTypes.string,
   price: PropTypes.number,
   currencyType: PropTypes.string,
@@ -19,6 +19,6 @@ const productType = {
   checkedStars: PropTypes.number,
   reviewsCount: PropTypes.number,
   category: PropTypes.string,
-};
+});
 
-export default productType;
+export default ProductType;
