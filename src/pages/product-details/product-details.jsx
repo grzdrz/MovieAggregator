@@ -1,30 +1,37 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
-import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
+import ProductsType from '../../store/Products/ProductsType';
+import defaultProducts from '../../store/Products/initialState';
+
 import './product-details.scss';
 
 function ProductDetails(props) {
-  const { products } = props;
-  const product = products.allProducts.find((item) => item.id === props.id);
   const {
-    id,
+    productId,
+    products,
+  } = props;
+  const product = products.allProducts.find((item) => item.id === productId);
+  const {
+    /* id, */
     name,
     price,
     currencyType,
     descriptions,
     manufacturer,
-    energyValue,
+    /* energyValue,
     proteins,
     fats,
     carbohydrates,
     energyUnits,
-    weightUnits,
+    weightUnits, */
     shelfLife,
     shelfLifeUnits,
-    packaging,
+    /* packaging,
     imageNames,
     checkedStars,
-    reviewsCount,
+    reviewsCount, */
   } = product;
 
   return (
@@ -54,5 +61,14 @@ function ProductDetails(props) {
   );
 }
 
-const mapStateToProps = (state) => state;
-export default connect(mapStateToProps)(ProductDetails);
+ProductDetails.propTypes = {
+  productId: PropTypes.number,
+  products: ProductsType,
+};
+
+ProductDetails.defaultProps = {
+  productId: -1,
+  products: defaultProducts,
+};
+
+export default ProductDetails;

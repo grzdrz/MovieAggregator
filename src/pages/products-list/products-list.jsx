@@ -1,12 +1,21 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
-import actions from './actions';
+import PropTypes from 'prop-types';
 
 import CreateButton from '../../components/create-button/create-button.jsx';
 import SorterForm from '../../components/sorter-form/sorter-form.jsx';
 import ProductShortInfo from '../../components/product-short-info/product-short-info.jsx';
 import Pagination from '../../components/pagination/pagination.jsx';
+
+import ProductsType from '../../store/Products/ProductsType';
+import PaginationType from '../../store/Pagination/PaginationType';
+import FiltersType from '../../store/Filters/FilersType';
+import ShoppingCartType from '../../store/ShoppingCart/ShoppingCartType';
+import AuthorizationType from '../../store/Authorization/AuthorizationType';
+import defaultProducts from '../../store/Products/initialState';
+import defaultPagination from '../../store/Pagination/initialState';
+import defaultFilters from '../../store/Filters/initialState';
+import defaultShoppingCart from '../../store/ShoppingCart/initialState';
+import defaultAuthorization from '../../store/Authorization/initialState';
 
 import './products-list.scss';
 
@@ -81,8 +90,36 @@ function ProductsList(props) {
   );
 }
 
-const mapStateToProps = function (state) {
-  return state;
+ProductsList.propTypes = {
+  products: ProductsType,
+  pagination: PaginationType,
+  filters: FiltersType,
+  shoppingCart: ShoppingCartType,
+  authorization: AuthorizationType,
+  createItemAction: PropTypes.func,
+  sorterAction: PropTypes.func,
+  filterByCategoryAction: PropTypes.func,
+  updateItemAction: PropTypes.func,
+  deleteItemAction: PropTypes.func,
+  shoppingCartPlusAction: PropTypes.func,
+  shoppingCartMinusAction: PropTypes.func,
+  changeCurrentPageAction: PropTypes.func,
 };
 
-export default connect(mapStateToProps, actions)(ProductsList);
+ProductsList.defaultProps = {
+  products: defaultProducts,
+  pagination: defaultPagination,
+  filters: defaultFilters,
+  shoppingCart: defaultShoppingCart,
+  authorization: defaultAuthorization,
+  createItemAction: () => { },
+  sorterAction: () => { },
+  filterByCategoryAction: () => { },
+  updateItemAction: () => { },
+  deleteItemAction: () => { },
+  shoppingCartPlusAction: () => { },
+  shoppingCartMinusAction: () => { },
+  changeCurrentPageAction: () => { },
+};
+
+export default ProductsList;

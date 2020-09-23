@@ -7,10 +7,12 @@ import ColoredLogo from '../colored-logo/colored-logo.jsx';
 import Button from '../button/button.jsx';
 import ShoppingCart from '../shopping-cart/shopping-cart.jsx';
 
-import defaultAuthorization from '../../store/Authorization/initialState';
-import defaultShoppingCart from '../../store/ShoppingCart/initialState';
+import ProductsType from '../../store/Products/ProductsType';
+import ShoppingCartType from '../../store/ShoppingCart/ShoppingCartType';
+import AuthorizationType from '../../store/Authorization/AuthorizationType';
 import defaultProducts from '../../store/Products/initialState';
-import ProductType from '../../store/Products/ProductType';
+import defaultShoppingCart from '../../store/ShoppingCart/initialState';
+import defaultAuthorization from '../../store/Authorization/initialState';
 
 import './header.scss';
 
@@ -107,31 +109,9 @@ function Header(props) {
 }
 
 Header.propTypes = {
-  products: PropTypes.shape({
-    allProducts: PropTypes.arrayOf(PropTypes.shape(ProductType)),
-    activeProducts: PropTypes.arrayOf(PropTypes.shape(ProductType)),
-  }),
-  shoppingCart: PropTypes.shape({
-    chosenProducts: PropTypes.arrayOf(
-      PropTypes.shape({
-        productId: PropTypes.number,
-        productCount: PropTypes.number,
-      }),
-    ),
-  }),
-  authorization: PropTypes.shape({
-    isSignUpFormHidden: PropTypes.bool,
-    isSignInFormHidden: PropTypes.bool,
-    login: PropTypes.string,
-    cookie: PropTypes.string,
-    users: PropTypes.arrayOf(
-      PropTypes.shape({
-        login: PropTypes.string,
-        password: PropTypes.string,
-        cookie: PropTypes.string,
-      }),
-    ),
-  }),
+  products: ProductsType,
+  shoppingCart: ShoppingCartType,
+  authorization: AuthorizationType,
   shoppingCartPlusAction: PropTypes.func,
   shoppingCartMinusAction: PropTypes.func,
   signUpButtonAction: PropTypes.func,

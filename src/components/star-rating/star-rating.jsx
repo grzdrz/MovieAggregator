@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './star-rating.scss';
 
 function StarRating(props) {
@@ -25,5 +26,15 @@ function StarRating(props) {
     </div>
   );
 }
+
+StarRating.propTypes = {
+  id: PropTypes.number,
+  checkedStars: PropTypes.number,
+};
+
+StarRating.defaultProps = {
+  id: 0,
+  checkedStars: 0,
+};
 
 export default StarRating;

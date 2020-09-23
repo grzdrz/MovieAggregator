@@ -1,69 +1,64 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
 import UpdateForm from '../update-form/update-form.jsx';
+
+import ProductType from '../../store/Products/ProductType';
+
 import './update-button.scss';
 
-class UpdateButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.isOpened = false;
-    this.plusButton = React.createRef();
-    this.updateForm = React.createRef();
-  }
+function UpdateButton(props) {
+  const {
+    product,
+    updateItemAction,
+  } = props;
 
-  componentDidMount() {
-    document.addEventListener('click', this.handleDropdownLeave);
-    this._changeState();
-  }
+  const [isOpened, setIsOpened] = useState(false);
 
-  handleDropdownLeave = (event) => {
+  const handleDropdownLeave = (event) => {
     const button = event.target.closest('.update-button');
     const submitButton = event.target.closest('.update-form__submit-button');
     if (!button || submitButton) {
-      this.isOpened = false;
-      this._changeState();
+      setIsOpened(false);
     }
-  }
+  };
 
-  _handlePlusWindowClick = () => {
-    this.isOpened = true;
-    this._changeState();
-  }
+  const handlePlusWindowClick = () => {
+    setIsOpened(true);
+  };
 
-  _changeState() {
-    const updateForm = this.updateForm.current;
-    if (this.isOpened) {
-      updateForm.classList.toggle('update-button__form_opened', true);
-    } else {
-      updateForm.classList.toggle('update-button__form_opened', false);
-    }
-  }
+  useEffect(() => {
+    document.addEventListener('click', handleDropdownLeave);
+    return (() => {
+      document.removeEventListener('click', handleDropdownLeave);
+    });
+  }, []);
 
-  // eslint-disable-next-line react/sort-comp
-  componentWillUnmount() {
-    document.removeEventListener('click', this.handleDropdownLeave);
-  }
-
-  render() {
-    const {
-      product,
-      updateItemAction,
-    } = this.props;
-    return (
-      <div className='update-button'>
-        <div className='update-button__button-container' onClick={this._handlePlusWindowClick} ref={this.plusButton}>
-          <span className='update-button__horizontal-part' />
-          <span className='update-button__vertical-part' />
-        </div>
-        <div className='update-button__form' ref={this.updateForm}>
-          <UpdateForm
-            product={product}
-            updateItemAction={updateItemAction}
-          />
-        </div>
+  return (
+    <div className='update-button'>
+      <div className='update-button__button-container' onClick={handlePlusWindowClick}>
+        <span className='update-button__horizontal-part' />
+        <span className='update-button__vertical-part' />
       </div>
-    );
-  }
+      <div className={`update-button__form ${isOpened ? 'update-button__form_opened' : ''}`}>
+        <UpdateForm
+          product={product}
+          updateItemAction={updateItemAction}
+        />
+      </div>
+    </div>
+  );
 }
+
+UpdateButton.propTypes = {
+  product: ProductType,
+  updateItemAction: PropTypes.func,
+};
+
+UpdateButton.defaultProps = {
+  product: {},
+  updateItemAction: () => { },
+};
 
 export default UpdateButton;

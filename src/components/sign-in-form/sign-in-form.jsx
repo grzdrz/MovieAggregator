@@ -1,87 +1,89 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import FormInput from '../form-input/form-input.jsx';
 import Button from '../button/button.jsx';
 
-import actions from './actions';
+import AuthorizationType from '../../store/Authorization/AuthorizationType';
+import defaultAuthorization from '../../store/Authorization/initialState';
 
 import './sign-in-form.scss';
 
-class SignInForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.formRef = React.createRef();
-  }
+function SignInForm(props) {
+  const {
+    authorization,
+    signInAction,
+    signInButtonAction,
+  } = props;
 
-  componentDidMount() {
-    document.addEventListener('click', this.handleFormLeave);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('click', this.handleFormLeave);
-  }
-
-  handleSubmitButton = (event) => {
+  const handleSubmitButton = (event) => {
     event.preventDefault();
 
-    const { signInAction, signInButtonAction } = this.props;
-
-    const formBody = new FormData(this.formRef.current);
+    const formBody = new FormData(event.target);
     const test = Array.from(formBody);
     const user = Object.fromEntries(test);
 
     signInAction(user);
-  }
+  };
 
-  handleFormLeave = (event) => {
-    const { signInButtonAction } = this.props;
+  const handleFormLeave = (event) => {
+    /* const { signInButtonAction } = props; */
 
     const form = event.target.closest('.sign-in-form');
     const button = event.target.closest('.header__sign-in-button');
     if (!form && !button) signInButtonAction(true);
-  }
+  };
 
-  render() {
-    const { authorization } = this.props;
+  useEffect(() => {
+    document.addEventListener('click', handleFormLeave);
+    return (() => {
+      document.removeEventListener('click', handleFormLeave);
+    });
+  }, []);
 
-    return (
-      <form
-        className={`sign-in-form ${authorization.isSignInFormHidden ? 'sign-in-form_hidden' : ''}`}
-        onSubmit={this.handleSubmitButton}
-        ref={this.formRef}
-      >
-        <p className='sign-in-form__title'>Авторизация</p>
-        <div className='sign-in-form__login-input'>
-          <FormInput
-            name='login'
-            type='text'
-            title='логин'
-            placeholder='login'
-          />
-        </div>
-        <div className='sign-in-form__password-input'>
-          <FormInput
-            name='password'
-            type='password'
-            title='пароль'
-            placeholder='password'
-          />
-        </div>
-        <div className='sign-in-form__submit-button'>
-          <Button
-            hasArrowА
-            basisType='submit'
-            text='Отправить'
-          />
-        </div>
-      </form>
-    );
-  }
+  return (
+    <form
+      className={`sign-in-form ${authorization.isSignInFormHidden ? 'sign-in-form_hidden' : ''}`}
+      onSubmit={handleSubmitButton}
+    >
+      <p className='sign-in-form__title'>Авторизация</p>
+      <div className='sign-in-form__login-input'>
+        <FormInput
+          name='login'
+          type='text'
+          title='логин'
+          placeholder='login'
+        />
+      </div>
+      <div className='sign-in-form__password-input'>
+        <FormInput
+          name='password'
+          type='password'
+          title='пароль'
+          placeholder='password'
+        />
+      </div>
+      <div className='sign-in-form__submit-button'>
+        <Button
+          hasArrowА
+          basisType='submit'
+          text='Отправить'
+        />
+      </div>
+    </form>
+  );
 }
 
-const mapStateToProps = function (state) {
-  return state;
+SignInForm.propTypes = {
+  authorization: AuthorizationType,
+  signInAction: PropTypes.func,
+  signInButtonAction: PropTypes.func,
 };
 
-export default connect(mapStateToProps, actions)(SignInForm);
+SignInForm.defaultProps = {
+  authorization: defaultAuthorization,
+  signInAction: () => { },
+  signInButtonAction: () => { },
+};
+
+export default SignInForm;
